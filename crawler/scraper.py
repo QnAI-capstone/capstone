@@ -1,20 +1,21 @@
 import requests
-import time
 import json
+import time
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 from io import BytesIO
 import PyPDF2
 
 
+# PDF 텍스트 추출 클래스
 class PDFExtractor:
     @staticmethod
     def extract_text_from_pdf(pdf_url):
         try:
-            response = requests.get(pdf_url)
+            response = requests.get(pdf_url, verify=False)
             pdf_file = BytesIO(response.content)
 
             pdf_reader = PyPDF2.PdfReader(pdf_file)
@@ -27,41 +28,69 @@ class PDFExtractor:
             return ""
 
 
+# 게시글 세부 내용 추출 클래스
 class PostDetailExtractor:
     def __init__(self, driver, base_url):
         self.driver = driver
         self.base_url = base_url
 
-    def extract_post_detail_without_pdf(self):
+    # 게시글에서 PDF 링크를 추출
+    def extract_pdf_link(self, soup):
+        # PDF 링크가 iframe 내에 포함되어 있을 수 있음
+        iframe_tag = soup.select_one("iframe[src*='viewer.html?file']")
+        if iframe_tag:
+            iframe_src = iframe_tag.get('src')
+            pdf_link = iframe_src.split("file=")[-1]
+            pdf_link = requests.utils.unquote(pdf_link)  # URL 디코딩
+            if not pdf_link.startswith("http"):
+                pdf_link = self.base_url + pdf_link
+            return pdf_link
+        
+        # 일반적으로 a 태그에서 .pdf 파일 링크 추출
+        pdf_tag = soup.select_one("a[href$='.pdf']")
+        if pdf_tag:
+            pdf_link = pdf_tag['href']
+            if not pdf_link.startswith("http"):
+                pdf_link = self.base_url + pdf_link  # 상대 경로를 절대 경로로 변경
+            return pdf_link
+        return None
+
+    # 게시글에서 이미지 URL을 추출 (특정 img 태그만 추출)
+    def extract_image_urls(self, soup):
+        img_urls = []
+        img_tags = soup.select("p img")  # 원하는 <img> 태그만 선택
+        
+        for img in img_tags:
+            img_url = img.get("src")
+            
+            # .svg 이미지는 제외
+            if img_url and not img_url.endswith('.svg'):
+                # 상대 경로일 경우 절대 경로로 변경
+                if not img_url.startswith("http"):
+                    img_url = self.base_url + img_url
+                img_urls.append(img_url)
+        
+        return img_urls
+
+
+    # 게시글 내용 추출 (PDF 있는 경우, 없는 경우 모두 처리)
+    def extract_post_detail(self):
         soup = BeautifulSoup(self.driver.page_source, "html.parser")
 
         title = self._extract_title(soup)
         author, date, views = self._extract_meta_info(soup)
         content = self._extract_content(soup)
 
-        return {
-            "title": title,
-            "author": author,
-            "date": date,
-            "views": views,
-            "content": content,
-            "url": self.driver.current_url
-        }
-
-    def extract_post_detail_with_pdf(self):
-        soup = BeautifulSoup(self.driver.page_source, "html.parser")
-
-        title = self._extract_title(soup)
-        author, date, views = self._extract_meta_info(soup)
-        content = self._extract_content(soup)
-
-        pdf_link = self._extract_pdf_link(soup)
+        # PDF 링크 추출
+        pdf_link = self.extract_pdf_link(soup)
         pdf_text = ""
         if pdf_link:
             print(f"📄 PDF 다운로드 중: {pdf_link}")
             pdf_text = PDFExtractor.extract_text_from_pdf(pdf_link)
+            content += "\n\n[PDF 내용]\n" + pdf_text
 
-        content += "\n\n[PDF 내용]\n" + pdf_text
+        # 이미지 URL 추출
+        image_urls = self.extract_image_urls(soup)
 
         return {
             "title": title,
@@ -70,7 +99,8 @@ class PostDetailExtractor:
             "views": views,
             "content": content,
             "url": self.driver.current_url,
-            "pdf_url": pdf_link if pdf_link else None
+            "pdf_url": pdf_link if pdf_link else None,
+            "image_urls": image_urls  # 이미지 URL 리스트 추가
         }
 
     def _extract_title(self, soup):
@@ -99,16 +129,17 @@ class PostDetailExtractor:
         content_container = soup.select_one("div.break-words.custom-css-tag-a.tiptap")
         return "\n".join([p.text.strip() for p in content_container.select("p.zoom-text")]) if content_container else ""
 
-    def _extract_pdf_link(self, soup):
-        pdf_tag = soup.select_one("a[href$='.pdf']")
-        if pdf_tag:
-            pdf_link = pdf_tag['href']
-            if not pdf_link.startswith("http"):
-                pdf_link = self.base_url + pdf_link  # 상대 경로를 절대 경로로 변경
-            return pdf_link
-        return None
 
+# 웹 드라이버 관리 클래스
+class WebDriverManager:
+    @staticmethod
+    def initialize_driver():
+        options = webdriver.ChromeOptions()
+        options.add_argument("--headless")  # 창 안 띄우는 옵션
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+        return driver
 
+# 메인 크롤러 클래스
 class NoticeScraper:
     def __init__(self, driver, base_url, start_page=1, end_page=1):
         self.driver = driver
@@ -137,13 +168,30 @@ class NoticeScraper:
                     self.driver.execute_script("arguments[0].click();", post)
                     time.sleep(1)
 
-                    if self.driver.current_url.endswith('.pdf'):
-                        data = self.post_detail_extractor.extract_post_detail_with_pdf()
-                    else:
-                        data = self.post_detail_extractor.extract_post_detail_without_pdf()
+                    # 게시글 세부 정보 추출, 최대 3번 시도
+                    retry_count = 0
+                    data = None
+                    while retry_count < 3:
+                        try:
+                            data = self.post_detail_extractor.extract_post_detail()
 
-                    all_data.append(data)
+                            # 디버깅용으로 텍스트 일부 출력
+                            print(f"📄 제목: {data['title']}")
+                            print(f"📄 내용 일부: {data['content'][:200]}...")  # 본문 내용의 앞 200자 출력
+                            
+                            # 제목과 본문 내용이 있으면 바로 저장
+                            if data['title'] != "제목 없음" and (data['content'] or data['image_urls']):
+                                break  # 본문이나 이미지가 있다면 멈추고 저장
 
+                        except Exception as e:
+                            print(f"    ❌ 게시글 크롤링 실패: {e}")
+                            retry_count += 1
+                            if retry_count >= 3:
+                                print("⚠️ 최대 시도 횟수 초과, 다음 게시글로 넘어갑니다.")
+                            time.sleep(2)
+
+                    if data:
+                        all_data.append(data)
                     self.driver.back()
                     time.sleep(1)
 
@@ -154,20 +202,11 @@ class NoticeScraper:
         return all_data
 
 
-class WebDriverManager:
-    @staticmethod
-    def initialize_driver():
-        options = webdriver.ChromeOptions()
-        # options.add_argument("--headless")  # 창 안 띄우는 옵션
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-        return driver
-
-
 if __name__ == "__main__":
     driver = WebDriverManager.initialize_driver()
     BASE_URL = "https://sogang.ac.kr/ko/academic-support/notices"
 
-    scraper = NoticeScraper(driver, BASE_URL, start_page=1, end_page=1)
+    scraper = NoticeScraper(driver, BASE_URL, start_page=1, end_page=16)
     scraped = scraper.scrape_notice_pages()
 
     with open("data/raw/aca-support_test.json", "w", encoding="utf-8") as f:
