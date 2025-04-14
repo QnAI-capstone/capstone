@@ -1,0 +1,105 @@
+{
+  "title": "확장형 수업계획서\n(Extended Syllabus)",
+  "course_name": "캡스톤디자인 |",
+  "semester": "2025년 1학기",
+  "course_credits": "3",
+  "course_code": "CSE4186",
+  "class_time": "금요일 10:30 ~ 13:15 (02분반)",
+  "target_students": "학부 3, 4학년",
+  "instructor": {
+    "name": "장두성",
+    "email": "dschang@sogang.ac.kr",
+    "location": "TE512",
+    "consultation_hours": "이메일 사전 예약"
+  },
+  "homepage": "TBA",
+  "contact_number": "dschang@sogang.ac.kr",
+  "course_overview": {
+    "overview": "본 교과목은 생성형AI에 기반한 팀 프로젝트 수행경험 습득 및 실무현장의 문제 해결 능력을 키우는 것을 목표로 한다. 초거대AI API에 기반한 서버프로그래밍 언어인 LangChain, Streamlit 등의 사용 경험을 습득하고, 자연어처리 및 검색기술에 기반한 RAG(Retrieval Augmented Generation), Prompt engineering, In-Context Learning 기법에 대해 학습한다.\n프로젝트는 팀 단위로 멘토의 지도를 받아 학기 중 개발을 완료하고, 교내 및 대외 SW경진대회 참여와 학술대회 논문 제출을 장려한다.",
+    "prerequisites": "- 자료구조\n- Python 프로그래밍 능력 보유 (Java 프로그래밍도 가능하나, 수업은 Python으로 진행함)",
+    "teaching_methods": {
+      "lecture": "50%",
+      "discussion": "0%",
+      "lab": "25%",
+      "field_trip": "0%",
+      "presentation": "25%",
+      "other": "0%"
+    },
+    "evaluation_methods": {
+      "midterm": "30%",
+      "final": "0%",
+      "quiz": "0%",
+      "presentation": "0%",
+      "project": "40%",
+      "assignments": "15%",
+      "participation": "10%",
+      "other": "5%"
+    }
+  },
+  "course_objectives": {
+    "knowledge": "생성형AI에 기반한 문제 해결 능력 확보를 위해, 1) 생성형AI 기술 개념, 2) 빠른 개발을 위한 LangChain, Streamlit 등의 프로그래밍 라이브러리 사용 방법 3) 성능확보를 위한 자연어처리 및 검색기술에 기반한 RAG, Prompt engineering, In-Context Learning 기법에 대해 학습한다.",
+    "skills": "생성형AI에 기반한 응용서비스 기획 및 팀 프로젝트 수행경험을 습득하고, 실무현장의 문제 해결 능력을 키워 제한된 자원에서 창의적인 개발 기술을 확보한다.",
+    "attitude": "프로젝트 팀원 간의 긴밀하고 효율적인 협업 및 멘토의 지도를 통해 의사소통, 갈등 조정, 위기 관리, 문제 해결 능력을 습득합니다."
+  },
+  "course_format": "수업은 생성형AI를 실무에 적용하기 위한 여러 기술을 주제로 실시간 강의 및 프로그래밍 실습으로 구성됩니다. 팀 프로젝트 주제는 산업체 제안 과제나 자유 주제를 선택하며, 발표 평가는 프로젝트 제안 발표와 최종 발표로 진행합니다. 멘토링은 필수 요건이며, 멘토는 학생이 직접 선정하거나 산업체 또는 담당 교수가 지정할 수 있습니다.",
+  "grading_criteria": {
+    "description": "생성형AI 응용서비스 개발은 팀프로젝트 결과 시연 및 발표, 프로그래밍 실습, 과제, 중간고사로 학습 내용을 평가합니다. 팀 프로젝트는 주제와 목표의 적절성, 팀 구성, 역할 분담, 의사소통, 프로젝트 관리, 문서화, 결과물의 품질 및 검증, 분석의 타당성을 평가합니다. 프로젝트 주제는 산업체 제안, 담당 교수 제안 또는 학생 제안 주제 중에서 선택합니다. 산업체 제안의 경우 업체에서 멘토를 선임하고 최종 발표에 참여해 평가 의견을 제공할 수 있습니다.",
+    "items": {
+      "team_project": "40%",
+      "assignments": "15%",
+      "midterm": "30%",
+      "participation": "10%",
+      "other": "5%"
+    }
+  },
+  "course_policies": {
+    "attendance": "출석 관련 규정은 서강대학교의 학사 규정을 따르며, 평가에 반영됩니다.",
+    "academic_integrity": "본 과목의 시험이나 과제에서 부정 행위가 발생할 경우 즉시 F 학점을 부여합니다.",
+    "grading": "학칙 제9조에 따라 상대평가 예외 적용 과목입니다."
+  },
+  "materials_and_references": {
+    "main_textbook": "강의자료",
+    "supplementary_materials": [
+      "LangChain Documents: https://python.langchain.com/docs/introduction/",
+      "Streamlit Documents: https://docs.streamlit.io/",
+      "https://learn.deeplearning.ai/",
+      "이외 많은 웹 상의 실습 동영상 강의들은 자유롭게 참고 가능합니다."
+    ]
+  },
+  "course_schedule": [
+    {
+      "week": "1",
+      "date": "3월/7일",
+      "learning_objectives": "생성형 AI 개요",
+      "main_content": "수업 및 프로젝트 진행 계획 소개, 생성형AI 개요 소개",
+      "teaching_method": "강의",
+      "materials": "강의자료",
+      "assignments": "[프로젝트] 팀 구성 착수, 서강 wiki 등록 신청"
+    },
+    {
+      "week": "2",
+      "date": "3월/14일",
+      "learning_objectives": "생성형 AI 응용서비스 개요",
+      "main_content": "생성형 AI 응용 서비스 습득 및 활용 분야 토론, 사용도구 설치",
+      "teaching_method": "강의 및 토론",
+      "materials": "강의 자료",
+      "assignments": "[프로젝트] 예산 신청"
+    },
+    {
+      "week": "3",
+      "date": "3월/21일",
+      "learning_objectives": "LangChain 개요",
+      "main_content": "LangChain 사용 방법, 개발환경 및 실습",
+      "teaching_method": "강의 및 실습",
+      "materials": "강의 자료",
+      "assignments": "[강의] 수업 중 공지 [프로젝트] 선정 주제 보고"
+    }
+  ],
+  "special_accommodations": [
+    "서강 위키를 통한 프로젝트 협업 지원.",
+    "캡스톤디자인 교과목은 \"기업연계 기반\" 유형으로, 학생 제안 자유주제 및 산업체 제안 주제 중 선택 가능하며, 협력 산업체에서 멘토링 및 프로젝트 평가를 지원합니다.",
+    "정해진 상담시간 이외에도 전화나 이메일을 통한 별도의 약속을 통한 면담 가능",
+    "상기 각 주차별 강의 계획은 내용과 일정이 강의가 진행되면서 수정될 수 있음"
+  ],
+  "aid_for_challenged_students": "수강 시 지원이 필요한 학생들은 개별적으로 면담을 통해 상의해 주세요."
+}
