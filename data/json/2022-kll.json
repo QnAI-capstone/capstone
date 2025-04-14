@@ -1,0 +1,104 @@
+{
+  "title": "국어국문학과",
+  "educational_goals": {
+    "overall": "학문의 질적 탁월성 추구, 지식의 체계성 및 깊이를 겸비하는 교육, 보편성과 특수성을 함께 탐구하는 교육, 실용적 교육, 시대 및 사회 요구에 부응하는 교육, 세계화 지향 교육",
+    "specific": [
+      "언어와 문학의 일반 이론 폭넓게 탐구",
+      "한국어와 한국문학의 역사적 흐름과 전통 이해",
+      "한국어와 한국문학 각 영역에 대한 체계적이고 깊이 있는 지식 축적",
+      "한국어문학과 인접 학문과의 관계 다각적으로 규명",
+      "언어와 문학을 통해 문화 이해",
+      "다매체적 상황에서 한국어와 한국문학의 새로운 위상 탐구",
+      "한국어문학 연구 성과의 세계적 통용 지향"
+    ]
+  },
+  "major_requirements": {
+    "credit_requirements": {
+      "general_education": {
+        "common_required": 11,
+        "common_elective": 3,
+        "introductory": 3,
+        "essential_required": 3,
+        "essential_elective": 3,
+        "major_basic": 6
+      },
+      "major": {
+        "essential": 9,
+        "general": 27,
+        "advanced": null,
+        "practical": null
+      },
+      "total": 130
+    },
+    "course_requirements": {
+      "pre_major": [
+        {
+          "code": "HSS3012",
+          "name": "동서고전세미나",
+          "credits": 3,
+          "semester": "1학년 1학기",
+          "note": "1과목(3학점) 필수 수강"
+        },
+        {
+          "code": "HSS3013",
+          "name": "현대인문세미나",
+          "credits": 3,
+          "semester": "1학년 1학기 또는 2학기",
+          "note": null
+        }
+      ],
+      "major_required": [
+        {
+          "code": "KOR2001",
+          "name": "국어학입문",
+          "credits": 3
+        },
+        {
+          "code": "KOR2200",
+          "name": "국문학개설",
+          "credits": 3
+        },
+        {
+          "code": "KOR2201",
+          "name": "문학이란 무엇인가",
+          "credits": 3
+        }
+      ],
+      "other": {
+        "KOR4099": {
+          "note": "졸업 학점에는 포함, 전공 학점에는 미포함. Honors Program 이수자 필수, 학과장 승인 필요"
+        },
+        "JAS3006": {
+          "note": "신문방송학전공 개설 과목과 동일(구 ‘COM3123 미디어글쓰기’)"
+        },
+        "JAS3009": {
+          "note": "신문방송학전공 개설 과목과 동일(구 ‘COM3210 광고카피와 제작’)"
+        },
+        "general_major": {
+          "note": "국어학 6학점, 국문학공통 3학점, 고전문학 3학점, 현대문학 3학점 이상 이수"
+        }
+      }
+    }
+  },
+  "roadmap": {
+    "advanced_major": {},
+    "practical_major": {}
+  },
+  "courses": {
+    "KOR2001": {
+      "name": "국어학입문",
+      "credits": 3,
+      "description": "국어학의 제 분야, 방법론, 각종 술어 등을 설명하고 기왕의 학설과 새로운 과제를 제시한다."
+    },
+    "KOR2200": {
+      "name": "국문학개설",
+      "credits": 3,
+      "description": "국문학의 범위, 특성, 내용 등을 개략적으로 다룬다."
+    },
+    "KOR2201": {
+      "name": "문학이란 무엇인가",
+      "credits": 3,
+      "description": "국어국문학전공 학생을 위한 강의로서 문학의 개념, 범위, 성격, 연구 방법 등을 다룬다."
+    }
+  }
+}
