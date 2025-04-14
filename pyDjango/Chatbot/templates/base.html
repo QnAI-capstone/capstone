@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/12522edff7.js" crossorigin="anonymous"></script>
+    {% block styles %}{% endblock %}
+    <style>
+      .main-header {
+        background-color: #b30000;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 15px;
+      }
+
+      .logo {
+        width: 54%;
+      }
+
+      .logo-image {
+        width: 200px;
+        object-fit: contain;
+        margin-top: 10px;
+      }
+
+      .menu {
+        margin-right: 20px;
+        margin-top: 20px;
+      } 
+    </style>
+  </head>
+  <header>
+    <div class="main-header">
+      <div class="logo">
+        <img class="logo-image" src="{% static 'image/logo.png' %}" alt="로고" />
+      </div>
+      <div class="menu">
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </div>
+    </div>
+  </header>
+  <body>
+    {% block content %}{% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script>
+    {% block scripts %}{% endblock %}
+  </body>
+</html>
