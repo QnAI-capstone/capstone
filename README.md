@@ -8,7 +8,7 @@
 4. parse_all.py: data/pdf 내의 파일을 모두 laod해서 txt 생성하고 json 파일 만드는 것까지
 
 # 그 외 파일 설명
-- requirements.txt : pip install로 설치하면 되는데 현서님이 맥북을 쓰셔서 그런지 Windows라 충돌이 일어나는 것들이 있었어요. windows 컴퓨터 쓰시는 분들은 이 파일로 설치하면 좋을 것 같습니다.
+- requirements.txt : pip install로 설치하면 되는데 현서님이 맥북을 쓰셔서 그런지 제 컴퓨터는 Windows라 충돌이 일어나는 것들이 있었어요. windows 컴퓨터 쓰시는 분들은 이 파일로 설치하면 좋을 것 같습니다.
 
   https://youtu.be/o_vKT80BBkw?si=nhCbb_KdZOBgm_Cl
   : 아직 파이썬 가상환경 설치 안 하신 분들은 이 영상 보시고 설치하면 좋을 것 같아욤!!
