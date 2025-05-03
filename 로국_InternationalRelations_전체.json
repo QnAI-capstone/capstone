@@ -1,0 +1,474 @@
+{
+    "로욜라국제대학 교육과정": 747,
+    "International Relations": {
+        "Mission": "The Bachelor of Arts in the International Studies Program with the International Relations Track cultivates young experts specialized in international politics. By offering a distinctive world-class education, this program equips students with practical capabilities and theoretical knowledge about international affairs, thereby nurturing them to become international experts who play a leading role in academia, public institutions, international organizations, and multinational corporations.",
+        "Career Paths": "The International Relations track can help students become global-minded professionals or academics. Students can seek employment opportunities in international organizations or nongovernmental organizations, such as the United Nations, Greenpeace, and Amnesty International. Our promising students can also seek employment opportunities in research institutions or pursue further education in academia, majoring in political science or international studies, at the post-graduate level to become excellent scholars.",
+        "Course Requirements": {
+            "Credit Requirements": [
+                {
+                    "Korean students on the English track 영어트랙 국내학생": {
+                        "Single major": {
+                            "Liberal Arts_교양": {
+                                "Core Required": 11,
+                                "Core Required Electives": {
+                                    "①": 3,
+                                    "②": 3,
+                                    "③": 3,
+                                    "④": 3
+                                },
+                                "Total cradits": 23
+                            },
+                            "Pre-Major Course": 9,
+                            "Major": {
+                                "Core": 18,
+                                "Elective": 27,
+                                "Total credits": 45
+                            },
+                            "Total Credits Required for Degree": 126
+                        },
+                        "Multiple major": {
+                            "Liberal Arts_교양": {
+                                "Core Required": 11,
+                                "Core Required Electives": {
+                                    "①": 3,
+                                    "②": 3,
+                                    "③": 3,
+                                    "④": 3
+                                },
+                                "Total cradits": 23
+                            },
+                            "Pre-Major Course": 9,
+                            "Major": {
+                                "Core": 18,
+                                "Elective": 21,
+                                "Total credits": 39
+                            },
+                            "Total Credits Required for Degree": 126
+                        },
+                        "비고": [
+                            "*전공입문교과는 전공이수학점에 포함되지 않음.",
+                            "*Pre-major courses do not count towards the total credits required for the major."
+                        ]
+                    }
+                },
+                {
+                    "International students on the English track 영어트랙 국제학생": {
+                        "Single major": {
+                            "Liberal Arts_교양": {
+                                "Core Required": 16,
+                                "Core Required Electives": {
+                                    "①, ②, ③, ④": 6
+                                },
+                                "Total cradits": 22
+                            },
+                            "Pre-Major Course": 9,
+                            "Major": {
+                                "Core": 18,
+                                "Elective": 27,
+                                "Total credits": 45
+                            },
+                            "Total Credits Required for Degree": 126
+                        },
+                        "Multiple major": {
+                            "Liberal Arts_교양": {
+                                "Core Required": 16,
+                                "Core Required Electives": {
+                                    "①, ②, ③, ④": 6
+                                },
+                                "Total cradits": 22
+                            },
+                            "Pre-Major Course": 9,
+                            "Major": {
+                                "Core": 18,
+                                "Elective": 21,
+                                "Total credits": 39
+                            },
+                            "Total Credits Required for Degree": 126
+                        },
+                        "비고": [
+                            "*전공입문교과는 전공이수학점에 포함되지 않음.",
+                            "*Pre-major courses do not count towards the total credits required for the major."
+                        ]
+                    }
+                }
+            ],
+            "Course Requirements": {
+                "Pre-Major Courses": [
+                    {
+                        "Course Code": "TIS1001",
+                        "Title": "Introduction to International Relations",
+                        "Credits": 3
+                    },
+                    {
+                        "Course Code": "TIS1002",
+                        "Title": "Introduction to International Commerce",
+                        "Credits": 3
+                    },
+                    {
+                        "Course Code": "AAS1001",
+                        "Title": "Introduction to Asian Studies",
+                        "Credits": 3
+                    }
+                ],
+                "Major Core Courses": {
+                    "Course": [
+                        {
+                            "Course Code": "TIS1004",
+                            "Title": "Research Methodology"
+                        },
+                        {
+                            "Course Code": "TIR2001",
+                            "Title": "International Relations Theory"
+                        },
+                        {
+                            "Course Code": "TIR2002",
+                            "Title": "Diplomatic History"
+                        },
+                        {
+                            "Course Code": "TIR2003",
+                            "Title": "Globalization and World Politics"
+                        },
+                        {
+                            "Course Code": "TIR2004",
+                            "Title": "Introduction to International Development"
+                        },
+                        {
+                            "Course Code": "TIR2005",
+                            "Title": "International Security and Peace"
+                        },
+                        {
+                            "Course Code": "TIR3001",
+                            "Title": "International Political Economy"
+                        },
+                        {
+                            "Course Code": "TIR3002",
+                            "Title": "International Politics of the Korea Peninsula"
+                        },
+                        {
+                            "Course Code": "TIR3003",
+                            "Title": "Advanced Research Methodolog"
+                        },
+                        {
+                            "Course Code": "TIR4001",
+                            "Title": "Major Issues in Global Affairs"
+                        }
+                    ],
+                    "Credits": 18
+                },
+                "Major Electives": {
+                    "Course": [
+                        {
+                            "Course Code": "TIR2006",
+                            "Title": "Understanding International Law"
+                        },
+                        {
+                            "Course Code": "TIR2007",
+                            "Title": "International Relations of East Asia"
+                        },
+                        {
+                            "Course Code": "TIR2008",
+                            "Title": "American Foreign Policy"
+                        },
+                        {
+                            "Course Code": "TIR2009",
+                            "Title": "Chinese Foreign Policy"
+                        },
+                        {
+                            "Course Code": "TIR2010",
+                            "Title": "International Relations of Japan"
+                        },
+                        {
+                            "Course Code": "TIR3004",
+                            "Title": "NGOs and Global Governance"
+                        },
+                        {
+                            "Course Code": "TIR3005",
+                            "Title": "International Conflict Resolution"
+                        },
+                        {
+                            "Course Code": "TIR3006",
+                            "Title": "Human Rights in a Globalized World"
+                        },
+                        {
+                            "Course Code": "TIR3007",
+                            "Title": "Foreign Policy Decision-Making"
+                        },
+                        {
+                            "Course Code": "TIR3008",
+                            "Title": "South-North Korean Relations"
+                        },
+                        {
+                            "Course Code": "TIR3009",
+                            "Title": "Contemporary Korea-US Relations"
+                        },
+                        {
+                            "Course Code": "TIR4002",
+                            "Title": "Energy and International Politics"
+                        },
+                        {
+                            "Course Code": "TIR4003",
+                            "Title": "Environment and International Politics"
+                        },
+                        {
+                            "Course Code": "TIR4004",
+                            "Title": "International Terrorism"
+                        },
+                        {
+                            "Course Code": "TIR4005",
+                            "Title": "Contemporary Europe"
+                        },
+                        {
+                            "Course Code": "TIR4006",
+                            "Title": "Contemporary North and South America"
+                        },
+                        {
+                            "Course Code": "TIR4007",
+                            "Title": "International Relations of the Middle East"
+                        },
+                        {
+                            "Course Code": "TIR4100",
+                            "Title": "Special Seminar on International Relations I"
+                        },
+                        {
+                            "Course Code": "TIR4101",
+                            "Title": "Special Seminar on International Relations II"
+                        },
+                        {
+                            "Course Code": "AAS2003",
+                            "Title": "Diplomacy in Asia"
+                        },
+                        {
+                            "Course Code": "AAS2016",
+                            "Title": "Politics in Southeast Asia"
+                        }
+                    ],
+                    "Credits": 27,
+                    "비고": "Multiple Majors 21"
+                },
+                "비고": [
+                    "* 전공필수선택 18학점 초과 취득 시 전공선택학점으로 인정",
+                    "* More than 18 credits of major core courses count towards major electives."
+                ]
+            }
+        },
+        "Pre-Major Courses(전공입문)": [
+            {
+                "과목 코드": "TIS1001",
+                "교과목명": "Introduction to International Relations(국제관계개론)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This is an introductory course on international relations, which provides students with a bird-eye-view of contemporary international affairs. By taking this course, students will obtain basic background knowledge about international relations, which will help build a solid foundation for advanced courses."
+            },
+            {
+                "과목 코드": "TIS1002",
+                "교과목명": "Introduction to International Commerce (국제통상입문)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This introductory course serves as a foundational exploration of essential economic concepts crucial to the International Commerce program, enriched by insightful case studies. Students will be able to understand the decision making of consumers and firms, price theory across various market structures, measures and models of aggregate economic activities, and macroeconomic policy tools."
+            },
+            {
+                "과목 코드": "AAS1001",
+                "교과목명": "Introduction to Asian Studies(아시아학개론)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This introductory course provides an overview of some of the key issues relating to Asia and Asian Studies. The course facilitates an interdisciplinary understanding of Asia's past and present through the region's geography, history, culture, economy and politics. Our approach enables students to acquire a foundational knowledge of Asia and prepares them for more advanced courses in the Asian Studies track and beyond."
+            }
+        ],
+        "Major Core Courses(전공필수선택)": [
+            {
+                "과목 코드": "TIS1004",
+                "교과목명": "Research Methodology(연구방법론)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This is an introductory course on research methods, which provides students insights into a range of methodological tools for problem-driven research. By taking this course, students will learn the basic processes and stages of qualitative and quantitative methods, which will help them to build their own research designs. This course is highly recommended, particularly for students who plan to major in International Relations and Asian Studies."
+            },
+            {
+                "과목 코드": "TIR2001",
+                "교과목명": "International Relations Theory(국제관계이론)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "In this course, students will learn about the major theories of international relations. While learning key concepts, fundamental assumptions, and essential arguments, students will be able to equip themselves with analytic tools with which they can better interpret complex international affairs."
+            },
+            {
+                "과목 코드": "TIR2002",
+                "교과목명": "Diplomatic History(외교사)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course aims to provide students with an in-depth understanding of diplomatic history, with a special focus on events that have a critical impact on contemporary international politics, such as the French Revolution, the Napoleonic Wars, two World Wars, the Cold War, and the dissolution of the Soviet Union."
+            },
+            {
+                "과목 코드": "TIR2003",
+                "교과목명": "Globalization and World Politics(세계화와글로벌정치)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "The primary objective of this course is to introduce students to major analytic tools and practical knowledge about world politics in the era of globalization. In this course, students will examine the impacts of globalization, de-globalization, localization, and regional integration on world affairs."
+            },
+            {
+                "과목 코드": "TIR2004",
+                "교과목명": "Introduction to International Development(국제개발개론)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course is designed to introduce students to an interdisciplinary study of international development. With overarching themes of economic growth, human development, foreign aid, women's empowerment, food and environmental security, etc., this course provides an in-depth understanding of international development and cooperation."
+            },
+            {
+                "과목 코드": "TIR2005",
+                "교과목명": "International Security and Peace (국제안보와평화)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course aims to teach students about international peace and security. In particular, a special scholarly emphasis will be put on the use of force as a tool to enable a state to accomplish its political goals."
+            },
+            {
+                "과목 코드": "TIR3001",
+                "교과목명": "International Political Economy(국제정치경제)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course investigates the linkage between international politics and international economy. With a special focus on impacts of international trade, investment, and monetary and financial policy, this course covers issues such as trade wars, currency crises, international organizations, and international regimes."
+            },
+            {
+                "과목 코드": "TIR3002",
+                "교과목명": "International Politics of the Korea Peninsula(한반도국제관계)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "International politics surrounding the Korean peninsula is exceptionally dynamic and complex. Students will investigate the intense international contests that have taken place on, around, and for the Korean peninsula since the nineteenth century."
+            },
+            {
+                "과목 코드": "TIR3003",
+                "교과목명": "Advanced Research Methodology(고급연구방법론)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course is intended to help students design their own research projects. By teaching quantitative and qualitative research methodologies, this course aims to hone students’ capabilities so that they can independently conduct academic research."
+            },
+            {
+                "과목 코드": "TIR4001",
+                "교과목명": "Major Issues in Global Affairs(글로벌시사문제)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This is a seminar course designed to familiarize students with current world affairs. By actively debating controversial international issues, students will not only deepen their understanding of international politics, but also sharpen their debating skills and learn to respect diversity."
+            }
+        ],
+        "Major Electives(전공선택)": [
+            {
+                "과목 코드": "TIR2006",
+                "교과목명": "Understanding International Law(국제법의이해)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course provides students with an introduction to international law in this era marked by trans-jurisdictional practice. By taking this course, students will become familiar with key features of international law, law of treaties, state's legal responsibility, jurisdiction and immunity, maritime law, international human right, etc."
+            },
+            {
+                "과목 코드": "TIR2007",
+                "교과목명": "International Relations of East Asia (동아시아국제관계)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course is designed to help students deepen their understanding of international relations in East Asia. While discussing politics, the economy, identity, history, and strategies, students will be able to depict a broader but more detailed picture of current international politics in the East Asian region."
+            },
+            {
+                "과목 코드": "TIR2008",
+                "교과목명": "American Foreign Policy (미국외교정책)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course explores American foreign policy and its implications on contemporary international affairs. By taking an “inside-out” approach, this course will place a particular emphasis on internal sources of American foreign policy formulation such as domestic power struggles, election politics, bureaucratic infightings, political systems, civil societies, etc."
+            },
+            {
+                "과목 코드": "TIR2009",
+                "교과목명": "Chinese Foreign Policy (중국외교정책)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "The primary goal of this course is to acquaint students with Chinese foreign policy. The issues that will be covered in this course include, but are not limited to, the history of Chinese foreign policy, Sino-U.S. rivalry, U.S.-China-Russian trilateral relations, China's exchanges with the Korean peninsula, and the Taiwan Strait crises."
+            },
+            {
+                "과목 코드": "TIR2010",
+                "교과목명": "International Relations of Japan (일본의 국제관계)",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course is intended to help students understand contemporary international relations of Japan. By taking this course, students will be able to deepen their understandings of Japanese politics and foreign policies in the contemporary world."
+            },
+            {
+                "과목 코드": "TIR2101",
+                "교과목명": "Understanding International Relations",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "Designed to help students expand their knowledge about the field of International Relations and horn analytical skills in Political Science, this course invites students to build their respective approaches to answer these questions. This course will impact students in the following regards. First, students will have a chance to familiarize themselves with diverse issues (e.g., war, peace, international political economy, human rights, etc.) and events in international relations (with a focus on East Asia) in the past and recent years. Second, students will learn existing theoretical frameworks in IR, which have greatly influenced policy-makers, scholars, and commentators alike. Third, students will develop their approaches through the presentation and essay assignments, which will be supported by the instructor's close consultations, not to mention in class discussions."
+            },
+            {
+                "과목 코드": "AAS2003",
+                "교과목명": "Diplomacy in Asia(아시아의 외교)",
+                "설명": "(Lecture 3hr.) 3cr. This course discusses the issues of diplomacy and foreign policy in the context of Asia. It aims to understand historical and contemporary institutions and laws of diplomacy, key diplomatic actors, and their decision-making processes, but also examine the diplomatic cultures and practices of key actors including leading and non-leading states."
+            },
+            {
+                "과목 코드": "AAS2016",
+                "교과목명": "Politics in Southeast Asia (동남아 정치 개론)",
+                "설명": "(Lecture 3hr.) 3cr. This course aims to provide an in-depth understanding of political and social issues in Southeast Asian countries with diverse theoretical perspectives in the field of comparative politics."
+            },
+            {
+                "과목 코드": "TIR3004",
+                "교과목명": "NGOs and Global Governance (NGO와 글로벌거버넌스)",
+                "설명": "(Lecture 3hr.) 3cr. This course helps students understand global governance and the role of non-governmental organizations (NGOs) in contemporary international politics. In this course, students will explore key issues about global governance, the impact of international non-governmental organizations on global governance, and interactions between NGOs and governmental organizations."
+            },
+            {
+                "과목 코드": "TIR3005",
+                "교과목명": "International Conflict Resolution(국제분쟁해결)",
+                "설명": "(Lecture 3hr.) 3cr. This course examines international conflicts as well as the management and resolution of these conflicts. By exploring theoretical and practical approaches to international conflicts, preventive diplomacy, international mediation, peacebuilding efforts, and resolution of international conflicts, students will be able to broaden their understandings of conflicts among states."
+            },
+            {
+                "과목 코드": "TIR3006",
+                "교과목명": "Human Rights in a Globalized World(세계화시대의인권)",
+                "설명": "(Lecture 3hr.) 3cr. This course offers an introduction to key issues concerning international human rights. Upon completion of this course, students will be equipped with a theoretical and practical understanding of diverse facets of human rights and their philosophies, institutions, principles, and practices."
+            },
+            {
+                "과목 코드": "TIR3007",
+                "교과목명": "Foreign Policy Decision-Making(외교정책결정론)",
+                "설명": "(Lecture 3hr.) 3cr. This course aims to expose students to foreign policy decision-making processes. By learning various theories about foreign policy decision-making, students will be able to better understand how foreign policy is made and conducted through interaction of diverse actors, the constraints on foreign policy formulation, and the implications a certain foreign policy can have at the local, national, regional, and global levels."
+            },
+            {
+                "과목 코드": "TIR3008",
+                "교과목명": "South-North Korean Relations(남북한관계)",
+                "설명": "(Lecture 3hr.) 3cr. In this course, students will examine inter-Korean relations from the latter half of the 20th century to the present. Focusing mainly on the aftermaths of war and division, this course offers knowledge about key issues in international affairs focused on modern Korea."
+            },
+            {
+                "과목 코드": "TIR3009",
+                "교과목명": "Contemporary Korea-US Relations (현대한미관계)",
+                "설명": "(Lecture 3hr.) 3cr. This course seeks to sharpen students’ intellectual capacities in order to grasp the multifaceted nature of contemporary Korea-U.S. relations. Specifically, students will investigate the Korean War, R.O.K-U.S. alliance, the North Korean nuclear crises, anti-American sentiments in South Korea, South Korea immigrants in the United States, etc."
+            },
+            {
+                "과목 코드": "TIR4002",
+                "교과목명": "Energy and International Politics(에너지와국제정치)",
+                "설명": "(Lecture 3hr.) 3cr. This course is designed to expose students to international politics with a focus on energy. By synthesizing diverse disciplines such as international relations, economics, security studies, and energy science, this course aims to nurture and equip energy experts through an interdisciplinary perspective."
+            },
+            {
+                "과목 코드": "TIR4003",
+                "교과목명": "Environment and International Politics (환경과국제정치)",
+                "설명": "(Lecture 3hr.) 3cr. This course is intended to introduce students to global environmental politics. While examining such issues as climate change, environmental pollution and protection, resource depletion, and energy and food security, students will learn how they are intertwined with international politics."
+            },
+            {
+                "과목 코드": "TIR4004",
+                "교과목명": "International Terrorism(국제테러리즘)",
+                "설명": "(Lecture 3hr.) 3cr. The purpose of this course is to familiarize students with key concepts, issues, history, and theories about international terrorism. While striving to look into the complexity of international terrorism, students, upon completion of this course, will be able to better conceptualize terrorism and counterterrorism in the context of today's international politics."
+            },
+            {
+                "과목 코드": "TIR4005",
+                "교과목명": "Contemporary Europe (현대유럽의이해)",
+                "설명": "(Lecture 3hr.) 3cr. This course looks at historical events that have shaped Europe today as well as the political system, domestic politics, and foreign policy of individual European countries. The process of European integration into a social, economic and political community with a mutually shared identity will be also explored in this course."
+            },
+            {
+                "과목 코드": "TIR4006",
+                "교과목명": "Contemporary North and South America(현대북남미의이해)",
+                "설명": "(Lecture 3hr.) 3cr. This is an interdisciplinary course designed to zero in on international politics of countries in North and South America. Specifically, this course helps students explore diverse issues such as migration, racial relations, political economy, colonialism, and nationalism in North and South America."
+            },
+            {
+                "과목 코드": "TIR4007",
+                "교과목명": "International Relations of the Middle East (중동국제관계)",
+                "설명": "(Lecture 3hr.) 3cr. This course is designed to introduce students to the international relations of the Middle East. In this course, students investigate major political events that took place in the Middle East during the colonial, Cold War, and post-Cold War periods."
+            },
+            {
+                "과목 코드": "TIR4100",
+                "교과목명": "Special Seminar on International Relations I (국제관계 세미나 I)",
+                "설명": "(Lecture 3hr.) 3cr. This course is designed to explore a specific issue related to international relations in depth. By taking this class, students will be able to develop a multifaceted perspective and cultivate an ability to conduct a thorough analysis of a particular topic in international relations."
+            },
+            {
+                "과목 코드": "TIR4101",
+                "교과목명": "Special Seminar on International Relations II (국제관계 세미나 II)",
+                "설명": "(Lecture 3hr.) 3cr. This course is designed to explore a specific issue related to international relations in depth. By taking this class, students will be able to develop a multifaceted perspective and cultivate an ability to conduct a thorough analysis of a particular topic in international relations."
+            }
+        ]
+    }
+}

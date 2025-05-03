@@ -1,0 +1,1044 @@
+{
+    "2025 서강대학교 요람": {
+        "International Commerce": {
+            "Mission": "The International Commerce Program at the Teodor Geppert School of International Studies provides rigorous training in international economics, business, finance, and economic law. This program is dedicated to cultivating outstanding students who not only build a robust academic foundation but also gain practical experience, empowering them to evolve into independent, motivated, and capable leaders poised to make enduring and indispensable contributions to the global economy.",
+            "Career Paths": "Students in the International Commerce program aspire to shape their careers by contributing to the public sector as diplomats, trade lawyers, international economic and business policymakers, and journalists. Additionally, they aim to engage with esteemed international organizations, including the United Nations, World Bank, World Trade Organization, International Monetary Fund, Asian Development Bank, and various nongovernmental or intergovernmental organizations. In the private sector, our graduates are encouraged to explore opportunities in global economics, business, ﬁnance, and legal ﬁelds, taking on roles as international economic consultants, international business entrepreneurs, and ﬁnancial analysts for multinational corporations and international banks. Our promising graduates also pursue further study in economics, business, law, and international studies at the post-graduate level, propelling them toward becoming outstanding scholars."
+        },
+        "로욜라국제대학 교육과정": {
+            "Course Requirements": {
+                "Credit Requirements": [
+                    {
+                        "Korean students on the English track 영어트랙_국내학생": {
+                            "Single major": {
+                                "Liberal Arts_교양": {
+                                    "Common Requirements": 11,
+                                    "Common Electives": {
+                                        "①": 3,
+                                        "②": 3,
+                                        "③": 3,
+                                        "④": 3
+                                    },
+                                    "Total cradits": 23
+                                },
+                                "Pre-Major Course": 12,
+                                "Major": {
+                                    "Required": 9,
+                                    "Core": 9,
+                                    "Elective": 27,
+                                    "Total credits": 45
+                                },
+                                "Total Credits Required for Degree": 126
+                            },
+                            "Multiple majors (with Economics)": {
+                                "Liberal Arts_교양": {
+                                    "Common Requirements": 11,
+                                    "Common Electives": {
+                                        "①": 3,
+                                        "②": 3,
+                                        "③": 3,
+                                        "④": 3
+                                    },
+                                    "Total cradits": 23
+                                },
+                                "Pre-Major Course": 9,
+                                "Major": {
+                                    "Required": 3,
+                                    "Core": 3,
+                                    "Elective": 33,
+                                    "Total credits": 39
+                                },
+                                "Total Credits Required for Degree": 126
+                            },
+                            "Multiple majors (with Business Administration)": {
+                                "Liberal Arts_교양": {
+                                    "Common Requirements": 11,
+                                    "Common Electives": {
+                                        "①": 3,
+                                        "②": 3,
+                                        "③": 3,
+                                        "④": 3
+                                    },
+                                    "Total cradits": 23
+                                },
+                                "Pre-Major Course": 9,
+                                "Major": {
+                                    "Required": 6,
+                                    "Core": 3,
+                                    "Elective": 30,
+                                    "Total credits": 39
+                                },
+                                "Total Credits Required for Degree": 126
+                            },
+                            "Multiple majors (with Economics and Business Administration)": {
+                                "Liberal Arts_교양": {
+                                    "Common Requirements": 11,
+                                    "Common Electives": {
+                                        "①": 3,
+                                        "②": 3,
+                                        "③": 3,
+                                        "④": 3
+                                    },
+                                    "Total cradits": 23
+                                },
+                                "Pre-Major Course": 9,
+                                "Major": {
+                                    "Required": 3,
+                                    "Core": 3,
+                                    "Elective": 33,
+                                    "Total credits": 39
+                                },
+                                "Total Credits Required for Degree": 126
+                            },
+                            "Multiple majors (others)": {
+                                "Liberal Arts_교양": {
+                                    "Common Requirements": 11,
+                                    "Common Electives": {
+                                        "①": 3,
+                                        "②": 3,
+                                        "③": 3,
+                                        "④": 3
+                                    },
+                                    "Total cradits": 23
+                                },
+                                "Pre-Major Course": 12,
+                                "Major": {
+                                    "Required": 9,
+                                    "Core": 9,
+                                    "Elective": 21,
+                                    "Total credits": 39
+                                },
+                                "Total Credits Required for Degree": 126
+                            },
+                            "비고": [
+                                "*전공입문교과는 전공이수학점에 포함되지 않음.",
+                                "*Pre-major courses do not count towards the total credits required for the major."
+                            ]
+                        },
+                        "International students on the English track 영어트랙 국제학생": {
+                            "Single major": {
+                                "Liberal Arts_교양": {
+                                    "Common Requirements": 16,
+                                    "Common Electives": {
+                                        "①, ②, ③, ④": 6
+                                    },
+                                    "Total cradits": 22
+                                },
+                                "Pre-Major Course": 12,
+                                "Major": {
+                                    "Required": 9,
+                                    "Core": 9,
+                                    "Elective": 27,
+                                    "Total credits": 45
+                                },
+                                "Total Credits Required for Degree": 126
+                            },
+                            "Multiple majors (with Economics)": {
+                                "Liberal Arts_교양": {
+                                    "Common Requirements": 16,
+                                    "Common Electives": {
+                                        "①, ②, ③, ④": 6
+                                    },
+                                    "Total cradits": 22
+                                },
+                                "Pre-Major Course": 9,
+                                "Major": {
+                                    "Required": 3,
+                                    "Core": 3,
+                                    "Elective": 33,
+                                    "Total credits": 39
+                                },
+                                "Total Credits Required for Degree": 126
+                            },
+                            "Multiple majors (with Business Administration)": {
+                                "Liberal Arts_교양": {
+                                    "Common Requirements": 16,
+                                    "Common Electives": {
+                                        "①, ②, ③, ④": 6
+                                    },
+                                    "Total cradits": 22
+                                },
+                                "Pre-Major Course": 9,
+                                "Major": {
+                                    "Required": 6,
+                                    "Core": 3,
+                                    "Elective": 30,
+                                    "Total credits": 39
+                                },
+                                "Total Credits Required for Degree": 126
+                            },
+                            "Multiple majors (with Economics and Business Administration)": {
+                                "Liberal Arts_교양": {
+                                    "Common Requirements": 16,
+                                    "Common Electives": {
+                                        "①, ②, ③, ④": 6
+                                    },
+                                    "Total cradits": 22
+                                },
+                                "Pre-Major Course": 9,
+                                "Major": {
+                                    "Required": 3,
+                                    "Core": 3,
+                                    "Elective": 33,
+                                    "Total credits": 39
+                                },
+                                "Total Credits Required for Degree": 126
+                            },
+                            "Multiple majors (others)": {
+                                "Liberal Arts_교양": {
+                                    "Common Requirements": 16,
+                                    "Common Electives": {
+                                        "①, ②, ③, ④": 6
+                                    },
+                                    "Total cradits": 22
+                                },
+                                "Pre-Major Course": 12,
+                                "Major": {
+                                    "Required": 9,
+                                    "Core": 9,
+                                    "Elective": 21,
+                                    "Total credits": 39
+                                },
+                                "Total Credits Required for Degree": 126
+                            },
+                            "비고": [
+                                "*전공입문교과는 전공이수학점에 포함되지 않음.",
+                                "*Pre-major courses do not count towards the total credits required for the major."
+                            ]
+                        }
+                    }
+                ],
+                "교과목 이수요건": {
+                    "Pre-Major Courses": {
+                        "Pre-Major 1": {
+                            "Course Code / Title": [
+                                {
+                                    "TIS1001": "Introduction to International Relations",
+                                    "Credits": 3
+                                },
+                                {
+                                    "TIS1002": "Introduction to International Commerce",
+                                    "Credits": 3
+                                },
+                                {
+                                    "AAS1001": "Introduction to Asian Studies",
+                                    "Credits": 3
+                                },
+                                {
+                                    "TIS1005": "Mathematical Methods for International Commerce",
+                                    "Credits": 3
+                                }
+                            ],
+                            "Total Credits": 12
+                        },
+                        "Pre-Major 2": {
+                            "Course Code / Title": [
+                                {
+                                    "TIS1001": "Introduction to International Relations",
+                                    "Credits": 3
+                                },
+                                {
+                                    "TIS1002": "Introduction to International Commerce",
+                                    "Credits": 3
+                                },
+                                {
+                                    "AAS1001": "Introduction to Asian Studies",
+                                    "Credits": 3
+                                }
+                            ],
+                            "Total Credits": 9,
+                            "비고": "Multiple majors (with Economics or Business Administration)"
+                        }
+                    },
+                    "Major Required Courses": {
+                        "Major Required 1": {
+                            "Course Code / Title": [
+                                {
+                                    "TIC2001": "Statistics for International Commerce",
+                                    "Credits": 3
+                                },
+                                {
+                                    "TIC2002": "Microeconomics for International Commerce",
+                                    "Credits": 3
+                                },
+                                {
+                                    "TIC3001": "Contemporary Issues in the Global Economy",
+                                    "Credits": 3
+                                }
+                            ],
+                            "Total Credits": 9
+                        },
+                        "Major Required 2": {
+                            "Course Code / Title": [
+                                {
+                                    "TIC3001": "Contemporary Issues in the Global Economy",
+                                    "Credits": 3
+                                }
+                            ],
+                            "Total Credits": 3,
+                            "비고": "Multiple majors (with Economics)"
+                        },
+                        "Major Required 3": {
+                            "Course Code / Title": [
+                                {
+                                    "TIC2002": "Microeconomics for International Commerce",
+                                    "Credits": 3
+                                },
+                                {
+                                    "TIC3001": "Contemporary Issues in the Global Economy",
+                                    "Credits": 3
+                                }
+                            ],
+                            "Total Credits": 6,
+                            "비고": "Multiple majors (with Business Administration)"
+                        },
+                        "Major Required 4": {
+                            "Course Code / Title": [
+                                {
+                                    "TIC3001": "Contemporary Issues in the Global Economy",
+                                    "Credits": 3
+                                }
+                            ],
+                            "Total Credits": 3,
+                            "비고": "Multiple majors (with Economics or Business Administration)"
+                        }
+                    },
+                    "Major Core Courses": {
+                        "Major Core 1": {
+                            "Course Code / Title": [
+                                {
+                                    "TIC2003": "Macroeconomics for International Commerce"
+                                },
+                                {
+                                    "TIC2004": "Korean Economy"
+                                },
+                                {
+                                    "TIC2005": "International Economics"
+                                },
+                                {
+                                    "TIC2006": "Principles of Accounting for International Commerce"
+                                },
+                                {
+                                    "TIC2007": "Principles of Marketing for International Commerce"
+                                },
+                                {
+                                    "TIC2008": "Financial Management"
+                                },
+                                {
+                                    "TIC3002": "Research Method of Data Science"
+                                },
+                                {
+                                    "TIC3003": "Global Economic History"
+                                },
+                                {
+                                    "TIC3004": "International Business"
+                                },
+                                {
+                                    "TIC3005": "Investment Analysis"
+                                },
+                                {
+                                    "TIC3006": "Corporate Finance"
+                                }
+                            ],
+                            "Total Credits": 9
+                        },
+                        "Major Core 2": {
+                            "Course Code / Title": [
+                                {
+                                    "TIC2004": "Korean Economy"
+                                },
+                                {
+                                    "TIC2005": "International Economics"
+                                },
+                                {
+                                    "TIC2007": "Principles of Marketing for International Commerce"
+                                },
+                                {
+                                    "TIC2008": "Financial Management"
+                                },
+                                {
+                                    "TIC3003": "Global Economic History"
+                                },
+                                {
+                                    "TIC3004": "International Business"
+                                },
+                                {
+                                    "TIC3005": "Investment Analysis"
+                                },
+                                {
+                                    "TIC3006": "Corporate Finance"
+                                }
+                            ],
+                            "Total Credits": 3,
+                            "비고": "Multiple majors (with Economics)"
+                        },
+                        "Major Core 3": {
+                            "Course Code / Title": [
+                                {
+                                    "TIC2003": "Macroeconomics for International Commerce"
+                                },
+                                {
+                                    "TIC2004": "Korean Economy"
+                                },
+                                {
+                                    "TIC2005": "International Economics"
+                                },
+                                {
+                                    "TIC3002": "Research Method of Data Science"
+                                },
+                                {
+                                    "TIC3003": "Global Economic History"
+                                },
+                                {
+                                    "TIC3004": "International Business"
+                                },
+                                {
+                                    "TIC3005": "Investment Analysis"
+                                },
+                                {
+                                    "TIC3006": "Corporate Finance"
+                                }
+                            ],
+                            "Total Credits": 3,
+                            "비고": "Multiple majors (with Business Administration)"
+                        },
+                        "Major Core 4": {
+                            "Course Code / Title": [
+                                {
+                                    "TIC2004": "Korean Economy"
+                                },
+                                {
+                                    "TIC2005": "International Economics"
+                                },
+                                {
+                                    "TIC3003": "Global Economic History"
+                                },
+                                {
+                                    "TIC3004": "International Business"
+                                },
+                                {
+                                    "TIC3005": "Investment Analysis"
+                                },
+                                {
+                                    "TIC3006": "Corporate Finance"
+                                }
+                            ],
+                            "Total Credits": 3,
+                            "비고": "Multiple majors (with Economics or Business Administration)"
+                        }
+                    },
+                    "Major Electives": {
+                        "Course Code / Title": [
+                            {
+                                "Course Code": "TIC4001",
+                                "Title": "Global Political Economy"
+                            },
+                            {
+                                "Course Code": "TIC4002",
+                                "Title": "Computing for International Commerce"
+                            },
+                            {
+                                "Course Code": "TIC4003",
+                                "Title": "International Trade Theory and Policy"
+                            },
+                            {
+                                "Course Code": "TIC4004",
+                                "Title": "International Finance Theory and Policy"
+                            },
+                            {
+                                "Course Code": "TIC4005",
+                                "Title": "International Economic Laws and Institutions"
+                            },
+                            {
+                                "Course Code": "TIC4006",
+                                "Title": "Global Trade in the Digital World"
+                            },
+                            {
+                                "Course Code": "TIC4007",
+                                "Title": "International Trade and Development"
+                            },
+                            {
+                                "Course Code": "TIC4008",
+                                "Title": "International Trade and Environment"
+                            },
+                            {
+                                "Course Code": "TIC4009",
+                                "Title": "International Trade and Immigration"
+                            },
+                            {
+                                "Course Code": "TIC4010",
+                                "Title": "Financial Markets and Global Financial Institutions"
+                            },
+                            {
+                                "Course Code": "TIC4011",
+                                "Title": "Financial Accounting"
+                            },
+                            {
+                                "Course Code": "TIC4012",
+                                "Title": "Derivatives"
+                            },
+                            {
+                                "Course Code": "TIC4013",
+                                "Title": "Financial Risk Management"
+                            },
+                            {
+                                "Course Code": "TIC4014",
+                                "Title": "International Negotiations"
+                            },
+                            {
+                                "Course Code": "TIC4015",
+                                "Title": "International Marketing"
+                            },
+                            {
+                                "Course Code": "TIC4016",
+                                "Title": "Global Business Strategy"
+                            },
+                            {
+                                "Course Code": "TIR4002",
+                                "Title": "Energy and International Politics"
+                            },
+                            {
+                                "Course Code": "AAS2006",
+                                "Title": "Modern Economic History of East Asia"
+                            },
+                            {
+                                "Course Code": "AAS3002",
+                                "Title": "Development Cooperation in Asia I"
+                            },
+                            {
+                                "Course Code": "AAS3003",
+                                "Title": "Comparative Research of Modern Asian Merchant Network"
+                            },
+                            {
+                                "Course Code": "AAS3017",
+                                "Title": "Development Cooperation in Asia II"
+                            },
+                            {
+                                "Course Code": "TIC4017",
+                                "Title": "Northeast Asian Economy"
+                            },
+                            {
+                                "Course Code": "TIC4018",
+                                "Title": "Southeast Asian Economy"
+                            },
+                            {
+                                "Course Code": "TIC4019",
+                                "Title": "US Economy"
+                            },
+                            {
+                                "Course Code": "TIC4020",
+                                "Title": "European Economy"
+                            },
+                            {
+                                "Course Code": "TIC4021",
+                                "Title": "Economy in the MENA"
+                            },
+                            {
+                                "Course Code": "TIC4022",
+                                "Title": "Sub-Saharan African Economy"
+                            },
+                            {
+                                "Course Code": "TIC4023",
+                                "Title": "Topics in International Trade"
+                            },
+                            {
+                                "Course Code": "TIC4024",
+                                "Title": "Topics in International Business"
+                            },
+                            {
+                                "Course Code": "TIC4025",
+                                "Title": "Topics in International Finance"
+                            },
+                            {
+                                "Course Code": "TIC4026",
+                                "Title": "Topics in Empirical Finance"
+                            },
+                            {
+                                "Course Code": "TIC4027",
+                                "Title": "Topics in International Economic Law"
+                            },
+                            {
+                                "Course Code": "TIC4101",
+                                "Title": "International Trade Practice"
+                            },
+                            {
+                                "Course Code": "TIC4102",
+                                "Title": "International Business Practice"
+                            },
+                            {
+                                "Course Code": "TIC4103",
+                                "Title": "International Finance Practice"
+                            }
+                        ],
+                        "Credits": 27,
+                        "비고": {
+                            "Multiple majors (with Economics)": 33,
+                            "Multiple majors (with Business Administration)": 30,
+                            "Multiple majors (with Economics and Business Administration)": 33,
+                            "Multiple majors (others)": 21
+                        }
+                    },
+                    "비고": "* 전공필수선택 지정학점 초과 취득 시 전공선택학점으로 인정\n* Major core courses that exceeds the required credits will be recornized as major elective credits."
+                }
+            },
+            "Substitute Recognized Courses": {
+                "대체 인정 교과목": [
+                    {
+                        "타 전공": "Pre-Major Course",
+                        "Recognized Courses": "ECO2003 경제수리기초",
+                        "Matching International Commerce Courses": "TIS1005 Mathematical Methods for International Commerce"
+                    },
+                    {
+                        "타 전공": "Economics",
+                        "Recognized Courses": "ECO2004 경제통계학",
+                        "Matching International Commerce Courses": "TIC2001 Statistics for International Commerce"
+                    },
+                    {
+                        "타 전공": "Economics",
+                        "Recognized Courses": "ECO2006 미시경제학",
+                        "Matching International Commerce Courses": "TIC2002 Microeconomics for International Commerce"
+                    },
+                    {
+                        "타 전공": "Economics",
+                        "Recognized Courses": "ECO2007 거시경제학",
+                        "Matching International Commerce Courses": "TIC2003 Macroeconomics for International Commerce"
+                    },
+                    {
+                        "타 전공": "Economics",
+                        "Recognized Courses": "ECO3017 국제경제학",
+                        "Matching International Commerce Courses": "TIC2005 International Economics"
+                    },
+                    {
+                        "타 전공": "Economics",
+                        "Recognized Courses": "ECO2009 계량경제학I",
+                        "Matching International Commerce Courses": "TIC3002 Research Method of Data Science"
+                    },
+                    {
+                        "타 전공": "Economics",
+                        "Recognized Courses": "ECO3010 국제무역론",
+                        "Matching International Commerce Courses": "TIC4003 International Trade Theory and Policy"
+                    },
+                    {
+                        "타 전공": "Economics",
+                        "Recognized Courses": "ECO3011 국제금융론",
+                        "Matching International Commerce Courses": "TIC4004 International Finance Theory and Policy"
+                    },
+                    {
+                        "타 전공": "Business Administration",
+                        "Recognized Courses": "MGT2002 경영통계학",
+                        "Matching International Commerce Courses": "TIC2001 Statistics for International Commerce"
+                    },
+                    {
+                        "타 전공": "Business Administration",
+                        "Recognized Courses": "MGT2003 회계학원론",
+                        "Matching International Commerce Courses": "TIC2006 Principles of Accounting for International Commerce"
+                    },
+                    {
+                        "타 전공": "Business Administration",
+                        "Recognized Courses": "MGT3006 마케팅원론",
+                        "Matching International Commerce Courses": "TIC2007 Principles of Marketing for International Commerce"
+                    },
+                    {
+                        "타 전공": "Business Administration",
+                        "Recognized Courses": "MGT3004 재무관리",
+                        "Matching International Commerce Courses": "TIC2008 Financial Management"
+                    },
+                    {
+                        "타 전공": "Business Administration",
+                        "Recognized Courses": "MGT3007 국제경영론",
+                        "Matching International Commerce Courses": "TIC3004 International Business"
+                    },
+                    {
+                        "타 전공": "Business Administration",
+                        "Recognized Courses": "MGT4301 투자론",
+                        "Matching International Commerce Courses": "TIC3005 Investment Analysis"
+                    },
+                    {
+                        "타 전공": "Business Administration",
+                        "Recognized Courses": "MGT4302 기업재무론",
+                        "Matching International Commerce Courses": "TIC3006 Corporate Finance"
+                    },
+                    {
+                        "타 전공": "Business Administration",
+                        "Recognized Courses": "MGT4510 국제마케팅론",
+                        "Matching International Commerce Courses": "TIC4015 International Marketing"
+                    }
+                ],
+                "비고": "* 아래 표의 과목을 수강한 경우 게페르트국제학부장의 심사에 따라 최대 18 학점까지 게페르트국제학부 개설 전공입문 과목 혹은 국제통상 전공 과목으로 대체 인정이 가능함. 단, 게페르트국제학부 소속 학생은 해당 과목의 영어 분반을 수강한 경우에만 인정이 가능함.\n* Students may apply for credit toward their International Commerce major for up to 18 credits if they have completed the listed courses offered by other departments, subject to approval of the chair of the Geppert School of International Studies. However, students of the Geppert School of International Studies may only receive credit if they have completed the English section of the course."
+            },
+            "2025 서강대학교 요람": {
+                "Pre-Major Courses": [
+                    {
+                        "과목 코드": "TIS1001",
+                        "교과목명": "Introduction to International Relations (국제관계개론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This is an introductory course on international relations, which provides students with a bird-eye-view of contemporary international affairs. By taking this course, students will obtain basic background knowledge about international relations, which will help build a solid foundation for advanced courses."
+                    },
+                    {
+                        "과목 코드": "TIS1002",
+                        "교과목명": "Introduction to International Commerce (국제통상입문)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This introductory course serves as a foundational exploration of essential economic concepts crucial to the International Commerce program, enriched by insightful case studies. Students will be able to understand the decision making of consumers and firms, price theory across various market structures, measures and models of aggregate economic activities, and macroeconomic policy tools."
+                    },
+                    {
+                        "과목 코드": "AAS1001",
+                        "교과목명": "Introduction to Asian Studies (아시아학개론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This introductory course provides an overview of some of the key issues relating to Asia and Asian Studies. The course facilitates an interdisciplinary understanding of Asia's past and present through the region's geography, history, culture, economy and politics. Our approach enables students to acquire a foundational knowledge of Asia and prepares them for more advanced courses in the Asian Studies track and beyond."
+                    },
+                    {
+                        "과목 코드": "TIS1005",
+                        "교과목명": "Mathematical Methods for International Commerce (국제통상수리기초)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course equips students with fundamental mathematical methods essential for success in international economics, business, and finance studies, Covering introductory algebra, differentiation, matrix analysis, and optimization, students will develop a robust foundation in mathematical skills vital for analytical decision-making in global economy."
+                    }
+                ],
+                "Major Required Courses": [
+                    {
+                        "과목 코드": "TIC2001",
+                        "교과목명": "Statistics for International Commerce (국제통상통계학)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "Prerequisite: TIS1005 This course provides students with fundamental tools for comprehending and analyzing quantitative data, furnishing knowledge necessary for theories and applications in economics, business, and finance studies. To learn the application of key statistical concepts and theories, the course applies these principles to real-world business and economics data is a main focus. Students engage with topics such as organizing variables, numerical descriptive statistical measures, probability distributions, confidence interval estimation, hypothesis testing, and basic regression analysis."
+                    },
+                    {
+                        "과목 코드": "TIC2002",
+                        "교과목명": "Microeconomics for International Commerce (국제통상미시경제학)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "Prerequisite: TIS1002, TIS1005 This course establishes a foundational understanding of microeconomics, focusing on individual decision-making in consumption, saving, and labor supply, as well as firms’ decisions in production, employment, and investment across various market structures. The curriculum also covers pricing theory in the general equilibrium model and welfare economics, providing students with both theoretical insights and practical applications."
+                    },
+                    {
+                        "과목 코드": "TIC3001",
+                        "교과목명": "Contemporary Issues in Global Economy (세계경제의최근이슈)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "Prerequisite: TIS1002, TIC2005 This course introduces students to the latest challenges and dynamics shaping the global economy. Students explore current issues such as global financial crisis, trade tensions, technological advancements, climate change impact, geopolitical shifts, and many others. Through theoretical and empirical studies, students gain insights into the complexities and interconnectedness of contemporary global economic issues."
+                    }
+                ],
+                "Major Core Courses": [
+                    {
+                        "과목 코드": "TIC2003",
+                        "교과목명": "Macroeconomics for International Commerce (국제통상거시경제학)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "Prerequisite: TIS1002, TIS1005, TIC2002 This course offers students the macro aspects of economic analysis, focusing on national and global phenomena. Students will explore key macroeconomic indicators, including national income, unemployment, inflation, and economic growth. The course emphasizes understanding the role of government policies, both monetary and fiscal, in influencing these indicators. Through a combination of theoretical foundations and real-world applications, students will develop analytical skills to examine economic trends and policy implications."
+                    },
+                    {
+                        "과목 코드": "TIC2004",
+                        "교과목명": "Korean Economy (한국경제론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "Prerequisite: TIS1002 This course offers a thorough examination of the structural evolution and growth factors shaping the Korean economy. Students delve into various dimensions, exploring industrial structure and policy dynamics, shifts in international trade patterns and policies, complexities of the labor market, and the historical context of economic policies. Through these explorations, students gain a comprehensive understanding of the economic landscape in Korea."
+                    },
+                    {
+                        "과목 코드": "TIC2005",
+                        "교과목명": "International Economics (국제경제학)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "Prerequisite: TIS1002, TIS1005, TIC2002 This introductory course explores the fundamental principles of international economics, focusing on the basic foundations of international trade and finance. Students will examine key theories in international trade, trade policies, balance of payments, foreign exchange markets, and open macroeconomic theories and policies. The course equips students with a solid understanding of these concepts and their practical applications, laying the groundwork for more advanced studies in international trade and finance programs."
+                    },
+                    {
+                        "과목 코드": "TIC2006",
+                        "교과목명": "Principles of Accounting for International Commerce (국제통상회계원론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "Prerequisite: TIS1005, TIC2001 This course investigates the fundamental principles of accounting. Students will be able to understand essential accounting concepts and principles, gaining insights into their application in the process of compiling financial statements and the structure of accounting ledgers, providing a comprehensive understanding of financial information of firms."
+                    },
+                    {
+                        "과목 코드": "TIC2007",
+                        "교과목명": "Principles of Marketing for International Commerce (국제통상마케팅원론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "Prerequisite: TIS1005, TIC2001, TIC2006 This foundational course explores the principles of marketing in business management. It aims to enhance students' understanding of key factors influencing marketing activities and to delve into the application of various marketing tools, including market research, product development, pricing strategies, distribution channels, physical distribution, sales promotion, advertising, sales force management, and organizational aspects relevant to effective marketing."
+                    },
+                    {
+                        "과목 코드": "TIC2008",
+                        "교과목명": "Financial Management (재무관리)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "Prerequisite: TIS1005, TIC2001 This course aims to provide students with fundamental knowledge in corporate financial management. The main topics include an overview of corporate finance, financial statement analysis, financial valuation, the valuation of representative assets, and basic tools for a firm's capital budgeting decisions."
+                    },
+                    {
+                        "과목 코드": "TIC3002",
+                        "교과목명": "Research Method of Data Science (국제통상계량경제학)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "Prerequisite: TIS1002, TIS1005, TIC2001 This course introduces the fundamentals of econometrics, a cornerstone of original data science, equipping students with quantitative research methods and data analysis skills. Topics cover bivariate and multivariate regressions, hypothesis testing, statistical inferences, and advanced methods such as time-series and panel data analysis. Through practical applications to examples in international economics and business, students will develop a strong foundation in econometric methods and gain hands-on experience in data analysis."
+                    },
+                    {
+                        "과목 코드": "TIC3003",
+                        "교과목명": "Global Economic History (세계경제사)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "Prerequisite: TIS1002, TIC2001, TIC2005 This course provides a comprehensive exploration of global economic history, tracing the evolution of economic systems, institutions, and key events that have shaped the modern global economy. Students will delve into the economic transformations over historical eras, examining the impact of trade, technology, industrialization, and economic ideologies. By analyzing the historical context, students gain insights into the complexities of economic development, globalization, and the lessons history offers for understanding today's economic challenges."
+                    },
+                    {
+                        "과목 코드": "TIC3004",
+                        "교과목명": "International Business (국제경영학)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "Prerequisite: TIC2005, TIC2006, TIC2007 This course explores the dynamics of international business, providing students with a foundational understanding of economic activities of multinational firms in the international context. Topics include multinational corporations, cross-border trade, global market entry strategies, and the impact of cultural, political, and economic factors on international business operations. Through case studies and real-world examples, students will develop insights into the complexities of managing businesses in the global arena."
+                    },
+                    {
+                        "과목 코드": "TIC3005",
+                        "교과목명": "Investment Analysis (투자분석)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "Prerequisite: TIC2001, TIC2008 This course immerses students in the fundamental theories and concepts essential for investment decisions. Exploring the risk-return tradeoff, the course delves into primary theories of investment, such as the modern portfolio theory, asset pricing models, and the efficient market hypothesis. Building on this theoretical foundation, the course seamlessly transitions to practical techniques, equipping students with valuable skills in assessing and managing investments, as well as insights into asset markets, valuation methods, and portfolio management strategies."
+                    },
+                    {
+                        "과목 코드": "TIC3006",
+                        "교과목명": "Corporate Finance (기업재무)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course is designed to help students understand corporate financial policies and decisions. It covers how firms strategically raise funds to finance their projects and discusses firms' capital structure decisions. Other topics in corporate financial policies include corporate payout policy, mergers and acquisitions (M&As), international corporate finance, real options, etc. Through an exploration of the fundamental theories and techniques related to corporate finance activities, the course aims to provide insights into firms’ financial decisions, including investment, funding strategies, and dividend policies."
+                    }
+                ],
+                "Major Electives": [
+                    {
+                        "과목 코드": "TIC4001",
+                        "교과목명": "Global Political Economy (글로벌정치경제학)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course surveys the theoretical and historical foundations of the political economy shaping the international economic order. Exploring the evolution of the international trade and financial system, students will engage with political economy models that underpin domestic politics and global economic dynamics. The course places a critical lens on contemporary international economic issues through the lens of political economy theory. By the course's conclusion, students will deeply understand the intricate relationship between politics and economics on the global stage."
+                    },
+                    {
+                        "과목 코드": "TIC4002",
+                        "교과목명": "Computing for International Commerce (국제통상프로그래밍)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course provides international commerce program students with foundational programming skills using Python and Julia. Emphasizing practical applications, students will learn to leverage programming for various purposes, including data analysis, econometric analysis, and data visualization. The course covers essential programming concepts, algorithmic thinking, and hands-on exercises to equip students with the skills necessary for solving real-world problems in the context of international commerce."
+                    },
+                    {
+                        "과목 코드": "TIC4003",
+                        "교과목명": "International Trade Theory and Policy (국제무역론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course enables students to comprehend the comprehensive theoretical foundations and empirical evidence related to international trade and trade policies. Covered topics include comparative advantages, gains from trade, economic integration, offshoring, multinational corporations, tariff and non-tariff policies, and the political economy of protection. Through a blend of theory and real-world applications, students will gain the necessary knowledge and analytical skills to navigate the complexities of international trade theory and policy."
+                    },
+                    {
+                        "과목 코드": "TIC4004",
+                        "교과목명": "International Finance Theory and Policy (국제금융론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course provides a systematic analysis of fundamental concepts in international finance and investment within the context of global financial markets. Topics include basic theories of international macroeconomics, crossborder financial flows and exchange rate determination, the international monetary system, and contemporary issues in the global financial system, such as financial crises, capital controls, and global financial regulation."
+                    },
+                    {
+                        "과목 코드": "TIC4005",
+                        "교과목명": "International Economic Laws and Institutions (국제통상법과제도)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course explores the legal framework of international economic relations, primarily developed post-1945 with relevant historical context. Primarily focusing on the rights and obligations outlined in international economic treaties, particularly trade agreements under the GATT and the WTO, the course delves into the historical background and structure of the GATT/WTO. Students will gain insights into the regulatory aspects of international economic relations among states and the functions of international organizations."
+                    },
+                    {
+                        "과목 코드": "TIC4006",
+                        "교과목명": "Global Trade in the Digital World (디지털통상)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This advanced course explores the transformative impact of digital technologies on global trade. Students delve into e-commerce, digital platforms, and the evolving landscape of the global economy. Topics include measurement issues in digital trade, digital trade policies, and the challenges and opportunities in digitalized supply chains. Through case studies, students gain insights into how the digital revolution reshapes global trade dynamics and influences economic strategies worldwide."
+                    },
+                    {
+                        "과목 코드": "TIC4007",
+                        "교과목명": "International Trade and Development (국제무역과경제발전)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course delves into the intricate relationship between international trade and economic development. Students explore the theories, policies, and empirical evidence surrounding the impact of global trade on the development of nations. Topics include trade and poverty, the role of institutions, trade liberalization, and sustainable development. Through case studies and realworld examples, students gain a nuanced understanding of the complexities involved in leveraging international trade for fostering economic development."
+                    },
+                    {
+                        "과목 코드": "TIC4008",
+                        "교과목명": "International Trade and Environment (국제무역과환경)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course explores the complex interplay between international trade and environmental considerations, examining the policies, agreements, and challenges in the global economy. Students delve into topics such as the relationship between the WTO and Multilateral Environmental Agreements (MEAs), the impact of green taxes, issues of eco-dumping, and the role of product standards and eco-labeling. Through case studies and discussions, students gain insights into the complex dynamics of fostering sustainable trade practices while addressing environmental concerns on a global scale."
+                    },
+                    {
+                        "과목 코드": "TIC4009",
+                        "교과목명": "International Trade and Immigration (국제무역과이주)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course explores the dynamic interconnection between international trade and immigration, unraveling the economic intricacies and policy considerations that arise from the convergence of these two pivotal global phenomena. Students will scrutinize the reciprocal influences of international trade and immigration, analyzing their economic ramifications on countries, industries, and individuals. Topics encompass the impact of trade agreements on labor mobility, the economic consequences of immigration policies, the role of skilled and unskilled labor in global markets, and others."
+                    },
+                    {
+                        "과목 코드": "TIC4010",
+                        "교과목명": "Financial Markets and Global Financial Institutions(금융시장과금융기관)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course provides a comprehensive overview of the financial system, focusing on the roles and functions of financial markets such as money, capital, and stock markets in the context of a globalized economy. Topics include fundamental theories of financial intermediation, interest rates, bond pricing, and exchange rate determinations"
+                    },
+                    {
+                        "과목 코드": "TIC4011",
+                        "교과목명": "Financial Accounting(재무회계)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This foundational financial accounting course provides students with essential principles and skills necessary for understanding and analyzing financial information. Topics include financial reporting, adjusting and closing journal entries, the statement of cash flows, short-term operating assets, accounting for income taxes, and stockholders’ equity. Additionally, the course incorporates an exploration of international financial reporting standards (IFRS), offering a well-rounded understanding of financial accounting principles in a global context."
+                    },
+                    {
+                        "과목 코드": "TIC4012",
+                        "교과목명": "Derivatives (파생상품론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course offers students comprehensive knowledge of financial derivatives. It starts with an introduction to fundamental concepts and tools in derivatives, providing an overview of derivative markets. Moving forward, the course explores the pricing mechanisms of standard financial derivatives such as forwards, futures, options, and swaps. Special emphasis is placed on developing an understanding of how to effectively manage the risks associated with these financial instruments."
+                    },
+                    {
+                        "과목 코드": "TIC4013",
+                        "교과목명": "Financial Risk Management (금융리스크관리)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course aims to equip students with a comprehensive understanding of corporate risk management. Exploring various types of risks that corporations encounter, the course thoroughly examines both quantitative and qualitative frameworks and tools for analyzing and mitigating these risks. Through the examination of real-world business cases, students will gain practical insights into how risk management methodologies are applied in the practice of corporate management."
+                    },
+                    {
+                        "과목 코드": "TIC4014",
+                        "교과목명": "International Negotiations (국제협상론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course enables students to understand the basic theories of strategic decisions and concepts of negotiations and practice strategies and tactics of negotiations in the context of various cross-border negotiations."
+                    },
+                    {
+                        "과목 코드": "TIC4015",
+                        "교과목명": "International Marketing (국제마케팅론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course explores the dynamic realm of global markets to gain insights into fundamental concepts, strategies, and frameworks crucial for successful international marketing campaigns. Students will study topics such as market entry strategies, cultural considerations, global branding, product adaptation, and the influence of digital technologies. Through case studies and practical exercises, they will develop the skills needed to navigate diverse cultural landscapes, analyze market trends, and create effective international marketing plans."
+                    },
+                    {
+                        "과목 코드": "TIC4016",
+                        "교과목명": "Global Business Strategy (글로벌경영전략)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course explores how multinational corporations, operating globally, formulate strategies amidst managerial, financial, legal, and cultural constraints. Students gain insights into distinctions between global and domestic strategies, understanding the unique aspects of global strategies, value creation through globalization, optimal organizational structures, and responses to external shocks like pandemics or economic transformations."
+                    },
+                    {
+                        "과목 코드": "TIR4002",
+                        "교과목명": "Energy and International Politics (에너지와국제정치)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course is designed to expose students to international politics with a focus on energy. By synthesizing diverse disciplines such as international relations, economics, security studies, and energy science, this course aims to nurture and equip energy experts through an interdisciplinary perspective."
+                    },
+                    {
+                        "과목 코드": "AAS3002",
+                        "교과목명": "Development Cooperation in Asia I (국제개발협력과 아시아 I)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This is the first of two-part course that surveys the key issues and processes of development cooperation in Asia. Within a broad context of the regional/international political economy, the course first takes up Japan's and of its donorship as the first non-Western OECD Development Assistance Committee member (1961). Through a perspective of critical development geography and political ecology, the course will explore Japan's development cooperation and its impact on Asian society as well as its own (n.b. AAS3018 Development cooperation in Asia II)"
+                    },
+                    {
+                        "과목 코드": "AAS3003",
+                        "교과목명": "Comparative Research of Modern Asian Merchant Network (근대 아시아 상인 네트워크 연구)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This module aims at considering the characteristics of Asian capitalism by comparing major Asian merchant groups such as China, India, and Japan, who were active throughout Asia, and the networks they built in and outside the region during the modern times."
+                    },
+                    {
+                        "과목 코드": "AAS3017",
+                        "교과목명": "Development Cooperation in Asia II (국제개발협력과 아시아 II)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This is the second of two-part course that surveys the key issues and processes of development cooperation in Asia. Building upon Development cooperation in Asia I, the course further explores development cooperation in Asia by focusing on both historical backdrops and political economic dynamics of ‘the rise of emerging economies in Asia in more recent years and their impacts in the region (and beyond)."
+                    },
+                    {
+                        "과목 코드": "TIC4017",
+                        "교과목명": "Northeast Asian Economy (동북아경제론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course explores the pivotal economic dynamics of Northeast Asia, a region with the world's second and third-largest economies undergoing major transformations. Through understanding the history and current developments in this area, this course delves into the economies of China, Korea, Japan, and other countries in the region."
+                    },
+                    {
+                        "과목 코드": "TIC4018",
+                        "교과목명": "Southeast Asian Economy(동남아경제론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course offers an in-depth understanding of Southeast Asian (ASEAN) economies in the evolving global business landscape. It explores their integration into the global market, emphasizing their strategic position in the supply chain. Focusing on key economies such as Singapore, Indonesia, Malaysia, Thailand, the Philippines, and Vietnam, the course examines business strategies in response to changing economic dynamics. Additionally, it contextualizes Southeast Asia's growth within the broader regions of East Asia and South Asia."
+                    },
+                    {
+                        "과목 코드": "TIC4019",
+                        "교과목명": "US Economy (미국경제론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course provides a comprehensive exploration of the American economy, covering historical underpinnings, contemporary dynamics, essential concepts, government policies, market structures, and international trade history. Engaging discussions, research projects, and assessments offer a holistic learning experience, addressing labor markets, economic inequality, and emerging trends in one of the world's largest economies."
+                    },
+                    {
+                        "과목 코드": "TIC4020",
+                        "교과목명": "European Economy (유럽경제론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course provides students with a comprehensive understanding of the European economy by delving into its historical evolution, key economic institutions, and contemporary dynamics. The curriculum covers the complexity of economic integration, explores the economic policy frameworks within the European Union (EU), and analyzes the role of European countries in the broader global economic landscape. Through a nuanced exploration of historical contexts and present-day economic challenges, students will gain valuable insights into the complex tapestry of the European economy."
+                    },
+                    {
+                        "과목 코드": "TIC4021",
+                        "교과목명": "Economy in the MENA (중동경제론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course offers a profound exploration of the economic landscape in the Middle East and North Africa (MENA) region, providing students with a comprehensive understanding of its historical evolution, economic structures, and contemporary dynamics. With an emphasis on energy economic topics on the largest oil and gas exporters, students will delve into the region's pivotal role in global energy markets and the ongoing efforts for economic diversification."
+                    },
+                    {
+                        "과목 코드": "TIC4022",
+                        "교과목명": "Sub-Saharan African Economy (아프리카경제론)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course provides students with an insightful exploration of the dynamic economic landscape in Sub-Saharan Africa. Covering historical contexts, contemporary challenges, and opportunities, students will delve into critical aspects, including economic structures, trade dynamics, policy frameworks, and development challenges. The course emphasizes perspectives on sustainable growth and global integration, offering a comprehensive understanding of Sub-Saharan Africa's economic dynamics."
+                    },
+                    {
+                        "과목 코드": "TIC4023",
+                        "교과목명": "Topics in International Trade (고급국제무역)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course offers graduate-level advanced international trade theory and empirical studies."
+                    },
+                    {
+                        "과목 코드": "TIC4024",
+                        "교과목명": "Topics in International Business (고급국제경영)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course offers graduate-level advanced international business theory and empirical studies."
+                    },
+                    {
+                        "과목 코드": "TIC4025",
+                        "교과목명": "Topics in International Finance (고급국제금융)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course offers graduate-level advanced international finance theory and empirical studies."
+                    },
+                    {
+                        "과목 코드": "TIC4026",
+                        "교과목명": "Topics in Empirical Finance (고급재무실증분석)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course offers graduate-level advanced empirical finance studies."
+                    },
+                    {
+                        "과목 코드": "TIC4027",
+                        "교과목명": "Topics in International Economic Law (고급국제경제법)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course offers graduate-level advanced international economic law studies."
+                    },
+                    {
+                        "과목 코드": "TIC4101",
+                        "교과목명": "International Trade Practice (국제무역현장실습)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course offers practice in international trade."
+                    },
+                    {
+                        "과목 코드": "TIC4102",
+                        "교과목명": "International Business Practice (국제경영현장실습)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course offers practice in international business."
+                    },
+                    {
+                        "과목 코드": "TIC4103",
+                        "교과목명": "International Finance Practice (국제금융현장실습)",
+                        "강의 시간": "Lecture 3hr.",
+                        "학점": "3cr.",
+                        "설명": "This course offers practice in international finance."
+                    }
+                ]
+            }
+        }
+    }
+}

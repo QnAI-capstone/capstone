@@ -1,0 +1,486 @@
+{
+    "지식융합미디어대학 교육과정": {
+        "Art & Technology": {
+            "Mission": "Our mission is to cultivate the next generation of creators and creative innovators. By providing trans-disciplinary education integrating humanities, art, and technology, learning-by-doing education, and global education, we prepare students to become global creative leaders who can create cultural and social impacts with huanistic imagination, artistic sensibility, and technological competence.",
+            "Credit Requirements": {
+                "Single Major": {
+                    "University-Level Requirements": {
+                    "Common Core Courses": 11,
+                    "Elective Courses from Four Areas": {
+                        "Area Ⅰ": 3,
+                        "Area Ⅱ": 3,
+                        "Area Ⅲ": 3,
+                        "Area Ⅳ": 3
+                    }
+                    },
+                    "College-Level Requirements": {
+                        "Common Core Courses": 10,
+                        "Elective Courses  ①": 9
+                    },
+                    "Department-Level Requirements": {
+                        "Pre-Major Courses": 3,
+                        "Common Core Courses ②": 12,
+                        "Elective Courses ③": 21
+                    },
+                    "Total Credits Required from Major Courses (①+②+③)": 42,
+                    "Total Credits Required from Major Courses": 130
+                },
+                "Multiple Major (Type-Ⅰ)": {
+                    "University-Level Requirements": {
+                    "Common Core Courses": 11,
+                    "Elective Courses from Four Areas": {
+                        "Area Ⅰ": 3,
+                        "Area Ⅱ": 3,
+                        "Area Ⅲ": 3,
+                        "Area Ⅳ": 3
+                    }
+                    },
+                    "College-Level Requirements": {
+                        "Common Core Courses": 10,
+                        "Elective Courses  ①": 9
+                    },
+                    "Department-Level Requirements": {
+                        "Pre-Major Courses": 3,
+                        "Common Core Courses ②": 6,
+                        "Elective Courses ③": 21
+                    },
+                    "Total Credits Required from Major Courses (①+②+③)": 36,
+                    "Total Credits Required from Major Courses": 130
+                },
+                "Multiple Major (Type-Ⅱ)": {
+                    "University-Level Requirements": {
+                    "Common Core Courses": 11,
+                    "Elective Courses from Four Areas": {
+                        "Area Ⅰ": 3,
+                        "Area Ⅱ": 3,
+                        "Area Ⅲ": 3,
+                        "Area Ⅳ": 3
+                    }
+                    },
+                    "College-Level Requirements": {
+                        "Common Core Courses": "-",
+                        "Elective Courses  ①": 9
+                    },
+                    "Department-Level Requirements": {
+                        "Pre-Major Courses": 3,
+                        "Common Core Courses ②": 6,
+                        "Elective Courses ③": 21
+                    },
+                    "Total Credits Required from Major Courses (①+②+③)": 36,
+                    "Total Credits Required from Major Courses": 130
+                },
+                "Information": {
+                    "Multiple Major (Type-Ⅰ)": "Students whose first major is Art & Technology.",
+                    "Multiple Major (Type-Ⅱ)": "Students whose first major is not Art & Technology."
+                }
+            },
+            "Course Requirements": {
+                "College-Level Requirements": {
+                    "Common Core Course": {
+                        "필수": {
+                            "과목코드": "MAS1001",
+                            "과목명": "지식융합미디어입문 - 팀티칭",
+                            "학점": 1
+                        },
+                        "선택": {
+                            "Courses": [
+                                {
+                                    "과목코드": "MAS1002",
+                                    "과목명": "Creativity & Visual Expression"
+                                },
+                                {
+                                    "과목코드": "MAS1003",
+                                    "과목명": "The Art of Storytelling"
+                                },
+                                {
+                                    "과목코드": "MAS1004",
+                                    "과목명": "Data & AI",
+                                    "선수과목": "COR1010 기초인공지능프로그래밍"
+                                },
+                                {
+                                    "과목코드": "GKS1001",
+                                    "과목명": "Critical Thinking for Social Inquiry"
+                                }
+                            ],
+                            "Required Credits": 9,
+                            "Note": "Must take three from the list (*MAS1004 must be included)"
+                        }
+                    },
+                    "Elective Courses": {
+                        "Courses": {
+                            "MAS2001": "융합 미디어 통론",
+                            "MAS2002": "전략 커뮤니케이션",
+                            "MAS2003": "한류",
+                            "MAS2004": "(prev. COM2002) 인간 소통과 미디어",
+                            "MAS2005": "시각과 음향의 향연",
+                            "MAS2006": "공연과 디지털테크놀로지",
+                            "MAS2007": "Media Technologies and Arts",
+                            "MAS2008": "Fundamentals of Programming and Problem Solving*",
+                            "MAS2010": "(prev. KOS2206) Fundamentals of Computer Science for Korean Studies",
+                            "MAS2011": "Introduction to Visual Media Programming",
+                            "MAS2012": "(prev. KOS3036) Computing Korean Culture",
+                            "MAS2013": "Data Structures"
+                        },
+                        "Required Credits": 9,
+                        "Note": "Must take three from the list (*MAS2008 must be included)"
+                    }
+                },
+                "Department-Level Requirements": {
+                    "Pre-Major Courses": {
+                        "Courses": {
+                            "STS2004": "대학수학",
+                            "STS2005": "미적분학 Ⅰ"
+                        },
+                        "Required Credits": 3,
+                        "Note": "Must take one from the list"
+                    },
+                    "Common Core Courses": {
+                        "Courses": {
+                            "AAT2004": "(prev. ANT2010) Intro to Creative Computing",
+                            "AAT2008": "Foundations of Human-Computer Interaction",
+                            "AAT2005": "(prev. ANT4020) Creative Capstone Project Ⅰ",
+                            "AAT2006": "(prev. ANT4013) Creative Capstone Project Ⅱ"
+                        },
+                        "Required Credits": {
+                            "Single major": 12,
+                            "Multiple major": 6
+                        },
+                        "Note": "Multiple major students are exempt from AAT2005 & AAT2006"
+                    },
+                    "Elective Courses": {
+                        "Courses": {
+                            "AAT2002": "(prev. ANT2003) Humanities & Creativity",
+                            "AAT2003": "(prev. ANT2004) Intro to Digital Arts",
+                            "AAT2007": "Fundamentals of Still & Moving Images",
+                            "AAT2009": "Interactive Storytelling",
+                            "AAT3002": "(prev. ANT2002) Content Planning & Development",
+                            "AAT3003": "(prev. ANT2009) Digital Fabrication(캡스톤디자인)",
+                            "AAT3004": "(prev. ANT2011) Intro to Sonic Art",
+                            "AAT3005": "(prev. ANT2015) Visual Design",
+                            "AAT3007": "(prev. ANT2017) Network Media",
+                            "AAT3008": "(prev. ANT3016) Creative Algorithms",
+                            "AAT3009": "(prev. ANT3017) Sound Production",
+                            "AAT3010": "(prev. ANT4001) Visual Story",
+                            "AAT3015": "(prev. ANT3012) 3D Modeling",
+                            "AAT3016": "(prev. ANT3014) UI/UX Design(캡스톤디자인)",
+                            "AAT3018": "Cinematography & Editing (2025-1부터 폐지)",
+                            "AAT3019": "Data Visualization",
+                            "AAT3020": "Natural Language Processing",
+                            "AAT3021": "나노디그리심화워크숍(메타버스)",
+                            "AAT3022": "Speculative Design",
+                            "AAT4001": "(prev. ANT2005) Computer Graphics",
+                            "AAT4002": "(prev. ANT3003) Advanced Web Development(캡스톤디자인)",
+                            "AAT4004": "(prev. ANT3008) Interactive Media Arts",
+                            "AAT4005": "(prev. ANT3009) Games & Interactive Media",
+                            "AAT4006": "(prev. ANT3010) 3D Animation",
+                            "AAT4007": "(prev. ANT4004) Advanced Interactive Storytelling",
+                            "AAT4008": "(prev. ANT4007) Visual Effects",
+                            "AAT4011": "(prev. ANT4012) Immersive Media",
+                            "AAT4012": "(prev. ANT4015) Internship",
+                            "AATG001": "Metaverse: Design & Development(캡스톤디자인)",
+                            "AATG009": "(prev. AAT4009, ANT4008) Physical Computing",
+                            "AATG010": "Generative AI",
+                            "AATG013": "(prev. AAT4013) Deep Learning & Computer Vision",
+                            "AATG015": "Deep Learning for Music & Audio",
+                            "AATG100": "Future Cinema (2025-1부터 폐지)",
+                            "AATG102": "Audio Visual Performance",
+                            "AATG104": "Media Aesthetics",
+                            "AATG800": "Creative Entrepreneurship"
+                        },
+                        "Required Credits": 21
+                    }
+                }
+            },
+            "비고": "Note that the credit and course requirements from college and department (except university-level requirements) also apply to students who entered the university in 2021 and declare majors in 2022."
+        },
+        "Course Descriptions": {
+            "AAT2002": {
+                "과목 코드": "AAT2002",
+                "선수과목": "ANT2003",
+                "교과목명": "Humanities & Creativity",
+                "학점": 3,
+                "내용": "This course aims to approach topics of humanities while cultivating students’ creativity. With various activities, discussions and performance projects, students will explore their “being-in-the-world” through artistic creation."
+            },
+            "AAT2003": {
+                "과목 코드": "AAT2003",
+                "선수과목": "ANT2004",
+                "교과목명": "Intro to Digital Arts",
+                "학점": 3,
+                "내용": "This course introduces students develop basic skills to convey and articulate complex and abstract ideas and personal expression into digital visual forms. Students will learn the digital visual expressions that is basic skills in digital creations through lectures, hands-on practice, and group critique. During the class, they will explore different materials, techniques, and themes, grounded in detailed observation and free imagination. For the final project, students will be encouraged to apply further contemporary experimentation responding to his/her own style."
+            },
+            "AAT2004": {
+                "과목 코드": "AAT2004",
+                "선수과목": "ANT2010",
+                "교과목명": "Intro to Creative Computing",
+                "학점": 3,
+                "내용": "In this course, students will be introduced to using a computer as a creative medium. Students will learn how to use a computer for visual arts and designs. Topics include how to program images, animation, and interactivity. Fundamentals of computer programming (variables, repetition, functions, selection, object-oriented programming, etc.) will be taught. This course will use Processing and JavaScript as main programming languages."
+            },
+            "AAT2005": {
+                "과목 코드": "AAT2005",
+                "선수과목": "ANT4020",
+                "교과목명": "Creative Capstone Project Ⅰ",
+                "학점": 3,
+                "내용": "This is part I of two-semester long creative capstone graduation projects. The aims of this course is to develop creative content, product, or service that has high degree of completion, meets sensitivity of consumers, and improves value of one's life. Each project group chooses a project that is proposed by institutions, companies, or students themselves. And they should perform overall process containing planning, design, production, and marketing. The final outcome will be shown to publics in the form of exhibition, performance and others."
+            },
+            "AAT2006": {
+                "과목 코드": "AAT2006",
+                "선수과목": "ANT4013",
+                "교과목명": "Creative Capstone Project Ⅱ",
+                "학점": 3,
+                "내용": "This course is part Ⅱ of two-semester long graduation projects to develop creative content, product, or service that has high degree of completion, meets sensitivity of consumers, and improves the value of one's life. Each project group chooses a project that is proposed by companies, institutions, or students themselves. Students have to perform overall processes of planning, design, and production. The final outcome will be shown to publics in the form of exhibition, performance, or others."
+            },
+            "AAT2007": {
+                "과목 코드": "AAT2007",
+                "교과목명": "Fundamentals of Still & Moving Images",
+                "학점": 3,
+                "내용": "Generally, the basis unit of a moving image is a short. However, this course explores the experimental methods of producing a moving image by the temporal and spatial arrangement of still images. Students will understand the various artists’ film and video practices originated from handmade cinema."
+            },
+            "AAT2008": {
+                "과목 코드": "AAT2008",
+                "교과목명": "Foundations of Human-Computer Interaction",
+                "학점": 3,
+                "내용": "This course introduces principles and methods for human-computer interaction design. Human-computer interaction (HCI) is a multi-disciplinary field of study focusing on the design of interaction between humans and computers based on cognitive science, social science, and design. This course will focus on how the properties of the interface can be designed to serve the needs of the user and our society. Students will use prototyping tools to build functional prototypes and evaluate them."
+            },
+            "AAT2009": {
+                "과목 코드": "AAT2009",
+                "교과목명": "Interactive Storytelling",
+                "학점": 3,
+                "내용": "The purpose of this course is to learn how users or audiences can interact with content using media. Therefore, in this class, the entire process of interactive content meeting with audiences and users through exhibition spaces, movie screens, or various platforms will be covered."
+            },
+            "AAT3002": {
+                "과목 코드": "AAT3002",
+                "선수과목": "ANT2002",
+                "교과목명": "Content Planning & Development",
+                "학점": 3,
+                "내용": "This course introduces principles and techniques for planning and developing digital content. The course is intended to help students become successful content planners and managers."
+            },
+            "AAT3003": {
+                "과목 코드": "AAT3003",
+                "선수과목": "ANT2009",
+                "교과목명": "Digital Fabrication (캡스톤디자인)",
+                "학점": 3,
+                "내용": "This course introduces the fundamental digital fabrication skills that enable students to create tangible prototypes. Students can learn through building creative projects using Arduino with useful electronic components, sensors and actuators for bringing their creative ideas to the real tangible working prototypes. Furthermore the students also can learn about how to translate of digital designs into physical objects using computer-controlled machine such as 3D printer, laser cutter, PCB router for the fast prototyping designs of circuit, case design and mechanical structure."
+            },
+            "AAT3004": {
+                "과목 코드": "AAT3004",
+                "선수과목": "ANT2011",
+                "교과목명": "Intro to Sonic Art",
+                "학점": 3,
+                "내용": "This course investigates the artistic practices to utilize sound as materials. The topics are voice, improvisational performance, spatial structure, specific place, instrument, recording, sampling and mixing, and album and distribution. Students will examine the contemporary practices to produce sound on an alternative way and to traverse the boundary between temporal and spatial arts."
+            },
+            "AAT3005": {
+                "과목 코드": "AAT3005",
+                "선수과목": "ANT2015",
+                "교과목명": "Visual Design",
+                "학점": 3,
+                "내용": "This design fundamental course introduces ideas, methodologies, principles, and skills that comprise a common knowledge base important to all design disciplines. These fundamentals including color, shape, texture, space, form, balance, hierarchy, etc foster a multidisciplinary design experience among students and prepare them to move to the next level."
+            },
+            "AAT3007": {
+                "과목 코드": "AAT3007",
+                "선수과목": "ANT2017",
+                "교과목명": "Network Media",
+                "학점": 3,
+                "내용": "The web is the most popular interactive medium and evolving into a universal medium for communication, computing, and creative expression. In this course, students will be introduced to the fundamental modern network media technologies HTML5, CSS3, and JavaScript to develop creative content and service on the web."
+            },
+            "AAT3008": {
+                "과목 코드": "AAT3008",
+                "선수과목": "ANT3016",
+                "교과목명": "Creative Algorithms",
+                "학점": 3,
+                "내용": "This course introduces students to fundamental computer algorithms for creative applications. This course comprises two parts. In the first part, wide range of creative algorithms will be introduced in five themes: Repetition, Parameterization, Transform, Visualization, and Simulation. Specific topics include Generative Design, Recursion, L-System, Slitscanning, Trans-Coding, Data Visualization, Particle System, Genetic Algorithms, Cellular Automata, etc. The second part of the course focuses on machine learning algorithms for creative applications. Students will learn computational processes of various machine learning algorithms such as k-NN, Decision Tree, Neural Networks, SVM, Linear/polynomial Regression, etc. Through hands-on workshops, they will learn how to apply the various algorithms for creative applications in practice."
+            },
+            "AAT3009": {
+                "과목 코드": "AAT3009",
+                "선수과목": "ANT3017",
+                "교과목명": "Sound Production",
+                "학점": 3,
+                "내용": "This course introduces the principles and techniques of producing sound. Students will learn the fundamental theories and techniques of sound synthesis using audio programming language. Prerequisite: AAT3004(prev. ANT2011) Intro to Sonic Art or equivalent."
+            },
+            "AAT3010": {
+                "과목 코드": "AAT3010",
+                "선수과목": "ANT4001",
+                "교과목명": "Visual Story",
+                "학점": 3,
+                "내용": "This class is mainly designed to make short films such as fiction, documentary, animation, video arts and diverse media arts. Therefore, each student will make a short film for his/her own final project. Filmmaking is totally based on how to discover creative idea and develop it for a good story telling. This is called “content” as a screenplay. Students will learn to discover great ideas and develop original stories throughout this course. Finally, students will carry their own story in film production as well as learn about what cinema language is through the short film production."
+            },
+            "AAT3015": {
+                "과목 코드": "AAT3015",
+                "선수과목": "ANT3012",
+                "교과목명": "3D Modeling",
+                "학점": 3,
+                "내용": "This course introduces the principles and techniques of 3D modeling. Topics include polygon based modeling, texture mapping, human body modeling, character modeling, lighting and rendering."
+            },
+            "AAT3016": {
+                "과목 코드": "AAT3016",
+                "선수과목": "ANT3014",
+                "교과목명": "UI/UX Design (캡스톤디자인)",
+                "학점": 3,
+                "내용": "This course provides a comprehensive overview of the user interface and user experience design process, and is intended to familiarize students with the concepts and techniques necessary to make user interface and user experience design an integral part of developing media interfaces. The course provides students with an opportunity to acquire the skills and hands-on experience they need to design, develop, and evaluate media interfaces from a user-centered design perspective."
+            },
+            "AAT3018": {
+                "과목 코드": "AAT3018",
+                "교과목명": "Cinematography & Editing (25-1 폐지)",
+                "학점": 3,
+                "내용": "This course focuses on the technical skills and creative principles required for camera shooting and post production. Topics include video recording, compositing, lighting, continuity, and editing. Students will complete some moving image works through hands-on exercises, projects, and assignments."
+            },
+            "AAT3019": {
+                "과목 코드": "AAT3019",
+                "교과목명": "Data Visualization",
+                "학점": 3,
+                "내용": "This course provides foundations necessary to understand and create effective visualizations. Topics include principles from graphics design, visual art, interaction techniques, and cognitive science."
+            },
+            "AAT3021": {
+                "과목 코드": "AAT3021",
+                "교과목명": "나노디그리심화워크숍(메타버스)",
+                "학점": 0,
+                "내용": "나노디그리심화워크숍(메타버스) 과목은 메타버스 나노디그리를 취득하기 위한 필수 과목으로, 본 과목은 단기 집중 워크샵 과정을 통해 메타버스 환경 구현에 필요한 전문 지식과 경험을 메타버스 영역 현장 전문가들에게 배우는 워크숍입니다. 이를 통해 학생들은 메타버스 구현에 필요한 실무적 지식을 전수 받을 수 있을 것으로 기대하고 있습니다."
+            },
+            "AAT3020": {
+                "과목 코드": "AAT3020",
+                "교과목명": "Natural Language Processing",
+                "학점": 3,
+                "내용": "This course introduces fundamentals of natural language processing utilizing machine learning and neural networks within the context of arts, design, and creative applications. Students will gain a mathematical foundation as well as programming skills in order to understand and implement various NLP models and machine learning in general."
+            },
+            "AAT3022": {
+                "과목 코드": "AAT3022",
+                "교과목명": "Speculative Design",
+                "학점": 3,
+                "내용": "This course introduces students to speculative design methods for exploring the personal and societal impacts of emerging technologies. Through creative approaches to design future, undergraduate students will acquire methods to shape technologies with a focus on positive societal change."
+            },
+            "AAT4001": {
+                "과목 코드": "AAT4001",
+                "선수과목": "ANT2005",
+                "교과목명": "Computer Graphics",
+                "학점": 3,
+                "내용": "In the course, students will learn the fundamental concepts and techniques of computer graphics. Topics include geometries, transform, camera, light, texture, shader programming, and animation. At the end of the semester, students will develop a creative interactive 3D computer graphics applications (interactive art, visualization, games, etc.). Processing, WebGL, and GLSL will be used for programming."
+            },
+            "AAT4002": {
+                "과목 코드": "AAT4002",
+                "선수과목": "ANT3003",
+                "교과목명": "Advanced Web Development (캡스톤디자인)",
+                "학점": 3,
+                "내용": "This course introduces students to full stack web development. In addition to client side web programming, the course will focus on server side programming of the web and the students will learn how to handle web frameworks during the course.",
+                "Prerequisite": "AAT3007(prev. ANT2017) or equivalent."
+            },
+            "AAT4004": {
+                "과목 코드": "AAT4004",
+                "선수과목": "ANT3008",
+                "교과목명": "Interactive Media Arts",
+                "학점": 3,
+                "내용": "This course explores the creative possibilities of technology and interactivity. students will have theoretical understanding about interactivity and hands-on experiences with tools for producing projects. Students will learn historical and current cases of interactive arts and study the cultural effects of interactive technology by looking at literary studies, performance studies, and fine arts. Students will implement interactivity in individual media art projects using various tools such as Unity, MAX, Processing, sensors, etc."
+            },
+            "AAT4005": {
+                "과목 코드": "AAT4005",
+                "선수과목": "ANT3009",
+                "교과목명": "Games & Interactive Media",
+                "학점": 3,
+                "내용": "This is an introductory course for computer game and other interactive media development. Students will learn the principles and techniques required for developing successful game and interactive media using real-time game engines."
+            },
+            "AAT4006": {
+                "과목 코드": "AAT4006",
+                "선수과목": "ANT3010",
+                "교과목명": "3D Animation",
+                "학점": 3,
+                "내용": "This course introduces the principles and techniques for making 3D computer animation. It covers principles of motion, staging and editing action, rigging, morphing, camera, lighting, inverse kinematics, etc.",
+                "Prerequisite": "AAT3015(ANT3012) 3D modeling or equivalents."
+            },
+            "AAT4007": {
+                "과목 코드": "AAT4007",
+                "선수과목": "ANT4004",
+                "교과목명": "Advanced Interactive Storytelling",
+                "학점": 3,
+                "내용": "This course, as a higher level course of the interactive storytelling course, aims to further expand the interaction of media through VR, AR, XR, or any other new media technologies to meet users. Therefore, this course is not limited to the production stage, but is designed as a course to understand and create various experimental interactive contents."
+            },
+            "AAT4008": {
+                "과목 코드": "AAT4008",
+                "선수과목": "ANT4007",
+                "교과목명": "Visual Effects",
+                "학점": 3,
+                "내용": "This course introduces the fundamental principles and techniques of visual effects. Students will learn the concept and the workflow as well as the practical skill required for making visual effects used in cinema."
+            },
+            "AAT4011": {
+                "과목 코드": "AAT4011",
+                "선수과목": "ANT4012",
+                "교과목명": "Immersive Media",
+                "학점": 3,
+                "내용": "This course provides students with principles and techniques for immersive media design and development. Students will be introduced to history of immersive media, theory on immersion, technologies and designs for immersion. Storytelling in immersive media will be emphasized and students will learn by conducting a series of immersive media projects.",
+                "Prerequisites": "AAT4005(ANT3009) Games & Interactive Media or equivalents."
+            },
+            "AAT4012": {
+                "과목 코드": "AAT4012",
+                "선수과목": "ANT4015",
+                "교과목명": "Internship",
+                "학점": 3,
+                "내용": "This internship course is designed to provide students with professional experience in creative industries. Students are expected to work for at least 4 weeks as a full-time at a company or institution during summer or winter session."
+            },
+            "AAT4019": {
+                "과목 코드": "AAT4019",
+                "교과목명": "Internship Ⅱ",
+                "학점": 3,
+                "내용": "This internship course is designed to provide students with professional experience in creative industries. Students are expected to work for at least 4 weeks as a full-time at a company or institution during summer or winter session."
+            },
+            "AATG001": {
+                "과목 코드": "AATG001",
+                "교과목명": "Metaverse: Design & Development (캡스톤디자인)",
+                "학점": 3,
+                "내용": "This course is an introduction to the design and development of a Metaverse. Students will learn technologies of constructing and navigating 3D virtual worlds in the context of a Metaverse including the creation of 3D avatars"
+            },
+            "AATG009": {
+                "과목 코드": "AATG009",
+                "선수과목": "AAT4009, ANT4008",
+                "교과목명": "Physical Computing",
+                "학점": 3,
+                "내용": "In this course, students learn how to design a system for the physical Human-Computer interaction between a user and a computer. Students study the basic concepts and programming of computer interfaces with electronic circuits, physical sensors, lighting, and mechanical devices, and plan and implement media systems or artworks based on visual, auditory, and mechanical interactions."
+            },
+            "AATG010": {
+                "과목 코드": "AATG010",
+                "교과목명": "Generative AI",
+                "학점": 3,
+                "내용": "In this course, students explore the fundamental principles and practical applications of generative artificial intelligence (Generative AI). The curriculum covers key topics, including variational autoencoders (VAEs), generative adversarial networks (GANs), diffusion models, and large language models (LLMs). Students will gain a deep understanding of each generative model and implement these concepts using Python and PyTorch framework."
+            },
+            "AATG013": {
+                "과목 코드": "AATG013",
+                "선수과목": "AAT4013",
+                "교과목명": "Deep Learning & Computer Vision",
+                "학점": 3,
+                "내용": "This course introduces fundamental principles of deep learning and computer vision. It focuses chiefly on deep neural network (DNN) and its models for solving computer vision problems. Topics include data manipulation, regularization, optimization, convolutional neural network (CNN), image classification, object detection, and basic generative adversarial network (GAN). We will develop the intuitions in class, and then implement models in projects."
+            },
+            "AATG015": {
+                "과목 코드": "AATG015",
+                "교과목명": "Deep Learning for Music & Audio",
+                "학점": 3,
+                "내용": "This course introduces deep learning programming for handling music and audio signal including a basic introduction to digital signal processing. Students will learn about how to apply deep learning for music and audio data, such as auto-tagging or sound synthesis."
+            },
+            "AATG100": {
+                "과목 코드": "AATG100",
+                "교과목명": "Future Cinema (25-1 폐지)",
+                "학점": 3,
+                "내용": "This course introduces the use of cutting-edge technologies in the cinema, which is undergoing major changes in both content and format as various advanced creative technologies are developed. Students will study new types of cinematic images produced with new technologies which go beyond the traditional concept of projecting images on a screen allowing the audience to directly participate in the content in a space outside the theatre."
+            },
+            "AATG102": {
+                "과목 코드": "AATG102",
+                "교과목명": "Audio Visual Performance",
+                "학점": 3,
+                "내용": "The act of projection is at the heart of cinema and media art. This theory and practice course explores the possibilities of the alternative exhibition for projected image and sound focusing on performance. Students will experiment with a wide variety of audiovisual strategies, complemented by related readings, screenings, and exhibitions. The technical, historical, and aesthetical aspects of the projected image and sound will be studied in order to reinvent cinema and investigate how the projected image can find meaning outside the black box of theaters or the white cube of galleries."
+            },
+            "AATG104": {
+                "과목 코드": "AATG104",
+                "교과목명": "Media Aesthetics",
+                "학점": 3,
+                "내용": "In this class, students will study the artistic practices of deconstructing and reconstructing the materiality and historicity of the medium by understanding the technical characteristics of the medium and analyzing the socialization process of the medium."
+            },
+            "AATG106": {
+                "과목 코드": "AATG106",
+                "교과목명": "Generative Audio Visualization",
+                "학점": 3,
+                "내용": "This course introduces students to the generative arts. Students will acquire methods for creating new audio and/or visual artworks using algorithms and autonomous process."
+            },
+            "AATG800": {
+                "과목 코드": "AATG800",
+                "교과목명": "Creative Entrepreneurship",
+                "학점": 3,
+                "내용": "This course surveys entrepreneurship in creative industry to increase understanding of how digital innovations grow into societal change. It will explore a range of business models and opportunities in creative industry."
+            }
+        }
+    }
+}
