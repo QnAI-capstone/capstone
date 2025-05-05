@@ -1,0 +1,910 @@
+{
+    "2025 서강대학교 요람": {
+        "Asian Studies": {
+            "Overview": "Our Asian Studies program approaches Asia with an emphasis on gaining a broader understanding of the region by utilizing knowledge and perspectives across a wide range of disciplines. Asia, now, is possibly the most dynamic area of the world economy. Countries in the region are ever more interconnected – not only through investment and trade, but also politically and culturally through global processes of diplomacy, migration, popular culture, and tourism. Our Asian Studies program therefore aims to provide a comprehensive learning experience that: 1) enables students to fully appreciate the interconnectedness within/of the region and beyond; 2) exposes students to diverse disciplinary approaches (including culture, geography, history, international development/cooperation, international relations, and politics). In addition to the subject-based modules, students will also be able to enrich their learning in/on Asia via our basic-level East Asian language courses or various Asia-related emersion and exchange programs. In order to create a stimulating learning environment for students, we will organize various Asia-related activities/events and special lectures/talks by professionals from diverse backgrounds, including academics and practitioners.",
+            "Career Paths": "Students who completed the Asian Studies major at Loyola College will have the expertise and skills to work as an Asia expert and enter a variety of fields, including international organizations in Korea and abroad, media, education, culture, business, and academia.",
+            "Course Requirements": {
+                "Credit Requirements": [
+                    {
+                        "Korean students on the English track 영어트랙 국내학생": {
+                            "Single major": {
+                                "Liberal Arts_교양": {
+                                    "Common Requirements": 11,
+                                    "Common Electives": {
+                                        "①": 3,
+                                        "②": 3,
+                                        "③": 3,
+                                        "④": 3
+                                    },
+                                    "Total cradits": 23
+                                },
+                                "Pre-Major Course": 9,
+                                "Major": {
+                                    "Core": 3,
+                                    "Elective": 42,
+                                    "Total credits": 45
+                                },
+                                "Total Credits Required for Degree": 126
+                            },
+                            "Multiple major": {
+                                "Liberal Arts_교양": {
+                                    "Common Requirements": 11,
+                                    "Common Electives": {
+                                        "①": 3,
+                                        "②": 3,
+                                        "③": 3,
+                                        "④": 3
+                                    },
+                                    "Total cradits": 23
+                                },
+                                "Pre-Major Course": 9,
+                                "Major": {
+                                    "Core": 3,
+                                    "Elective": 33,
+                                    "Total credits": 36
+                                },
+                                "Total Credits Required for Degree": 126
+                            },
+                            "비고": [
+                                "*전공입문교과는 전공이수학점에 포함되지 않음.",
+                                "*Pre-major courses do not count towards the total credits required for the major."
+                            ]
+                        },
+                        "International students on the English track 영어트랙 국제학생": {
+                            "Single major": {
+                                "Liberal Arts_교양": {
+                                    "Common Requirements": 16,
+                                    "Common Electives": {
+                                        "①, ②, ③, ④": 6
+                                    },
+                                    "Total cradits": 22
+                                },
+                                "Pre-Major Course": 9,
+                                "Major": {
+                                    "Core": 3,
+                                    "Elective": 42,
+                                    "Total credits": 45
+                                },
+                                "Total Credits Required for Degree": 126
+                            },
+                            "Multiple major": {
+                                "Liberal Arts_교양": {
+                                    "Common Requirements": 16,
+                                    "Common Electives": {
+                                        "①, ②, ③, ④": 6
+                                    },
+                                    "Total cradits": 22
+                                },
+                                "Pre-Major Course": 9,
+                                "Major": {
+                                    "Core": 3,
+                                    "Elective": 33,
+                                    "Total credits": 36
+                                },
+                                "Total Credits Required for Degree": 126
+                            },
+                            "비고": [
+                                "*전공입문교과는 전공이수학점에 포함되지 않음.",
+                                "*Pre-major courses do not count towards the total credits required for the major."
+                            ]
+                        }
+                    }
+                ],
+                "Course Requirements": [
+                    {
+                        "Pre-Major Courses": [
+                            {
+                                "Course Code": "AAS1001",
+                                "Title": "Introduction to Asian Studies",
+                                "Credits": 3
+                            },
+                            {
+                                "Course Code": "TIS1001",
+                                "Title": "Introduction to International Relations",
+                                "Credits": 3
+                            },
+                            {
+                                "Course Code": "TIS1002",
+                                "Title": "Introduction to International Commerce",
+                                "Credits": 3
+                            }
+                        ],
+                        "Major Core Courses": {
+                            "Credits": 3,
+                            "Course": [
+                                {
+                                    "Course Code": "AAS2005",
+                                    "Title": "Understanding Asian History"
+                                },
+                                {
+                                    "Course Code": "AAS2015",
+                                    "Title": "Understanding Cooperation and Conflict in and around Asia"
+                                }
+                            ]
+                        },
+                        "Major Electives": {
+                            "Course": [
+                                {
+                                    "Course Code": "AAS2001",
+                                    "Title": "Methods in Asian Studies in Practice"
+                                },
+                                {
+                                    "Course Code": "AAS2002",
+                                    "Title": "Understanding Asian Cultures"
+                                },
+                                {
+                                    "Course Code": "AAS2003",
+                                    "Title": "Diplomacy in Asia"
+                                },
+                                {
+                                    "Course Code": "AAS2004",
+                                    "Title": "Art and Archeology of Korea"
+                                },
+                                {
+                                    "Course Code": "AAS2006",
+                                    "Title": "Modern Economic History of East Asia"
+                                },
+                                {
+                                    "Course Code": "AAS2007",
+                                    "Title": "Asia in a Globalizing World"
+                                },
+                                {
+                                    "Course Code": "AAS2008",
+                                    "Title": "Global Governance and Asia"
+                                },
+                                {
+                                    "Course Code": "AAS2009",
+                                    "Title": "Understanding Asia through its Geographies"
+                                },
+                                {
+                                    "Course Code": "AAS2010",
+                                    "Title": "Popular Culture in East Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS2011 Understanding Asian Civilization Through Enterprise and Urban Space"
+                                },
+                                {
+                                    "Course Code / Title": "AAS2012 Understanding Contemporary Muslim World"
+                                },
+                                {
+                                    "Course Code / Title": "AAS2013 Asia's Environmental Issues through Cinema"
+                                },
+                                {
+                                    "Course Code / Title": "AAS2014 Life and Fun in Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS2016 Politics in Southeast Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS2017 Critical Thinking in Asian Studies"
+                                },
+                                {
+                                    "Course Code / Title": "AAS2018 Critical Writing in Asian Studies"
+                                },
+                                {
+                                    "Course Code / Title": "AAS2019 Global Communication Ⅰ"
+                                },
+                                {
+                                    "Course Code / Title": "AAS2020 Global Communication Ⅱ"
+                                },
+                                {
+                                    "Course Code / Title": "AAS2021 Global Communication Ⅲ"
+                                },
+                                {
+                                    "Course Code / Title": "AAS2022 Understanding Chinese Politics"
+                                },
+                                {
+                                    "Course Code / Title": "AAS2023 Understanding Middle East"
+                                },
+                                {
+                                    "Course Code / Title": "AAS2024 Critical Issues in Contemporary Asia Ⅰ"
+                                },
+                                {
+                                    "Course Code / Title": "AAS2025 Critical Issues in Contemporary Asia Ⅱ"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3001 Asian Studies Practice"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3002 Development Cooperation in Asia Ⅰ"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3003 Comparative Research of Modern Asian Merchant Network"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3004 Art of India and Southeast Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3005 Understanding Contemporary Southeast Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3006 Asia in the Anthropocene"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3007 Japan's Environments and Environmentalisms"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3008 Understanding South Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3009 Migration in Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3010 Chinese Art and Culture"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3011 Overseas Chinese and the Dynamic of World history"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3012 Comparative History of China and Southeast Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3013 Material Culture and Exchange of the East and the West"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3014 Empire and Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3015 Art and Culture in Japan"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3016 Minorities in Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3017 Development Cooperation in Asia Ⅱ"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3018 Introduction to Anthropology of Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3019 Exploring Asia in Korea"
+                                },
+                                {
+                                    "Course Code / Title": "AAS3020 Art History of Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4001 Issues and Perspectives in Contemporary Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4002 Gender in Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4003 Asian Studies in Comparison"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4004 Special Lecture on Asian Studies"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4005 Special Lecture on Asian Culture"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4006 Special Lecture on Asian History"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4007 Special Lecture on Asian Politics"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4008 Special Lecture on Asia's Development Issues"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4009 Special Lecture on Development Cooperation in Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4010 Special Lecture on Geography of Asia"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4011 Methods in Asian Studies in Theory"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4012 Research Practice in Asian Studies Ⅰ"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4013 Research Practice in Asian Studies Ⅱ"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4014 Research Practice in Asian Studies Ⅲ"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4015 Research Practice in Asian Studies Ⅳ"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4016 Understanding Contemporary China"
+                                },
+                                {
+                                    "Course Code / Title": "AAS4017 Popular Culture of China"
+                                },
+                                {
+                                    "Course Code / Title": "TIC2004 Korean Economy"
+                                },
+                                {
+                                    "Course Code / Title": "TIR2007 International Relations of East Asia"
+                                },
+                                {
+                                    "Course Code / Title": "TIR2009 Chinese Foreign Policy"
+                                },
+                                {
+                                    "Course Code / Title": "TIR3002 International Politics of the Korean Peninsula"
+                                },
+                                {
+                                    "Course Code / Title": "TIR3008 South-North Korean Relations"
+                                },
+                                {
+                                    "Course Code / Title": "TIR4007 International Relations of the Middle East"
+                                },
+                                {
+                                    "Course Code / Title": "TIC4017 Northeast Asian Economy"
+                                },
+                                {
+                                    "Course Code / Title": "TIC4018 Southeast Asian Economy"
+                                },
+                                {
+                                    "Course Code / Title": "TIC4021 Economy in the MENA"
+                                }
+                            ],
+                            "Credits": 42,
+                            "비고": {
+                                "Multiple Majors": 33
+                            }
+                        },
+                        "비고": [
+                            "*전공필수선택 3학점 초과 취득 시 전공선택학점으로 인정",
+                            "* More than three credits of major core courses count towards major electives."
+                        ]
+                    }
+                ]
+            },
+            "Substitute Recognized Courses": {
+                "대체 인정 교과목": [
+                    {
+                        "Major": "Global Korean Studies",
+                        "Recognized Courses": "GKS3001 Global Diffusion of the K-Wave",
+                        "Matching AAS Courses": "AAS2010 Popular Culture in East Asia"
+                    },
+                    {
+                        "Major": "Global Korean Studies",
+                        "Recognized Courses": "GKS4006 Korean Studies Seminar: Gender and Development",
+                        "Matching AAS Courses": "AAS4002 Gender in Asia"
+                    },
+                    {
+                        "Major": "Chinese Culture",
+                        "Recognized Courses": "CHI4009 Media and City in China",
+                        "Matching AAS Courses": "AAS4016 Understanding Contemporary China"
+                    },
+                    {
+                        "Major": "Chinese Culture",
+                        "Recognized Courses": "CHI4014 Globalization and China",
+                        "Matching AAS Courses": "AAS2007 Asia in a Globalizing World"
+                    }
+                ],
+                "비고": "Students may apply for credit toward their Asian Studies major if they have completed the listed courses offered by other departments, subject to approval of the chair of the Geppert School of International Studies. However, students of the Geppert School of International Studies may only receive credit if they have completed the English section of the course."
+            },
+            "로욜라국제대학 교육과정": {
+                "Pre-Major Courses(전공입문)": [
+                    {
+                        "과목 코드": "AAS1001",
+                        "교과목명": "Introduction to Asian Studies(아시아학 개론)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This introductory course provides an overview of some of the key issues relating to Asia and Asian Studies. The course facilitates an interdisciplinary understanding of Asia's past and present through the region's geography, history, culture, economy and politics. Our approach enables students to acquire a foundational knowledge of Asia and prepares them for more advanced courses in the Asian Studies track and beyond."
+                    },
+                    {
+                        "과목 코드": "TIS1001",
+                        "교과목명": "Introduction to International Relations(국제관계개론)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This is an introductory course on international relations, which provides students with a bird-eye-view of contemporary international affairs. By taking this course, students will obtain basic background knowledge about international relations, which will help build a solid foundation for advanced courses."
+                    },
+                    {
+                        "과목 코드": "TIS1002",
+                        "교과목명": "Introduction to International Commerce(국제통상입문)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This introductory course serves as a foundational exploration of essential economic concepts crucial to the International Commerce program, enriched by insightful case studies. Students will be able to understand the decision making of consumers and firms, price theory across various market structures, measures and models of aggregate economic activities, and macroeconomic policy tools."
+                    }
+                ],
+                "Major Core Courses(전공필수선택)": [
+                    {
+                        "과목 코드": "AAS2005",
+                        "교과목명": "Understanding Asian History(아시아역사의이해)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course provides the Asian historical trajectories and experiences of Asian people from the ancient times to the contemporary period. Students could understand the Asian regional order in a historical context and a comparative perspective."
+                    },
+                    {
+                        "과목 코드": "AAS2015",
+                        "교과목명": "Understanding cooperation and conflict in and around Asia (세계 속 아시아의 협력과 갈등)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course is designed to discuss the contemporary issues of cooperation and conflicts in and around Asia. It aims to enhance the understanding of thematic issues and conceptual debates using diverse theoretical and historical perspectives."
+                    }
+                ],
+                "Major Elective Courses (전공선택)": [
+                    {
+                        "과목 코드": "AAS2001",
+                        "교과목명": "Methods in Asian Studies in Practice(아시아 연구 방법론)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course is designed to provide a range of methodological approaches to the Asian Studies. Both qualitative and quantitative methodologies will be introduced as important tools for understanding Asia."
+                    },
+                    {
+                        "과목 코드": "AAS2002",
+                        "교과목명": "Understanding Asian Cultures (아시아 문화의 이해)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course provides an introduction to the diverse cultures of Asia, focusing on their historical, social, and religious foundations. Students will explore key cultural practices, values, and beliefs across various Asian societies, fostering a deeper appreciation of the region's complexity. By the end of the course, students will gain a broad understanding of how these cultural elements influence contemporary Asian life and global interactions."
+                    },
+                    {
+                        "과목 코드": "AAS2003",
+                        "교과목명": "Diplomacy in Asia (아시아의 외교)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course discusses the issues of diplomacy and foreign policy in the context of Asia. It aims to understand historical and contemporary institutions and laws of diplomacy, key diplomatic actors, and their decision-making processes, but also examine the diplomatic cultures and practices of key actors including leading and non-leading states."
+                    },
+                    {
+                        "과목 코드": "AAS2004",
+                        "교과목명": "Art and Archeology of Korea (한국의 미술문화)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course examines Korean art's diversity and creativity by exploring each genre's development, including painting, crafts, and sculpture, from prehistoric times to modern times. By examining the changes in aesthetics, political and cultural patronage, and technological advancements, in a three-dimensional manner, we will explore the origins of Korean art and the driving forces of change."
+                    },
+                    {
+                        "과목 코드": "AAS2006",
+                        "교과목명": "Modern Economic History of East Asia (동아시아 근대경제사)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "By comparing and analyzing the economies of East Asia (Northeast Asia and Southeast Asia), which have experienced modernity since the entry of European imperialism into Asia, this module considers the nature of the modern economy of imperialism/colonialism and its impact on East Asia regional context."
+                    },
+                    {
+                        "과목 코드": "AAS2007",
+                        "교과목명": "Asia in a Globalizing World (글로벌리제이션 시대의 아시아)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This is a survey course introducing key issues of globalisation with a particular focus on Asian response to such process. This module therefore aims to help students to start critically engaging with globalization in all its diverse forms of world-wide interconnection - and Asian stances and responses to the process(es). Such interconnections include economic ties, political ties, cultural ties, and social ties. These ties will be analysed independently, but at the same time will be understood in conjunction with one another to produce the overall effect that has been given the single label globalisation."
+                    },
+                    {
+                        "과목 코드": "AAS2008",
+                        "교과목명": "Global Governance and Asia (글로벌 거버넌스와 아시아)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course aims to understand conceptual and practical debates about the structure and processes of global governance in diverse issue areas. It also sees Asia as a space for engaging global governance but also a space for creating alternative/complementary regional governance."
+                    },
+                    {
+                        "과목 코드": "AAS2009",
+                        "교과목명": "Understanding Asia through its Geographies (지리적 사고로 바라보는 아시아)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "The course introduces some of the key issues of Asia through theoretical lenses in human geography to provide an opportunity for students to think critically about the production of knowledge on peoples and environments of Asia. By drawing upon the questions of differences, inequality and unevenness, the course explores the region with a particular emphasis on the changing relationships between societies and their environments. For that purpose, the course focuses on the economic, social and environmental transformations in Southeast Asia since 1945 with case studies from the field to examine the challenges posed by rapid urbanization, industrialization and rural agrarian transformation."
+                    },
+                    {
+                        "과목 코드": "AAS2010",
+                        "교과목명": "Popular Culture in East Asia (동아시아의 대중문화)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "East Asian countries have been experiencing many cultural changes along with socio-economic development. Societies of each country are creating diverse cultures by accepting foreign cultures based on their unique traditional culture. In addition, the recent Korean Wave has a great influence on cultural changes in exchanges with Asia and the world. In this situation, understanding the popular culture of each East Asian country could be important to understand the society. This course aims to deepen understanding of East Asian countries through popular culture such as movies and music."
+                    },
+                    {
+                        "과목 코드": "AAS2011",
+                        "교과목명": "Understanding Asian Civilization Through Enterprise and Urban Space (기업과 도시로 보는 아시아 문명)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "The Asian origins of businesses and cities, the two most important subjects of Western modern civilization, are explored, and the continuity of Asian civilization from ancient times to the present is studied through the entrepreneurial spirit of merchants and the formation of commercial cities."
+                    },
+                    {
+                        "과목 코드": "AAS2012",
+                        "교과목명": "Understanding Contemporary Muslim World (아시아와 이슬람 세계)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course aims to provide an in-depth understanding of the societies and people practicing Islam, one of major religions in Asia."
+                    },
+                    {
+                        "과목 코드": "AAS2013",
+                        "교과목명": "Asia's Environmental Issues through Cinema (영화로 보는 아시아의 환경이슈)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course introduces key environmental issues in Asia to students through selected films on related issues that navigates the relationship between humans and their environments."
+                    },
+                    {
+                        "과목 코드": "AAS2014",
+                        "교과목명": "Life and Fun in Asia (아시아의 대중문화와 삶)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course tries to observe and discuss how cultural products such as pop music, games, movies, novels and cartoons as well as various activities for entertainment constitute the lives of people in the various parts of Asia."
+                    },
+                    {
+                        "과목 코드": "AAS2016",
+                        "교과목명": "Politics in Southeast Asia (동남아 정치 개론)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course aims to provide an in-depth understanding of political and social issues in Southeast Asian countries with diverse theoretical perspectives in the field of comparative politics."
+                    },
+                    {
+                        "과목 코드": "AAS2017",
+                        "교과목명": "Critical Thinking in Asian Studies (아시아학의 비판적 사고)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course is designed to facilitate students' abilities to think critically. Students will analyse a range of perspectives and engage with key texts and case studies in order to gain an understanding of the complexities of Asian societies. The course aims to facilitate students' capacity to critically assess both contemporary and historical events within the region."
+                    },
+                    {
+                        "과목 코드": "AAS2018",
+                        "교과목명": "Critical Writing in Asian Studies (아시아학의 비판적 글쓰기)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "The objective of this course is to enhance students' writing abilities by facilitating their engagement with the critical analysis of historical, political, and cultural issues in Asia. Students will engage with a variety of texts and arguments, developing the ability to construct clear, coherent, and well-supported written responses. Upon completion of the course, students will be able to produce critical essays that demonstrate a comprehensive understanding of complex topics within the field of Asian Studies."
+                    },
+                    {
+                        "과목 코드": "AAS2019",
+                        "교과목명": "Global Communication Ⅰ(글로벌 커뮤니케이션 Ⅰ)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course explores the dynamics of communication in a globalized world, focusing on how socio-cultural context and processes influence international interactions. By the end of the course, students will have developed a deeper understanding of effective communication across diverse settings in Asian societies."
+                    },
+                    {
+                        "과목 코드": "AAS2020",
+                        "교과목명": "Global Communication Ⅱ (글로벌 커뮤니케이션 Ⅱ)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course explores the dynamics of communication in a globalized world, focusing on how political contexts and processes influence international interactions. By the end of the course, students will have developed a deeper understanding of effective communication across diverse settings in Asian societies."
+                    },
+                    {
+                        "과목 코드": "AAS2021",
+                        "교과목명": "Global Communication Ⅲ (글로벌 커뮤니케이션 Ⅲ)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course explores the dynamics of communication in a globalized world, focusing on how economic contexts and processes influence international interactions. By the end of the course, students will have developed a deeper understanding of effective communication across diverse settings in Asian societies."
+                    },
+                    {
+                        "과목 코드": "AAS2022",
+                        "교과목명": "Understanding Chinese Politics (중국 정치의 이해)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "Description": "This course is designed to focus on the political and social issues pertaining to China that is grounded in a range of theoretical perspectives drawn from the field of Asian studies. It considers the transnational and international dynamics at play across the region's numerous countries."
+                    },
+                    {
+                        "과목 코드": "AAS2023",
+                        "교과목명": "Understanding Middle East(중동 사회의 이해)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course aims to provide an in-depth understanding of political and social issues in Middle East with diverse theoretical perspectives in the field of Asian studies. It also discusses transnational and international dynamics across numerous countries within the region."
+                    },
+                    {
+                        "과목 코드": "AAS2024",
+                        "교과목명": "Critical Issues in Contemporary Asia Ⅰ (현대 아시아의 중요 이슈들 Ⅰ)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course examines the key challenges facing contemporary Asia. Through case studies and discussions on socio-political changes and processes, students will gain an understanding of the impact these have on Asian societies. By the end of the course, students will have a comprehensive appreciation of the critical issues shaping modern Asia and its structural traits."
+                    },
+                    {
+                        "과목 코드": "AAS2025",
+                        "교과목명": "Critical Issues in Contemporary Asia Ⅱ (현대 아시아의 중요 이슈들 Ⅱ)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course examines the key challenges facing contemporary Asia. Through case studies and discussions on development and socio-ecological changes and processes, students will gain an understanding of the impact these have on Asian societies. By the end of the course, students will have a comprehensive appreciation of the critical issues shaping modern Asia and its structural traits."
+                    },
+                    {
+                        "과목 코드": "TIR2007",
+                        "교과목명": "International Relations of East Asia (동아시아국제관계)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course is designed to help students deepen their understanding of international relations in East Asia. While discussing politics, the economy, identity, history, and strategies, students will be able to depict a broader but more detailed picture of current international politics in the East Asian region."
+                    },
+                    {
+                        "과목 코드": "TIR2009",
+                        "교과목명": "Chinese Foreign Policy (중국외교정책)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "The primary goal of this course is to acquaint students with Chinese foreign policy. The issues that will be covered in this course include, but are not limited to, the history of Chinese foreign policy, Sino-U.S. rivalry, U.S.-China-Russian trilateral relations, China's exchanges with the Korean peninsula, and the Taiwan Strait crises."
+                    },
+                    {
+                        "과목 코드": "TIC2004",
+                        "교과목명": "Korean Economy (한국경제론)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course offers a thorough examination of the structural evolution and growth factors shaping the Korean economy. Students delve into various dimensions, exploring industrial structure and policy dynamics, shifts in international trade patterns and policies, complexities of the labor market, and the historical context of economic policies. Through these explorations, students gain a comprehensive understanding of the economic landscape in Korea.",
+                        "비고": "Prerequisite: TIS1002"
+                    },
+                    {
+                        "과목 코드": "AAS3001",
+                        "교과목명": "Asian Studies Practice (아시아학의실제)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This is a class in the form of an invited lecture to hear the importance of understanding and knowledge about Asia from experts who majored in Asian studies and are currently working at the forefront of their respective fields."
+                    },
+                    {
+                        "과목 코드": "AAS3002",
+                        "교과목명": "Development Cooperation in Asia Ⅰ (국제개발협력과 아시아 Ⅰ)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This is the first of two-part course that surveys the key issues and processes of development cooperation in Asia. Within a broad context of the regional/international political economy, the course first takes up Japan's and of its donorship as the first non-Western OECD Development Assistance Committee member (1961). Through a perspective of critical development geography and political ecology, the course will explore Japan's development cooperation and its impact on Asian society as well as its own."
+                    },
+                    {
+                        "과목 코드": "AAS3003",
+                        "교과목명": "Comparative Research of Modern Asian Merchant Network (근대 아시아 상인 네트워크 비교연구)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This module aims at considering the characteristics of Asian capitalism by comparing major Asian merchant groups such as China, India, and Japan, who were active throughout Asia, and the networks they built in and outside the region during the modern times."
+                    },
+                    {
+                        "과목 코드": "AAS3004",
+                        "교과목명": "Art of India and Southeast Asia (인도·동남아시아의 미술)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course examines the art of India, which influenced the other regions of Asia, and also explores the art of the traditional Southeast Asian period, whose civilization began with Indianization. It will examine the similarities and differences between the art and society of India and those of Southeast Asia to create an objective and rational understanding of Asian art and culture."
+                    },
+                    {
+                        "과목 코드": "AAS3005",
+                        "교과목명": "Understanding Contemporary Southeast Asia(동남아시아 현대 사회의 이해)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "Southeast Asian countries are not only geographically close to Korea, but also have rapidly expanded their relationship with Korea in terms of politics, economy, and people-to-people exchanges. As the relationship between Korea and Southeast Asia will continue to expand in the future, understanding Southeast Asian society is useful and urgent. This course attempts to lay the foundation for the development of bilateral relations by understanding the modern society of Southeast Asia."
+                    },
+                    {
+                        "과목 코드": "AAS3006",
+                        "교과목명": "Asia in the Anthropocene (인류세 시대의 아시아)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "The course explores Asia within some of the key debates on Anthropocene from a critical geographical perspective. The course focuses on the ranges of issues including the poverty-environment nexus, environment as a source of livelihood and good health, sustainable resource use, the adverse impacts of climate change on the poor and vulnerable in developing countries, conservation as protection from emerging zoonotic diseases and the future pandemic-led crises."
+                    },
+                    {
+                        "과목 코드": "AAS3007",
+                        "교과목명": "Japan's Environments and Environmentalisms (일본의 환경과 환경문제)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "The course provides an introduction to some of the central debates on the environmental issues in an advanced economy, Japan which has undergone a process of late industrialisation. Being guided by the key theoretical concepts in environmental politics and political ecology, the ways in which the uneven and unjust distribution of risks and power impacts upon the various stakeholders’ ability to respond to those problems will be examined. While considering the Japan's physical (natural) environment which presents multiple hazards of both natural and human origin, the course also explores how cultural and man-made attributes impact upon attitudes and behaviour towards the environment, and a civil society's participation in environmental movements (at both global and national level). The course uses various visual materials including Myazaki Hayao's animation and the Japanese films."
+                    },
+                    {
+                        "과목 코드": "AAS3008",
+                        "교과목명": "Understanding South Asia (남아시아의 정치와 사회)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course aims to provide an in-depth understanding of political and social issues in South Asia with diverse theoretical perspectives in the field of Asian studies. It also discusses transnational and international dynamics across numerous countries within the region."
+                    },
+                    {
+                        "과목 코드": "AAS3009",
+                        "교과목명": "Migration in Asia (아시아의 이주현상)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "The course explores key debates and issues concerning migration in Asia. It focuses on the phenomena of both international and intraregional migration in the contemporary Asia."
+                    },
+                    {
+                        "과목 코드": "AAS3010",
+                        "교과목명": "Chinese Art and Culture (중국의 미술과 문화)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course explores the historical development of Chinese art and how the political, ideological, and religious contexts prompted the transformation of the arts. Furthermore, it examines the ways in which Chinese art communicated and interacted with other regions of Asia through its art. This provides a foundation for understanding China's cultural influence in Asia and how China has historically accommodated other regional cultures."
+                    },
+                    {
+                        "과목 코드": "AAS3011",
+                        "교과목명": "Overseas Chinese and the Dynamic of World history (화인의 이주와 세계사의 변동)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "Explore the dynamics of the World history from a different point of view through the historical experience of the world's largest immigrant group, the overseas Chinese who have taken root in various parts of the world."
+                    },
+                    {
+                        "과목 코드": "AAS3012",
+                        "교과목명": "Comparative History of China and Southeast Asia (중국-동남아시아 비교관계사)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "Compares China, the oldest civilization in the world, with Southeast Asia, one of the youngest civilizations, and aims to examine the relationship between the two regions since ancient times."
+                    },
+                    {
+                        "과목 코드": "AAS3013",
+                        "교과목명": "Material Culture and Exchange of the East and the West (물질문화와 동서교류)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course aims to provide an overview of the cultural exchange between the East and the West through material culture. It would be helpful for students to understand when and how Asia met the West."
+                    },
+                    {
+                        "과목 코드": "AAS3014",
+                        "교과목명": "Empire and Asia (제국과 아시아)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course investigates empire as the most important variable in the formation of modern Asian regional order. Students will gain a better understanding of Asia today as an interaction between the various empires introduced in this course and the responses and changes in each region of Asia."
+                    },
+                    {
+                        "과목 코드": "AAS3015",
+                        "교과목명": "Art and Culture in Japan (일본의 미술과 문화)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course covers a long period of Japanese art and culture from ancient to modern times. Students can be introduced to the international influence and uniqueness of Japanese art."
+                    },
+                    {
+                        "과목 코드": "AAS3016",
+                        "교과목명": "Minorities in Asia (아시아와 마이노리티)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "Asia - one of the most ethnically-diverse regions in the world- is the site of large indigenous minority populations as well as non-indigenous minorities through rapidly expanding regular and irregular migrant flows. This course explores key debates and issues of such minority groups in Asia."
+                    },
+                    {
+                        "과목 코드": "AAS3017",
+                        "교과목명": "Development Cooperation in Asia Ⅱ (국제개발협력과 아시아 Ⅱ)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This is the second of two-part course that surveys the key issues and processes of development cooperation in Asia. Building upon Development cooperation in Asia I, the course further explores development cooperation in Asia by focusing on both historical backdrops and political economic dynamics of ‘the rise of emerging economies in Asia in more recent years and their impacts in the region (and beyond)."
+                    },
+                    {
+                        "과목 코드": "AAS3018",
+                        "교과목명": "Introduction to Anthropology of Asia (아시아 인류학 개론)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "The course provides an introduction to the anthropological study of Asia. Through ethnographic case studies, students will explore the everyday lives, practices, and beliefs of various Asian communities. By the end of the course, students will have acquired a foundational understanding of the anthropological methods used to study Asia and the region's rich cultural complexities."
+                    },
+                    {
+                        "과목 코드": "AAS3019",
+                        "교과목명": "Exploring Asia in Korea (한국 속의 아시아 현장)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course offers opportunities of field-based research to explore diverse Asian communities and their cultural contributions in Korea. The course includes visits to cultural sites, communities and institutions, with the objective of observing the manner in which different Asian cultures are represented and integrated into Korean society. Upon completion of the course, students will have developed a more nuanced comprehension of the multifaceted, multicultural landscape of Korea and its longstanding interconnections with the broader Asian context."
+                    },
+                    {
+                        "과목 코드": "AAS3020",
+                        "교과목명": "Art History of Asia (아시아 미술사)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course explores the distinctive civilizations in various Asian countries, focusing on the art of each region, and also examines the nature of each region's cultural heritage. It examines how each region's unique history and culture are expressed through visual culture to understand how unique aesthetics have been expressed across regions and races, and how they have been exchanged and transformed."
+                    },
+                    {
+                        "과목 코드": "TIR3002",
+                        "교과목명": "International Politics of the Korea Peninsula(한반도국제관계)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "International politics surrounding the Korean peninsula is exceptionally dynamic and complex. Students will investigate the intense international contests that have taken place on, around, and for the Korean peninsula since the nineteenth century."
+                    },
+                    {
+                        "과목 코드": "TIR3008",
+                        "교과목명": "South-North Korean Relations (남북한관계)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "In this course, students will examine inter-Korean relations from the latter half of the 20th century to the present. Focusing mainly on the aftermaths of war and division, this course offers knowledge about key issues in international affairs focused on modern Korea."
+                    },
+                    {
+                        "과목 코드": "AAS4001",
+                        "교과목명": "Issues and Perspectives in Contemporary Asia (현대 아시아 국제이슈 특강)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course is designed to examine the key transnational and international political and social issues of our time. It aims for training students to critically observe and engage these issues from both dominant and alternative perspectives."
+                    },
+                    {
+                        "과목 코드": "AAS4002",
+                        "교과목명": "Gender in Asia (아시아와 젠더)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "The course discusses various gender issues in Asia. It examines key debates and issues of gender in Asia in the context of labour, migrations, and mobilities."
+                    },
+                    {
+                        "과목 코드": "AAS4003",
+                        "교과목명": "Asian Studies in Comparison (비교아시아학)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "As an advanced course for Asian Studies majors, it provides students opportunity to get a first-hand experience at the Asian scene through students-driven experiments connecting various Asian regions and topics."
+                    },
+                    {
+                        "과목 코드": "AAS4004",
+                        "교과목명": "Special Lecture on Asian Studies (아시아 인류학 특강)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This special lecture module provides in-depth study of the anthropology of Asia."
+                    },
+                    {
+                        "과목 코드": "AAS4005",
+                        "교과목명": "Special Lecture on Asian Culture (아시아 문화 특강)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This special lecture module provides in-depth study of the culture of Asia."
+                    },
+                    {
+                        "과목 코드": "AAS4006",
+                        "교과목명": "Special Lecture on Asian History (아시아 역사 특강)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This special lecture-based module provides an in-depth study of the history of Asia."
+                    },
+                    {
+                        "과목 코드": "AAS4007",
+                        "교과목명": "Special Lecture on Asian Politics (아시아 정치 특강)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This special lecture-based module provides an in-depth study of the politics in and of Asia."
+                    },
+                    {
+                        "과목 코드": "AAS4008",
+                        "교과목명": "Special Lecture on Asia's Development Issues (아시아 개발 특강)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This special lecture-based module provides an in-depth study of development issues in and from Asia."
+                    },
+                    {
+                        "과목 코드": "AAS4009",
+                        "교과목명": "Special Lecture on Development Cooperation in Asia (아시아 개발협력 특강)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This special lecture-based module provides an in-depth study of development cooperation in and from Asia."
+                    },
+                    {
+                        "과목 코드": "AAS4010",
+                        "교과목명": "Special Lecture on Geography of Asia (아시아 지리 특강)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This special lecture-based module provides an in-depth study of the human geography of Asia."
+                    },
+                    {
+                        "과목 코드": "AAS4011",
+                        "교과목명": "Methods in Asian Studies in Theory (아시아학 방법론 심화)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course introduces theoretical frameworks and research methodologies used in Asian Studies. Students will critically engage with various methodological approaches to better understand the diverse ways of Asia Studies. By the end of the course, students will be able to apply these theoretical methods to analyze complex issues in Asian Studies."
+                    },
+                    {
+                        "과목 코드": "AAS4012",
+                        "교과목명": "Research Practice in Asian Studies (아시아학 연습 Ⅰ)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "The objective of this course is to equip students with the skills to conduct independent research on a range of topics related to art and cultural heritage history of Asia. This will be achieved by introducing them to the various methodologies available, including both qualitative and quantitative approaches. Upon completion of the course, students will have acquired the capacity to devise research projects that will contribute to the advancement of knowledge in the field of Asian Studies."
+                    },
+                    {
+                        "과목 코드": "AAS4013",
+                        "교과목명": "Research Practice in Asian Studies Ⅱ (아시아학 연습 Ⅱ)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "The objective of this course is to equip students with the skills to conduct independent research on a range of topics related to the Asian history. This will be achieved by introducing them to the various methodologies available, including both qualitative and quantitative approaches. Upon completion of the course, students will have acquired the capacity to devise research projects that will contribute to the advancement of knowledge in the field of Asian Studies."
+                    },
+                    {
+                        "과목 코드": "AAS4014",
+                        "교과목명": "Research Practice in Asian Studies Ⅲ (아시아학 연습 Ⅲ)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "The objective of this course is to equip students with the skills to conduct independent research on a range of topics related to development and environmental issues in Asia. This will be achieved by introducing them to the various methodologies available, including both qualitative and quantitative approaches. Upon completion of the course, students will have acquired the capacity to devise research projects that will contribute to the advancement of knowledge in the field of Asian Studies."
+                    },
+                    {
+                        "과목 코드": "AAS4015",
+                        "교과목명": "Research Practice in Asian Studies Ⅳ (아시아학 연습 Ⅳ)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "The objective of this course is to equip students with the skills to conduct independent research on a range of topics related to diplomacy and international relations in and around Asia. This will be achieved by introducing them to the various methodologies available, including both qualitative and quantitative approaches. Upon completion of the course, students will have acquired the capacity to devise research projects that will contribute to the advancement of knowledge in the field of Asian Studies."
+                    },
+                    {
+                        "과목 코드": "AAS4016",
+                        "교과목명": "Understanding Contemporary China (현대 중국사회의 이해)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "The objective of this course is to provide an introduction to the diverse social and cultural aspects of contemporary China. In addition, it seeks to examine the national and transnational dynamics of Chinese lives in and around the Asian region."
+                    },
+                    {
+                        "과목 코드": "AAS4017",
+                        "교과목명": "Popular Culture of China (중국 대중문화 개론)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course explores the evolution and impact of Chinese popular culture, including music, film, television series, and social media. The course will enable students to analyse the manner in which contemporary cultural trends reflect social changes, political influences and globalisation within China. Upon completion of the course, students will have acquired a more nuanced understanding of the role Chinese pop culture plays in shaping national identity and its influence on global culture."
+                    },
+                    {
+                        "과목 코드": "TIR4007",
+                        "교과목명": "International Relations of the Middle East (중동국제관계)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course is designed to introduce students to the international relations of the Middle East. In this course, students investigate major political events that took place in the Middle East during the colonial, Cold War, and post-Cold War periods."
+                    },
+                    {
+                        "과목 코드": "TIC4017",
+                        "교과목명": "Northeast Asian Economy (동북아경제론)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course explores the pivotal economic dynamics of Northeast Asia, a region with the world's second and third-largest economies undergoing major transformations. Through understanding the history and current developments in this area, this course delves into the economies of China, Korea, Japan, and other countries in the region."
+                    },
+                    {
+                        "과목 코드": "TIC4018",
+                        "교과목명": "Southeast Asian Economy (동남아경제론)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course offers an in-depth understanding of Southeast Asian (ASEAN) economies in the evolving global business landscape. It explores their integration into the global market, emphasizing their strategic position in the supply chain. Focusing on key economies such as Singapore, Indonesia, Malaysia, Thailand, the Philippines, and Vietnam, the course examines business strategies in response to changing economic dynamics. Additionally, it contextualizes Southeast Asia's growth within the broader regions of East Asia and South Asia."
+                    },
+                    {
+                        "과목 코드": "TIC4021",
+                        "교과목명": "Economy in the MENA (중동경제론)",
+                        "Lecture": "3hr.",
+                        "Credits": "3cr.",
+                        "설명": "This course offers a profound exploration of the economic landscape in the Middle East and North Africa (MENA) region, providing students with a comprehensive understanding of its historical evolution, economic structures, and contemporary dynamics. With an emphasis on energy economic topics on the largest oil and gas exporters, students will delve into the region's pivotal role in global energy markets and the ongoing efforts for economic diversification."
+                    }
+                ]
+            }
+        }
+    }
+}

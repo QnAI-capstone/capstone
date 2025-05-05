@@ -1,0 +1,214 @@
+{
+    "2025 서강대학교 요람": {
+        "지식융합미디어대학": {
+            "목표": "인문학, 예술/디자인, 사회과학, 테크놀로지 지식의 통섭적 탐구와 미디어의 응용을 기반으로 창의력, 비판적 사고력, 협업능력, 테크놀로지 활용능력, 글로벌 혁신능력을 갖추고 정보, 지식, 상상력 기반의 지식기반 사회를 선도할 최정예 인재를 양성한다.",
+            "학부 필수 및 학부 선택 과목 안내": {
+                "학부필수": {
+                    "필수": {
+                        "과목코드": "MAS1001",
+                        "과목명": "지식융합미디어입문 - 팀티칭",
+                        "학점": 1,
+                        "비고": "한국어 강의"
+                    },
+                    "선택": {
+                        "과목코드/과목명": [
+                            {
+                                "과목코드": "MAS1002",
+                                "과목명": "Creativity & Visual Expression"
+                            },
+                            {
+                                "과목코드": "MAS1003",
+                                "과목명": "The Art of Storytelling"
+                            },
+                            {
+                                "과목코드": "MAS1004",
+                                "과목명": "Data & AI",
+                                "선수과목" : "COR1010 기초인공지능프로그래밍"
+                            },
+                            {
+                                "과목코드": "GKS1001",
+                                "과목명": "Critical Thinking for Social Inquiry"
+                            }
+                        ],
+                        "학점": 9,
+                        "비고": "이 중에서 3과목 이상 이수 (영어 강의) (아트&테크놀로지학과는 MAS1004 과목 이수 필수)"
+                    }
+                },
+                "학부선택": {
+                    "과목코드/과목명": [
+                        {
+                            "과목코드": "MAS2001",
+                            "과목명": "융합 미디어 통론"
+                        },
+                        {
+                            "과목코드": "MAS2002",
+                            "과목명": "전략 커뮤니케이션"
+                        },
+                        {
+                            "과목코드": "MAS2003",
+                            "과목명": "한류"
+                        },
+                        {
+                            "과목코드": "MAS2004",
+                            "과목명": "인간 소통과 미디어",
+                            "비고": "구 COM2002"
+                        },
+                        {
+                            "과목코드": "MAS2005",
+                            "과목명": "영상제작입문"
+                        },
+                        {
+                            "과목코드": "MAS2006",
+                            "과목명": "공연예술의이해"
+                        },
+                        {
+                            "과목코드": "MAS2007",
+                            "과목명": "Media Technologies and Arts"
+                        },
+                        {
+                            "과목코드": "MAS2008",
+                            "과목명": "Fundamentals of Programming and Problem Solving"
+                        },
+                        {
+                            "과목코드": "MAS2010",
+                            "과목명": "Fundamentals of Computer Science for Korean Studies",
+                            "비고": "구 KOS2206"
+                        },
+                        {
+                            "과목코드": "MAS2011",
+                            "과목명": "Introduction to Visual Media Programming"
+                        },
+                        {
+                            "과목코드": "MAS2012",
+                            "과목명": "Computing Korean Culture",
+                            "비고": "구 KOS3036"
+                        },
+                        {
+                            "과목코드": "MAS2013",
+                            "과목명": "Data Structures"
+                        }
+                    ],
+                    "학점": 9,
+                    "비고": "이 중에서 3과목 이상 이수 (아트&테크놀로지 학과는 MAS2008 과목 이수 필수)"
+                },
+                "비고": [
+                    "학부필수 과목은 본 대학 학생만 수강할 수 있고 전공학점으로 인정되지 않으며, 학부선택 과목은 전공선택 학점으로 인정함.",
+                    "지식융합대학 및 커뮤니케이션대학 재학생이 학부선택 과목을 이수하였을 경우 전공선택 학점으로 인정함.",
+                    "지식융합미디어대학 내 학과를 다전공으로 이수하는 타단과대학 학생은 학부선택 과목 중 9학점 이상을 반드시 이수해야 함.",
+                    "지식융합미디어대학 재학생 중 지식융합미디어대학 내 학과를 다전공으로 이수하는 학생은 학부선택 과목을 추가로 9학점 이상 이수해야 함.",
+                    "지식융합미디어대학 본인 소속 전공 학과장의 승인을 거쳐 학부선택 9학점 중 최대 3학점에 대하여 지식융합미디어대학 내 학과의 전공선택과목(본인전공 아니어도됨)으로 대체 할 수 있음.(단, 지식융합미디어대학 학생이 대학 내 학과를 다전공으로 추가 이수하는 경우에는 각 전공 학과장에게 각 전공 이수에 필요한 학부선택 당 3학점씩 대체 가능)"
+                ]
+            },
+            "지식융합미디어대학 교육과정": {
+                "학부 필수 과목": [
+                    {
+                        "과목 코드": "MAS1001",
+                        "교과목명": "지식융합미디어입문 (팀티칭)",
+                        "학점": "1학점",
+                        "내용": "신입생이 입학한 첫 학기에 개설되며 학장의 주관 하에 본 지식융합미디어학부의 모든 전임교수님들이 2인 1조로 짝이 되어 매주 수업시간에 학생들과 만난다. 해당 교수님들이 각자 학생들에게 도움을 줄 수 있는 전문 영역에 관해 간단한 토크를 진행하고, 질의응답을 통해 각 학생들이 추후 어느 교수님과 더 깊은 진로상담을 원하는지 정하여 2학년 이후 학생들이 나아가게 될 융합전공의 방향을 결정하는 데 도움을 준다."
+                    },
+                    {
+                        "과목 코드": "MAS1002",
+                        "교과목명": "Creativity & Visual Expression",
+                        "학점": "3학점",
+                        "내용": "‘세상에 없던 사항을 생각하는 원리’ ‘전혀 새로운 사항을 제시하는 화법’ ‘새로운 조합(Combination)에 의해 New를 제작하는 테크닉’ 등에 대하여 논의할 예정이다. 물론 독창적인 사고의 수행을 통하여 다양한 분야에서 탁월한 성과를 이루어낸 국내외 사례들 또한 장르를 불문하고 중요한 교재로 활용된다. 크리에이티브적 사고가 특히 필수적으로 요구되는 미디어 산업, 그 중에서도 광고를 비롯한 Strategic Communication의 영역에서의 실제 예들을 통해 심층 토론을 수차례 진행할 것이며, 매년 프랑스 칸느에서 개최되어 전 세계인의 Creative Thinking의 수준을 가늠하는 본 분야 세계적 경쟁 무대인 ‘칸느 크리에이티브 페스티발’의 부문별 수상작들을 검토하는 시간도 가질 것이다. 이와 더불어 사람들의 시선을 사로잡기 위해 필요한 조형의 원리를 여러 예술 작품과 디자인 작품을 보며 그 시각적 원리를 학습하고 디지털 카메라 등을 사용해 자신의 화면의 구성과 시각적 표현 방식도 다양하게 탐색한다."
+                    },
+                    {
+                        "과목 코드": "MAS1003",
+                        "교과목명": "The Art of Storytelling",
+                        "학점": "3학점",
+                        "내용": "본 과목은 콘텐츠 창작의 기본이 되는 스토리 아트와 스토리텔링 크래프트를 집중적으로 다룬다. 스토리 개발, 다양한 목적 및 매체에 따른 스토리텔링 전략과 방법 탐색, 창의적인 적용과 응용의 과정을 실습한다."
+                    },
+                    {
+                        "과목 코드": "MAS1004",
+                        "교과목명": "Data & AI",
+                        "학점": "3학점",
+                        "선수과목": "COR1010 기초인공지능프로그래밍",
+                        "내용": "인공지능은 반복되는 일을 자동화하고, 어려운 인간의 일을 돕는 등 인간 사회를 풍요롭게 하기 위함에서 비롯되었다. 과거에 인공 지능은 인간의 지식과 생각하는 방식에 대한 규칙을 컴퓨터 언어로 기술하는 방식이었다. 보다 최근, 컴퓨팅 파워의 성장과 인간 삶에 관한 데이터 축적이 급속도로 이루어짐에 따라 인공 지능을 이루는 기술은 데이터로부터 지식과 규칙을 학습하는 방식으로 진행되고 있고 이를 위한 기계 학습의 방식이 다양해졌다. 그 활용도에 있어서도 단순히 인간의 일을 돕는 수준에서 나아가 스토리텔링, 엔터테인먼트 등의 문화 분야와 음악, 미술 등의 예술 분야로까지 넓혀지고 있다. 이러한 시대적 요구에 맞추어 데이터로부터 지식과 규칙을 학습하여 활용하기 위한 기초를 가르친다. 특히 최근, 기계학습 방법의 하나인 신경망 기법에 혁명적인 개선을 이루어졌고 딥러닝이라는 이름으로 불리며 실생활에까지 응용 가능한 방식으로 자리 잡고 있다. 이에 본 수업에서는 데이터로부터 그 특징을 학습하는 신경망 기초 이론을 배우고 딥러닝 소프트웨어를 이용하여 실제 문제를 해결하는 방법을 배운다."
+                    },
+                    {
+                        "과목 코드": "GKS1001",
+                        "교과목명": "Critical Thinking for Social Inquiry",
+                        "학점": "3학점",
+                        "내용": "Students will learn diverse perspectives and methods to understand human societies and seek solutions for social problems arising from societies. This course will offer students an opportunity to apprehend social phenomena not as an immediate manifestation of the natural characteristics of individual things and institutions but as historical constructs and social relations. In each week, students will be encouraged to cast ontological, epistemological and methodological questions to social affairs they encounter in daily life and scrutinise them through quantitative and qualitative research methods. In so doing, students will have a chance to imagine best possible socio-historical solutions to such social problems."
+                    }
+                ],
+                "학부 선택 과목": [
+                    {
+                        "과목 코드": "MAS2001",
+                        "교과목명": "융합 미디어 통론",
+                        "학점": "3학점",
+                        "내용": "다양해져 가는 미디어의 모습에서 찾을 수 있는 공통성과 각 미디어가 갖는 특수성을 찾는 동시에 미디어간 연결성을 탐구한다. 시간과 공간에 따라 특수성이나 연결성의 경향이 달라짐에 주목하며 사회와 미디어 간 관계에 대한 논의도 편다. 미디어성, 미디어 간 연결성 그리고 미디어 사회성에 대한 탐구를 행하는 과목이다."
+                    },
+                    {
+                        "과목 코드": "MAS2002",
+                        "교과목명": "전략 커뮤니케이션",
+                        "학점": "3학점",
+                        "내용": "전략 커뮤니케이션은 다양한 커뮤니케이션학을 토대로 발전한 최신 학문이다. 2010년 이전에는 PR(공중관계), 마케팅 커뮤니케이션, 헬스커뮤니케이션 등을 아우르면서 명명되었다. 그러다 최근에는 대내외 커뮤니케이션이 통합적으로 운용되면서, 비즈니스 분야들(인사, 마케팅, 재무, 연구, 생산, 신뢰 등)도 전략 커뮤니케이션을 채택하기 시작하였다. 이제 전략 커뮤니케이션은 저널리즘, 인간 커뮤니케이션, 매스 커뮤니케이션, 조직 커뮤니케이션, 국제 커뮤니케이션 등 전통적 커뮤니케이션학을 융합하며 글로벌 조직의 필수불가결한 경영 핵심이 된 것이다. 따라서 본 수업에서는 먼저 전략 커뮤니케이션이 지능(Intelligence), 지혜, AI 등과 어떠한 개념적 차이가 있는지 살펴본 후에, 4차 산업혁명기술(AI 등) 발전에 어떠한 영향을 미치는 지 토론하고자 한다. 다음으로 정부, 기업, 병원, 미디어 등 조직에서 펼치는 새로운 전략 커뮤니케이션 트렌드를 연구한다. 정치, 과학, 헬스, 공공외교(Public Diplomacy), 공공 이슈 및 안전 관리, 국방, 스포츠, 엔터테인먼트 등에서 이뤄지고 있는 사례들을 분석하고, 전략 커뮤니케이션 분야 월드클래스 전문가가 되기 위한 통찰적 능력을 제시하고자 한다."
+                    },
+                    {
+                        "과목 코드": "MAS2003",
+                        "교과목명": "한류",
+                        "학점": "3학점",
+                        "내용": "신자유주의 시대 이후 대중문화의 교류가 더 활발해지고 있다. 이를 두고 문화침범이거나 문화 헤게모니라고 부르는 이도 있고 문화교류라고 중립적으로 말하기도 한다. 한국의 대중문화가 아시아 권역에서 혹은 그를 넘어 세계적인 인기를 누리는 현상은 과연 어떤 이름으로 부를수 있을까. 한류의 시작과 팬덤 그리고 초국가적 현상을 논의한다."
+                    },
+                    {
+                        "과목 코드": "MAS2004(구 COM2002)",
+                        "교과목명": "인간 소통과 미디어",
+                        "학점": "3학점",
+                        "내용": "사람과 사람 사이의 의미 공유 과정에서 작용하는 사회심리학적 원리들과 그 응용 방식을 미디어 발전의 맥락 안에서 다룬다. 미디어를 경유한 커뮤니케이션과 면대면 커뮤니케이션을 모두 포함한다. 개개인 바로 옆에 붙어 작동하며 온 세상을 연결하고 있는 미디어가 사람과 사람 사이의 의미 공유를 넘어 사람과 사물 사이의 연결까지 가능하게 해 주고 있는 현 상황에서, 미디어를 통해 소통 공간이 확장되는 측면을 중점적으로 살펴본다. 이 과목을 통해 학생들은 인간을 향한 따뜻한 시선에서 출발하여 다양한 융합 학문의 토대를 다질 수 있을 것이다."
+                    },
+                    {
+                        "과목코드": "MAS2005",
+                        "교과목명": "영상제작입문",
+                        "학점": "3학점",
+                        "내용": "상급 제작 수업을 수강하기 전에 필요한 제작 워크숍으로서, 신입생을 위한 과목이다. 매체의 종류에 관계없이 의미 있는 아이디어를 영상과 음향의 복합콘텐츠로 제작 가능하게 하는 프로덕션 테크닉의 기본적인 요소들을 중점적으로 배운다."
+                    },
+                    {
+                        "과목코드": "MAS2006",
+                        "교과목명": "공연예술의이해",
+                        "학점": "3학점",
+                        "내용": "연극, 무용, 음악극 등 다양한 공연형식의 특성들을 고찰한다. 미학적, 사회적, 철학적 맥락에서 공연예술의 의미를 파악하는 한편 공연제작실습을 통해 공연예술에 대한 실천적 이해를 함께 추구한다."
+                    },
+                    {
+                        "과목코드": "MAS2007",
+                        "교과목명": "Media Technologies and Arts",
+                        "학점": "3학점",
+                        "내용": "This course aims to provide historical context for media arts by examining the interaction between the arts, media technologies, and sciences in different periods. It offers lectures about art and visual culture including photography, film, sound and radio work, experimental music, new media art, and mixed media work. Students explore how artists have used the potentials of various media forms and examine emerging scientific and technological researches, and their relevant experimentations in arts."
+                    },
+                    {
+                        "과목코드": "MAS2008",
+                        "교과목명": "Fundamentals of Programming and Problem Solving",
+                        "학점": "3학점",
+                        "내용": "This course introduces the development of programming and problem-solving skills, focusing on the C++ programming language and object-oriented programming. Topics include C++ syntax and semantics, basic data structures, principles of design, and basic software engineering skills. The course emphasizes object-oriented programming in the development of algorithm solutions to common problems and media design problems.",
+                        "비고": "Prerequisites: ANT2010"
+                    },
+                    {
+                        "과목코드": "MAS2010",
+                        "교과목명": "Fundamentals of Computer Science for Korean Studies",
+                        "학점": "3학점",
+                        "내용": "A great deal of what we know about Korea has been calculated using a wide variety of computational systems and devices. In this course, students will be taught the fundamentals of computer science so that they are equipped to understand how Korea is represented and assessed by computational systems. Students will learn the fundamentals of computer science as they pertain to the study of Korea. The course will also survey the history of computation and computational systems in Korea, how computational systems are currently used to study Korea, and how they might be used to study Korea in the future."
+                    },
+                    {
+                        "과목코드": "MAS2011",
+                        "교과목명": "Introduction to Visual Media Programming",
+                        "학점": "3학점",
+                        "내용": "The course introduces the components of computer programming for developing visual graphics applications for Korean studies research. Beginning with basic principles, the course moves on to explain advanced techniques in visual media program with the goal of enabling student to generate creative visual displays that can represent key ideas and vexing problems in the study of Korea. The course relies on open-source environments only and provides step-by-step guidance for creating visual media without using commercial software tools."
+                    },
+                    {
+                        "과목코드": "MAS2012",
+                        "교과목명": "Computing Korean Culture",
+                        "학점": "3학점",
+                        "내용": "This course enables students to investigate Korea's long cultural history using the latest tools in humanities computing. The course begins with an investigation of the book, that central technology of culture and knowledge production. The course then contemplates editorial practice, modeling, and design as they relate to data curation, visualization, and newer forms of knowledge. Students are introduced to GIS (Geographic Information Systems) and social network analysis (SNA), as well as learn how to use GIS and SNA tools. Key terms (information, code, data, digital object, materiality, post-humanism) will be examined in the context of Korean studies along with newer theoretical approaches(distant reading, algorithmic criticism) and areas of study (critical code studies, software studies). While researching a subject of her or his own choosing—anything from Korean Buddhism to punk rock in contemporary Seoul—students will develop websites and cultural atlases, as well as learn the basics of coding for the web. By the end of the course, students will be able to compose an academic argument using new media. Along with a working knowledge of html, css, javascript and various data analysis and visualization tools, students will take away a deep understanding of Korea's cultural legacy and the ways that digital technologies can illuminate it."
+                    },
+                    {
+                        "과목코드": "MAS2013",
+                        "교과목명": "Data Structures",
+                        "학점": "3학점",
+                        "내용": "Understanding and designing data structures is one of the foundations of computer science with programming languages. In this course, students will learn the fundamental principles and techniques of organizing data for writing effective code."
+                    }
+                ]
+            }
+        }
+    }
+}
