@@ -1,0 +1,805 @@
+{
+  "2025 서강대학교 요람": {
+    "Global Korean Studies": {
+      "Mission": "The Department of Global Korean Studies (GKS) nurtures engaged, creative, global citizens and leaders of twenty-first century knowledge development through an integrated study of Korea from a global perspective. GKS students study various aspects of the global construction of modern and contemporary Korea in order to understand Korea constructed by the world, Korea constructing the world, and Korea understood by the world. In so doing, students gain not only an extensive knowledge of Korea but also learn how knowledge about Korea is produced, both in Korea and around the world. As future leaders in academia, creative industries, information technology, publishing, global journalism, government and non-governmental organizations, and entrepreneurship, GKS graduates bring knowledge of Korea to the world and a knowledge of the world to Korea.",
+      "Bachelor of Arts in Global Korean Studies": "The Bachelor of Arts in Global Korean Studies Program provides an elite liberal arts education to the next generation of global leaders. Korea as an object of study presents students with the opportunity to understand the diverse ways that Korea is known on the peninsula and around the world, situating GKS students at a hub of international discourse. Studying at this global intersection, GKS students develop uniquely broad international perspectives, as well as exceptional analytical and communication skills. A deep knowledge of Korea and the practical skills of knowledge development documentation and curation, quantitative and qualitative analysis, argument and creative expression as they are practiced with millennia-old and next-generation technological equipments and positions students in GKS as global leaders of twenty-first century knowledge creation. Courses in the Department of Global Korean Studies are taught in English. However, Korean language skills are required in order to participate successfully. Students, therefore, are expected to have native or near-native fluency in English and a working knowledge of both languages before entering the B.A. Program in Global Korean Studies."
+    },
+    "Course Requirements": [
+      {
+        "Credit Requirements": {
+          "지식융합미디어 글로벌한국학전공": {
+            "Single major": {
+              "Liberal Arts_교양": {
+                "Core Required": 11,
+                "Core Required Electives": {
+                  "①": 3,
+                  "②": 3,
+                  "③": 3,
+                  "④": 3
+                },
+                "Total cradits": 23
+              },
+              "학부필수": 10,
+              "Major": {
+                "학부선택": 9,
+                "Required": 15,
+                "Elective": 18,
+                "Total credits": 42
+              },
+              "Total Credits Required for Degree": 130
+            },
+            "Multiple major": {
+              "Liberal Arts_교양": {
+                "Core Required": 11,
+                "Core Required Electives": {
+                  "①": 3,
+                  "②": 3,
+                  "③": 3,
+                  "④": 3
+                },
+                "Total cradits": 23
+              },
+              "학부필수": 10,
+              "Major": {
+                "학부선택": 9,
+                "Required": 9,
+                "Elective": 18,
+                "Total credits": 36
+              },
+              "Total Credits Required for Degree": 130
+            }
+          },
+          "로욜라국제대학 글로벌한국학전공": {
+            "영어트랙_국내학생": {
+              "Single major": {
+                "Liberal Arts_교양": {
+                  "Core Required": 11,
+                  "Core Required Electives": {
+                    "①": 3,
+                    "②": 3,
+                    "③": 3,
+                    "④": 3
+                  },
+                  "Total cradits": 23
+                },
+                "Pre-Major Course": 6,
+                "Major": {
+                  "Required": 3,
+                  "Elective": 39,
+                  "Total credits": 42
+                },
+                "Total Credits Required for Degree": 130
+              },
+              "Multiple major": {
+                "Liberal Arts_교양": {
+                  "Core Required": 11,
+                  "Core Required Electives": {
+                    "①": 3,
+                    "②": 3,
+                    "③": 3,
+                    "④": 3
+                  },
+                  "Total cradits": 23
+                },
+                "Pre-Major Course": 6,
+                "Major": {
+                  "Required": 3,
+                  "Elective": 33,
+                  "Total credits": 36
+                },
+                "Total Credits Required for Degree": 130
+              },
+              "비고": [
+                "*전공입문교과는 전공이수학점에 포함되지 않음.",
+                "*Pre-Major Courses are not counted as Major credits"
+              ]
+            },
+            "영어트랙_국제학생": {
+              "Single major": {
+                "Liberal Arts_교양": {
+                  "Core Required": 16,
+                  "Core Required Electives": {
+                    "①, ②, ③, ④": 6
+                  },
+                  "Total cradits": 22
+                },
+                "Pre-Major Course": 6,
+                "Major": {
+                  "Required": 3,
+                  "Elective": 39,
+                  "Total credits": 42
+                },
+                "Total Credits Required for Degree": 130
+              },
+              "Multiple major": {
+                "Liberal Arts_교양": {
+                  "Core Required": 16,
+                  "Core Required Electives": {
+                    "①, ②, ③, ④": 6
+                  },
+                  "Total cradits": 22
+                },
+                "Pre-Major Course": 6,
+                "Major": {
+                  "Required": 3,
+                  "Elective": 33,
+                  "Total credits": 36
+                },
+                "Total Credits Required for Degree": 130
+              }
+            }
+          }
+        }
+      },
+      {
+        "교과목 이수요건": {
+          "Pre-Major Courses": [
+            {
+              "Course Code": "GKS1001",
+              "Title": "Critical Thinking for Social Inquiry",
+              "Credits": 3
+            },
+            {
+              "Course Code": "GKS1002",
+              "Title": "Global Citizenship",
+              "Credits": 3
+            }
+          ],
+          "GKS Required Courses": [
+            {
+              "Course Code": "GKS2001",
+              "Former Code": "KOS2007",
+              "Title": "Introductory Seminar in Korean Studies",
+              "Credits": 3
+            }
+          ],
+          "GKS Electives": {
+            "Course Code/Title": [
+              {
+                "Course Code": "GKS2002",
+                "Title": "Korean Studies and Data Science"
+              },
+              {
+                "Course Code": "GKS2003",
+                "Title": "Understanding Korean History in the Context of Time/Space"
+              },
+              {
+                "Course Code": "GKS2004",
+                "Title": "Capstone 1: Korean Studies in Practice"
+              },
+              {
+                "Course Code": "GKS3001",
+                "Title": "Global Diffusion of the K-wave"
+              },
+              {
+                "Course Code": "GKS3002",
+                "Title": "Toward Creation: Introduction to Korea Through Literature and Film"
+              },
+              {
+                "Course Code": "GKS3004",
+                "Title": "Formation of Modern Korea"
+              },
+              {
+                "Course Code": "GKS3005",
+                "Title": "Globalisation and Korean Development"
+              },
+              {
+                "Course Code": "GKS3006",
+                "Title": "Tigers and Dragons: East Asian Development Revisited"
+              },
+              {
+                "Course Code": "GKS3007",
+                "Title": "Topics in Korea Today"
+              },
+              {
+                "Course Code": "GKS3008",
+                "Title": "Statistical Thinking for Global Korean Studies"
+              },
+              {
+                "Course Code": "GKS3009",
+                "Title": "Korean Society and Media: Continuity of Political Topics"
+              },
+              {
+                "Course Code": "GKS3010",
+                "Title": "Development of Web Contents for Korean Studies"
+              },
+              {
+                "Course Code": "GKS3011",
+                "Title": "Korean Studies Seminar Ⅰ : Everyday Life of North and South"
+              },
+              {
+                "Course Code": "GKS3012",
+                "Title": "Image Pedagogy for Korean Studies"
+              },
+              {
+                "Course Code": "GKS3013",
+                "Title": "Korean Studies in Practice Ⅱ (Capstone)"
+              },
+              {
+                "Course Code": "GKS3014",
+                "Title": "Sociological Imagination for Global Korean Studies"
+              },
+              {
+                "Course Code": "GKS3016",
+                "Title": "세계 속의 한국인1"
+              },
+              {
+                "Course Code": "GKS3017",
+                "Title": "세계 속의 한국인2"
+              },
+              {
+                "Course Code": "GKS4001",
+                "Title": "Translated Korea: The Social History of Concepts in Korea"
+              },
+              {
+                "Course Code": "GKS4003",
+                "Title": "Modern Korean Fiction"
+              },
+              {
+                "Course Code": "GKS4004",
+                "Title": "Development: Korean Experience and Global Debates"
+              },
+              {
+                "Course Code": "GKS4005",
+                "Title": "Formation of Contemporary Korea"
+              },
+              {
+                "Course Code": "GKS4006",
+                "Title": "Korean Studies Seminar : Gender and Development"
+              },
+              {
+                "Course Code": "GKS4007",
+                "Title": "International Politics of the Korean Peninsula"
+              },
+              {
+                "Course Code": "GKS4008",
+                "Title": "Social Change and Movement in Contemporary Korea"
+              },
+              {
+                "Course Code": "GKS4009",
+                "Title": "Introduction to Exploratory Machine Learning"
+              },
+              {
+                "Course Code": "GKS4011",
+                "Title": "The Mediums of Korean Cultural Modernity"
+              },
+              {
+                "Course Code": "GKS4012",
+                "Title": "Seeing Korea: An Introduction to Image Generation, Processing & Computer Vision"
+              },
+              {
+                "Course Code": "GKS4015",
+                "Title": "Curatorial Studies for Korean Culture Exchange"
+              },
+              {
+                "Course Code": "GKS4016",
+                "Title": "Theory and Practice in Global Korean Studies Ⅰ (Capstone Design)"
+              },
+              {
+                "Course Code": "GKSG002",
+                "Title": "Digital Arts and Scholarly Craft in Korean Studies"
+              },
+              {
+                "Course Code": "GKSG003",
+                "Title": "Reading Theories of Korean Development"
+              },
+              {
+                "Course Code": "GKSG004",
+                "Title": "Research in Korean Studies: Labour and Development"
+              },
+              {
+                "Course Code": "GKSG005",
+                "Title": "Historical Social Science and Korean Studies"
+              },
+              {
+                "Course Code": "GKSG007",
+                "Title": "Big Data Analysis in Korean Studies"
+              },
+              {
+                "Course Code": "GKSG008",
+                "Title": "Programming for Applied Deep Learning"
+              },
+              {
+                "Course Code": "GKSG009",
+                "Title": "Korean Computational Linguistics"
+              },
+              {
+                "Course Code": "GKSG010",
+                "Title": "Filming Korea: Korean Historians Behind the Camera"
+              },
+              {
+                "Course Code": "GKSG011",
+                "Title": "Capstone 2: Advanced Academic Writing in Korean Studies"
+              },
+              {
+                "Course Code": "GKSG012",
+                "Title": "Introduction to Korean Sociolinguistics"
+              },
+              {
+                "Course Code": "GKS3024",
+                "Title": "Korean Language & Culture- Intermediate"
+              },
+              {
+                "Course Code": "GKS3025",
+                "Title": "Korean Language & History- Intermediate"
+              },
+              {
+                "Course Code": "GKS3026",
+                "Title": "Korean Language & Society- Intermediate"
+              },
+              {
+                "Course Code": "GKS3027",
+                "Title": "Korean Language & Culture-Beginner"
+              },
+              {
+                "Course Code": "GKS3028",
+                "Title": "Korean Language & History-Beginner"
+              },
+              {
+                "Course Code": "GKS3029",
+                "Title": "Korean Language & Society-Beginner"
+              },
+              {
+                "Course Code": "GKS3030",
+                "Title": "Korean Language & Culture-Advanced"
+              },
+              {
+                "Course Code": "GKS3031",
+                "Title": "Korean Language & History-Advanced"
+              },
+              {
+                "Course Code": "GKS9000",
+                "Title": "Elementary Korean 1"
+              },
+              {
+                "Course Code": "GKS9001",
+                "Title": "Elementary Korean 2"
+              },
+              {
+                "Course Code": "GKS9002",
+                "Title": "Intermediate Korean 1"
+              },
+              {
+                "Course Code": "GKS9003",
+                "Title": "Intermediate Korean 2"
+              },
+              {
+                "Course Code": "GKS9004",
+                "Title": "Advanced Korean Ⅰ"
+              },
+              {
+                "Course Code": "GKS9005",
+                "Title": "Advanced Korean Ⅱ"
+              }
+            ],
+            "Credits": 39,
+            "비고": "단일전공 39 다전공 33"
+          }
+        }
+      }
+    ],
+    "로욜라국제대학 교육과정": {
+        "Pre-Major Courses": [
+            {
+                "과목 코드": "GKS1001",
+                "교과목명": "Critical Thinking for Social Inquiry",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course is designed to introduce students studying social sciences for the first time to critical thinking, the logic and process of social science inquiry, and the method of empirical research. Students will learn about knowledge production that underpins our approach to any social science inquiry as well as how to ask and answer empirical research questions. The course will begin with introducing critical reading and thinking, the foundational elements of social science inquiry. The course then explores the processes of social science inquiry, including the construction of research questions, literature review, causal reasoning, the selection of methodology and methods, the techniques and tools of data gathering and analysis, and writing up your research conclusion. The course also introduces qualitative and quantitative studies. The course sequence will guide you to develop your research proposal step by step through the semester and present it at the end of the semester. This course will be devoted to helping you acquire pivotal reading, thinking, and research skills necessary to successfully complete tertiary education. Remember that the practical knowledge and skills you earned in the course are transferable and will guide you in other university courses and beyond."
+            },
+            {
+                "과목 코드": "GKS1002",
+                "교과목명": "Global Citizenship",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "The increasing interdependence between different communities around the world and the emergence of global issues, such as climate change and global pandemics, show that the territorial and spatial nature of citizenship is changing and needs to change in order to address issues that affect all members of the international community. Global citizenship refers to the belief that individuals no longer belong to isolated communities such as nation-states. Rather, they are members of multiple and diverse communities, the nature of which is changing as they interact with each other. This course provides an overview of the evolving concept of global citizenship and explores the virtue of the concept by relating it to various debates about international development cooperation, poverty alleviation and the growing importance and awareness of sustainable development for all. In doing so, the course aims to foster responsible global citizens."
+            }
+        ],
+        "GKS Required Courses": [
+            {
+                "과목 코드": "GKS2001",
+                "교과목명": "Introductory Seminar in Korean Studies",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course aims to help students navigate through Korean Studies as an academic field. In this course, students will engage with ideas, traditions, and debates that affect and build Global Korean Studies. Students will be exposed to the ways in which Korean Studies have emerged in different contexts and localities with different emphasises and perspectives. In addition, students will review important historical moments, cultural forces, and socio-economic developments on the Korean peninsula, as well as methods, sources, and authors in the field of Korean studies. In doing so, students will learn some basic skills required to explore Korean Studies materials and produce knowledge of Korea."
+            }
+        ],
+        "GKS Electives": [
+            {
+                "과목 코드": "GKS2002",
+                "교과목명": "Korean Studies and Data Science",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "In this course, students will learn the fundamentals of data science as they pertain to the study of Korea. The course will survey how data about Korea has been created historically, as well as how it is currently curated and how it might be made in the future. Similarly, the course will survey how data has been assessed historically and in the present, as well as how it might be assessed and used to understand Korea in the future. Students will also be taught basic programming and mathematical skills that will enable them to create, assess, and learn from data about Korea."
+            },
+            {
+                "과목 코드": "GKS2003",
+                "교과목명": "Understanding Korean History in the Context of Time/Space",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course will introduce students to Korean history in temporal and spatial context to enable the integrated study of Korea. In the course, students will investigate key events, junctures, and structures in Korean history from temporal and spatial perspectives."
+            },
+            {
+                "과목 코드": "GKS2004",
+                "교과목명": "Capstone 1: Korean Studies in Practice",
+                "Former Code": "KOS3041",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course offers students chances to test what they have learned in the classroom by engaging with people and ideas in a variety of academic, business, and social contexts related to Korean studies. Students will have to opportunity to learn the practice of Korean studies."
+            },
+            {
+                "과목 코드": "GKS3001",
+                "교과목명": "Global Diffusion of the K-wave",
+                "Former Code": "KOS2203",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "Diffusion differs from transplantation in that the meanings of new cultural products are not copied but localized, and this course provides knowledge and concepts for evaluating the global spread of K-wave as a case of cultural diffusion. Students will be able to understand how the spread of K-culture has benefited from new media and gain the knowledge to apply this lens on more K-wave phenomena in the future."
+            },
+            {
+                "과목 코드": "GKS3002",
+                "교과목명": "Toward Creation: Introduction to Korea through Literature and Film",
+                "Former Code": "KOS2201",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "Toward Creation: An Introduction to Korea through Literature and Film provides a broad overview of Korean culture as it is presented in Korean literature and film. The course rehearses what we know about important historical and cultural events while raising questions about the creative processes that inform how we know and understand Korea. The course begins with readings and films from contemporary North and South Korea and then moves backward through time to explore some of Korea's earliest extant legends and creation myths. Important authors and genres from both the modern and pre-modern period will be examined; each unit centers on a small number of literary works. Films are shown to provide alternate perspectives on Korean culture and the creative processes that shape our understanding of Korea. All readings will be in English. No previous knowledge of Korea or the Korean language is required. This class is designed as an introduction for students who are new to Korea and do not have a background in Korean studies. The course will not be opened to Global Korean Studies majors and is not recommended for students who have taken (or plan to take) “Introduction to Korean Literature” at Sogang."
+            },
+            {
+                "과목 코드": "GKS3004",
+                "교과목명": "Formation of Modern Korea",
+                "Former Code": "KOS3043",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course is a historical survey of Korean politics that begins with the opening of Korea's ports (1876) when Chosn intellectuals were exposed to Western civilization and began to develop Korean modernity. By the end of the course, students will understand how traditional Korea was transformed by the experience and modern Korea subsequently took shape, changing everything from the routines of everyday life to political systems."
+            },
+            {
+                "과목 코드": "GKS3005",
+                "교과목명": "Globalisation and Korean Development",
+                "Former Code": "KOS2202",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course offers an introduction to the arguably most significant feature and problem of our era: globalisation. It reviews economic, sociological and political theories of globalisation and assesses actually existing globalisation processes that produce certain types of development with peculiar social, cultural, political and ecological consequences. In doing so, it examines how these processes influence Korea and vice versa."
+            },
+            {
+                "과목 코드": "GKS3006",
+                "교과목명": "Tigers and Dragons: East Asian Development Revisited",
+                "Former Code": "KOS3006",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This advanced course aims to provide a critical review of theories and practices of East Asian development. It will demonstrate Korean development as internal to the regional dynamics of development in East Asia. Our major question is this: Does East Asian development offer any alternative to the contemporary forms of globalisation and economic development? We will try to answer this question by engaging with various theories of East Asian development and putting them in the context of the particular historical moments of Northeast and Southeast Asian development."
+            },
+            {
+                "과목 코드": "GKS3007",
+                "교과목명": "Topics in Korea Today",
+                "Former Code": "KOS2205",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course presets historical information and theoretical perspectives needed to understand Korean society. It will introduce students to the complex and diverse political, economic, social phenomena Korean society confronts, including industrialization, democratization, globalisation, inter-Korea relations, among others."
+            },
+            {
+                "과목 코드": "GKS3008",
+                "교과목명": "Statistical Thinking for Global Korean Studies",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "The variety and complexity of data in Korean studies has been a significant barrier to the adoption of modern computer technology in the field. Concepts of computer programming for exploratory data analysis and examination will be presented during the course, which include probability distributions, modeling, regression, and classification. Computer programming will be a central part of the course, and students will be expected to make frequent presentations. Students will also be asked to write several reports during the course that summarize the findings of various data collection techniques and exploratory analyses."
+            },
+            {
+                "과목 코드": "GKS3009",
+                "교과목명": "Korean Society and Media: Continuity of Political Topics",
+                "Former Code": "KOS3008",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "The Korean media is aligned with political camps and provides a mirror of the frames that persist in political debates in Korea. This course focuses on two important and controversial issues in Korea: welfare and unification. Students will be equipped with the skills to see the relative landscape of truths in Korean politics by learning to associate persistent or shifting opinions with camps in traditional and new media. They will gain a nuanced, objective, and analytical understanding of Korean political discourse that goes beyond one-sided aspects of the Korean political landscape."
+            },
+            {
+                "과목 코드": "GKS3010",
+                "교과목명": "Development of Web Contents for Korean Studies",
+                "Former Code": "KOS3014",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "Students will learn about practical & fundamental uses of computers to do Korean Studies in the digital world. This course will focus more on the subject data of Korea rather than general data. In this course, students will learn both how to program with a few Web programming languages such as HTML5, CSS3, JavaScript, and Python to represent Korean culture using computational methods in the Internet. In addition to this, students will also learn how to make it fun with computers in their minds. Furthermore, students will be introduced to visualisation techniques to represent Korean knowledge. Finally, this course leads students to find potential interest from Korean data and realise their creative ideas in the digital world."
+            },
+            {
+                "과목 코드": "GKS3011",
+                "교과목명": "Korean Studies SeminarⅠ: Everyday Life of North and South",
+                "Former Code": "KOS3031",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "Key topics at the intersection of language, text, and culture will be investigated by students in an effort to understand Korea from a variety of linguistic, textual, and cultural perspectives."
+            },
+            {
+                "과목 코드": "GKS3012",
+                "교과목명": "Image Pedagogy for Korean Studies",
+                "Lecture": "3hr.",
+                "Credits": "3cr.",
+                "Description": "This course explores the knowledge and understanding of past and present societies as constituted and conveyed via formal and informal educational media, within and beyond schools. Its focus is on various types of texts and images found in textbooks, magazines, museums, films, and digital media. Of particular interest are conceptions of time and space, forms of representation, as well as the construction of meaning and identity. Additionally, this course delves into various 20th century efforts to create new forms of media production that blend pedagogical goals with artistic experimentation. Many artists seek to surpass their function as entertainers or creators of beautiful-but-useless cultural objects by insisting on their art's capacity to teach. The tradition to create pedagogical art has laid the foundation for avant-garde movements in Asia, including Korea. Throughout the course, students will explore different models of pedagogical art to illustrate how the function of art has been defined and delimited and how new functions and conceptualization of art have emerged, while building on the formal possibilities."
+            },
+            {
+                "과목 코드": "GKS3013",
+                "교과목명": "Korean Studies in Practice Ⅱ(Capstone)",
+                "강의 시간": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course offers students a chance test what they have learned in the classroom by engaging with people and ideas in variety of academic, business, and social contexts related to Korean studies."
+            },
+            {
+                "과목 코드": "GKS3014",
+                "교과목명": "Sociological Imagination for Global Korean Studies",
+                "강의 시간": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course is crafted to enhance students’ capacity to understand social issues through the lens of sociological imagination. Its goal is to familiarise students with diverse perspectives and methodologies for comprehending human societies and social problems. It provides an opportunity for students to perceive social phenomena not merely as immediate expressions of the natural characteristics of individual entities and institutions, but as historical constructs and social relations. This course is well-suited for students interested in social matters and eager to grasp the intricacies of these issues across different geographical scales. Throughout each week, students will be encouraged to pose ontological, epistemological, and methodological questions about social affairs encountered in their daily lives. They will then scrutinise these issues using both quantitative and qualitative research methods. Through this process, students will have the opportunity to envision optimal socio-historical solutions to various social problems."
+            },
+            {
+                "과목 코드": "GKS3016",
+                "교과목명": "세계 속의 한국인1",
+                "강의 시간": "강의 3시간",
+                "학점": "3학점",
+                "설명": "근현대 대한민국이 수립되는 과정에서 헌신했던 많은 인물들 가운데 세계 속에서 기억될 필요가 있는 사람들을 소개하는 강좌 가운데 첫 번째 강좌이다. 본 강좌는 대한민국 임시정부의 주요 인물 가운데 백범김구 선생을 중심으로 그의 삶과 사상, 독립과 세계평화정신에 초점을 맞춘다. 그리고 그를 중심으로 한 독립운동사와 사회사를 학습한다. 특히 백범 선생의 발자취를 간직하고 있는 유가족들의 경험을 나누는 수업을 통해 근현대 대한민국이 정부 수립에 관련된 지식뿐만 아니라 국가의 독립과 인물의 헌신에 관한 공감을 이끌어내고자 한다. 아울러 필요한 경우 강의 주제와 관련된 현장체험 프로그램을 실시한다."
+            },
+            {
+                "과목 코드": "GKS3017",
+                "교과목명": "세계 속의 한국인2",
+                "강의 시간": "강의 3시간",
+                "학점": "3학점",
+                "설명": "근현대 대한민국이 수립되는 과정에서 헌신했던 많은 인물들 가운데 세계사적으로 기억할 필요가 있는 주요 인물을 소개하는 강좌이다. 이 강좌에서는 임시정부에 공헌했던 인물들이 자의반 타의반으로 해외 이민을 하게 됨으로써 해외 한인으로서 국외에서 대한민국의 수립과정에 기여했던 과정에 초점을 맞춘다. 특히 동시대에 식민지와 독립운동을 경험했던 많은 세계인들과 그 경험을 공유함으로써, 인류의 평화로운 공존과 그에 필요한 세계시민으로서의 자질을 함양한다. 나아가 세계시민으로서 자질과 유대감 강화를 위해, 여러 나라의 학생들과 함께 위의 주제와 관련된 현장체험 프로그램을 실시한다."
+            }
+        ],
+        "Advanced Electives": [
+            {
+                "과목 코드": "GKS4001",
+                "교과목명": "Translated Korea: The Social History of Concepts in Korea",
+                "강의 시간": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "The formation of modern knowledge in Korea was promoted by the ceaseless efforts of intellectuals to transform themselves on the one hand, and by the introduction of translated knowledge from the West on the other. This course examines translation as part of the process of making modern knowledge. It explores how translated words and concepts were crafted and how they affected Korea in the context of knowledge circulation."
+            },
+            {
+                "과목 코드": "GKS4003",
+                "교과목명": "Modern Korean Fiction",
+                "강의 시간": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course is to introduce important twentieth-century Korean fiction writers and fictional genres, as well as basic knowledge that is essential to an understanding of twentieth-century Korean fiction."
+            },
+            {
+                "과목 코드": "GKS4004",
+                "교과목명": "Development: Korean Experience and Global Debates",
+                "강의 시간": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This is an introductory course providing an overview of core debates around the notion and practice of development across the world, with a particular emphasis on Korea's experience of development. This course touches upon major social theories that intervene in the making of the notion of development and identifies sets of social relations and issues that affect development practice. In so doing, we will look into the ways in which these theories, sets of social relations and issues shape and reshape our development experience in Korea."
+            },
+            {
+                "과목 코드": "GKS4005",
+                "교과목명": "Formation of Contemporary Korea",
+                "강의 시간": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This is an advanced course on contemporary Korean society, economy and politics. It investigates major issues of post-colonial Korea from the perspective of political economy."
+            },
+            {
+                "과목 코드": "GKS4006",
+                "교과목명": "Korean Studies Seminar: Gender and Development",
+                "강의 시간": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course is designed to offer an analytical framework on Korean development from a gender perspective. In this class, students examine the gendered nature of political-economic changes in South Korea. Students are exposed to various discourses on gender and development at the international fora and theoretical debates on feminist political economy including social reproduction, measuring gender inequality, unpaid care labor, household, gender-based violence and etc. Students are expected to choose a gender-related issue in contemporary South Korea and work on their research projects throughout the semester with the professor's guidance."
+            },
+            {
+                "과목 코드": "GKS4007",
+                "교과목명": "International Politics of the Korean Peninsula",
+                "강의 시간": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "North-East Asia is dynamic and complex. Students will investigate the intense international contests that have taken place on, around, and for the Korean peninsula since the nineteenth century."
+            },
+            {
+                "과목 코드": "GKS4008",
+                "교과목명": "Social Change and Movement in Contemporary Korea",
+                "강의 시간": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "The course offers an overview of the rapid social changes and various social movements in Korea in the context of economic development. Students will study social movements, democratization, and industrialization."
+            },
+            {
+                "과목 코드": "GKS4009",
+                "교과목명": "Introduction to Exploratory Machine Learning",
+                "강의 시간": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "Modern Korean studies uses computational techniques to manipulate and process raw data, as well as obtain useful visualizations and insights. This course will introduce various ata manipulation techniques, including several machine learning algorithms. The course focuses on developing computer programs using well-known, open-source libraries and helps students understand the practical elements of machine learning algorithms for Korean studies. Students will be given chances to design and develop projects, as well as present their results to solidify their understanding of machine learning's practical applications in Korean studies."
+            },
+            {
+                "과목 코드": "GKS4011",
+                "교과목명": "The Mediums of Korean Cultural Modernity",
+                "강의 시간": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course investigates the media of popular artistic expression and cultural experience in twentieth-century Korea. Students will learn how to read the physical materials of artistic endeavor for what they have to say about art and Korea's encounter with modernity. The course will touch on a wide variety of cultural and artistic mediums but will focus on oral performance, printed literature, and film from the first half of the century. Questions concerning the nature of these media, the historical roles that they played, and how to approach them critically will be explored. Screenings, as well as viewing and listening assignments, will be integral. “Hands-on” experimentation with the media will illuminate the artistic possibilities and technological constraints of alternate expressive modes. Participation in vocal performance, print production, and filmmaking practicums will be graded elements of the course."
+            },
+            {
+                "과목 코드": "GKS4012",
+                "교과목명": "Seeing Korea: An Introduction to Image Generation, Processing & Computer Vision",
+                "강의 시간": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "Images are two dimensional data that have special characteristics. This course will investigate computer representation of image data, how to manipulate it, how to process it, and how to make computers understand the contents of images. Various image data from historical Korean artworks will be considered and students will perform several projects to develop computer programs to implement algorithms for image generation, processing, and understanding."
+            },
+            {
+                "과목 코드": "GKS4015",
+                "교과목명": "Curatorial Studies for Korean Culture Exchange",
+                "강의 시간": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course aims to help students utilise data science in the field of Korean Studies by providing them with mathematical foundations of data science. Students will learn the basics of linear algebra, analytic geometry, matrix decompositions, vector calculus, probability and distribution, and continuous optimisation. Students will also be exposed to computational aspects of those mathematical topics through Python programming. In so doing, they will obtain a better understanding of the ways in which data science algorithms are applied to design and analysis of issues related to Korean Studies."
+            },
+            {
+                "과목 코드": "GKS4016",
+                "교과목명": "Theory and Practice in Global Korean Studies 1 (Capstone Design)",
+                "강의 시간": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course will investigate the field of Korean studies as a platform for local action that enables positive global political, economic, educational, environmental, and social outcomes, as well as global political, economic, educational, environmental, and social initiatives that enable positive local outcomes in Korean communities on the peninsula and elsewhere. Students will organize a series of international forums, publish an undergraduate journal, and instigate political, economic, social, and/or diplomatic interventions for positive change."
+            },
+            {
+                "과목 코드": "GKSG002",
+                "교과목명": "Digital Arts and Scholarly Craft in Korean Studies",
+                "강의 시간": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This fast-paced course builds on what students have learned in Computing Korean Culture about the latest methods, theories, and tools in humanities computing as they relate to the study of Korea. Learning the art and craft of these technologies will enable students to gain a new critical understanding of Korea, as well as a deeper understanding of the tools used to create knowledge about Korea. As with Computing Korean Culture, this course begins with an investigation of the book, that central technology of culture and knowledge production. The course then contemplates reading and editorial practice in Korean cultural context, as well as modeling and design as they relate to data curation, visualization, and newer forms of knowledge about Korea. Students’ investigation of GIS (Geographic Information Systems) and network analysis will be advanced through a number of handson projects. Students will also be introduced to the principles of machine learning by conducting machine learning experiments in cloud computing environments, such as Microsoft's Machine Learning Studio. In addition, students will test experimental image mining software. Key terms (information, code, data, digital object, materiality, posthumanism) will be examined at greater depths as they relate to the study of Korea, along with new and old theoretical approaches (close reading, distant reading, sociology of texts, algorithmic criticism) and areas of study (critical code studies, software studies, platform studies, and media archaeology). While researching a subject of her or his choosing, students will develop websites and cultural atlases, as well as advance their understanding of coding for the web. By the end of the course, students will be able to compose a sophisticated academic argument using new media and/or enhance traditional research papers with data and analysis enabled by digital methods and tools. Along with a working knowledge of html, css, javascript and various data cleaning, mining and visualization tools, students will take away a deep understanding of Korea and the ways that data and digital technologies can illuminate it."
+            },
+            {
+                "과목 코드": "GKSG003",
+                "교과목명": "Reading Theories of Korean Development",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This is an advanced course that aims to provide students with a firm theoretical grounding for the study of Korean development experience. The course introduces various social, political and economic theories of development which emerged from specific historical contexts since the birth of the modern notion of development in the seventeenth century. In doing so, the course explores the origin and evolution of the doctrine of development from Western invention to global faith. Students will also learn the ways in which these particular development theories and doctrines have been imposed, adapted and taken advantage of by diverse agencies of development in Korea."
+            },
+            {
+                "과목 코드": "GKSG004",
+                "교과목명": "Research in Korean Studies: Labour and Development",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This is an advanced course that aims to investigate the links between labour, capitalism, development and poverty in contemporary Korea. The course firstly explores the ways in which labour has contributed to the making of the modern notion and practice of development. It then moves on to analyse how labour has been constantly recomposed by different doctrines of development since the emergence of capitalist industrialisation and developmentalist states. Furthermore, the course explores the role of industrial, emotional and reproductive labour in contemporary Korean development as well as the strategies and campaigns of labour movements."
+            },
+            {
+                "과목 코드": "GKSG005",
+                "교과목명": "Historical Social Science and Korean Studies",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course will review important case studies and theoretical perspectives in historical sociology as an essential method in Korean studies. Theorizing the applicability of a spatio-temporal middle ground neither universalist or individualist, the course investigates the contexts in which Korea can be studied and theorized from a comparativist perspective."
+            },
+            {
+                "과목 코드": "GKSG007",
+                "교과목명": "Big Data Analysis in Korean Studies",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "Students will learn about data analytics in Korean Studies and how to approach it. In this course, students will learn how to collect data in Korean, as well as how to conduct Korean-language analysis using computational methods. Furthermore, this course will introduce students to applied machine learning approaches. In general, students will be learning how to analyse large amounts of Korean texts and utilize the methods of data analytics in conducting research in Korean studies."
+            },
+            {
+                "과목 코드": "GKSG008",
+                "교과목명": "Programming for Applied Deep Learning",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course introduces students to methods for building computer programs for deep neural networks. The course focuses on developing applications using a well-developed, opensource deep learning toolkit. Various issues related to deep learning will be investigated within the framework of Korean studies, and students will be expected to design several competitive projects in Korean studies."
+            },
+            {
+                "과목 코드": "GKSG009",
+                "교과목명": "Korean Computational Linguistics",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "Korean is central to Korean studies in the same way that computational systems are central to contemporary life. A study of Korean, that central element of Korean identity, can be combined with the study of new information technologies in order to develop the knowledge of Korea. The study of Korean language can all be enhanced through the use of new digital tools and methods. In this course, students will learn how to advance the study of Korea by studying the Korean language with the latest computational methods."
+            },
+            {
+                "과목 코드": "GKSG010",
+                "교과목명": "Filming Korea: Korean Historians Behind the Camera",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "Some critical historical junctures in Korean history have been captured on camera and recorded in films of different sorts. This course traces decisive moments in Korean history, as well as scenes from the daily life of Koreans, by critically engaging with Korean films as historical texts."
+            },
+            {
+                "과목 코드": "GKSG011",
+                "교과목명": "Capstone 2: Advanced Academic Writing in Korean Studies",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course is intended for Global Korean Studies students in their final year. Students will be challenged to conduct original research related to Korea and compose a 30-page research paper. The paper will make a compelling argument, present new knowledge about a well-defined topic, and demonstrate a command of research methodologies and practices in Korean studies. Class will be conducted in English, and all written assignments will be composed in English. However, advanced Korean skills (including Sino-Korean characters) will be required."
+            },
+            {
+                "과목 코드": "GKSG012",
+                "교과목명": "Introduction to Korean Sociolinguistics",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "Language is one of the most powerful emblems of social behavior. Sociolinguistics is a field that studies various aspects of society and certain cultures in the speech community in terms of language use. In this course, students will be introduced to language and nationalism, language and ethnicity, and language and gender so as to do Korean studies with sociolinguistic concepts. In this age, language uses in a particular communities and larger societies appear are represented in digital forms. From this perspective, students will learn how to approach Korean sociolinguistic problems using digital methods."
+            }
+        ],
+        "Courses for International Students": [
+            {
+                "과목 코드": "GKS3024",
+                "교과목명": "Korean Language & Culture-Intermediate",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course aims to improve students' Korean language ability through engagement with research materials. Students will also take field trips, make reports and presentations, and participate in wide-ranging discussions."
+            },
+            {
+                "과목 코드": "GKS3025",
+                "교과목명": "Korean Language & History-Intermediate",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course aims to improve students' Korean language ability through engagement with research materials. Students will also take field trips, make reports and presentations, and participate in wide-ranging discussions."
+            },
+            {
+                "과목 코드": "GKS3026",
+                "교과목명": "Korean Language & Society-Intermediate",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course aims to improve students' Korean language ability through engagement with research materials. Students will also take field trips, make reports and presentations, and participate in wide-ranging discussions."
+            },
+            {
+                "과목 코드": "GKS3027",
+                "교과목명": "Korean Language & Culture-Beginner",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course aims to improve students' Korean language ability through engagement with research materials. Students will also take field trips, make reports and presentations, and participate in wide-ranging discussions."
+            },
+            {
+                "과목 코드": "GKS3028",
+                "교과목명": "Korean Language & History-Beginner",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course aims to improve students' Korean language ability through engagement with research materials. Students will also take field trips, make reports and presentations, and participate in wide-ranging discussions."
+            },
+            {
+                "과목 코드": "GKS3029",
+                "교과목명": "Korean Language & Society-Beginner",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course aims to improve students' Korean language ability through engagement with research materials. Students will also take field trips, make reports and presentations, and participate in wide-ranging discussions."
+            },
+            {
+                "과목 코드": "GKS3030",
+                "교과목명": "Korean Language & Culture-Advanced",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course aims to improve students' Korean language ability through engagement with research materials. Students will also take field trips, make reports and presentations, and participate in wide-ranging discussions."
+            },
+            {
+                "과목 코드": "GKS3031",
+                "교과목명": "Korean Language & History-Advanced",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course aims to improve students' Korean language ability through engagement with research materials. Students will also take field trips, make reports and presentations, and participate in wide-ranging discussions."
+            }
+        ],
+        "Courses for Sogang International Summer Program (SISP)": [
+            {
+                "과목 코드": "GKS9000",
+                "교과목명": "Elementary Korean 1",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course aims to develop students' Korean language ability through engagement with various subjects of language materials. Students will also take field trips, make reports and presentations, and participate in wide-ranging discussions."
+            },
+            {
+                "과목 코드": "GKS9001",
+                "교과목명": "Elementary Korean 2",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course aims to develop students' Korean language ability through engagement with various subjects of language materials. Students will also take field trips, make reports and presentations, and participate in wide-ranging discussions."
+            },
+            {
+                "과목 코드": "GKS9002",
+                "교과목명": "Intermediate Korean 1",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course aims to improve students' Korean language ability through engagement with various subjects of language materials. Students will also take field trips, make reports and presentations, and participate in wide-ranging discussions."
+            },
+            {
+                "과목 코드": "GKS9003",
+                "교과목명": "Intermediate Korean 2",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course aims to improve students' Korean language ability through engagement with various subjects of language materials. Students will also take field trips, make reports and presentations, and participate in wide-ranging discussions."
+            },
+            {
+                "과목 코드": "GKS9004",
+                "교과목명": "Advanced Korean Ⅰ",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course aims to advance students' Korean language ability through engagement with various subjects of language materials. Students will also take field trips, make reports and presentations, and participate in wide-ranging discussions."
+            },
+            {
+                "과목 코드": "GKS9005",
+                "교과목명": "Advanced Korean Ⅱ",
+                "수업 형태": "Lecture 3hr.",
+                "학점": "3cr.",
+                "설명": "This course aims to advance students' Korean language ability through engagement with various subjects of language materials. Students will also take field trips, make reports and presentations, and participate in wide-ranging discussions."
+            }
+        ]
+    }
+  }
+}
