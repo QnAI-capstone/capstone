@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sgChatbot.apps.SgchatbotConfig',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -120,6 +121,10 @@ USE_TZ = False
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+#LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL='/chatbot/'
+LOGOUT_REDIRECT_URL='/chatbot/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
