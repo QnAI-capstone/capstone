@@ -2,53 +2,182 @@
 
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>{% block title %}{% endblock %}</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/12522edff7.js" crossorigin="anonymous"></script>
-    {% block styles %}{% endblock %}
-    <style>
-      .main-header {
-        background-color: #b30000;
-        height: 60px;
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: 15px;
-      }
 
-      .logo {
-        width: 54%;
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>{% block title %}{% endblock %}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/12522edff7.js" crossorigin="anonymous"></script>
+  {% block styles %}{% endblock %}
+  <style>
+    .main-header {
+      background-color: #b30000;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 15px;
+    }
 
-      .logo-image {
-        width: 200px;
-        object-fit: contain;
-        margin-top: 10px;
-      }
+    .logo {
+      width: 54%;
+    }
 
-      .menu {
-        margin-right: 20px;
-        margin-top: 20px;
-      } 
-    </style>
-  </head>
-  <header>
-    <div class="main-header">
-      <div class="logo">
-        <img class="logo-image" src="{% static 'image/logo.png' %}" alt="로고" />
-      </div>
-      <div class="menu">
-        <i class="fa-solid fa-bars fa-xl"></i>
-      </div>
+    .logo-image {
+      width: 200px;
+      object-fit: contain;
+      margin-top: 10px;
+    }
+
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #closeMenuButton {
+      margin-bottom: 16px;
+    }
+
+    .sub_btn,
+    button.sub_btn {
+      display: inline-block;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      color: #f1f1f1;
+      background-color: #b30000;
+      border: 1px solid transparent;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      border-radius: .25rem;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+    .sub_btn:hover,
+    button.sub_btn:hover {
+      color: #212529;
+      text-decoration: none;
+    }
+
+    .menu {
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+
+    .sub_menu {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      padding: 30px 16px;
+      width: 300px;
+      background-color: #fff;
+      box-sizing: border-box;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+      z-index: 500;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .dimmed {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #000;
+      opacity: .8;
+      filter: alpha(opacity=80);
+      z-index: 10
+    }
+
+    .dimmed,
+    .sub_menu {
+      display: none;
+      /* 초기에는 숨김 */
+    }
+
+    .dimmed.active,
+    .sub_menu.active {
+      display: block;
+      /* active 클래스가 추가되면 보이게 */
+    }
+
+    #menuButton {
+      background-color: transparent;
+      border: none;
+    }
+  </style>
+</head>
+<header>
+  <div class="main-header">
+    <div class="logo">
+      <img class="logo-image" src="{% static 'image/logo.png' %}" alt="로고" />
     </div>
-  </header>
-  <body>
-    {% block content %}{% endblock %}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script>
-    {% block scripts %}{% endblock %}
-  </body>
+    <div class="menu">
+      <button id="menuButton"><i class="fa-solid fa-bars fa-xl"></i></button>
+    </div>
+  </div>
+</header>
+
+<body>
+  {% block content %}{% endblock %}
+  <div class="dimmed" id="dimmedBackground" style="z-index: 100;"></div>
+  <div class="sub_menu" id="sideMenu">
+    <button id="closeMenuButton"
+      style="align-self: flex-end; background: none; border: none; font-size: 24px; cursor: pointer;">
+      <i class="fa-solid fa-arrow-left"></i>
+    </button>
+    <ul class="navbar-nav ml-5 mr-5">
+      <li class="nav-item">
+        {% if user.is_authenticated %}
+        <i class="fas fa-user"></i>&ensp;{% firstof user.get_short_name user.get_username %}&ensp;
+        <form method="post" action="{% url 'logout' %}" style="display: inline;">
+          {% csrf_token %}
+          <button type="submit" class="sub_btn" style="margin: 10px 0px;">
+            로그아웃
+          </button>
+        </form>
+
+        <a class="sub_btn" href="{% url 'password_change' %}">비밀번호 변경</a>
+        {% else %}
+        <i class="fas fa-user"></i>&ensp;Guest&ensp;
+        <a class="sub_btn" href="{% url 'login' %}" style="margin: 10px 0px;">로그인</a>
+        <a class="sub_btn" href="{% url 'register' %}">회원가입</a>
+        {% endif %}
+      </li>
+    </ul>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script>
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const closeButton = document.getElementById('closeMenuButton');
+    const dimmed = document.getElementById('dimmedBackground');
+    const subMenu = document.getElementById('sideMenu');
+
+    menuButton.addEventListener('click', () => {
+      dimmed.classList.add('active');
+      subMenu.classList.add('active');
+    });
+
+    // dimmed나 닫기 버튼 클릭 시 메뉴 닫기
+    function closeMenu() {
+      dimmed.classList.remove('active');
+      subMenu.classList.remove('active');
+    }
+
+    dimmed.addEventListener('click', closeMenu);
+    closeButton.addEventListener('click', closeMenu);
+  </script>
+  {% block scripts %}{% endblock %}
+</body>
+
 </html>
