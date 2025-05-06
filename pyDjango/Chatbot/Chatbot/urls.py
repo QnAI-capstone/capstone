@@ -16,8 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from Chatbot.views import UserCreateView, UserCreateDoneTV
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('chatbot/', include('sgChatbot.urls')),
+    path('chatbot/accounts/', include('django.contrib.auth.urls')),
+    path('chatbot/accounts/register/', UserCreateView.as_view(), name='register'),
+    path('chatbot/accounts/register/done/', UserCreateDoneTV.as_view(), name='register_done'),
 ]
