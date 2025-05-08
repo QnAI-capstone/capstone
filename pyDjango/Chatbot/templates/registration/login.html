@@ -3,23 +3,6 @@
 
 {% block title %}login.html{% endblock %}
 
-{% block styles %}
-<style>
-    .content {
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-
-    .btn-row {
-  display: flex;
-  justify-content: flex-start;
-  gap: 20px;             /* 버튼 간 간격 */
-  margin-left: 262px;    /* 왼쪽 정렬 위치 */
-}
-
-</style>
-{% endblock %}
-
 {% block content %}
 <div class="content">
     <h1>로그인</h1>
@@ -49,12 +32,12 @@
 
         <div class="form-group">
             <div class="btn-row">
-              <input type="submit" value="로그인" class="sub_btn" />
-              <input type="hidden" name="next" value="{{ next }}" />
-              <a href="{% url 'register' %}" class="sub_btn">회원가입</a>
+                <input type="submit" value="로그인" class="sub_btn" />
+                <input type="hidden" name="next" value="{{ next }}" />
+                <a href="{% url 'register' %}" class="sub_btn">회원가입</a>
             </div>
-          </div>
-          
+        </div>
+
     </form>
 </div>
 {% endblock %}
