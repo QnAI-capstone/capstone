@@ -12,4 +12,5 @@ flat_json.py / hybrid_rag.py - 수정된 코드 구조에 맞춰 flatten 후 hyb
 2. collection 이름
 - 각 학과별 / 정보별로 collection명 어떤식으로 하면 좋을지 정해야함
 3. rag 검색 구조
-- gpt-4o 토큰 수 제한 이슈로 context를 걸러서 넘겨야 될 듯 (개선 필요)
+- gpt-4o 토큰 수 제한 이슈로 질문을 받으면 context를 걸러서 넘겨야 될 듯 (개선 필요)
+- gpt api에 전달하는 context 분량 or 디비에 저장할 데이터의 양을 줄일 수 있는 방법이 있으면 참 좋을 것 같습니당 (같이 고민해봐요)
