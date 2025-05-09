@@ -8,7 +8,7 @@ flat_json.py / hybrid_rag.py - 수정된 콛 구조에 맞춰 flatten 후 hybrid
 
 # 추가 고려사항
 1. collection 구조
-- 요람 정보 나누기 / 개설교과목 정보와 합치기 작업 진행중인데 collection 구조를 어떻게 설계해서 document들 넣을지 정해야함
+- 요람 정보 나누기 / 개설교과목 정보와 합치기 작업 진행중인데 collection 구조를 어떻게 설계해서 documents 넣을지 정해야함
 2. collection 이름
 - 각 학과별 / 정보별로 collection명 어떤식으로 하면 좋을지 정해야함
 3. rag 검색 구조
