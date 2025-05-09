@@ -4,7 +4,7 @@ build_db.py - line 37: raw["2025 서강대학교 요람"]["인문대학"].keys()
 collection_name: json 파일명 영어로 변경 -> collection_{file_name}으로 사용
 ex) 학과별 요람정보(국어국문학과): Major_Korean.json
 
-flat_json.py / hybrid_rag.py - 수정된 콛 구조에 맞춰 flatten 후 hybrid 검색 가능한 형식으로 수정
+flat_json.py / hybrid_rag.py - 수정된 코드 구조에 맞춰 flatten 후 hybrid 검색 가능한 형식으로 수정
 
 # 추가 고려사항
 1. collection 구조
