@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Pretendard-Regular';
+}
+
+.chat-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 챗봇 */
+.messages-box {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.messages-list {
+    padding-left: 0;
+}
+
+.message {
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.message-text {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message-sender {
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+.sent {
+    background-color: #5c8b45;
+    align-self: flex-end;
+    color: #f1f1f1;
+}
+
+.received {
+    background-color: #dddddd;
+    align-self: flex-start;
+}
+
+/* 전송 */
+.message-form {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.message-input {
+    flex: 1;
+    border-radius: 0;
+    border-right: none;
+}
+
+.btn-send {
+    border-radius: 0;
+}
