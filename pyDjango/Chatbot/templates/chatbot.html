@@ -1,164 +1,137 @@
 {% extends 'base.html' %}
 
 {% block styles %}
-<style>
-    @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    }
-
-    body, html {
-        height: 100%;
-        font-family: 'Pretendard-Regular';
-    }
-
-    .chat-container {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* 챗봇 */
-    .messages-box {
-      flex: 1;
-      overflow-y: auto;
-    }
-
-    .messages-list {
-      padding-left: 0;
-    }
-
-    .message {
-      margin-bottom: 15px;
-      list-style: none;
-    }
-
-    .message-text {
-      padding: 10px;
-      border-radius: 5px;
-    }
-
-    .message-sender {
-        font-size: 14px;
-        line-height: 1.8em;
-    }
-
-    .sent {
-      background-color: #5c8b45;
-      align-self: flex-end;
-      color: #f1f1f1;
-    }
-
-    .received {
-      background-color: #dddddd;
-      align-self: flex-start;
-    }
-
-    /* 전송 */
-    .message-form {
-      display: flex;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 10px;
-      background-color: #f8f9fa;
-    }
-
-    .message-input {
-      flex: 1;
-      border-radius: 0;
-      border-right: none;
-    }
-
-    .btn-send {
-      border-radius: 0;
-    }
-</style>
+{% load static %}
+<link rel="stylesheet" href="{% static 'chatbot.css' %}">
 {% endblock %}
 
 {% block content %}
 <div class="chat-container">
-    <div class="message-box">
-        <ul class="list-unstyled messages-list">
-            <li class="message received">
-              <div class="message-text">
-                <div class="message-sender">
-                  <b>서강챗봇</b>
-                </div>
-                <div class="message-content">
-                  무엇을 도와드릴까요?
-                </div>
-              </div>
-            </li>
-          </ul>
-    </div>
-
-    <form class="message-form">
-        {%csrf_token%}
-        <div class="input-group">
-          <input type="text" class="form-control message-input" placeholder="질문을 입력해주세요.">
-          <div class="input-group-append">
-            <button type="submit" class="btn btn-outline-secondary btn-send">전송</button>
+  <div class="message-box">
+    <ul class="list-unstyled messages-list">
+      <!-- 로그인 사용자 - chat_history 불러오기 -->
+      {% for message in chat_history %}
+      {% if message.type == 'date_separator' %}
+      <li class="date-separator">📅 {{ message.date }}</li>
+      {% else %}
+      <li class="message {% if message.type == 'user' %}sent{% else %}received{% endif %}">
+        <div class="message-text">
+          <div class="message-sender">
+            <b>{% if message.type == 'user' %}사용자{% else %}챗봇{% endif %}</b>
           </div>
+          <div class="message-content">{{ message.text }}</div>
+          <div class="message-time">{{ message.time }}</div>
         </div>
-    </form>
+      </li>
+      {% endif %}
+      {% endfor %}
+      <!-- 오늘 날짜 구분선 표시 -->
+      <li class="date-separator">
+        📅 {{ today }}
+      </li>
+      <!-- 기본 챗봇 메시지 -->
+      <li class="message received">
+        <div class="message-text">
+          <div class="message-sender"><b>챗봇</b></div>
+          <div class="message-content">안녕하세요. 챗봇입니다.</div>
+          <div class="message-time">{{ now }}</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <form class="message-form">
+    {%csrf_token%}
+    <div class="input-group">
+      <input type="text" class="form-control message-input" placeholder="질문을 입력해주세요.">
+      <div class="input-group-append">
+        <button type="submit" class="btn btn-outline-secondary btn-send">전송</button>
+      </div>
+    </div>
+  </form>
 </div>
 
 <script>
-    const messageList = document.querySelector('.messages-list');
-    const messageForm = document.querySelector('.message-form');
-    const messageInput = document.querySelector('.message-input');
-  
-    messageForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-  
-      const message = messageInput.value.trim();
-      if (message.length === 0) {
-        return;
-      }
-  
-      const messageItem = document.createElement('li');
-      messageItem.classList.add('message', 'sent');
-      messageItem.innerHTML = `
+  const messageList = document.querySelector('.messages-list');
+  const messageForm = document.querySelector('.message-form');
+  const messageInput = document.querySelector('.message-input');
+
+  function formatCurrentTime() {
+    const now = new Date();
+    return now.getHours().toString().padStart(2, '0') + ':' +
+      now.getMinutes().toString().padStart(2, '0');
+  }
+
+  function formatTodayDate() {
+    const now = new Date();
+    return now.getFullYear() + '-' +
+      (now.getMonth() + 1).toString().padStart(2, '0') + '-' +
+      now.getDate().toString().padStart(2, '0');
+  }
+
+  function insertDateIfNeeded() {
+    const today = formatTodayDate();
+    const lastDate = localStorage.getItem('lastMessageDate');
+
+    if (lastDate !== today) {
+      const dateItem = document.createElement('li');
+      dateItem.classList.add('date-separator');
+      dateItem.textContent = '📅 ' + today;
+      messageList.appendChild(dateItem);
+      localStorage.setItem('lastMessageDate', today);
+    }
+  }
+
+  messageForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const message = messageInput.value.trim();
+    if (message.length === 0) {
+      return;
+    }
+
+    const time = formatCurrentTime();
+    insertDateIfNeeded();  // 오늘 날짜 표시
+
+    // 사용자 메시지 추가
+    const userMessageItem = document.createElement('li');
+    userMessageItem.classList.add('message', 'sent');
+    userMessageItem.innerHTML = `
       <div class="message-text">
-        <div class="message-sender">
-          <b>사용자</b>
-        </div>
-        <div class="message-content">
-          ${message}
-        </div>
+        <div class="message-sender"><b>사용자</b></div>
+        <div class="message-content">${message}</div>
+        <div class="message-time">${time}</div>
       </div>`;
-      messageList.appendChild(messageItem);
-      
-      messageInput.value = '';
-  
-      fetch('', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-          'csrfmiddlewaretoken': document.querySelector('[name=csrfmiddlewaretoken]').value,
-          'message': message
-        })
+    messageList.appendChild(userMessageItem);
+    messageList.scrollTop = messageList.scrollHeight;
+
+    messageInput.value = '';
+
+    // 챗봇 응답 처리
+    fetch('', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        'csrfmiddlewaretoken': document.querySelector('[name=csrfmiddlewaretoken]').value,
+        'message': message
       })
-        .then(response => response.json())
-        .then(data => {
-          const response = data.response;
-          const messageItem = document.createElement('li');
-          messageItem.classList.add('message', 'received');
-          messageItem.innerHTML = `
-          <div class="message-text">
-            <div class="message-sender">
-              <b>서강챗봇</b>
-            </div>
-            <div class="message-content">
-              ${response}
-            </div>
-          </div>`;
-          messageList.appendChild(messageItem);
-        })
     })
-  </script>
+      .then(response => response.json())
+      .then(data => {
+        const response = data.response;
+        const time = formatCurrentTime();
+
+        const botMessageItem = document.createElement('li');
+        botMessageItem.classList.add('message', 'received');
+        botMessageItem.innerHTML = `
+        <div class="message-text">
+          <div class="message-sender"><b>챗봇</b></div>
+          <div class="message-content">${response}</div>
+          <div class="message-time">${time}</div>
+        </div>`;
+        messageList.appendChild(botMessageItem);
+        messageList.scrollTop = messageList.scrollHeight;
+      });
+  });
+</script>
 {% endblock %}
