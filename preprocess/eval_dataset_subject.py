@@ -36,8 +36,8 @@ for college, college_data in subject_info["2025 서강대학교 요람"].items()
                     rows.append({
                         "의도": "과목정보 - 트랙 전체 목록",
                         "범위": f"{college} {category}",
-                        "질문": f"{category}의 {group_name} 과목들을 모두 알려줘.",
-                        "답변": f"{category}의 {group_name} 과목 목록은 다음과 같습니다: {subject_summary}",
+                        "질문": f"{college}의 {category}의 {group_name} 과목들을 모두 알려줘.",
+                        "답변": f"{college}의 {category}의 {group_name} 과목 목록은 다음과 같습니다: {subject_summary}",
                         "답변 근거": f"과목정보.json > {college} > {category} > 과목정보 > {group_name}"
                     })
 
@@ -56,16 +56,16 @@ for college, college_data in subject_info["2025 서강대학교 요람"].items()
                     rows.append({
                         "의도": "과목정보 - 기본 정보",
                         "범위": f"{college} {category}",
-                        "질문": f"{name}에 대해서 설명해줘.",
-                        "답변": f"{name}({code})은 {credits} 과목으로 {group_name} 과목이며, 주요 내용은 다음과 같습니다. {content}",
+                        "질문": f"{college}의 {category}의 {name}에 대해서 설명해줘.",
+                        "답변": f"{college}의 {category}의 {name}({code})은 {credits} 과목으로 {group_name} 과목이며, 주요 내용은 다음과 같습니다. {content}",
                         "답변 근거": f"과목정보.json > {college} > {category} > 과목정보 > {group_name} > {code}"
                     })
 
                     rows.append({
                         "의도": "과목정보 - 학점",
                         "범위": f"{college} {category}",
-                        "질문": f"{name}은 몇 학점 과목이야?",
-                        "답변": f"{name}({code})은 {credits} 과목입니다.",
+                        "질문": f"{college}의 {category}의 {name}은 몇 학점 과목이야?",
+                        "답변": f"{college}의 {category}의 {name}({code})은 {credits} 과목입니다.",
                         "답변 근거": f"과목정보.json > {college} > {category} > 과목정보 > {group_name} > {code}"
                     })
 
@@ -73,8 +73,8 @@ for college, college_data in subject_info["2025 서강대학교 요람"].items()
                         rows.append({
                             "의도": "과목정보 - 선수과목",
                             "범위": f"{college} {category}",
-                            "질문": f"{name}의 선수과목은 무엇인가요?",
-                            "답변": f"{name}의 선수과목은 {prerequisite} 입니다.",
+                            "질문": f"{college}의 {category}의 {name}의 선수과목은 뭐야?",
+                            "답변": f"{college}의 {category}의 {name}의 선수과목은 {prerequisite} 입니다.",
                             "답변 근거": f"과목정보.json > {college} > {category} > 과목정보 > {group_name} > {code} > 선수과목"
                         })
 
@@ -91,8 +91,8 @@ for college, college_data in subject_info["2025 서강대학교 요람"].items()
                 rows.append({
                     "의도": "과목정보 - 트랙 전체 목록",
                     "범위": f"{college} {category}",
-                    "질문": f"{category}의 과목들을 모두 알려줘.",
-                    "답변": f"{category} 과목 목록은 다음과 같습니다: {subject_summary}",
+                    "질문": f"{college}의 {category}의 {category}의 과목들을 모두 알려줘.",
+                    "답변": f"{college}의 {category}의 {category} 과목 목록은 다음과 같습니다: {subject_summary}",
                     "답변 근거": f"과목정보.json > {college} > {category} > 과목정보"
                 })
 
@@ -113,16 +113,16 @@ for college, college_data in subject_info["2025 서강대학교 요람"].items()
                 rows.append({
                     "의도": "과목정보 - 기본 정보",
                     "범위": f"{college} {category}",
-                    "질문": f"{name}에 대해서 설명해줘.",
-                    "답변": f"{name}({code})은 {credits} 과목으로 주요 내용은 다음과 같습니다. {content}",
+                    "질문": f"{college}의 {category}의 {name}에 대해서 설명해줘.",
+                    "답변": f"{college}의 {category}의 {name}({code})은 {credits} 과목으로 주요 내용은 다음과 같습니다. {content}",
                     "답변 근거": f"과목정보.json > {college} > {category} > 과목정보 > {code}"
                 })
 
                 rows.append({
                     "의도": "과목정보 - 학점",
                     "범위": f"{college} {category}",
-                    "질문": f"{name}은 몇 학점 과목이야?",
-                    "답변": f"{name}({code})은 {credits} 과목입니다.",
+                    "질문": f"{college}의 {category}의 {name}은 몇 학점 과목이야?",
+                    "답변": f"{college}의 {category}의 {name}({code})은 {credits} 과목입니다.",
                     "답변 근거": f"과목정보.json > {college} > {category} > 과목정보 > {code}"
                 })
 
@@ -130,8 +130,8 @@ for college, college_data in subject_info["2025 서강대학교 요람"].items()
                     rows.append({
                         "의도": "과목정보 - 선수과목",
                         "범위": f"{college} {category}",
-                        "질문": f"{name}의 선수과목은 무엇인가요?",
-                        "답변": f"{name}의 선수과목은 {prerequisite} 입니다.",
+                        "질문": f"{college}의 {category}의 {name}의 선수과목은 뭐야?",
+                        "답변": f"{college}의 {category}의 {name}의 선수과목은 {prerequisite} 입니다.",
                         "답변 근거": f"과목정보.json > {college} > {category} > 과목정보 > {code} > 선수과목"
                     })
 
