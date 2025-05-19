@@ -1,75 +1,149 @@
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+:root {
+  --main-color: #b30000;
+  --active-color: #5c8b45;
+  --user-color: #e9e9e9;
+  --charbot-color: #b30000;
 }
 
-body,
-html {
-    height: 100%;
-    font-family: 'Pretendard-Regular';
+* {
+    box-sizing: border-box;
+    word-break: keep-all;
 }
 
 .chat-container {
+    background-color: #ecf0f1;
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    padding: 15px;
+}
+.date-separator {
+    text-align: center;
+    color: #95a5a6;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
-/* 챗봇 */
+/* 메시지 */
 .messages-box {
     flex: 1;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
 }
 
 .messages-list {
-    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .message {
+    display: flex;
     margin-bottom: 15px;
-    list-style: none;
 }
 
-.message-text {
-    padding: 10px;
-    border-radius: 5px;
+.message .message-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sent.message-text {
+    align-items: flex-end;
+}
+
+.received .message-text {
+    align-items: flex-start;
 }
 
 .message-sender {
     font-size: 14px;
-    line-height: 1.8em;
 }
 
-.sent {
-    background-color: #5c8b45;
+.sent .message-sender,
+.sent .message-time {
+    text-align: right;
+}
+
+.message-content {
+    background-color: #aaa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+    color: #333;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.message-time {
+    font-size: 12px;
+    color: #95a5a6;
+    margin-top: 5px;
+}
+
+/* 사용자 메시지 스타일 */
+.message.sent .message-content {
+    background-color: var(--user-color);
+    color: #000000;
     align-self: flex-end;
-    color: #f1f1f1;
+    max-width: 70%;
 }
 
-.received {
-    background-color: #dddddd;
-    align-self: flex-start;
+/* 챗봇 메시지 스타일 */
+.message.received .message-content {
+    background-color: var(--charbot-color);
+    color: white;
+    max-width: 70%;
 }
 
-/* 전송 */
+/* 입력칸 */
 .message-form {
     display: flex;
+    justify-content: space-between;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 10px;
+    border-top: 1px solid #ddd;
     background-color: #f8f9fa;
 }
 
+.input-wrapper {
+    display: flex;
+    flex-grow: 1;
+}
+
 .message-input {
+    flex-grow: 1;
     flex: 1;
-    border-radius: 0;
-    border-right: none;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    outline: none;
+    width: 100%;
+}
+
+.message-input:focus {
+    border-color: var(--active-color);
 }
 
 .btn-send {
-    border-radius: 0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #dddddd;
+}
+
+.btn-send:hover {
+    background-color: var(--active-color);
 }

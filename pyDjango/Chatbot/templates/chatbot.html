@@ -8,7 +8,7 @@
 {% block content %}
 <div class="chat-container">
   <div class="message-box">
-    <ul class="list-unstyled messages-list">
+    <ul class="messages-list">
       <!-- 로그인 사용자 - chat_history 불러오기 -->
       {% for message in chat_history %}
       {% if message.type == 'date_separator' %}
@@ -33,7 +33,7 @@
       <li class="message received">
         <div class="message-text">
           <div class="message-sender"><b>챗봇</b></div>
-          <div class="message-content">안녕하세요. 챗봇입니다.</div>
+          <div class="message-content">챗봇 기본 응답</div>
           <div class="message-time">{{ now }}</div>
         </div>
       </li>
@@ -42,11 +42,9 @@
 
   <form class="message-form">
     {%csrf_token%}
-    <div class="input-group">
-      <input type="text" class="form-control message-input" placeholder="질문을 입력해주세요.">
-      <div class="input-group-append">
-        <button type="submit" class="btn btn-outline-secondary btn-send">전송</button>
-      </div>
+    <div class="input-wrapper">
+      <input type="text" class="message-input" placeholder="질문을 입력해주세요.">
+      <button type="submit" class="btn-send">전송</button>
     </div>
   </form>
 </div>
