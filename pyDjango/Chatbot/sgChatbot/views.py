@@ -7,7 +7,7 @@ weekday_korean = ['월', '화', '수', '목', '금', '토', '일']
 
 def chatbot(request):
     # chatgpt api 들어갈 부분
-    default_response = '무엇을 도와드릴까요?'
+    default_response = '챗봇 답변'
 
     if request.method == 'POST':
         message = request.POST.get('message')
@@ -18,7 +18,6 @@ def chatbot(request):
             chat_history = cache.get(user_key, [])
 
             now = datetime.now()
-            today_key = now.strftime('%Y-%m-%d')
             today_label = f"{now.year}년 {now.month}월 {now.day}일 ({weekday_korean[now.weekday()]})"
 
             # 마지막 저장된 날짜 확인, 구분선 추가
