@@ -16,9 +16,6 @@
       {% else %}
       <li class="message {% if message.type == 'user' %}sent{% else %}received{% endif %}">
         <div class="message-text">
-          <div class="message-sender">
-            <b>{% if message.type == 'user' %}사용자{% else %}챗봇{% endif %}</b>
-          </div>
           <div class="message-content">{{ message.text }}</div>
           <div class="message-time">{{ message.time }}</div>
         </div>
@@ -32,8 +29,25 @@
       <!-- 기본 챗봇 메시지 -->
       <li class="message received">
         <div class="message-text">
-          <div class="message-sender"><b>챗봇</b></div>
-          <div class="message-content">챗봇 기본 응답</div>
+          <img class="character-image" src="{% static 'image/서강이.png' %}">
+          <div class="message-content">
+            <p>안녕하세요. 서강대학교 챗봇입니다.</p>
+            <p>아래 버튼에서 궁금한 점을 선택하고 질문해주세요.</p>
+          </div>
+        </div>
+      </li>
+      <li class="message received">
+        <div class="message-text">
+          <div class="chat-box">
+            <a href="#none" class="icon_box chatbot-btn" data-type="학사공지">
+              <img class="notice-image" src="{% static 'image/학사공지.png' %}">
+              <span class="m_txt"><span>학사공지<br></span></span>
+            </a>
+            <a href="#none" class="icon_box chatbot-btn" data-type="학과정보">
+              <img class="notice-image" src="{% static 'image/학과정보.png' %}">
+              <span class="m_txt"><span>학과정보<br></span></span>
+            </a>
+          </div>
           <div class="message-time">{{ now }}</div>
         </div>
       </li>
@@ -49,87 +63,5 @@
   </form>
 </div>
 
-<script>
-  const messageList = document.querySelector('.messages-list');
-  const messageForm = document.querySelector('.message-form');
-  const messageInput = document.querySelector('.message-input');
-
-  function formatCurrentTime() {
-    const now = new Date();
-    return now.getHours().toString().padStart(2, '0') + ':' +
-      now.getMinutes().toString().padStart(2, '0');
-  }
-
-  function formatTodayDate() {
-    const now = new Date();
-    return now.getFullYear() + '-' +
-      (now.getMonth() + 1).toString().padStart(2, '0') + '-' +
-      now.getDate().toString().padStart(2, '0');
-  }
-
-  function insertDateIfNeeded() {
-    const today = formatTodayDate();
-    const lastDate = localStorage.getItem('lastMessageDate');
-
-    if (lastDate !== today) {
-      const dateItem = document.createElement('li');
-      dateItem.classList.add('date-separator');
-      dateItem.textContent = '📅 ' + today;
-      messageList.appendChild(dateItem);
-      localStorage.setItem('lastMessageDate', today);
-    }
-  }
-
-  messageForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const message = messageInput.value.trim();
-    if (message.length === 0) {
-      return;
-    }
-
-    const time = formatCurrentTime();
-    insertDateIfNeeded();  // 오늘 날짜 표시
-
-    // 사용자 메시지 추가
-    const userMessageItem = document.createElement('li');
-    userMessageItem.classList.add('message', 'sent');
-    userMessageItem.innerHTML = `
-      <div class="message-text">
-        <div class="message-sender"><b>사용자</b></div>
-        <div class="message-content">${message}</div>
-        <div class="message-time">${time}</div>
-      </div>`;
-    messageList.appendChild(userMessageItem);
-    messageList.scrollTop = messageList.scrollHeight;
-
-    messageInput.value = '';
-
-    // 챗봇 응답 처리
-    fetch('', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({
-        'csrfmiddlewaretoken': document.querySelector('[name=csrfmiddlewaretoken]').value,
-        'message': message
-      })
-    })
-      .then(response => response.json())
-      .then(data => {
-        const response = data.response;
-        const time = formatCurrentTime();
-
-        const botMessageItem = document.createElement('li');
-        botMessageItem.classList.add('message', 'received');
-        botMessageItem.innerHTML = `
-        <div class="message-text">
-          <div class="message-sender"><b>챗봇</b></div>
-          <div class="message-content">${response}</div>
-          <div class="message-time">${time}</div>
-        </div>`;
-        messageList.appendChild(botMessageItem);
-        messageList.scrollTop = messageList.scrollHeight;
-      });
-  });
-</script>
+<script src="{% static 'chatbot.js' %}"></script>
 {% endblock %}
