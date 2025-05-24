@@ -11,10 +11,10 @@
   {% block styles %}{% endblock %}
 
   {% load static %}
-    <link rel="stylesheet" href="{% static 'main.css' %}">
+  <link rel="stylesheet" href="{% static 'main.css' %}">
 
 </head>
-<header>
+<body>
   <div class="main-header">
     <div class="logo">
       <img class="logo-image" src="{% static 'image/logo.png' %}" alt="로고" />
@@ -23,12 +23,9 @@
       <button id="menuButton"><i class="fa-solid fa-bars"></i></button>
     </div>
   </div>
-</header>
-
-<body>
   {% block content %}{% endblock %}
   <div class="dimmed" id="dimmedBackground" style="z-index: 100;"></div>
-  <div class="sub_menu" id="sideMenu">
+  <div class="side_menu" id="sideMenu">
     <button id="closeMenuButton"
       style="align-self: flex-end; background: none; border: none; font-size: 24px; cursor: pointer;">
       <i class="fa-solid fa-arrow-left"></i>
@@ -39,43 +36,22 @@
         <i class="fas fa-user"></i>&ensp;{% firstof user.get_short_name user.get_username %}&ensp;
         <form method="post" action="{% url 'logout' %}" style="display: inline;">
           {% csrf_token %}
-          <button type="submit" class="sub_btn">
+          <button type="submit" class="menu_btn">
             로그아웃
           </button>
         </form>
 
-        <a class="sub_btn" href="{% url 'password_change' %}">비밀번호 변경</a>
+        <a class="menu_btn" href="{% url 'password_change' %}">비밀번호 변경</a>
         {% else %}
         <i class="fas fa-user" style="font-size: 13px; letter-spacing: 1px;"> Guest</i>
-        <a class="sub_btn" href="{% url 'login' %}">로그인</a>
-        <a class="sub_btn" href="{% url 'register' %}">회원가입</a>
+        <a class="menu_btn" href="{% url 'login' %}">로그인</a>
+        <a class="menu_btn" href="{% url 'register' %}">회원가입</a>
         {% endif %}
       </li>
     </ul>
   </div>
 
   <script src="{% static 'script.js' %}"></script>
-
-  <script>
-    const menuButton = document.getElementById('menuButton');
-    const closeButton = document.getElementById('closeMenuButton');
-    const dimmed = document.getElementById('dimmedBackground');
-    const subMenu = document.getElementById('sideMenu');
-
-    menuButton.addEventListener('click', () => {
-      dimmed.classList.add('active');
-      subMenu.classList.add('active');
-    });
-
-    // dimmed나 닫기 버튼 클릭 시 메뉴 닫기
-    function closeMenu() {
-      dimmed.classList.remove('active');
-      subMenu.classList.remove('active');
-    }
-
-    dimmed.addEventListener('click', closeMenu);
-    closeButton.addEventListener('click', closeMenu);
-  </script>
 
   {% block scripts %}{% endblock %}
 </body>
