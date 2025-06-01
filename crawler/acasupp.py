@@ -209,7 +209,7 @@ if __name__ == "__main__":
     scraper = NoticeScraper(driver, BASE_URL, start_page=1, end_page=11)
     scraped = scraper.scrape_notice_pages()
 
-    with open("data/raw/acasupp.json", "w", encoding="utf-8") as f:
+    with open("data/acasupport/raw/acasupp.json", "w", encoding="utf-8") as f:
         json.dump(scraped, f, ensure_ascii=False, indent=2)
     print(f"\n✅ 총 {len(scraped)}개의 게시글 저장 완료!")
     driver.quit()
