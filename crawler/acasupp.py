@@ -135,7 +135,7 @@ class WebDriverManager:
     @staticmethod
     def initialize_driver():
         options = webdriver.ChromeOptions()
-        options.add_argument("--headless")  # 창 안 띄우는 옵션
+        #options.add_argument("--headless")  # 창 안 띄우는 옵션
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
         return driver
 
@@ -206,10 +206,10 @@ if __name__ == "__main__":
     driver = WebDriverManager.initialize_driver()
     BASE_URL = "https://sogang.ac.kr/ko/academic-support/notices"
 
-    scraper = NoticeScraper(driver, BASE_URL, start_page=1, end_page=16)
+    scraper = NoticeScraper(driver, BASE_URL, start_page=1, end_page=11)
     scraped = scraper.scrape_notice_pages()
 
-    with open("data/raw/aca-support_test.json", "w", encoding="utf-8") as f:
+    with open("data/raw/acasupp.json", "w", encoding="utf-8") as f:
         json.dump(scraped, f, ensure_ascii=False, indent=2)
     print(f"\n✅ 총 {len(scraped)}개의 게시글 저장 완료!")
     driver.quit()
