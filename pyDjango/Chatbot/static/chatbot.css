@@ -1,75 +1,240 @@
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+:root {
+    --main-color: #b30000;
+    --active-color: #5c8b45;
+    --user-color: #fdfdfd;
+    --charbot-color: #b30000;
 }
 
-body,
-html {
-    height: 100%;
-    font-family: 'Pretendard-Regular';
+* {
+    box-sizing: border-box;
+    word-break: keep-all;
 }
 
 .chat-container {
-    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    right: 0;
+    background-color: #ecf0f1;
+    height: 87%;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 15px 25px;
 }
 
-/* 챗봇 */
+.date-separator {
+    text-align: center;
+    color: #95a5a6;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.chat-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.icon_box {
+    width: 90px;
+    height: 80px;
+    padding: 10px;
+    text-align: center;
+    color: #282828;
+    background-color: var(--user-color);
+    border-radius: 15px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_box:hover {
+    background-color: var(--active-color);
+    color: var(--user-color);
+}
+
+.notice-image {
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+.message .chat-box {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+}
+
+/* 메시지 */
 .messages-box {
     flex: 1;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
 }
 
 .messages-list {
-    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .message {
-    margin-bottom: 15px;
-    list-style: none;
-}
-
-.message-text {
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.message-sender {
-    font-size: 14px;
-    line-height: 1.8em;
-}
-
-.sent {
-    background-color: #5c8b45;
-    align-self: flex-end;
-    color: #f1f1f1;
-}
-
-.received {
-    background-color: #dddddd;
-    align-self: flex-start;
-}
-
-/* 전송 */
-.message-form {
     display: flex;
+    margin-bottom: 15px;
+}
+
+.message .message-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sent.message-text {
+    align-items: flex-end;
+}
+
+.received .message-text {
+    align-items: flex-start;
+}
+
+.character-image {
+    width: 80px;
+}
+
+.sent .message-time {
+    text-align: right;
+}
+
+.message-content {
+    width: fit-content;
+    background-color: #aaa;
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: 5px;
+    color: #333;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.message-content p {
+    margin: 0.5em;
+}
+
+.message-time {
+    font-size: 12px;
+    color: #95a5a6;
+    margin-top: 5px;
+}
+
+/* 사용자 메시지 스타일 */
+.message.sent .message-content {
+    background-color: var(--user-color);
+    color: #000000;
+    align-self: flex-end;
+    max-width: 60%;
+}
+
+/* 챗봇 메시지 스타일 */
+.message.received .message-content {
+    background-color: var(--charbot-color);
+    color: white;
+    max-width: 60%;
+}
+
+/* 로딩 */
+.message.loading .message-content {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.message.loading .message-content span {
+    width: 6px;
+    height: 6px;
+    background-color: #555;
+    border-radius: 50%;
+    animation: blink 1.2s infinite;
+}
+
+.message.loading .message-content span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.message.loading .message-content span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+}
+
+/* 입력칸 */
+.message-form {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 10px;
+    padding: 8px;
+    border-top: 1px solid #ddd;
     background-color: #f8f9fa;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-grow: 1;
 }
 
 .message-input {
     flex: 1;
-    border-radius: 0;
-    border-right: none;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    outline: none;
+    width: 100%;
+}
+
+.message-input:focus {
+    border-color: var(--active-color);
 }
 
 .btn-send {
-    border-radius: 0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #dddddd;
+}
+
+.btn-send:hover {
+    background-color: var(--active-color);
 }

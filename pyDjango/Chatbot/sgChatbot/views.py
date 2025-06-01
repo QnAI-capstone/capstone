@@ -3,11 +3,38 @@ from django.http import JsonResponse
 from django.core.cache import cache
 from datetime import datetime
 
+# chatgpt api
+import openai
+import os
+from django.http import JsonResponse
+from django.conf import settings
+
+# chatgpt
+def get_chatgpt_response(user_input):
+    try:
+        # ChatGPT API 호출
+        response = openai.Completion.create(
+            model="gpt-4.5-turbo",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": user_input}
+            ],
+            max_tokens=500
+        )
+        
+        message = response['choices'][0]['message']['content']
+        return message
+    
+    except Exception as e:
+        print(f"Error: {e}")
+        return "Sorry, I couldn't process your request."
+
+# chatbot
 weekday_korean = ['월', '화', '수', '목', '금', '토', '일']
 
 def chatbot(request):
     # chatgpt api 들어갈 부분
-    default_response = '무엇을 도와드릴까요?'
+    default_response = "chatgpt 응답"
 
     if request.method == 'POST':
         message = request.POST.get('message')
@@ -18,7 +45,6 @@ def chatbot(request):
             chat_history = cache.get(user_key, [])
 
             now = datetime.now()
-            today_key = now.strftime('%Y-%m-%d')
             today_label = f"{now.year}년 {now.month}월 {now.day}일 ({weekday_korean[now.weekday()]})"
 
             # 마지막 저장된 날짜 확인, 구분선 추가

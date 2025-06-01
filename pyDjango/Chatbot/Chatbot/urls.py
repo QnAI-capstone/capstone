@@ -20,7 +20,7 @@ from Chatbot.views import UserCreateView, UserCreateDoneTV
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('chatbot/', include('sgChatbot.urls')),
+    path('', include('sgChatbot.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/register/', UserCreateView.as_view(), name='register'),
     path('accounts/register/done/', UserCreateDoneTV.as_view(), name='register_done'),

@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +28,6 @@ SECRET_KEY = 'django-insecure-s**@z(b&m$iw7fdfb=b^vt2qc%@ge=_8z)x!5iu6q$fx*e9ho8
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -132,10 +132,14 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 #LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL='/chatbot/'
-LOGOUT_REDIRECT_URL='/chatbot/'
+LOGIN_REDIRECT_URL='/'
+LOGOUT_REDIRECT_URL='/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# OpenAI API 키 설정
+load_dotenv()
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')

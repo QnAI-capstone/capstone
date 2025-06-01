@@ -1,119 +1,275 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'SOGANGUNIVERSITYTTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/SOGANGUNIVERSITYTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+  --main-color: #b30000;
+  --active-color: #5c8b45;
+  --disable-color: #d3d3d3;
+  --white: #fff;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Pretendard-Regular';
+  overflow: hidden;
+  background-color: #ecf0f1;
+}
+
+* {
+  box-sizing: border-box;
+  word-break: keep-all;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
 /* 헤더 */
 .main-header {
-  background-color: #b30000;
+  position: fixed;
+  background-color: var(--main-color);
   height: 60px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 15px;
+  align-items: center;
+  z-index: 500;
 }
 
 .logo {
-  width: 54%;
+  width: 53%;
 }
 
 .logo-image {
-  width: 200px;
+  width: 150px;
   object-fit: contain;
-  margin-top: 10px;
-}
-
-.nav-item {
-  display: flex;
-  flex-direction: column;
+  margin-top: 5px;
+  margin-left: 12px;
 }
 
 /* 메뉴 */
-.menu {
-  margin-right: 20px;
-  margin-top: 20px;
-}
-
-#menuButton {
-  background-color: transparent;
+.main-header .menu button {
+  background: none;
   border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+  color: white;
 }
 
-.sub_menu {
+.side_menu {
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
   padding: 30px 16px;
-  width: 300px;
-  background-color: #fff;
-  box-sizing: border-box;
+  width: 360px;
+  background-color: var(--white);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
-  z-index: 500;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  z-index: 501;
 }
 
-#closeMenuButton {
-  margin-bottom: 16px;
+.side_menu .navbar-nav {
+  padding: 20px;
+  list-style: none;
+}
+
+.side_menu .nav-item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
 }
 
 .dimmed {
   position: fixed;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
-  background: #000;
-  opacity: .8;
-  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
   z-index: 10
 }
 
 .dimmed,
-.sub_menu {
+.side_menu {
   display: none;
-  /* 초기에는 숨김 */
 }
 
 .dimmed.active,
-.sub_menu.active {
+.side_menu.active {
   display: block;
-  /* active 클래스가 추가되면 보이게 */
 }
 
-.sub_btn,
-button.sub_btn {
+.menu_btn {
   display: inline-block;
-  font-weight: 400;
+  width: 268px;
+  padding: 8px 20px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  font-size: 17px;
   text-align: center;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #f1f1f1;
-  background-color: #b30000;
-  border: 1px solid transparent;
-  padding: .375rem .75rem;
-  font-size: 1rem;
+  cursor: pointer;
+  background-color: white;
+  color: var(--main-color);
+  text-decoration: none;
+  margin-top: 10px;
   line-height: 1.5;
-  border-radius: .25rem;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.sub_btn:hover,
-button.sub_btn:hover {
-  color: #212529;
-  text-decoration: none;
+.menu_btn:hover {
+  background-color: var(--main-color);
+  color: var(--white);
 }
 
-.content {
-  margin-left: 80px;
-  margin-right: 80px;
+.btn {
+  font-family: 'Pretendard-Regular';
+  display: inline-block;
+  width: fit-content;
+  padding: 8px 20px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  color: var(--main-color);
+  text-decoration: none;
+  margin-top: 10px;
+  line-height: 1.5;
+  vertical-align: middle;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+.btn:focus {
+  outline: none;
 }
 
 .btn-row {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 20px;
-  /* 버튼 간 간격 */
-  margin-left: 262px;
-  /* 왼쪽 정렬 위치 */
+}
+
+/* 콘텐츠 영역 */
+.wrap {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  right: 0;
+}
+
+.content {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-top: 30px;
+  font-family: 'SOGANGUNIVERSITYTTF';
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.desc {
+  font-style: italic;
+  color: #777;
+}
+
+.alert {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.card {
+  padding-top: 30px;
+  border: none;
+}
+
+/* 폼 그룹 스타일 */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #555;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--main-color);
+}
+
+.form-group input {
+  width: 96%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group input:focus {
+  border-color: var(--active-color);
+  outline: none;
+}
+
+/* footer */
+.chat-footer {
+  background-color: #424549;
+  color: #ecf0f1;
+  font-size: 14px;
+  padding: 15px 20px;
+  text-align: center;
+  line-height: 1.6;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-top: 1px solid #34495e;
+}
+
+.chat-container {
+  padding-bottom: 80px;
 }

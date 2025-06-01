@@ -4,41 +4,52 @@
 {% block title %}register.html{% endblock %}
 
 {% block content %}
-<div class="content">
-    <h1>회원가입</h1>
-    <p class="font-italic">사용자 이름과 비밀번호를 입력해주세요.</p>
+<div class="wrap">
+    <div class="content">
+        <h1>회원가입</h1>
+        <p class="desc">사용자 이름과 비밀번호를 입력해주세요.</p>
 
-    {% if form.errors %}
-    <div class="alert alert-danger">
-        <div class="font-weight-bold">Error.</div>
-        {{ form.errors }}
-    </div>
-    {% endif %}
-
-    <form action="." method="post" class="card pt-3">{% csrf_token %}
-        <div class="form-group row">
-            {{ form.username|add_label_class:"col-form-label col-sm-3 ml-3 font-weight-bold" }}
-            <div class="col-sm-5">
-                {{ form.username|add_class:"form-control"|attr:"autofocus" }}
-            </div>
+        {% if form.errors %}
+        <div class="alert">
+            <div style="font-weight: bold;">회원가입 오류</div>
+            {{ form.errors }}
         </div>
-            <div class="form-group row">
-                {{ form.password1|add_label_class:"col-form-label col-sm-3 ml-3 font-weight-bold" }}
-                <div class="col-sm-5">
-                    {{ form.password1|add_class:"form-control" }}
-                </div>
-            </div>
-            <div class="form-group row">
-                {{ form.password2|add_label_class:"col-form-label col-sm-3 ml-3 font-weight-bold" }}
-                <div class="col-sm-5">
-                    {{ form.password2|add_class:"form-control" }}
+        {% endif %}
+
+
+        <form action="." method="post" class="card">{% csrf_token %}
+            <div class="form-group">
+                <label for="username" class="label">사용자 이름</label>
+                <div>
+                    {{ form.username|add_class:"form-input"|attr:"autofocus" }}
                 </div>
             </div>
             <div class="form-group">
-                <div class="offset-sm-3 col-sm-5">
-                    <input type="submit" value="확인" class="sub_btn"/>
+                <label for="password1" class="label">비밀번호</label>
+                <div>
+                    {{ form.password1|add_class:"form-input" }}
                 </div>
             </div>
-    </form>
+            <div class="form-group">
+                <label for="password2" class="label">비밀번호 확인</label>
+                <div>
+                    {{ form.password2|add_class:"form-input" }}
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="btn-row">
+                    <button type="submit" class="btn">확인</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
+<footer class="chat-footer">
+  <div class="footer-info">
+    04107 서울특별시 마포구 백범로 35 (신수동) 서강대학교 | 02-705-8114
+  </div>
+  <div class="footer-copy">
+    COPYRIGHT&copy; SOGANG UNIVERSITY. ALL RIGHTS RESERVED.
+  </div>
+</footer>
 {% endblock %}
