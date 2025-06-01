@@ -1,0 +1,2356 @@
+{
+  "2025 서강대학교 요람": {
+    "로욜라국제대학": {
+      "Global Korean Studies": {
+        "Course Requirements": [
+          {
+            "Credit Requirements": {
+              "지식융합미디어 글로벌한국학전공": {
+                "Single major": {
+                  "Liberal Arts_교양": {
+                    "Core Required": 11,
+                    "Core Required Electives": {
+                      "①": 3,
+                      "②": 3,
+                      "③": 3,
+                      "④": 3
+                    },
+                    "Total cradits": 23
+                  },
+                  "학부필수": 10,
+                  "Major": {
+                    "학부선택": 9,
+                    "Required": 15,
+                    "Elective": 18,
+                    "Total credits": 42
+                  },
+                  "Total Credits Required for Degree": 130
+                },
+                "Multiple major": {
+                  "Liberal Arts_교양": {
+                    "Core Required": 11,
+                    "Core Required Electives": {
+                      "①": 3,
+                      "②": 3,
+                      "③": 3,
+                      "④": 3
+                    },
+                    "Total cradits": 23
+                  },
+                  "학부필수": 10,
+                  "Major": {
+                    "학부선택": 9,
+                    "Required": 9,
+                    "Elective": 18,
+                    "Total credits": 36
+                  },
+                  "Total Credits Required for Degree": 130
+                }
+              },
+              "로욜라국제대학 글로벌한국학전공": {
+                "영어트랙_국내학생": {
+                  "Single major": {
+                    "Liberal Arts_교양": {
+                      "Core Required": 11,
+                      "Core Required Electives": {
+                        "①": 3,
+                        "②": 3,
+                        "③": 3,
+                        "④": 3
+                      },
+                      "Total cradits": 23
+                    },
+                    "Pre-Major Course": 6,
+                    "Major": {
+                      "Required": 3,
+                      "Elective": 39,
+                      "Total credits": 42
+                    },
+                    "Total Credits Required for Degree": 130
+                  },
+                  "Multiple major": {
+                    "Liberal Arts_교양": {
+                      "Core Required": 11,
+                      "Core Required Electives": {
+                        "①": 3,
+                        "②": 3,
+                        "③": 3,
+                        "④": 3
+                      },
+                      "Total cradits": 23
+                    },
+                    "Pre-Major Course": 6,
+                    "Major": {
+                      "Required": 3,
+                      "Elective": 33,
+                      "Total credits": 36
+                    },
+                    "Total Credits Required for Degree": 130
+                  },
+                  "비고": [
+                    "*전공입문교과는 전공이수학점에 포함되지 않음.",
+                    "*Pre-Major Courses are not counted as Major credits"
+                  ]
+                },
+                "영어트랙_국제학생": {
+                  "Single major": {
+                    "Liberal Arts_교양": {
+                      "Core Required": 16,
+                      "Core Required Electives": {
+                        "①, ②, ③, ④": 6
+                      },
+                      "Total cradits": 22
+                    },
+                    "Pre-Major Course": 6,
+                    "Major": {
+                      "Required": 3,
+                      "Elective": 39,
+                      "Total credits": 42
+                    },
+                    "Total Credits Required for Degree": 130
+                  },
+                  "Multiple major": {
+                    "Liberal Arts_교양": {
+                      "Core Required": 16,
+                      "Core Required Electives": {
+                        "①, ②, ③, ④": 6
+                      },
+                      "Total cradits": 22
+                    },
+                    "Pre-Major Course": 6,
+                    "Major": {
+                      "Required": 3,
+                      "Elective": 33,
+                      "Total credits": 36
+                    },
+                    "Total Credits Required for Degree": 130
+                  }
+                }
+              }
+            }
+          },
+          {
+            "교과목 이수요건": {
+              "Pre-Major Courses": [
+                {
+                  "Course Code": "GKS1001",
+                  "Title": "Critical Thinking for Social Inquiry",
+                  "Credits": 3
+                },
+                {
+                  "Course Code": "GKS1002",
+                  "Title": "Global Citizenship",
+                  "Credits": 3
+                }
+              ],
+              "GKS Required Courses": [
+                {
+                  "Course Code": "GKS2001",
+                  "Former Code": "KOS2007",
+                  "Title": "Introductory Seminar in Korean Studies",
+                  "Credits": 3
+                }
+              ],
+              "GKS Electives": {
+                "Course Code/Title": [
+                  {
+                    "Course Code": "GKS2002",
+                    "Title": "Korean Studies and Data Science"
+                  },
+                  {
+                    "Course Code": "GKS2003",
+                    "Title": "Understanding Korean History in the Context of Time/Space"
+                  },
+                  {
+                    "Course Code": "GKS2004",
+                    "Title": "Capstone 1: Korean Studies in Practice"
+                  },
+                  {
+                    "Course Code": "GKS3001",
+                    "Title": "Global Diffusion of the K-wave"
+                  },
+                  {
+                    "Course Code": "GKS3002",
+                    "Title": "Toward Creation: Introduction to Korea Through Literature and Film"
+                  },
+                  {
+                    "Course Code": "GKS3004",
+                    "Title": "Formation of Modern Korea"
+                  },
+                  {
+                    "Course Code": "GKS3005",
+                    "Title": "Globalisation and Korean Development"
+                  },
+                  {
+                    "Course Code": "GKS3006",
+                    "Title": "Tigers and Dragons: East Asian Development Revisited"
+                  },
+                  {
+                    "Course Code": "GKS3007",
+                    "Title": "Topics in Korea Today"
+                  },
+                  {
+                    "Course Code": "GKS3008",
+                    "Title": "Statistical Thinking for Global Korean Studies"
+                  },
+                  {
+                    "Course Code": "GKS3009",
+                    "Title": "Korean Society and Media: Continuity of Political Topics"
+                  },
+                  {
+                    "Course Code": "GKS3010",
+                    "Title": "Development of Web Contents for Korean Studies"
+                  },
+                  {
+                    "Course Code": "GKS3011",
+                    "Title": "Korean Studies Seminar Ⅰ : Everyday Life of North and South"
+                  },
+                  {
+                    "Course Code": "GKS3012",
+                    "Title": "Image Pedagogy for Korean Studies"
+                  },
+                  {
+                    "Course Code": "GKS3013",
+                    "Title": "Korean Studies in Practice Ⅱ (Capstone)"
+                  },
+                  {
+                    "Course Code": "GKS3014",
+                    "Title": "Sociological Imagination for Global Korean Studies"
+                  },
+                  {
+                    "Course Code": "GKS3016",
+                    "Title": "세계 속의 한국인1"
+                  },
+                  {
+                    "Course Code": "GKS3017",
+                    "Title": "세계 속의 한국인2"
+                  },
+                  {
+                    "Course Code": "GKS4001",
+                    "Title": "Translated Korea: The Social History of Concepts in Korea"
+                  },
+                  {
+                    "Course Code": "GKS4003",
+                    "Title": "Modern Korean Fiction"
+                  },
+                  {
+                    "Course Code": "GKS4004",
+                    "Title": "Development: Korean Experience and Global Debates"
+                  },
+                  {
+                    "Course Code": "GKS4005",
+                    "Title": "Formation of Contemporary Korea"
+                  },
+                  {
+                    "Course Code": "GKS4006",
+                    "Title": "Korean Studies Seminar : Gender and Development"
+                  },
+                  {
+                    "Course Code": "GKS4007",
+                    "Title": "International Politics of the Korean Peninsula"
+                  },
+                  {
+                    "Course Code": "GKS4008",
+                    "Title": "Social Change and Movement in Contemporary Korea"
+                  },
+                  {
+                    "Course Code": "GKS4009",
+                    "Title": "Introduction to Exploratory Machine Learning"
+                  },
+                  {
+                    "Course Code": "GKS4011",
+                    "Title": "The Mediums of Korean Cultural Modernity"
+                  },
+                  {
+                    "Course Code": "GKS4012",
+                    "Title": "Seeing Korea: An Introduction to Image Generation, Processing & Computer Vision"
+                  },
+                  {
+                    "Course Code": "GKS4015",
+                    "Title": "Curatorial Studies for Korean Culture Exchange"
+                  },
+                  {
+                    "Course Code": "GKS4016",
+                    "Title": "Theory and Practice in Global Korean Studies Ⅰ (Capstone Design)"
+                  },
+                  {
+                    "Course Code": "GKSG002",
+                    "Title": "Digital Arts and Scholarly Craft in Korean Studies"
+                  },
+                  {
+                    "Course Code": "GKSG003",
+                    "Title": "Reading Theories of Korean Development"
+                  },
+                  {
+                    "Course Code": "GKSG004",
+                    "Title": "Research in Korean Studies: Labour and Development"
+                  },
+                  {
+                    "Course Code": "GKSG005",
+                    "Title": "Historical Social Science and Korean Studies"
+                  },
+                  {
+                    "Course Code": "GKSG007",
+                    "Title": "Big Data Analysis in Korean Studies"
+                  },
+                  {
+                    "Course Code": "GKSG008",
+                    "Title": "Programming for Applied Deep Learning"
+                  },
+                  {
+                    "Course Code": "GKSG009",
+                    "Title": "Korean Computational Linguistics"
+                  },
+                  {
+                    "Course Code": "GKSG010",
+                    "Title": "Filming Korea: Korean Historians Behind the Camera"
+                  },
+                  {
+                    "Course Code": "GKSG011",
+                    "Title": "Capstone 2: Advanced Academic Writing in Korean Studies"
+                  },
+                  {
+                    "Course Code": "GKSG012",
+                    "Title": "Introduction to Korean Sociolinguistics"
+                  },
+                  {
+                    "Course Code": "GKS3024",
+                    "Title": "Korean Language & Culture- Intermediate"
+                  },
+                  {
+                    "Course Code": "GKS3025",
+                    "Title": "Korean Language & History- Intermediate"
+                  },
+                  {
+                    "Course Code": "GKS3026",
+                    "Title": "Korean Language & Society- Intermediate"
+                  },
+                  {
+                    "Course Code": "GKS3027",
+                    "Title": "Korean Language & Culture-Beginner"
+                  },
+                  {
+                    "Course Code": "GKS3028",
+                    "Title": "Korean Language & History-Beginner"
+                  },
+                  {
+                    "Course Code": "GKS3029",
+                    "Title": "Korean Language & Society-Beginner"
+                  },
+                  {
+                    "Course Code": "GKS3030",
+                    "Title": "Korean Language & Culture-Advanced"
+                  },
+                  {
+                    "Course Code": "GKS3031",
+                    "Title": "Korean Language & History-Advanced"
+                  },
+                  {
+                    "Course Code": "GKS9000",
+                    "Title": "Elementary Korean 1"
+                  },
+                  {
+                    "Course Code": "GKS9001",
+                    "Title": "Elementary Korean 2"
+                  },
+                  {
+                    "Course Code": "GKS9002",
+                    "Title": "Intermediate Korean 1"
+                  },
+                  {
+                    "Course Code": "GKS9003",
+                    "Title": "Intermediate Korean 2"
+                  },
+                  {
+                    "Course Code": "GKS9004",
+                    "Title": "Advanced Korean Ⅰ"
+                  },
+                  {
+                    "Course Code": "GKS9005",
+                    "Title": "Advanced Korean Ⅱ"
+                  }
+                ],
+                "Credits": 39,
+                "비고": "단일전공 39 다전공 33"
+              }
+            }
+          }
+        ]
+      },
+      "한국어교육전공": {
+        "전공 이수요건": {
+          "학점 이수요건": {
+            "단일전공(자격증 취득)": {
+              "전인교육과정": {
+                "공통필수": 16,
+                "공통선택": {
+                  "①, ②, ③, ④": 6
+                }
+              },
+              "전인교육소계": 22,
+              "전공입문": 3,
+              "전공": {
+                "전공필수": 15,
+                "전공선택": 30,
+                "전공소계": 45
+              },
+              "총이수학점": 130
+            },
+            "다전공(자격증 취득)": {
+              "전인교육과정": {
+                "공통필수": 16,
+                "공통선택": {
+                  "①, ②, ③, ④": 6
+                }
+              },
+              "전인교육소계": 22,
+              "전공입문": 3,
+              "전공": {
+                "전공필수": 15,
+                "전공선택": 30,
+                "전공소계": 45
+              },
+              "총이수학점": 130
+            },
+            "단일전공(자격증 미취득)": {
+              "전인교육과정": {
+                "공통필수": 16,
+                "공통선택": {
+                  "①, ②, ③, ④": 6
+                }
+              },
+              "전인교육소계": 22,
+              "전공입문": 3,
+              "전공": {
+                "전공필수": 12,
+                "전공선택": 24,
+                "전공소계": 36
+              },
+              "총이수학점": 130
+            },
+            "비고": "*전공입문교과는 전공이수학점에 포함되지 않음."
+          },
+          "교과목 이수요건": {
+            "전공 입문": [
+              {
+                "Course Code": "KLC1002",
+                "Title": "한국어의사소통Ⅱ",
+                "Credits": 3,
+                "비고": "국제학생 전용교과목"
+              }
+            ],
+            "전공 필수": [
+              {
+                "Course Code": "GKE2001",
+                "Title": "한국어교육학개론",
+                "Credits": 3
+              },
+              {
+                "Course Code": "GKE2002",
+                "Title": "한국어학개론",
+                "Credits": 3
+              },
+              {
+                "Course Code": "GKE2003",
+                "Title": "외국어습득론",
+                "Credits": 3
+              },
+              {
+                "Course Code": "GKE2004",
+                "Title": "한국역사와문화",
+                "Credits": 3
+              },
+              {
+                "Course Code": "GKE2005",
+                "Title": "외국어로서의한국어교육실습",
+                "Credits": 3
+              }
+            ],
+            "전공 선택": {
+              "Course Code/Title": [
+                {
+                  "Course Code": "GKE3001",
+                  "Title": "한국어문법론"
+                },
+                {
+                  "Course Code": "GKE3002",
+                  "Title": "한국어어문규범"
+                },
+                {
+                  "Course Code": "GKE3003",
+                  "Title": "대조언어학"
+                },
+                {
+                  "Course Code": "GKE3004",
+                  "Title": "언어학개론"
+                },
+                {
+                  "Course Code": "GKE3005",
+                  "Title": "매체활용한국어교육"
+                },
+                {
+                  "Course Code": "GKE3006",
+                  "Title": "한국문화교육론"
+                },
+                {
+                  "Course Code": "GKE3007",
+                  "Title": "한국어교수법"
+                },
+                {
+                  "Course Code": "GKE3008",
+                  "Title": "한국어교육과정및교재론"
+                },
+                {
+                  "Course Code": "GKE3009",
+                  "Title": "한국어문법교육론"
+                },
+                {
+                  "Course Code": "GKE3010",
+                  "Title": "한국어발음교육론"
+                },
+                {
+                  "Course Code": "GKE3011",
+                  "Title": "한국어어휘교육론"
+                },
+                {
+                  "Course Code": "GKE3012",
+                  "Title": "한국어이해교육론"
+                },
+                {
+                  "Course Code": "GKE3013",
+                  "Title": "한국어평가론"
+                },
+                {
+                  "Course Code": "GKE3014",
+                  "Title": "한국어표현교육론"
+                },
+                {
+                  "Course Code": "GKE3015",
+                  "Title": "한국대중문화의이해"
+                },
+                {
+                  "Course Code": "GKE3016",
+                  "Title": "한국문학개론"
+                },
+                {
+                  "Course Code": "GKE3017",
+                  "Title": "기초번역"
+                },
+                {
+                  "Course Code": "GKE3018",
+                  "Title": "기초통역"
+                },
+                {
+                  "Course Code": "GKE3019",
+                  "Title": "대중매체영상통번역"
+                },
+                {
+                  "Course Code": "GKE3020",
+                  "Title": "대중매체와한국사회문화"
+                },
+                {
+                  "Course Code": "GKE3021",
+                  "Title": "번역실습및평가"
+                },
+                {
+                  "Course Code": "GKE3022",
+                  "Title": "비즈니스통번역"
+                },
+                {
+                  "Course Code": "GKE3023",
+                  "Title": "에듀테크와한국어교육"
+                },
+                {
+                  "Course Code": "GKE3024",
+                  "Title": "출판번역"
+                },
+                {
+                  "Course Code": "GKE3025",
+                  "Title": "통역실습및평가"
+                },
+                {
+                  "Course Code": "GKE3026",
+                  "Title": "한국공연예술과테크놀로지"
+                },
+                {
+                  "Course Code": "GKE3027",
+                  "Title": "한국어교육영상제작"
+                },
+                {
+                  "Course Code": "GKE3028",
+                  "Title": "한국어데이터기반에듀테크창업"
+                },
+                {
+                  "Course Code": "GKE3029",
+                  "Title": "한국어데이터와한국사회문화"
+                },
+                {
+                  "Course Code": "GKE3030",
+                  "Title": "한류산업과한국어교육"
+                }
+              ],
+              "Credits": {
+                "단일 전공/다전공(자격증 취득)": 30,
+                "다전공(자격증 미취득)": 24
+              },
+              "비고": "GKE3001-GKE3016은 자격증 과정 전공선택"
+            }
+          },
+          "선택적 전공 경로별 이수요건": {
+            "교원자격증(2급) 취득 목적을 위한 과목 이수": {
+              "전공 구분": {
+                "전공필수": [
+                  "GKE2001 한국어교육학개론",
+                  "GKE2002 한국어학개론",
+                  "GKE2003 외국어습득론",
+                  "GKE2004 한국역사와문화",
+                  "GKE2005 외국어로서의한국어교육실습"
+                ],
+                "전공선택": "교원자격증과 관련이 있는 과목(표1 참고)에서 30학점 선택하여 수강",
+                "전공소계": 45
+              },
+              "비고": "(졸업 후 학생들이 직접 문체부 국립국어원 사이트에서 자격증 심사를 신청해야 함.)"
+            },
+            "다전공(자격증 미취득)": {
+              "전공 구분": {
+                "전공필수(12)": [
+                  "GKE2001 한국어교육학개론",
+                  "GKE2002 한국어학개론",
+                  "GKE2003 외국어습득론",
+                  "GKE2004 한국역사와문화"
+                ],
+                "전공선택(24)": "-전공과목 자유롭게 수강",
+                "전공소계": "36학점"
+              }
+            },
+            "[표 1] 문체부 인증 교원자격증 취득 교육과정(로욜라 국제대학 글로벌한국학부 한국어교육 전공)": {
+              "영역별 과목 및 학점": {
+                "1. 한국어학": {
+                  "과목명": [
+                    {
+                      "과목코드": "GKE3001",
+                      "과목명": "한국어문법론",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE3002",
+                      "과목명": "한국어어문규범",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE3003",
+                      "과목명": "한국어학개론",
+                      "학점": 3
+                    }
+                  ]
+                },
+                "2. 일반언어학 및 응용언어학": {
+                  "과목명": [
+                    {
+                      "과목코드": "GKE4001",
+                      "과목명": "대조언어학",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE4002",
+                      "과목명": "언어학개론",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE4003",
+                      "과목명": "외국어습득론",
+                      "학점": 3
+                    }
+                  ]
+                },
+                "3. 외국어로서의 한국어 교육론": {
+                  "과목명": [
+                    {
+                      "과목코드": "GKE5002",
+                      "과목명": "매체활용 한국어교육",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE5003",
+                      "과목명": "한국문화교육론",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE5004",
+                      "과목명": "한국어교수법",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE5005",
+                      "과목명": "한국어교육과정 및교재론",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE5001",
+                      "과목명": "한국어교육학개론",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE5001",
+                      "과목명": "한국어문법교육론",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE3004",
+                      "과목명": "한국어발음교육론",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE3005",
+                      "과목명": "한국어어휘교육론",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE3006",
+                      "과목명": "한국어이해교육론",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE3007",
+                      "과목명": "한국어평가론",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE3008",
+                      "과목명": "한국어표현교육론",
+                      "학점": 3
+                    }
+                  ]
+                },
+                "4. 한국문화": {
+                  "과목명": [
+                    {
+                      "과목코드": "GKE6001",
+                      "과목명": "한국대중문화의 이해",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE6002",
+                      "과목명": "한국문학개론",
+                      "학점": 3
+                    },
+                    {
+                      "과목코드": "GKE6003",
+                      "과목명": "한국역사와문화",
+                      "학점": 3
+                    }
+                  ]
+                },
+                "5. 한국어교육 실습": {
+                  "과목명": [
+                    {
+                      "과목코드": "GKE7001",
+                      "과목명": "외국어로서의 한국어교육실습",
+                      "학점": 3
+                    }
+                  ]
+                },
+                "총 과목 수": "21 개",
+                "총학점": "63 학점"
+              }
+            }
+          }
+        }
+      },
+      "International Relations": {
+        "Course Requirements": {
+          "Credit Requirements": [
+            {
+              "Korean students on the English track 영어트랙 국내학생": {
+                "Single major": {
+                  "Liberal Arts_교양": {
+                    "Core Required": 11,
+                    "Core Required Electives": {
+                      "①": 3,
+                      "②": 3,
+                      "③": 3,
+                      "④": 3
+                    },
+                    "Total cradits": 23
+                  },
+                  "Pre-Major Course": 9,
+                  "Major": {
+                    "Core": 18,
+                    "Elective": 27,
+                    "Total credits": 45
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "Multiple major": {
+                  "Liberal Arts_교양": {
+                    "Core Required": 11,
+                    "Core Required Electives": {
+                      "①": 3,
+                      "②": 3,
+                      "③": 3,
+                      "④": 3
+                    },
+                    "Total cradits": 23
+                  },
+                  "Pre-Major Course": 9,
+                  "Major": {
+                    "Core": 18,
+                    "Elective": 21,
+                    "Total credits": 39
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "비고": [
+                  "*전공입문교과는 전공이수학점에 포함되지 않음.",
+                  "*Pre-major courses do not count towards the total credits required for the major."
+                ]
+              }
+            },
+            {
+              "International students on the English track 영어트랙 국제학생": {
+                "Single major": {
+                  "Liberal Arts_교양": {
+                    "Core Required": 16,
+                    "Core Required Electives": {
+                      "①, ②, ③, ④": 6
+                    },
+                    "Total cradits": 22
+                  },
+                  "Pre-Major Course": 9,
+                  "Major": {
+                    "Core": 18,
+                    "Elective": 27,
+                    "Total credits": 45
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "Multiple major": {
+                  "Liberal Arts_교양": {
+                    "Core Required": 16,
+                    "Core Required Electives": {
+                      "①, ②, ③, ④": 6
+                    },
+                    "Total cradits": 22
+                  },
+                  "Pre-Major Course": 9,
+                  "Major": {
+                    "Core": 18,
+                    "Elective": 21,
+                    "Total credits": 39
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "비고": [
+                  "*전공입문교과는 전공이수학점에 포함되지 않음.",
+                  "*Pre-major courses do not count towards the total credits required for the major."
+                ]
+              }
+            }
+          ],
+          "Course Requirements": {
+            "Pre-Major Courses": [
+              {
+                "Course Code": "TIS1001",
+                "Title": "Introduction to International Relations",
+                "Credits": 3
+              },
+              {
+                "Course Code": "TIS1002",
+                "Title": "Introduction to International Commerce",
+                "Credits": 3
+              },
+              {
+                "Course Code": "AAS1001",
+                "Title": "Introduction to Asian Studies",
+                "Credits": 3
+              }
+            ],
+            "Major Core Courses": {
+              "Course": [
+                {
+                  "Course Code": "TIS1004",
+                  "Title": "Research Methodology"
+                },
+                {
+                  "Course Code": "TIR2001",
+                  "Title": "International Relations Theory"
+                },
+                {
+                  "Course Code": "TIR2002",
+                  "Title": "Diplomatic History"
+                },
+                {
+                  "Course Code": "TIR2003",
+                  "Title": "Globalization and World Politics"
+                },
+                {
+                  "Course Code": "TIR2004",
+                  "Title": "Introduction to International Development"
+                },
+                {
+                  "Course Code": "TIR2005",
+                  "Title": "International Security and Peace"
+                },
+                {
+                  "Course Code": "TIR3001",
+                  "Title": "International Political Economy"
+                },
+                {
+                  "Course Code": "TIR3002",
+                  "Title": "International Politics of the Korea Peninsula"
+                },
+                {
+                  "Course Code": "TIR3003",
+                  "Title": "Advanced Research Methodolog"
+                },
+                {
+                  "Course Code": "TIR4001",
+                  "Title": "Major Issues in Global Affairs"
+                }
+              ],
+              "Credits": 18
+            },
+            "Major Electives": {
+              "Course": [
+                {
+                  "Course Code": "TIR2006",
+                  "Title": "Understanding International Law"
+                },
+                {
+                  "Course Code": "TIR2007",
+                  "Title": "International Relations of East Asia"
+                },
+                {
+                  "Course Code": "TIR2008",
+                  "Title": "American Foreign Policy"
+                },
+                {
+                  "Course Code": "TIR2009",
+                  "Title": "Chinese Foreign Policy"
+                },
+                {
+                  "Course Code": "TIR2010",
+                  "Title": "International Relations of Japan"
+                },
+                {
+                  "Course Code": "TIR3004",
+                  "Title": "NGOs and Global Governance"
+                },
+                {
+                  "Course Code": "TIR3005",
+                  "Title": "International Conflict Resolution"
+                },
+                {
+                  "Course Code": "TIR3006",
+                  "Title": "Human Rights in a Globalized World"
+                },
+                {
+                  "Course Code": "TIR3007",
+                  "Title": "Foreign Policy Decision-Making"
+                },
+                {
+                  "Course Code": "TIR3008",
+                  "Title": "South-North Korean Relations"
+                },
+                {
+                  "Course Code": "TIR3009",
+                  "Title": "Contemporary Korea-US Relations"
+                },
+                {
+                  "Course Code": "TIR4002",
+                  "Title": "Energy and International Politics"
+                },
+                {
+                  "Course Code": "TIR4003",
+                  "Title": "Environment and International Politics"
+                },
+                {
+                  "Course Code": "TIR4004",
+                  "Title": "International Terrorism"
+                },
+                {
+                  "Course Code": "TIR4005",
+                  "Title": "Contemporary Europe"
+                },
+                {
+                  "Course Code": "TIR4006",
+                  "Title": "Contemporary North and South America"
+                },
+                {
+                  "Course Code": "TIR4007",
+                  "Title": "International Relations of the Middle East"
+                },
+                {
+                  "Course Code": "TIR4100",
+                  "Title": "Special Seminar on International Relations I"
+                },
+                {
+                  "Course Code": "TIR4101",
+                  "Title": "Special Seminar on International Relations II"
+                },
+                {
+                  "Course Code": "AAS2003",
+                  "Title": "Diplomacy in Asia"
+                },
+                {
+                  "Course Code": "AAS2016",
+                  "Title": "Politics in Southeast Asia"
+                }
+              ],
+              "Credits": 27,
+              "비고": "Multiple Majors 21"
+            },
+            "비고": [
+              "* 전공필수선택 18학점 초과 취득 시 전공선택학점으로 인정",
+              "* More than 18 credits of major core courses count towards major electives."
+            ]
+          }
+        }
+      },
+      "International Commerce": {
+        "Course Requirements": {
+          "Credit Requirements": [
+            {
+              "Korean students on the English track 영어트랙_국내학생": {
+                "Single major": {
+                  "Liberal Arts_교양": {
+                    "Common Requirements": 11,
+                    "Common Electives": {
+                      "①": 3,
+                      "②": 3,
+                      "③": 3,
+                      "④": 3
+                    },
+                    "Total cradits": 23
+                  },
+                  "Pre-Major Course": 12,
+                  "Major": {
+                    "Required": 9,
+                    "Core": 9,
+                    "Elective": 27,
+                    "Total credits": 45
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "Multiple majors (with Economics)": {
+                  "Liberal Arts_교양": {
+                    "Common Requirements": 11,
+                    "Common Electives": {
+                      "①": 3,
+                      "②": 3,
+                      "③": 3,
+                      "④": 3
+                    },
+                    "Total cradits": 23
+                  },
+                  "Pre-Major Course": 9,
+                  "Major": {
+                    "Required": 3,
+                    "Core": 3,
+                    "Elective": 33,
+                    "Total credits": 39
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "Multiple majors (with Business Administration)": {
+                  "Liberal Arts_교양": {
+                    "Common Requirements": 11,
+                    "Common Electives": {
+                      "①": 3,
+                      "②": 3,
+                      "③": 3,
+                      "④": 3
+                    },
+                    "Total cradits": 23
+                  },
+                  "Pre-Major Course": 9,
+                  "Major": {
+                    "Required": 6,
+                    "Core": 3,
+                    "Elective": 30,
+                    "Total credits": 39
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "Multiple majors (with Economics and Business Administration)": {
+                  "Liberal Arts_교양": {
+                    "Common Requirements": 11,
+                    "Common Electives": {
+                      "①": 3,
+                      "②": 3,
+                      "③": 3,
+                      "④": 3
+                    },
+                    "Total cradits": 23
+                  },
+                  "Pre-Major Course": 9,
+                  "Major": {
+                    "Required": 3,
+                    "Core": 3,
+                    "Elective": 33,
+                    "Total credits": 39
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "Multiple majors (others)": {
+                  "Liberal Arts_교양": {
+                    "Common Requirements": 11,
+                    "Common Electives": {
+                      "①": 3,
+                      "②": 3,
+                      "③": 3,
+                      "④": 3
+                    },
+                    "Total cradits": 23
+                  },
+                  "Pre-Major Course": 12,
+                  "Major": {
+                    "Required": 9,
+                    "Core": 9,
+                    "Elective": 21,
+                    "Total credits": 39
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "비고": [
+                  "*전공입문교과는 전공이수학점에 포함되지 않음.",
+                  "*Pre-major courses do not count towards the total credits required for the major."
+                ]
+              },
+              "International students on the English track 영어트랙 국제학생": {
+                "Single major": {
+                  "Liberal Arts_교양": {
+                    "Common Requirements": 16,
+                    "Common Electives": {
+                      "①, ②, ③, ④": 6
+                    },
+                    "Total cradits": 22
+                  },
+                  "Pre-Major Course": 12,
+                  "Major": {
+                    "Required": 9,
+                    "Core": 9,
+                    "Elective": 27,
+                    "Total credits": 45
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "Multiple majors (with Economics)": {
+                  "Liberal Arts_교양": {
+                    "Common Requirements": 16,
+                    "Common Electives": {
+                      "①, ②, ③, ④": 6
+                    },
+                    "Total cradits": 22
+                  },
+                  "Pre-Major Course": 9,
+                  "Major": {
+                    "Required": 3,
+                    "Core": 3,
+                    "Elective": 33,
+                    "Total credits": 39
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "Multiple majors (with Business Administration)": {
+                  "Liberal Arts_교양": {
+                    "Common Requirements": 16,
+                    "Common Electives": {
+                      "①, ②, ③, ④": 6
+                    },
+                    "Total cradits": 22
+                  },
+                  "Pre-Major Course": 9,
+                  "Major": {
+                    "Required": 6,
+                    "Core": 3,
+                    "Elective": 30,
+                    "Total credits": 39
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "Multiple majors (with Economics and Business Administration)": {
+                  "Liberal Arts_교양": {
+                    "Common Requirements": 16,
+                    "Common Electives": {
+                      "①, ②, ③, ④": 6
+                    },
+                    "Total cradits": 22
+                  },
+                  "Pre-Major Course": 9,
+                  "Major": {
+                    "Required": 3,
+                    "Core": 3,
+                    "Elective": 33,
+                    "Total credits": 39
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "Multiple majors (others)": {
+                  "Liberal Arts_교양": {
+                    "Common Requirements": 16,
+                    "Common Electives": {
+                      "①, ②, ③, ④": 6
+                    },
+                    "Total cradits": 22
+                  },
+                  "Pre-Major Course": 12,
+                  "Major": {
+                    "Required": 9,
+                    "Core": 9,
+                    "Elective": 21,
+                    "Total credits": 39
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "비고": [
+                  "*전공입문교과는 전공이수학점에 포함되지 않음.",
+                  "*Pre-major courses do not count towards the total credits required for the major."
+                ]
+              }
+            }
+          ],
+          "교과목 이수요건": {
+            "Pre-Major Courses": {
+              "Pre-Major 1": {
+                "Course Code / Title": [
+                  {
+                    "TIS1001": "Introduction to International Relations",
+                    "Credits": 3
+                  },
+                  {
+                    "TIS1002": "Introduction to International Commerce",
+                    "Credits": 3
+                  },
+                  {
+                    "AAS1001": "Introduction to Asian Studies",
+                    "Credits": 3
+                  },
+                  {
+                    "TIS1005": "Mathematical Methods for International Commerce",
+                    "Credits": 3
+                  }
+                ],
+                "Total Credits": 12
+              },
+              "Pre-Major 2": {
+                "Course Code / Title": [
+                  {
+                    "TIS1001": "Introduction to International Relations",
+                    "Credits": 3
+                  },
+                  {
+                    "TIS1002": "Introduction to International Commerce",
+                    "Credits": 3
+                  },
+                  {
+                    "AAS1001": "Introduction to Asian Studies",
+                    "Credits": 3
+                  }
+                ],
+                "Total Credits": 9,
+                "비고": "Multiple majors (with Economics or Business Administration)"
+              }
+            },
+            "Major Required Courses": {
+              "Major Required 1": {
+                "Course Code / Title": [
+                  {
+                    "TIC2001": "Statistics for International Commerce",
+                    "Credits": 3
+                  },
+                  {
+                    "TIC2002": "Microeconomics for International Commerce",
+                    "Credits": 3
+                  },
+                  {
+                    "TIC3001": "Contemporary Issues in the Global Economy",
+                    "Credits": 3
+                  }
+                ],
+                "Total Credits": 9
+              },
+              "Major Required 2": {
+                "Course Code / Title": [
+                  {
+                    "TIC3001": "Contemporary Issues in the Global Economy",
+                    "Credits": 3
+                  }
+                ],
+                "Total Credits": 3,
+                "비고": "Multiple majors (with Economics)"
+              },
+              "Major Required 3": {
+                "Course Code / Title": [
+                  {
+                    "TIC2002": "Microeconomics for International Commerce",
+                    "Credits": 3
+                  },
+                  {
+                    "TIC3001": "Contemporary Issues in the Global Economy",
+                    "Credits": 3
+                  }
+                ],
+                "Total Credits": 6,
+                "비고": "Multiple majors (with Business Administration)"
+              },
+              "Major Required 4": {
+                "Course Code / Title": [
+                  {
+                    "TIC3001": "Contemporary Issues in the Global Economy",
+                    "Credits": 3
+                  }
+                ],
+                "Total Credits": 3,
+                "비고": "Multiple majors (with Economics or Business Administration)"
+              }
+            },
+            "Major Core Courses": {
+              "Major Core 1": {
+                "Course Code / Title": [
+                  {
+                    "TIC2003": "Macroeconomics for International Commerce"
+                  },
+                  {
+                    "TIC2004": "Korean Economy"
+                  },
+                  {
+                    "TIC2005": "International Economics"
+                  },
+                  {
+                    "TIC2006": "Principles of Accounting for International Commerce"
+                  },
+                  {
+                    "TIC2007": "Principles of Marketing for International Commerce"
+                  },
+                  {
+                    "TIC2008": "Financial Management"
+                  },
+                  {
+                    "TIC3002": "Research Method of Data Science"
+                  },
+                  {
+                    "TIC3003": "Global Economic History"
+                  },
+                  {
+                    "TIC3004": "International Business"
+                  },
+                  {
+                    "TIC3005": "Investment Analysis"
+                  },
+                  {
+                    "TIC3006": "Corporate Finance"
+                  }
+                ],
+                "Total Credits": 9
+              },
+              "Major Core 2": {
+                "Course Code / Title": [
+                  {
+                    "TIC2004": "Korean Economy"
+                  },
+                  {
+                    "TIC2005": "International Economics"
+                  },
+                  {
+                    "TIC2007": "Principles of Marketing for International Commerce"
+                  },
+                  {
+                    "TIC2008": "Financial Management"
+                  },
+                  {
+                    "TIC3003": "Global Economic History"
+                  },
+                  {
+                    "TIC3004": "International Business"
+                  },
+                  {
+                    "TIC3005": "Investment Analysis"
+                  },
+                  {
+                    "TIC3006": "Corporate Finance"
+                  }
+                ],
+                "Total Credits": 3,
+                "비고": "Multiple majors (with Economics)"
+              },
+              "Major Core 3": {
+                "Course Code / Title": [
+                  {
+                    "TIC2003": "Macroeconomics for International Commerce"
+                  },
+                  {
+                    "TIC2004": "Korean Economy"
+                  },
+                  {
+                    "TIC2005": "International Economics"
+                  },
+                  {
+                    "TIC3002": "Research Method of Data Science"
+                  },
+                  {
+                    "TIC3003": "Global Economic History"
+                  },
+                  {
+                    "TIC3004": "International Business"
+                  },
+                  {
+                    "TIC3005": "Investment Analysis"
+                  },
+                  {
+                    "TIC3006": "Corporate Finance"
+                  }
+                ],
+                "Total Credits": 3,
+                "비고": "Multiple majors (with Business Administration)"
+              },
+              "Major Core 4": {
+                "Course Code / Title": [
+                  {
+                    "TIC2004": "Korean Economy"
+                  },
+                  {
+                    "TIC2005": "International Economics"
+                  },
+                  {
+                    "TIC3003": "Global Economic History"
+                  },
+                  {
+                    "TIC3004": "International Business"
+                  },
+                  {
+                    "TIC3005": "Investment Analysis"
+                  },
+                  {
+                    "TIC3006": "Corporate Finance"
+                  }
+                ],
+                "Total Credits": 3,
+                "비고": "Multiple majors (with Economics or Business Administration)"
+              }
+            },
+            "Major Electives": {
+              "Course Code / Title": [
+                {
+                  "Course Code": "TIC4001",
+                  "Title": "Global Political Economy"
+                },
+                {
+                  "Course Code": "TIC4002",
+                  "Title": "Computing for International Commerce"
+                },
+                {
+                  "Course Code": "TIC4003",
+                  "Title": "International Trade Theory and Policy"
+                },
+                {
+                  "Course Code": "TIC4004",
+                  "Title": "International Finance Theory and Policy"
+                },
+                {
+                  "Course Code": "TIC4005",
+                  "Title": "International Economic Laws and Institutions"
+                },
+                {
+                  "Course Code": "TIC4006",
+                  "Title": "Global Trade in the Digital World"
+                },
+                {
+                  "Course Code": "TIC4007",
+                  "Title": "International Trade and Development"
+                },
+                {
+                  "Course Code": "TIC4008",
+                  "Title": "International Trade and Environment"
+                },
+                {
+                  "Course Code": "TIC4009",
+                  "Title": "International Trade and Immigration"
+                },
+                {
+                  "Course Code": "TIC4010",
+                  "Title": "Financial Markets and Global Financial Institutions"
+                },
+                {
+                  "Course Code": "TIC4011",
+                  "Title": "Financial Accounting"
+                },
+                {
+                  "Course Code": "TIC4012",
+                  "Title": "Derivatives"
+                },
+                {
+                  "Course Code": "TIC4013",
+                  "Title": "Financial Risk Management"
+                },
+                {
+                  "Course Code": "TIC4014",
+                  "Title": "International Negotiations"
+                },
+                {
+                  "Course Code": "TIC4015",
+                  "Title": "International Marketing"
+                },
+                {
+                  "Course Code": "TIC4016",
+                  "Title": "Global Business Strategy"
+                },
+                {
+                  "Course Code": "TIR4002",
+                  "Title": "Energy and International Politics"
+                },
+                {
+                  "Course Code": "AAS2006",
+                  "Title": "Modern Economic History of East Asia"
+                },
+                {
+                  "Course Code": "AAS3002",
+                  "Title": "Development Cooperation in Asia I"
+                },
+                {
+                  "Course Code": "AAS3003",
+                  "Title": "Comparative Research of Modern Asian Merchant Network"
+                },
+                {
+                  "Course Code": "AAS3017",
+                  "Title": "Development Cooperation in Asia II"
+                },
+                {
+                  "Course Code": "TIC4017",
+                  "Title": "Northeast Asian Economy"
+                },
+                {
+                  "Course Code": "TIC4018",
+                  "Title": "Southeast Asian Economy"
+                },
+                {
+                  "Course Code": "TIC4019",
+                  "Title": "US Economy"
+                },
+                {
+                  "Course Code": "TIC4020",
+                  "Title": "European Economy"
+                },
+                {
+                  "Course Code": "TIC4021",
+                  "Title": "Economy in the MENA"
+                },
+                {
+                  "Course Code": "TIC4022",
+                  "Title": "Sub-Saharan African Economy"
+                },
+                {
+                  "Course Code": "TIC4023",
+                  "Title": "Topics in International Trade"
+                },
+                {
+                  "Course Code": "TIC4024",
+                  "Title": "Topics in International Business"
+                },
+                {
+                  "Course Code": "TIC4025",
+                  "Title": "Topics in International Finance"
+                },
+                {
+                  "Course Code": "TIC4026",
+                  "Title": "Topics in Empirical Finance"
+                },
+                {
+                  "Course Code": "TIC4027",
+                  "Title": "Topics in International Economic Law"
+                },
+                {
+                  "Course Code": "TIC4101",
+                  "Title": "International Trade Practice"
+                },
+                {
+                  "Course Code": "TIC4102",
+                  "Title": "International Business Practice"
+                },
+                {
+                  "Course Code": "TIC4103",
+                  "Title": "International Finance Practice"
+                }
+              ],
+              "Credits": 27,
+              "비고": {
+                "Multiple majors (with Economics)": 33,
+                "Multiple majors (with Business Administration)": 30,
+                "Multiple majors (with Economics and Business Administration)": 33,
+                "Multiple majors (others)": 21
+              }
+            },
+            "비고": "* 전공필수선택 지정학점 초과 취득 시 전공선택학점으로 인정\n* Major core courses that exceeds the required credits will be recornized as major elective credits."
+          },
+          "대체 인정 교과목": [
+            {
+              "타 전공": "Pre-Major Course",
+              "Recognized Courses": "ECO2003 경제수리기초",
+              "Matching International Commerce Courses": "TIS1005 Mathematical Methods for International Commerce"
+            },
+            {
+              "타 전공": "Economics",
+              "Recognized Courses": "ECO2004 경제통계학",
+              "Matching International Commerce Courses": "TIC2001 Statistics for International Commerce"
+            },
+            {
+              "타 전공": "Economics",
+              "Recognized Courses": "ECO2006 미시경제학",
+              "Matching International Commerce Courses": "TIC2002 Microeconomics for International Commerce"
+            },
+            {
+              "타 전공": "Economics",
+              "Recognized Courses": "ECO2007 거시경제학",
+              "Matching International Commerce Courses": "TIC2003 Macroeconomics for International Commerce"
+            },
+            {
+              "타 전공": "Economics",
+              "Recognized Courses": "ECO3017 국제경제학",
+              "Matching International Commerce Courses": "TIC2005 International Economics"
+            },
+            {
+              "타 전공": "Economics",
+              "Recognized Courses": "ECO2009 계량경제학I",
+              "Matching International Commerce Courses": "TIC3002 Research Method of Data Science"
+            },
+            {
+              "타 전공": "Economics",
+              "Recognized Courses": "ECO3010 국제무역론",
+              "Matching International Commerce Courses": "TIC4003 International Trade Theory and Policy"
+            },
+            {
+              "타 전공": "Economics",
+              "Recognized Courses": "ECO3011 국제금융론",
+              "Matching International Commerce Courses": "TIC4004 International Finance Theory and Policy"
+            },
+            {
+              "타 전공": "Business Administration",
+              "Recognized Courses": "MGT2002 경영통계학",
+              "Matching International Commerce Courses": "TIC2001 Statistics for International Commerce"
+            },
+            {
+              "타 전공": "Business Administration",
+              "Recognized Courses": "MGT2003 회계학원론",
+              "Matching International Commerce Courses": "TIC2006 Principles of Accounting for International Commerce"
+            },
+            {
+              "타 전공": "Business Administration",
+              "Recognized Courses": "MGT3006 마케팅원론",
+              "Matching International Commerce Courses": "TIC2007 Principles of Marketing for International Commerce"
+            },
+            {
+              "타 전공": "Business Administration",
+              "Recognized Courses": "MGT3004 재무관리",
+              "Matching International Commerce Courses": "TIC2008 Financial Management"
+            },
+            {
+              "타 전공": "Business Administration",
+              "Recognized Courses": "MGT3007 국제경영론",
+              "Matching International Commerce Courses": "TIC3004 International Business"
+            },
+            {
+              "타 전공": "Business Administration",
+              "Recognized Courses": "MGT4301 투자론",
+              "Matching International Commerce Courses": "TIC3005 Investment Analysis"
+            },
+            {
+              "타 전공": "Business Administration",
+              "Recognized Courses": "MGT4302 기업재무론",
+              "Matching International Commerce Courses": "TIC3006 Corporate Finance"
+            },
+            {
+              "타 전공": "Business Administration",
+              "Recognized Courses": "MGT4510 국제마케팅론",
+              "Matching International Commerce Courses": "TIC4015 International Marketing"
+            }
+          ],
+          "비고": "* 아래 표의 과목을 수강한 경우 게페르트국제학부장의 심사에 따라 최대 18 학점까지 게페르트국제학부 개설 전공입문 과목 혹은 국제통상 전공 과목으로 대체 인정이 가능함. 단, 게페르트국제학부 소속 학생은 해당 과목의 영어 분반을 수강한 경우에만 인정이 가능함.\n* Students may apply for credit toward their International Commerce major for up to 18 credits if they have completed the listed courses offered by other departments, subject to approval of the chair of the Geppert School of International Studies. However, students of the Geppert School of International Studies may only receive credit if they have completed the English section of the course."
+        }
+      },
+      "Asian Studies": {
+        "Course Requirements": {
+          "Credit Requirements": [
+            {
+              "Korean students on the English track 영어트랙 국내학생": {
+                "Single major": {
+                  "Liberal Arts_교양": {
+                    "Common Requirements": 11,
+                    "Common Electives": {
+                      "①": 3,
+                      "②": 3,
+                      "③": 3,
+                      "④": 3
+                    },
+                    "Total cradits": 23
+                  },
+                  "Pre-Major Course": 9,
+                  "Major": {
+                    "Core": 3,
+                    "Elective": 42,
+                    "Total credits": 45
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "Multiple major": {
+                  "Liberal Arts_교양": {
+                    "Common Requirements": 11,
+                    "Common Electives": {
+                      "①": 3,
+                      "②": 3,
+                      "③": 3,
+                      "④": 3
+                    },
+                    "Total cradits": 23
+                  },
+                  "Pre-Major Course": 9,
+                  "Major": {
+                    "Core": 3,
+                    "Elective": 33,
+                    "Total credits": 36
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "비고": [
+                  "*전공입문교과는 전공이수학점에 포함되지 않음.",
+                  "*Pre-major courses do not count towards the total credits required for the major."
+                ]
+              },
+              "International students on the English track 영어트랙 국제학생": {
+                "Single major": {
+                  "Liberal Arts_교양": {
+                    "Common Requirements": 16,
+                    "Common Electives": {
+                      "①, ②, ③, ④": 6
+                    },
+                    "Total cradits": 22
+                  },
+                  "Pre-Major Course": 9,
+                  "Major": {
+                    "Core": 3,
+                    "Elective": 42,
+                    "Total credits": 45
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "Multiple major": {
+                  "Liberal Arts_교양": {
+                    "Common Requirements": 16,
+                    "Common Electives": {
+                      "①, ②, ③, ④": 6
+                    },
+                    "Total cradits": 22
+                  },
+                  "Pre-Major Course": 9,
+                  "Major": {
+                    "Core": 3,
+                    "Elective": 33,
+                    "Total credits": 36
+                  },
+                  "Total Credits Required for Degree": 126
+                },
+                "비고": [
+                  "*전공입문교과는 전공이수학점에 포함되지 않음.",
+                  "*Pre-major courses do not count towards the total credits required for the major."
+                ]
+              }
+            }
+          ],
+          "Course Requirements": [
+            {
+              "Pre-Major Courses": [
+                {
+                  "Course Code": "AAS1001",
+                  "Title": "Introduction to Asian Studies",
+                  "Credits": 3
+                },
+                {
+                  "Course Code": "TIS1001",
+                  "Title": "Introduction to International Relations",
+                  "Credits": 3
+                },
+                {
+                  "Course Code": "TIS1002",
+                  "Title": "Introduction to International Commerce",
+                  "Credits": 3
+                }
+              ],
+              "Major Core Courses": {
+                "Credits": 3,
+                "Course": [
+                  {
+                    "Course Code": "AAS2005",
+                    "Title": "Understanding Asian History"
+                  },
+                  {
+                    "Course Code": "AAS2015",
+                    "Title": "Understanding Cooperation and Conflict in and around Asia"
+                  }
+                ]
+              },
+              "Major Electives": {
+                "Course": [
+                  {
+                    "Course Code": "AAS2001",
+                    "Title": "Methods in Asian Studies in Practice"
+                  },
+                  {
+                    "Course Code": "AAS2002",
+                    "Title": "Understanding Asian Cultures"
+                  },
+                  {
+                    "Course Code": "AAS2003",
+                    "Title": "Diplomacy in Asia"
+                  },
+                  {
+                    "Course Code": "AAS2004",
+                    "Title": "Art and Archeology of Korea"
+                  },
+                  {
+                    "Course Code": "AAS2006",
+                    "Title": "Modern Economic History of East Asia"
+                  },
+                  {
+                    "Course Code": "AAS2007",
+                    "Title": "Asia in a Globalizing World"
+                  },
+                  {
+                    "Course Code": "AAS2008",
+                    "Title": "Global Governance and Asia"
+                  },
+                  {
+                    "Course Code": "AAS2009",
+                    "Title": "Understanding Asia through its Geographies"
+                  },
+                  {
+                    "Course Code": "AAS2010",
+                    "Title": "Popular Culture in East Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS2011 Understanding Asian Civilization Through Enterprise and Urban Space"
+                  },
+                  {
+                    "Course Code / Title": "AAS2012 Understanding Contemporary Muslim World"
+                  },
+                  {
+                    "Course Code / Title": "AAS2013 Asia's Environmental Issues through Cinema"
+                  },
+                  {
+                    "Course Code / Title": "AAS2014 Life and Fun in Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS2016 Politics in Southeast Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS2017 Critical Thinking in Asian Studies"
+                  },
+                  {
+                    "Course Code / Title": "AAS2018 Critical Writing in Asian Studies"
+                  },
+                  {
+                    "Course Code / Title": "AAS2019 Global Communication Ⅰ"
+                  },
+                  {
+                    "Course Code / Title": "AAS2020 Global Communication Ⅱ"
+                  },
+                  {
+                    "Course Code / Title": "AAS2021 Global Communication Ⅲ"
+                  },
+                  {
+                    "Course Code / Title": "AAS2022 Understanding Chinese Politics"
+                  },
+                  {
+                    "Course Code / Title": "AAS2023 Understanding Middle East"
+                  },
+                  {
+                    "Course Code / Title": "AAS2024 Critical Issues in Contemporary Asia Ⅰ"
+                  },
+                  {
+                    "Course Code / Title": "AAS2025 Critical Issues in Contemporary Asia Ⅱ"
+                  },
+                  {
+                    "Course Code / Title": "AAS3001 Asian Studies Practice"
+                  },
+                  {
+                    "Course Code / Title": "AAS3002 Development Cooperation in Asia Ⅰ"
+                  },
+                  {
+                    "Course Code / Title": "AAS3003 Comparative Research of Modern Asian Merchant Network"
+                  },
+                  {
+                    "Course Code / Title": "AAS3004 Art of India and Southeast Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS3005 Understanding Contemporary Southeast Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS3006 Asia in the Anthropocene"
+                  },
+                  {
+                    "Course Code / Title": "AAS3007 Japan's Environments and Environmentalisms"
+                  },
+                  {
+                    "Course Code / Title": "AAS3008 Understanding South Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS3009 Migration in Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS3010 Chinese Art and Culture"
+                  },
+                  {
+                    "Course Code / Title": "AAS3011 Overseas Chinese and the Dynamic of World history"
+                  },
+                  {
+                    "Course Code / Title": "AAS3012 Comparative History of China and Southeast Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS3013 Material Culture and Exchange of the East and the West"
+                  },
+                  {
+                    "Course Code / Title": "AAS3014 Empire and Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS3015 Art and Culture in Japan"
+                  },
+                  {
+                    "Course Code / Title": "AAS3016 Minorities in Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS3017 Development Cooperation in Asia Ⅱ"
+                  },
+                  {
+                    "Course Code / Title": "AAS3018 Introduction to Anthropology of Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS3019 Exploring Asia in Korea"
+                  },
+                  {
+                    "Course Code / Title": "AAS3020 Art History of Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS4001 Issues and Perspectives in Contemporary Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS4002 Gender in Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS4003 Asian Studies in Comparison"
+                  },
+                  {
+                    "Course Code / Title": "AAS4004 Special Lecture on Asian Studies"
+                  },
+                  {
+                    "Course Code / Title": "AAS4005 Special Lecture on Asian Culture"
+                  },
+                  {
+                    "Course Code / Title": "AAS4006 Special Lecture on Asian History"
+                  },
+                  {
+                    "Course Code / Title": "AAS4007 Special Lecture on Asian Politics"
+                  },
+                  {
+                    "Course Code / Title": "AAS4008 Special Lecture on Asia's Development Issues"
+                  },
+                  {
+                    "Course Code / Title": "AAS4009 Special Lecture on Development Cooperation in Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS4010 Special Lecture on Geography of Asia"
+                  },
+                  {
+                    "Course Code / Title": "AAS4011 Methods in Asian Studies in Theory"
+                  },
+                  {
+                    "Course Code / Title": "AAS4012 Research Practice in Asian Studies Ⅰ"
+                  },
+                  {
+                    "Course Code / Title": "AAS4013 Research Practice in Asian Studies Ⅱ"
+                  },
+                  {
+                    "Course Code / Title": "AAS4014 Research Practice in Asian Studies Ⅲ"
+                  },
+                  {
+                    "Course Code / Title": "AAS4015 Research Practice in Asian Studies Ⅳ"
+                  },
+                  {
+                    "Course Code / Title": "AAS4016 Understanding Contemporary China"
+                  },
+                  {
+                    "Course Code / Title": "AAS4017 Popular Culture of China"
+                  },
+                  {
+                    "Course Code / Title": "TIC2004 Korean Economy"
+                  },
+                  {
+                    "Course Code / Title": "TIR2007 International Relations of East Asia"
+                  },
+                  {
+                    "Course Code / Title": "TIR2009 Chinese Foreign Policy"
+                  },
+                  {
+                    "Course Code / Title": "TIR3002 International Politics of the Korean Peninsula"
+                  },
+                  {
+                    "Course Code / Title": "TIR3008 South-North Korean Relations"
+                  },
+                  {
+                    "Course Code / Title": "TIR4007 International Relations of the Middle East"
+                  },
+                  {
+                    "Course Code / Title": "TIC4017 Northeast Asian Economy"
+                  },
+                  {
+                    "Course Code / Title": "TIC4018 Southeast Asian Economy"
+                  },
+                  {
+                    "Course Code / Title": "TIC4021 Economy in the MENA"
+                  }
+                ],
+                "Credits": 42,
+                "비고": {
+                  "Multiple Majors": 33
+                }
+              },
+              "비고": [
+                "*전공필수선택 3학점 초과 취득 시 전공선택학점으로 인정",
+                "* More than three credits of major core courses count towards major electives."
+              ]
+            }
+          ]
+        },
+        "Substitute Recognized Courses": {
+          "대체 인정 교과목": [
+            {
+              "Major": "Global Korean Studies",
+              "Recognized Courses": "GKS3001 Global Diffusion of the K-Wave",
+              "Matching AAS Courses": "AAS2010 Popular Culture in East Asia"
+            },
+            {
+              "Major": "Global Korean Studies",
+              "Recognized Courses": "GKS4006 Korean Studies Seminar: Gender and Development",
+              "Matching AAS Courses": "AAS4002 Gender in Asia"
+            },
+            {
+              "Major": "Chinese Culture",
+              "Recognized Courses": "CHI4009 Media and City in China",
+              "Matching AAS Courses": "AAS4016 Understanding Contemporary China"
+            },
+            {
+              "Major": "Chinese Culture",
+              "Recognized Courses": "CHI4014 Globalization and China",
+              "Matching AAS Courses": "AAS2007 Asia in a Globalizing World"
+            }
+          ],
+          "비고": "Students may apply for credit toward their Asian Studies major if they have completed the listed courses offered by other departments, subject to approval of the chair of the Geppert School of International Studies. However, students of the Geppert School of International Studies may only receive credit if they have completed the English section of the course."
+        }
+      },
+      "글로벌경제전공": {
+        "전공 이수요건": {
+          "학점 이수요건": {
+            "전인교육과정": {
+              "공통필수": 16,
+              "공통선택": 6,
+              "소계": 22
+            },
+            "전공입문": 16,
+            "전공": {
+              "전공필수": 6,
+              "전공선택": 36,
+              "전공소계": 42
+            },
+            "총이수학점": 126
+          },
+          "교과목 이수요건": {
+            "전공 입문": {
+              "Pre-Major Courses": [
+                {
+                  "Course Code": "GIS1001",
+                  "Title": "글로벌융합학부입문"
+                },
+                {
+                  "Course Code": "GIS2001",
+                  "Title": "미시경제원론"
+                },
+                {
+                  "Course Code": "GIS2002",
+                  "Title": "회계학"
+                },
+                {
+                  "Course Code": "GIS2003",
+                  "Title": "The Art of Storytelling"
+                },
+                {
+                  "Course Code": "GIS2004",
+                  "Title": "인공지능프로그래밍"
+                },
+                {
+                  "Course Code": "GIS2005",
+                  "Title": "거시경제원론"
+                }
+              ],
+              "Credits": 16
+            },
+            "전공 필수": {
+              "Required Courses": [
+                {
+                  "Course Code": "GEC3001",
+                  "Title": "미시경제학"
+                },
+                {
+                  "Course Code": "GEC3002",
+                  "Title": "거시경제학"
+                }
+              ],
+              "Credits": 6
+            },
+            "전공 선택": {
+              "Electives": [
+                {
+                  "Course Code": "GEC4001",
+                  "Title": "화폐와금융"
+                },
+                {
+                  "Course Code": "GEC4002",
+                  "Title": "국제무역이론"
+                },
+                {
+                  "Course Code": "GEC4003",
+                  "Title": "국제금융이론"
+                },
+                {
+                  "Course Code": "GEC4004",
+                  "Title": "산업조직론"
+                },
+                {
+                  "Course Code": "GEC4005",
+                  "Title": "계량경제학"
+                },
+                {
+                  "Course Code": "GEC4006",
+                  "Title": "한국경제의발전"
+                },
+                {
+                  "Course Code": "GEC4007",
+                  "Title": "경제개발이론"
+                },
+                {
+                  "Course Code": "GEC4008",
+                  "Title": "경제수학"
+                }
+              ],
+              "Credits": 36
+            }
+          }
+        }
+      },
+      "글로벌경영전공": {
+        "전공 이수요건": {
+          "학점 이수요건": {
+            "전인교육과정": {
+              "공통필수": 16,
+              "공통선택": 6,
+              "소계": 22
+            },
+            "전공입문": 16,
+            "전공": {
+              "전공필수": 12,
+              "전공선택": 30,
+              "전공소계": 42
+            },
+            "총이수학점": 126
+          },
+          "교과목 이수요건": {
+            "전공 입문": {
+              "Required Courses": [
+                {
+                  "과목코드": "GIS1001",
+                  "과목명": "글로벌융합학부입문"
+                },
+                {
+                  "과목코드": "GIS2001",
+                  "과목명": "미시경제원론"
+                },
+                {
+                  "과목코드": "GIS2002",
+                  "과목명": "회계학"
+                },
+                {
+                  "과목코드": "GIS2003",
+                  "과목명": "The Art of Storytelling"
+                },
+                {
+                  "과목코드": "GIS2004",
+                  "과목명": "인공지능프로그래밍"
+                },
+                {
+                  "과목코드": "GIS2005",
+                  "과목명": "거시경제원론"
+                }
+              ],
+              "Credits": 16
+            },
+            "전공 필수": {
+              "Required Courses": [
+                {
+                  "과목코드": "GMT3001",
+                  "과목명": "경영과돈의흐름름"
+                },
+                {
+                  "과목코드": "GMT3002",
+                  "과목명": "경영과고객"
+                },
+                {
+                  "과목코드": "GMT3003",
+                  "과목명": "경영과사람"
+                },
+                {
+                  "과목코드": "GMT3004",
+                  "과목명": "경영과운영"
+                }
+              ],
+              "Credits": 12
+            },
+            "전공 선택": {
+              "Electives": [
+                {
+                  "과목코드": "GMT4001",
+                  "과목명": "기업과글로벌화"
+                },
+                {
+                  "과목코드": "GMT4002",
+                  "과목명": "기업과디지털화"
+                },
+                {
+                  "과목코드": "GMT4003",
+                  "과목명": "기업과사회환경"
+                },
+                {
+                  "과목코드": "GMT4004",
+                  "과목명": "기업과서비스화"
+                },
+                {
+                  "과목코드": "GMT4005",
+                  "과목명": "기업과기술사업화(캡스톤디자인)",
+                  "비고": "캡스톤 디자인 과목. 졸업 필수"
+                },
+                {
+                  "과목코드": "GMT4006",
+                  "과목명": "통계학"
+                }
+              ],
+              "Credits": 30,
+              "비고": "*전공 선택 이수학점 취득을 위해서는 글로벌경제전공 및 글로벌미디어전공의 전공 선택 교과목을 이수할 수 있음."
+            }
+          }
+        }
+      },
+      "글로벌미디어전공": {
+        "전공 이수요건": {
+          "학점 이수요건": {
+            "전인교육과정": {
+              "공통필수": 16,
+              "공통선택": 6,
+              "소계": 22
+            },
+            "전공입문": 10,
+            "전공": {
+              "전공필수": 9,
+              "전공선택": 33,
+              "전공소계": 42
+            },
+            "총이수학점": 126
+          },
+          "교과목 이수요건": {
+            "전공 입문": {
+              "Pre-Major Courses": [
+                {
+                  "Course Code": "GIS1001",
+                  "Title": "글로벌융합학부입문(1학점)"
+                },
+                {
+                  "Course Code": "GIS2001",
+                  "Title": "미시경제원론"
+                },
+                {
+                  "Course Code": "GIS2003",
+                  "Title": "The Art of Storytelling"
+                },
+                {
+                  "Course Code": "GIS2004",
+                  "Title": "인공지능프로그래밍"
+                }
+              ],
+              "Credits": 10
+            },
+            "전공 필수": {
+              "Required Courses": [
+                {
+                  "Course Code": "GME3001",
+                  "Title": "미디어콘텐츠기획기초"
+                },
+                {
+                  "Course Code": "GME3002",
+                  "Title": "영상제작기초"
+                },
+                {
+                  "Course Code": "GME3003",
+                  "Title": "PR의이해"
+                }
+              ],
+              "Credits": 9
+            },
+            "전공 선택": {
+              "Electives": [
+                {
+                  "Course Code": "GME3000",
+                  "Title": "미디어커뮤니케이션입문"
+                },
+                {
+                  "Course Code": "GME4001",
+                  "Title": "가상현실과 미디어"
+                },
+                {
+                  "Course Code": "GME4002",
+                  "Title": "시네마틱 스토리텔링"
+                },
+                {
+                  "Course Code": "GME4003",
+                  "Title": "장면 연출"
+                },
+                {
+                  "Course Code": "GME4004",
+                  "Title": "UI/UX 디자인 기획"
+                },
+                {
+                  "Course Code": "GME4005",
+                  "Title": "영상제작 심화"
+                },
+                {
+                  "Course Code": "GME4006",
+                  "Title": "인터액티브 미디어 콘텐츠 기획"
+                },
+                {
+                  "Course Code": "GME4007",
+                  "Title": "광고와 소비자 심리"
+                },
+                {
+                  "Course Code": "GME4008",
+                  "Title": "PR 글쓰기와 실무"
+                },
+                {
+                  "Course Code": "GME4009",
+                  "Title": "스토리와 캐릭터"
+                },
+                {
+                  "Course Code": "GME4010",
+                  "Title": "광고와 디자인기획"
+                }
+              ],
+              "Credits": 33
+            }
+          }
+        }
+      }
+    }
+  }
+}
