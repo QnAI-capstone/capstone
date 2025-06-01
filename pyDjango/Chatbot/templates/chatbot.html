@@ -32,21 +32,24 @@
           <img class="character-image" src="{% static 'image/서강이.png' %}">
           <div class="message-content">
             <p>안녕하세요. 서강대학교 챗봇입니다.</p>
-            <p>아래 버튼에서 궁금한 점을 선택하고 질문해주세요.</p>
+            <p>질문의 카테고리를 선택해주세요.</p>
           </div>
         </div>
       </li>
       <li class="message received">
         <div class="message-text">
-          <div class="chat-box">
-            <a href="#none" class="icon_box chatbot-btn" data-type="학사공지">
-              <img class="notice-image" src="{% static 'image/학사공지.png' %}">
-              <span class="m_txt"><span>학사공지<br></span></span>
-            </a>
-            <a href="#none" class="icon_box chatbot-btn" data-type="학과정보">
-              <img class="notice-image" src="{% static 'image/학과정보.png' %}">
-              <span class="m_txt"><span>학과정보<br></span></span>
-            </a>
+          <div id="category_buttons" class="chat-box">
+            <form id="category_form" method="post">
+              {% csrf_token %}
+              <button class="icon_box category-btn" type="button" name="message" value="1" data-type="이수요건">
+                <img class="notice-image" src="{% static 'image/학사공지.png' %}">
+                <span class="m_txt"><span>이수요건<br></span></span>
+              </button>
+              <button class="icon_box category-btn" type="button" name="message" value="2" data-type="과목정보">
+                <img class="notice-image" src="{% static 'image/학과정보.png' %}">
+                <span class="m_txt"><span>과목정보<br></span></span>
+              </button>
+            </form>
           </div>
           <div class="message-time">{{ now }}</div>
         </div>

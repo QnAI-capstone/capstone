@@ -19,9 +19,9 @@ from chromadb import PersistentClient
 from chromadb.utils.embedding_functions import EmbeddingFunction
 import re # 정규표현식 사용을 위해 추가
 from rapidfuzz import process
-from dictionary import ABBREVIATION_GROUPS
+from sgChatbot.dictionary import ABBREVIATION_GROUPS
 import math
-from utils import get_user_chat_history
+from sgChatbot.utils import get_user_chat_history
 from django.shortcuts import render
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
@@ -356,55 +356,67 @@ def preprocess_query(query):
             query = pattern.sub(replacer, query)
     return query, used_majors
 
-# ✅ 메인 실행 루프
-if __name__ == "__main__":
-    print("💬 학사요람 기반 RAG 시스템 시작됨.")
+# ✅ 카테고리 → 컬렉션 이름 매핑
+category_to_collection = {
+    "1": "collection_course",
+    "2": "collection_subjectinfo"
+}
 
+def get_categories():
+    return {
+        "1": "과목/전공 이수 요건",
+        "2": "과목 정보"
+    }
+
+retrievers = {}
+majors_by_collection = {}
+
+def initialize_rag():
+    global retrievers, majors_by_collection
     collection_data = load_corpus_by_collection()
     if not collection_data:
         print("⚠️ 로드된 문서가 없습니다. DB를 먼저 생성하거나 경로를 확인해주세요.")
         exit()
-
+        
     # ✅ 컬렉션별 retriever 초기화
-    retrievers = {}
-    for col_name, content in collection_data.items():
-        retrievers[col_name] = HybridRetriever(
+    retrievers = {
+        col_name: HybridRetriever(
             content["documents"],
             content["metadatas"],
             collection_name=col_name
-        )
+        ) for col_name, content in collection_data.items()
+    }    
 
     # ✅ major 목록도 함께 저장
     majors_by_collection = {
         col_name: content["majors"] for col_name, content in collection_data.items()
     }
 
-    # ✅ 카테고리 → 컬렉션 이름 매핑
-    category_to_collection = {
-        "1": "collection_course",
-        "2": "collection_subjectinfo"
-    }
-
-    while True:
-        #category 초기화
-        print("어떤 카테고리의 질문을 할지 골라주세요.")
-        cat = input("\n1. 과목/전공 이수 요건 2. 과목 정보\n-> ")
-
-        if cat not in category_to_collection:
-            print("⚠️ 잘못된 입력입니다. 1 또는 2를 입력하세요.")
-            continue
-        else:
-            break
-    
-    selected_collection = category_to_collection[cat]
-
+# 검색기에서 데이터를 추출하는 함수
+def get_response_from_retriever(query: str, selected_collection: str) -> str:
     if selected_collection not in retrievers:
-        print(f"❌ 선택한 컬렉션 '{selected_collection}'이 로드되지 않았습니다.")
+        return f"❌ 선택한 컬렉션 '{selected_collection}'이 로드되지 않았습니다."
         exit()
 
     retriever = retrievers[selected_collection]
-    unique_majors = majors_by_collection[selected_collection]
+    top_docs_with_meta = retriever.retrieve(query, top_k_bm25=10, top_k_dpr=3)
 
+    if not top_docs_with_meta:
+        return "관련된 문서를 찾지 못했습니다. 다른 질문을 해주시거나 키워드를 확인해주세요."
+
+    answer = generate_answer(query, top_docs_with_meta, request=None)
+    return f"{answer}"
+
+initialize_rag()
+
+# ✅ 메인 실행 루프
+if __name__ == "__main__":
+    print("💬 학사요람 기반 RAG 시스템 시작됨.")
+    categoris = get_categories()
+    print("질문의 카테고리를 선택하세요.")
+    cat = input("\n1. 과목/전공 이수 요건 2. 과목 정보\n-> ")
+    
+    selected_collection = category_to_collection[cat]
 
     while True:
         query = input("\n❓ 질문을 입력하세요 (종료를 원하면 exit을, category 변경을 원하면 cat을 입력해주세요.): ")
@@ -412,7 +424,7 @@ if __name__ == "__main__":
             print("🚫챗봇을 종료합니다.\n")
             break
         elif query.lower().strip() == "cat":
-            print("어떤 카테고리의 질문을 할지 골라주세요.")
+            print("질문의 카테고리를 선택하세요.")
             cat = input("\n1. 과목/전공 이수 요건 2. 과목 정보\n-> ")
 
             if cat not in category_to_collection:

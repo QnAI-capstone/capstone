@@ -2,50 +2,38 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.core.cache import cache
 from datetime import datetime
-
-# chatgpt api
-import openai
-import os
-from django.http import JsonResponse
-from django.conf import settings
-
-# chatgpt
-def get_chatgpt_response(user_input):
-    try:
-        # ChatGPT API 호출
-        response = openai.Completion.create(
-            model="gpt-4.5-turbo",
-            messages=[
-                {"role": "system", "content": "You are a helpful assistant."},
-                {"role": "user", "content": user_input}
-            ],
-            max_tokens=500
-        )
-        
-        message = response['choices'][0]['message']['content']
-        return message
-    
-    except Exception as e:
-        print(f"Error: {e}")
-        return "Sorry, I couldn't process your request."
+from .build_db import *
+from .hybrid_rag import get_categories, category_to_collection, get_response_from_retriever
 
 # chatbot
 weekday_korean = ['월', '화', '수', '목', '금', '토', '일']
 
 def chatbot(request):
-    # chatgpt api 들어갈 부분
-    default_response = "chatgpt 응답"
+    default_response = "답변"
+    now = datetime.now()
+    today_label = f"{now.year}년 {now.month}월 {now.day}일 ({weekday_korean[now.weekday()]})"
 
     if request.method == 'POST':
         message = request.POST.get('message')
         response = default_response
 
+        # 사용자가 카테고리를 선택한 경우 처리
+        if message in category_to_collection:
+            selected_category = category_to_collection[message]
+            cache.set(f"chat_selected:{request.user.id}", selected_category, timeout=60*60*24*30)
+            response = f"✅ '{get_categories()[message]}' 카테고리가 선택되었습니다."
+
+        # 사용자가 질문을 입력한 경우
+        elif message.strip():
+            selected_category = cache.get(f"chat_selected:{request.user.id}")
+            if selected_category:
+                response = get_response_from_retriever(message, selected_category)
+            else:
+                response = "⚠️ 먼저 카테고리를 선택해주세요."
+
         if request.user.is_authenticated:
             user_key = f"chat_history:{request.user.id}"
             chat_history = cache.get(user_key, [])
-
-            now = datetime.now()
-            today_label = f"{now.year}년 {now.month}월 {now.day}일 ({weekday_korean[now.weekday()]})"
 
             # 마지막 저장된 날짜 확인, 구분선 추가
             last_date = None
@@ -65,7 +53,6 @@ def chatbot(request):
                 'text': message,
                 'time': now.strftime('%H:%M')
             })
-
             chat_history.append({
                 'type': 'bot',
                 'text': response,
@@ -83,9 +70,6 @@ def chatbot(request):
         chat_history = cache.get(user_key, [])
     else:
         chat_history = []
-
-    now = datetime.now()
-    today_label = f"{now.year}년 {now.month}월 {now.day}일 ({weekday_korean[now.weekday()]})"
 
     return render(request, 'chatbot.html', {
         'chat_history': chat_history,

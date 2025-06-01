@@ -152,44 +152,19 @@
 }
 
 /* 로딩 */
-.message.loading .message-content {
-    display: flex;
-    gap: 5px;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.message.loading .message-content span {
-    width: 6px;
-    height: 6px;
-    background-color: #555;
-    border-radius: 50%;
-    animation: blink 1.2s infinite;
-}
-
-.message.loading .message-content span:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.message.loading .message-content span:nth-child(3) {
-    animation-delay: 0.4s;
+.loading {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  position: relative;
+  animation: blink 1.5s step-end infinite;
 }
 
 @keyframes blink {
-    0% {
-        opacity: 0.2;
-        transform: scale(1);
-    }
-
-    50% {
-        opacity: 1;
-        transform: scale(1.2);
-    }
-
-    100% {
-        opacity: 0.2;
-        transform: scale(1);
-    }
+  50% {
+    opacity: 0;
+  }
 }
 
 /* 입력칸 */

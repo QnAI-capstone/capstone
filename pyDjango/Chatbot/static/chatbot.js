@@ -29,6 +29,72 @@ function insertDateIfNeeded() {
   }
 }
 
+// 로딩 메시지 요소
+const loadingMessageHTML = `
+  <li class="message received" id="loadingMessage">
+    <div class="message-text">
+      <div class="message-content">로딩 중...</div>
+    </div>
+  </li>
+`;
+
+const chatbotResponses = {
+  "이수요건": {
+    message: "이수요건 알려주세요"
+  },
+  "과목정보": {
+    message: "과목정보 알려주세요"
+  }
+};
+
+document.querySelectorAll('.category-btn').forEach(btn => {
+  btn.addEventListener('click', (event) => {
+    event.preventDefault();
+    
+    const type = btn.dataset.type;
+    const config = chatbotResponses[type];
+    const message = btn.value;
+    const time = formatCurrentTime();
+    insertDateIfNeeded();
+
+    // 사용자 메시지 추가
+    const userMessageItem = document.createElement('li');
+    userMessageItem.classList.add('message', 'sent');
+    userMessageItem.innerHTML = `
+      <div class="message-text">
+        <div class="message-content">${config.message}</div>
+        <div class="message-time">${time}</div>
+      </div>`;
+    messageList.appendChild(userMessageItem);
+
+    // 챗봇 응답 처리
+    fetch('', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        'csrfmiddlewaretoken': document.querySelector('[name=csrfmiddlewaretoken]').value,
+        'message': message
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+      const response = data.response;  // 챗봇의 응답 받기
+      const botMessageItem = document.createElement('li');
+      botMessageItem.classList.add('message', 'received');
+      botMessageItem.innerHTML = `
+        <div class="message-text">
+          <div class="message-content">${response}</div>
+          <div class="message-time">${time}</div>
+        </div>`;
+      messageList.appendChild(botMessageItem);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  });
+});
+
+
 messageForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
@@ -49,9 +115,20 @@ messageForm.addEventListener('submit', (event) => {
         <div class="message-time">${time}</div>
       </div>`;
   messageList.appendChild(userMessageItem);
-  messageList.scrollTop = messageList.scrollHeight;
 
   messageInput.value = '';
+
+  // 로딩중
+  const loadingMessage = document.createElement('li');
+  loadingMessage.classList.add('message', 'received');
+  loadingMessage.innerHTML = `
+    <div class="message-text">
+      <div class="message-content">
+        <p class="loading">로딩 중...</p>
+      </div>
+    </div>
+  `;
+  messageList.appendChild(loadingMessage);
 
   // 챗봇 응답 처리
   fetch('', {
@@ -67,6 +144,9 @@ messageForm.addEventListener('submit', (event) => {
       const response = data.response;
       const time = formatCurrentTime();
 
+      // 로딩 메시지 제거
+      loadingMessage.remove();
+
       const botMessageItem = document.createElement('li');
       botMessageItem.classList.add('message', 'received');
       botMessageItem.innerHTML = `
@@ -75,6 +155,20 @@ messageForm.addEventListener('submit', (event) => {
           <div class="message-time">${time}</div>
         </div>`;
       messageList.appendChild(botMessageItem);
+    })
+    .catch(error => {
+      console.error('Error:', error);  // 오류 처리
+      // 로딩 메시지 제거
+      loadingMessage.remove();
+
+      // 오류 메시지 표시
+      const errorMessageItem = document.createElement('li');
+      errorMessageItem.classList.add('message', 'received');
+      errorMessageItem.innerHTML = `
+        <div class="message-text">
+          <div class="message-content">오류가 발생했습니다. 다시 시도해주세요.</div>
+        </div>`;
+      messageList.appendChild(errorMessageItem);
       messageList.scrollTop = messageList.scrollHeight;
     });
 });
@@ -97,163 +191,3 @@ messageFormScroll.addEventListener('submit', function (e) {
   // Ajax라면 Ajax 완료 콜백 안에서 호출해야 함
   setTimeout(scrollToBottom, 100); // 약간의 지연 후 스크롤
 });
-
-/* 기본 버튼 */
-// 버튼 클릭에 대한 응답 매핑
-const chatbotResponses = {
-  "학사공지": {
-    message: "학사공지 알려주세요",
-    botResponse: `어떤 학사 공지가 궁금하신가요?`
-  },
-  "학과정보": {
-    message: "학과정보 알려주세요",
-    botResponse: `어떤 학과 정보가 궁금하신가요?`,
-    showSubButtons: true
-  }
-};
-
-// 버튼 클릭 이벤트 처리
-document.querySelectorAll('.chatbot-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const type = btn.dataset.type;
-    const config = chatbotResponses[type];
-
-    if (!config) return;
-
-    const time = formatCurrentTime();
-    insertDateIfNeeded();
-
-    // 사용자 메시지
-    const userMessageItem = document.createElement('li');
-    userMessageItem.classList.add('message', 'sent');
-    userMessageItem.innerHTML = `
-      <div class="message-text">
-        <div class="message-content">${config.message}</div>
-        <div class="message-time">${time}</div>
-      </div>`;
-    messageList.appendChild(userMessageItem);
-
-    // 챗봇 응답 메시지
-    const botMessageItem = document.createElement('li');
-    botMessageItem.classList.add('message', 'received');
-
-    let contentHTML = `
-      <div class="message-text">
-        <div class="message-content">${config.botResponse}`;
-
-    // 기존 메시지 생성 (학사일정 등 단순 버튼용)
-    if (!config.showSubButtons) {
-      const botMessageItem = document.createElement('li');
-      botMessageItem.classList.add('message', 'received');
-      let contentHTML = `
-    <div class="message-text">
-      <div class="message-content">${config.botResponse}<br></div>
-      <div class="message-time">${time}</div>
-    </div>`;
-
-      botMessageItem.innerHTML = contentHTML;
-      messageList.appendChild(botMessageItem);
-      scrollToBottom();
-    }
-    // 학과정보처럼 버튼이 따로 필요한 경우
-    else {
-      // 텍스트만 따로 말풍선 출력
-      const botTextOnly = document.createElement('li');
-      botTextOnly.classList.add('message', 'received');
-      botTextOnly.innerHTML = `
-    <div class="message-text">
-      <div class="message-content">${config.botResponse}</div>
-      <div class="message-time">${time}</div>
-    </div>`;
-      messageList.appendChild(botTextOnly);
-
-      // 버튼만 따로 출력
-      const botButtons = document.createElement('li');
-      botButtons.classList.add('message', 'received');
-      botButtons.innerHTML = `
-    <div class="message-text">
-      <div class="chat-box">
-        <a href="#none" class="icon_box sub-btn" data-sub="과목">
-          <img class="notice-image" src="/static/image/과목.png">
-          <span class="m_txt"><span>과목<br></span></span>
-        </a>
-        <a href="#none" class="icon_box sub-btn" data-sub="학과">
-          <img class="notice-image" src="/static/image/학과.png">
-          <span class="m_txt"><span>학과<br></span></span>
-        </a>
-        <a href="#none" class="icon_box sub-btn" data-sub="이수요건">
-          <img class="notice-image" src="/static/image/이수요건.png">
-          <span class="m_txt"><span>이수요건<br></span></span>
-        </a>
-      </div>
-      <div class="message-time">${time}</div>
-    </div>`;
-      messageList.appendChild(botButtons);
-      scrollToBottom();
-    }
-
-    messageList.scrollTop = messageList.scrollHeight;
-
-    // 서브 버튼 클릭 이벤트 (동적 요소이므로 나중에 바인딩)
-    setTimeout(() => {
-      document.querySelectorAll('.sub-btn').forEach(sub => {
-        sub.addEventListener('click', () => {
-          const subType = sub.dataset.sub;
-          const time = formatCurrentTime();
-
-          const userMsg = document.createElement('li');
-          userMsg.classList.add('message', 'sent');
-          userMsg.innerHTML = `
-            <div class="message-text">
-              <div class="message-content">${subType} 정보 알려줘</div>
-              <div class="message-time">${time}</div>
-            </div>`;
-          messageList.appendChild(userMsg);
-
-          const botMsg = document.createElement('li');
-          botMsg.classList.add('message', 'received');
-          botMsg.innerHTML = `
-            <div class="message-text">
-              <div class="message-content">${subType}에 대한 정보를 준비 중입니다!</div>
-              <div class="message-time">${time}</div>
-            </div>`;
-          messageList.appendChild(botMsg);
-          scrollToBottom();
-
-          messageList.scrollTop = messageList.scrollHeight;
-        });
-      });
-    }, 100);
-  });
-});
-
-/* 로딩 메시지 추가 */
-function addLoadingMessage() {
-  const messagesList = document.querySelector('.messages-list');
-  const loadingMessage = document.createElement('li');
-  loadingMessage.className = 'message received loading';
-  loadingMessage.innerHTML = `
-    <div class="message-text">
-      <div class="message-content">
-        <span></span><span></span><span></span>
-      </div>
-      <div class="message-time">입력 중...</div>
-    </div>
-  `;
-  messagesList.appendChild(loadingMessage);
-  scrollToBottom();
-}
-
-function replaceLoadingMessageWithResponse(text, time) {
-  const loadingMessage = document.querySelector('.message.received.loading');
-  if (loadingMessage) {
-    loadingMessage.innerHTML = `
-      <div class="message-text">
-        <div class="message-content">${text}</div>
-        <div class="message-time">${time}</div>
-      </div>
-    `;
-    loadingMessage.classList.remove('loading');
-    scrollToBottom();
-  }
-}
