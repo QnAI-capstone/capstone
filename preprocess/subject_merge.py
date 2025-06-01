@@ -5,8 +5,8 @@ from glob import glob
 
 # 경로 설정
 course_info_path = "data/courseinfo/course_info_subject.csv"
-subjectinfo_dir = "data/subjectinfo/"
-output_dir = "data/subject/"
+subjectinfo_dir = "data/subject/"
+output_dir = "data/subjectinfo/"
 
 # CSV 불러오기
 course_df = pd.read_csv(course_info_path)
