@@ -1,7 +1,7 @@
 # capstone
 
-- build_db: 임베딩 모델을 바꿔서 디비를 다시 빌드해야 돼요..
-- joint_어쩌구.json: 과목코드가 처음에 있지 않은 게 있어서 이 파일만 수정해서 subjectinfo에 넣고 이걸로 돌려주세요
-- hybrid_rag.py: 임베딩 모델 바꾸기 + preprocess 함수(그 앞에 있는 빨간색 조사들도!) + retrieve함수(hyperparameter tuning) 정도만 수정하면 됩니당
-- chunk_splite: 과목 블록을 기준으로 나누기
-- dictionary.py: 제가 아는 선까지 줄임말 추가해뒀습니당
+- subjectinfo, course_req, notice: json 파일이 들어있는 디렉토리들이에요 수정된 것도 있으니 새로 다운받아주세요
+- delete_db: 기존에 있던 디비들 삭제하고 새로 빌드해야할 것 같아서 이 파일 한 번 실행시키면 디비 삭제될 겁니다.
+- build_db, build_db_chunk, build_db: 따로 수정할 필요 없이 이 파일들 한 번씩 실행하면 공지, 과목 정보, 이수요건 관련 db들 빌드될 거에요
+- hybrid_rag: rag 성능 높이려고 코드 수정했는데 히스토리는 어떻게 해야 하는지 몰라서 기존 파일 보고 수정 한 번만 해주세요..
+- 나머지 파일들은 쓰이는 모듈들이니까 한 번씩 다운받아주세요! 기존에 있던 모듈이라도 수정된 게 있을 수 있으니 새로 다운받아주시면 감사하겠습니다!!
