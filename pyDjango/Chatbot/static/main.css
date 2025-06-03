@@ -13,7 +13,7 @@
 }
 
 :root {
-  --main-color: #b30000;
+  --main-color: #880000;
 }
 
 body,
@@ -32,9 +32,8 @@ html {
   word-break: keep-all;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+p {
+  margin: 0 auto;
 }
 
 /* 헤더 */
@@ -50,7 +49,7 @@ a {
 }
 
 .logo {
-  width: 53%;
+  width: calc(50% + 43px);
 }
 
 .logo-image {
@@ -71,7 +70,7 @@ a {
 }
 
 .side_menu {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   bottom: 0;
@@ -80,6 +79,19 @@ a {
   background-color: white;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
   z-index: 501;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.side_menu.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.side_menu.inactive {
+  opacity: 0;
+  transform: translateX(100%);
 }
 
 .side_menu .navbar-nav {
@@ -103,14 +115,12 @@ a {
   z-index: 10
 }
 
-.dimmed,
-.side_menu {
-  display: none;
+.dimmed.active {
+  visibility: visible;
 }
 
-.dimmed.active,
-.side_menu.active {
-  display: block;
+.dimmed.inactive {
+  visibility: hidden;
 }
 
 .menu_btn {
@@ -127,7 +137,7 @@ a {
   text-decoration: none;
   margin-top: 10px;
   line-height: 1.5;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 .menu_btn:hover {
@@ -200,13 +210,6 @@ h1 {
   color: #777;
 }
 
-.alert {
-  background-color: #f8d7da;
-  color: #721c24;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
 .card {
   padding-top: 30px;
   border: none;
