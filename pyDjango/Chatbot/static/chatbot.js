@@ -29,31 +29,27 @@ function insertDateIfNeeded() {
   }
 }
 
-// 로딩 메시지 요소
-const loadingMessageHTML = `
-  <li class="message received" id="loadingMessage">
-    <div class="message-text">
-      <div class="message-content">로딩 중...</div>
-    </div>
-  </li>
-`;
-
 const chatbotResponses = {
   "이수요건": {
     message: "이수요건 알려주세요"
   },
   "과목정보": {
     message: "과목정보 알려주세요"
+  },
+  "학사공지": {
+    message: "학사공지 알려주세요"
   }
 };
 
+/* 카테고리 버튼 응답 */
 document.querySelectorAll('.category-btn').forEach(btn => {
   btn.addEventListener('click', (event) => {
     event.preventDefault();
-    
+
     const type = btn.dataset.type;
     const config = chatbotResponses[type];
-    const message = btn.value;
+    const message = config.message;
+    const category = btn.value;
     const time = formatCurrentTime();
     insertDateIfNeeded();
 
@@ -62,7 +58,7 @@ document.querySelectorAll('.category-btn').forEach(btn => {
     userMessageItem.classList.add('message', 'sent');
     userMessageItem.innerHTML = `
       <div class="message-text">
-        <div class="message-content">${config.message}</div>
+        <div class="message-content">${message}</div>
         <div class="message-time">${time}</div>
       </div>`;
     messageList.appendChild(userMessageItem);
@@ -73,28 +69,30 @@ document.querySelectorAll('.category-btn').forEach(btn => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams({
         'csrfmiddlewaretoken': document.querySelector('[name=csrfmiddlewaretoken]').value,
-        'message': message
+        'message': message,
+        'category': category
       })
     })
-    .then(response => response.json())
-    .then(data => {
-      const response = data.response;  // 챗봇의 응답 받기
-      const botMessageItem = document.createElement('li');
-      botMessageItem.classList.add('message', 'received');
-      botMessageItem.innerHTML = `
+      .then(response => response.json())
+      .then(data => {
+        const response = data.response;
+        const botMessageItem = document.createElement('li');
+        botMessageItem.classList.add('message', 'received');
+        botMessageItem.innerHTML = `
         <div class="message-text">
           <div class="message-content">${response}</div>
           <div class="message-time">${time}</div>
         </div>`;
-      messageList.appendChild(botMessageItem);
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
+        messageList.appendChild(botMessageItem);
+        scrollToBottom()
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
   });
 });
 
-
+/* 일반 질문 응답 */
 messageForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
@@ -118,16 +116,20 @@ messageForm.addEventListener('submit', (event) => {
 
   messageInput.value = '';
 
+  // 로딩 메시지 요소
+  const loadingMessageHTML = `
+  <div class="message-text">
+    <div class="message-content">
+      <span class="dot dot1"></span>
+      <span class="dot dot2"></span>
+      <span class="dot dot3"></span>
+      </div>
+  </div>
+`;
   // 로딩중
   const loadingMessage = document.createElement('li');
   loadingMessage.classList.add('message', 'received');
-  loadingMessage.innerHTML = `
-    <div class="message-text">
-      <div class="message-content">
-        <p class="loading">로딩 중...</p>
-      </div>
-    </div>
-  `;
+  loadingMessage.innerHTML = loadingMessageHTML;
   messageList.appendChild(loadingMessage);
 
   // 챗봇 응답 처리
@@ -155,6 +157,7 @@ messageForm.addEventListener('submit', (event) => {
           <div class="message-time">${time}</div>
         </div>`;
       messageList.appendChild(botMessageItem);
+      scrollToBottom()
     })
     .catch(error => {
       console.error('Error:', error);  // 오류 처리
@@ -191,3 +194,67 @@ messageFormScroll.addEventListener('submit', function (e) {
   // Ajax라면 Ajax 완료 콜백 안에서 호출해야 함
   setTimeout(scrollToBottom, 100); // 약간의 지연 후 스크롤
 });
+
+/* 버튼 재전송 */
+const reButton = document.querySelector(".btn-re");
+
+reButton.addEventListener("click", function () {
+  reloadScript("/static/button.js?v=${Date.now()}`")
+  const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]')?.value;
+
+  const defaultHTML = `
+      <div class="message-text">
+        <div class="message-content">
+          <p>질문의 카테고리를 선택해주세요.</p>
+        </div>
+      </div>
+    `;
+
+  const defaultbtnHTML = `
+      <div class="message-text">
+        <div id="category_buttons" class="chat-box">
+          <form id="category_form" method="post">
+            <input type="hidden" name="csrfmiddlewaretoken" value="${csrfToken}">
+            <button class="cat-btn" type="button" name="message" value="1" data-type="이수요건">
+              <span class="m_txt"><span>이수요건<br></span></span>
+            </button>
+            <button class="cat-btn" type="button" name="message" value="2" data-type="과목정보">
+              <span class="m_txt"><span>과목정보<br></span></span>
+            </button>
+            <button class="cat-btn" type="button" name="message" value="3" data-type="학사공지">
+              <span class="m_txt"><span>학사공지<br></span></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    `;
+  const reMessage1 = document.createElement('li');
+  reMessage1.classList.add('message', 'received');
+  reMessage1.innerHTML = defaultHTML;
+  messageList.appendChild(reMessage1);
+  const reMessage2 = document.createElement('li');
+  reMessage2.classList.add('message', 'received');
+  reMessage2.innerHTML = defaultbtnHTML;
+  messageList.appendChild(reMessage2);
+  scrollToBottom()
+});
+
+function reloadScript(src) {
+  // 기존 script 제거 (src로 비교)
+  const oldScript = document.querySelector(`script[src="${src}"]`);
+  if (oldScript) {
+    oldScript.remove();
+  }
+
+  // 새 script 생성
+  const newScript = document.createElement("script");
+  newScript.src = src;
+  newScript.onload = () => {
+    console.log(`✅ ${src} reloaded`);
+  };
+  newScript.onerror = () => {
+    console.error(`❌ Failed to load ${src}`);
+  };
+
+  document.body.appendChild(newScript);
+}

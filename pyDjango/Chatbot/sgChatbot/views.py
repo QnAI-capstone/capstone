@@ -3,10 +3,13 @@ from django.http import JsonResponse
 from django.core.cache import cache
 from datetime import datetime
 from .build_db import *
-from .hybrid_rag import get_categories, category_to_collection, get_response_from_retriever
+from .hybrid_rag import initialize_rag, get_categories, category_to_collection, get_response_from_retriever, auto_linkify
+from .utils import convert_markdown_to_html
 
 # chatbot
 weekday_korean = ['월', '화', '수', '목', '금', '토', '일']
+
+initialize_rag()
 
 def chatbot(request):
     default_response = "답변"
@@ -15,19 +18,22 @@ def chatbot(request):
 
     if request.method == 'POST':
         message = request.POST.get('message')
+        category = request.POST.get('category')
         response = default_response
 
         # 사용자가 카테고리를 선택한 경우 처리
-        if message in category_to_collection:
-            selected_category = category_to_collection[message]
+        if category in category_to_collection:
+            selected_category = category_to_collection[category]
             cache.set(f"chat_selected:{request.user.id}", selected_category, timeout=60*60*24*30)
-            response = f"✅ '{get_categories()[message]}' 카테고리가 선택되었습니다."
+            response = f"✅ '{get_categories()[category]}' 카테고리가 선택되었습니다."
 
         # 사용자가 질문을 입력한 경우
         elif message.strip():
             selected_category = cache.get(f"chat_selected:{request.user.id}")
             if selected_category:
-                response = get_response_from_retriever(message, selected_category)
+                raw_response = get_response_from_retriever(message, selected_category)
+                raw_response = auto_linkify(raw_response)
+                response = convert_markdown_to_html(raw_response)
             else:
                 response = "⚠️ 먼저 카테고리를 선택해주세요."
 

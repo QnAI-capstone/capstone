@@ -1,4 +1,5 @@
 from django.core.cache import cache
+import markdown
 
 def save_user_message(user_id, message):
     key = f"chat_history:{user_id}"
@@ -13,3 +14,6 @@ def get_user_chat_history(user_id):
 def clear_user_chat_history(user_id):
     key = f"chat_history:{user_id}"
     cache.delete(key)
+
+def convert_markdown_to_html(markdown_text):
+    return markdown.markdown(markdown_text)
