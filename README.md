@@ -3,12 +3,12 @@
 # 파일 설명
 - Chatbot: 챗봇 메인 화면 관련, 로그인 회원가입 기능
 - sgChatbot: 챗봇 입출력 관련
-- static: 이미지
-- templates: html 파일
+- static: 이미지, js, css
+- templates: html
 
-# 실행 방법
-1. 가상환경 실행
-2. pip install -r requirements.txt
-3. cd ~/pyDjango/Chatbot
-4. python manage.py runserver 0.0.0.0:8000
-5. 크롬 주소창에 http://127.0.0.1:8000/chatbot/ 입력
+# sgChatbot
+- build_db.py: 파일 3개 하나로 합쳤습니다.
+- hybrid_rag.py: 프롬프트에 "이전 대화 내용이 제공된 경우 해당 내용을 참고하여 **대화의 맥락을 유지**하세요.\n" 추가했습니다.
+
+### 문제점
+> 맥락유지: 예를 들어 *"컴공 전선 뭐있어?" "그중에서 인공지능 관련 과목 추천해줘."*로 질문한 경우 후자에서 특정 학과 키워드가 없어서 전체 문서에서 검색하면서 전자와 상관 없는 **BA 인공지능**이 들어가게 됩니다. 이 부분 수정이 필요할 것 같습니다! (자세한 내용 노션에 정리해두었습니다.)
