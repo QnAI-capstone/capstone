@@ -19,7 +19,6 @@ from chromadb.utils.embedding_functions import EmbeddingFunction
 import re # 정규표현식 사용을 위해 추가
 from rapidfuzz import process
 from sgChatbot.dictionary import ABBREVIATION_GROUPS,DATE_GROUPS
-from sgChatbot.utils import get_user_chat_history
 from sgChatbot.ex_sub import extract_subject_by_rapidfuzz
 from django.contrib.auth.models import User
 
@@ -239,22 +238,7 @@ class HybridRetriever:
         return final_results
 
 # ✅ GPT 응답 생성기
-def generate_answer(query, context_docs, cat, request):
-    # ✅ 최근 대화 이력 3개 불러오기 (user_id가 제공된 경우)
-    recent_history = []
-    
-    if request is not None and request.user.is_authenticated:
-        user = request.user
-        user_id = user.id
-
-        history = get_user_chat_history(user_id)
-        if history:
-            last_3 = history[-3:]
-            for h in last_3:
-                if h["type"] == "user":
-                    recent_history.append({"role": "user", "content": h["text"]})
-                elif h["type"] == "bot":
-                    recent_history.append({"role": "assistant", "content": h["text"]})
+def generate_answer(query, context_docs, log, cat):
 
     if not context_docs: # 참고 문서가 없는 경우
         return "관련 정보를 찾지 못했습니다. 질문을 조금 더 구체적으로 해주시거나 다른 키워드로 시도해주세요."
@@ -268,6 +252,7 @@ def generate_answer(query, context_docs, cat, request):
         prompt = (
             "당신은 서강대학교의 학사 요람에 기반하여 정확하고 간결하게 답변해야 합니다.\n"
             "질문이 모호하더라도 관련 학과 또는 규정 문서를 참고하여 정확하게 답변하세요.\n"
+            "이전 대화 내용이 제공된 경우 해당 내용을 참고하여 **대화의 맥락을 유지**하세요.\n"
             "사용자는 아래의 세 가지 전공 유형 중 하나에 해당할 수 있습니다. 이 구분은 모든 학과에 동일하게 적용되며, 어떤 전공이 주 전공인지에 따라 학과별 졸업 요건 및 이수 기준이 달라질 수 있습니다:\n"
             
             "1. **단일전공**: 사용자는 특정 학과(예: 컴퓨터공학과)만 전공합니다.\n"
@@ -283,10 +268,9 @@ def generate_answer(query, context_docs, cat, request):
             "제공된 context에서 찾을 수 없다면 찾을 수 없다고 메시지를 출력해주세요.\n"
         )
 
-        messages = [
-            {"role": "system", "content": prompt},
-            {"role": "user", "content": f"context:\n{context}\n\n질문: {query}\n답변:"}
-        ]
+        messages = [{"role": "system", "content": prompt}]
+        check_log(log, messages)
+        messages.append({"role": "user", "content": f"context:\n{context}\n\n질문: {query}\n답변:"})
         model_name = "gpt-4o"
     
     elif cat == 2: # collection_subjectinfo
@@ -298,16 +282,16 @@ def generate_answer(query, context_docs, cat, request):
         prompt = (
             "당신은 서강대학교의 학사 요람 정보를 기반으로, 사용자 질문에 대해 정확하고 간결하게 답변해야 합니다.\n"
             "- 질문이 모호하더라도, 관련 학과 또는 규정 문서를 모두 참고하여 가능한 모든 정보를 포함하세요.\n"
+            "- 이전 대화 내용이 제공된 경우 해당 내용을 참고하여 **대화의 맥락을 유지**하세요.\n"
             "- 같은 과목에 대한 설명이 여러 학과 또는 전공에서 반복될 경우, **모든 관련 문서에서 나온 설명을 빠짐없이 포함**하세요.\n"
             "- 각각의 설명은 **출처 학과명 기준으로 문단을 분리하여 출력**하고, 중복된 내용이 있더라도 **학과 문맥 내에서는 생략하지 말고 모두 출력**하세요.\n"
             "- 요약하지 마세요. **모든 학과별 설명을 전부 나열**하는 것이 중요합니다.\n"
             "- 제공된 context에서 답변을 찾을 수 없을 경우, \"제공된 정보에서 답변을 찾을 수 없습니다.\"라고 출력하세요.\n"
         )
 
-        messages = [
-            {"role": "system", "content": prompt},
-            {"role": "user", "content": f"context:\n{context}\n\n질문: {query}\n답변:"}
-        ]
+        messages = [{"role": "system", "content": prompt}]
+        check_log(log, messages)
+        messages.append({"role": "user", "content": f"context:\n{context}\n\n질문: {query}\n답변:"})
         #model_name = "ft:gpt-3.5-turbo-0125:capston::Bdtr05OS"
         model_name="gpt-4o"
 
@@ -316,7 +300,7 @@ def generate_answer(query, context_docs, cat, request):
         context = context_docs
         prompt = (
             "당신은 서강대학교의 공지사항 데이터를 기반으로 질문에 정확하고 간결하게 답변하는 어시스턴트입니다.\n"
-            #"다음 예시를 참고하여 답변하되, 링크는 한 번만 출력하세요.\n"
+            "이전 대화 내용이 제공된 경우 해당 내용을 참고하여 **대화의 맥락을 유지**하세요.\n"
             "질문이 모호하더라도, 제공된 공지 context를 바탕으로 규정과 사실에 근거해 답변해야 합니다.\n"
             "가능한 한 질문과 키워드가 정확히 일치하는 공지를 찾아서 제시하세요.\n"
             "여러 개의 공지가 관련 있다면, 날짜(date)가 가장 최신인 순서로 정렬하여 출력하세요.\n"
@@ -324,16 +308,15 @@ def generate_answer(query, context_docs, cat, request):
             "링크는 반드시 한 번만 출력하고, 마크다운 문법을 사용하지 말고 순수한 URL만 출력하세요.\n\n"
         )
 
-        messages = [
-            {"role": "system", "content": prompt},
+        messages = [{"role": "system", "content": prompt}]
+        check_log(log, messages)
+        messages.append([
             # 🟡 One-shot 예시
             {"role": "user", "content": "context:\n[졸업] 2023학년도 후기(2024년 8월) 졸업_학위증 배부 및 학위가운 대여 안내|2024.07.30|https://sogang.ac.kr/ko/detail/\n\n질문: 학위 가운은 어디서 대여할 수 있어?\n답변:"},
             {"role": "assistant", "content": "학위 가운 대여와 관련하여 다음 공지를 참조하세요.\n제목:[졸업] 2023학년도 후기(2024년 8월) 졸업_학위증 배부 및 학위가운 대여 안내\n업로드일자: 2024.07.30\n링크:https://sogang.ac.kr/ko/detail/\n"},
             {"role": "user", "content": f"context:\n{context}\n\n질문: {query}\n답변:"}
-        ]
+        ])
         model_name = "gpt-4o"
-
-    messages.extend(recent_history)  # 🔁 최근 채팅 내역 삽입
 
     total_tokens = count_total_tokens(messages, model="gpt-4o")
     max_tokens_model = 128000 # 모델의 최대 토큰 (gpt-4o 기준)
@@ -404,6 +387,14 @@ def auto_linkify(text):
     url_pattern = re.compile(r'(https?://[^\s]+)')
     return url_pattern.sub(r'<a href="\1" target="_blank">링크</a>', text)
 
+def check_log(log, messages):
+    recent_conversation = log[-6:]
+    for msg in recent_conversation:
+        messages.append(msg)
+        print("현재 log 내용:")
+        for i, msg in enumerate(log):
+            print(f"{i}: role={msg['role']}, content={msg['content']}")
+
 # ✅ 카테고리 → 컬렉션 이름 매핑
 category_to_collection = {
     "1": "collection_course",
@@ -446,7 +437,7 @@ def initialize_rag():
     print("✨ Initialize rag")
 
 # 검색기에서 데이터를 추출하는 함수
-def get_response_from_retriever(query: str, selected_collection: str) -> str:
+def get_response_from_retriever(query: str, selected_collection: str, chat_log: list) -> str:
     if selected_collection not in retrievers:
         return f"❌ 선택한 컬렉션 '{selected_collection}'이 로드되지 않았습니다."
         exit()
@@ -471,7 +462,7 @@ def get_response_from_retriever(query: str, selected_collection: str) -> str:
         all_docs = collection_data[selected_collection]["documents"]
         all_metas = collection_data[selected_collection]["metadatas"]
 
-        answer=generate_answer(query, all_docs, cat=3, request=None)
+        answer=generate_answer(query, all_docs, chat_log, cat=3)
 
     elif selected_collection == "collection_subjectinfo":
         unique_majors = majors_by_collection[selected_collection]
@@ -496,7 +487,7 @@ def get_response_from_retriever(query: str, selected_collection: str) -> str:
         if not top_docs_with_meta:
             print("\n🧠 chatbot 응답:\n관련된 문서를 찾지 못했습니다. 다른 질문을 해주시거나 키워드를 확인해주세요.")
 
-        answer = generate_answer(query, top_docs_with_meta, cat=2, request=None)
+        answer = generate_answer(query, top_docs_with_meta, chat_log, cat=2)
 
         print("\n📎 참고한 문서 메타데이터:")
         for doc_content, meta in top_docs_with_meta: # 문서 내용도 함께 출력 (디버깅용)
@@ -525,7 +516,7 @@ def get_response_from_retriever(query: str, selected_collection: str) -> str:
         if not top_docs_with_meta:
             print("\n🧠 chatbot 응답:\n관련된 문서를 찾지 못했습니다. 다른 질문을 해주시거나 키워드를 확인해주세요.")
 
-        answer = generate_answer(query, top_docs_with_meta, cat=1, request=None)
+        answer = generate_answer(query, top_docs_with_meta, chat_log, cat=1)
 
         print("\n📎 참고한 문서 메타데이터:")
         for doc_content, meta in top_docs_with_meta: 

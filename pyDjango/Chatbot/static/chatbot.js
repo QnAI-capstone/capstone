@@ -205,7 +205,7 @@ reButton.addEventListener("click", function () {
   const defaultHTML = `
       <div class="message-text">
         <div class="message-content">
-          <p>질문의 카테고리를 선택해주세요.</p>
+          <p style="margin:0;">질문의 카테고리를 선택해주세요.</p>
         </div>
       </div>
     `;
