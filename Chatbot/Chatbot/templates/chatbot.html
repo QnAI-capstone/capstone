@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="chat-container">
+  <div class="messages-box">
+    <ul class="messages-list">
+      <!-- 로그인 사용자 - chat_history 불러오기 -->
+      {% for message in chat_history %}
+      {% if message.type == 'date_separator' %}
+      <li class="date-separator">📅 {{ message.date }}</li>
+      {% else %}
+      <li class="message {% if message.type == 'user' %}sent{% else %}received{% endif %}">
+        <div class="message-text">
+          <div class="message-content">{{ message.text|safe }}</div>
+          <div class="message-time">{{ message.time }}</div>
+        </div>
+      </li>
+      {% endif %}
+      {% endfor %}
+      <!-- 오늘 날짜 구분선 표시 -->
+      <li class="date-separator">
+        📅 {{ today }}
+      </li>
+      <!-- 기본 챗봇 메시지 -->
+      <li class="message received">
+        <div class="message-text">
+          <img class="character-image" src="{% static 'image/서강이.png' %}">
+          <div class="message-content">
+            <p>안녕하세요. 서강대학교 챗봇입니다.</p>
+            <p>질문의 카테고리를 선택해주세요.</p>
+          </div>
+        </div>
+      </li>
+      <li class="message received">
+        <div class="message-text">
+          <div id="category_buttons" class="chat-box">
+            <form id="category_form" method="post">
+              {% csrf_token %}
+              <button class="category-btn" type="button" name="message" value="1" data-type="이수요건">
+                <span class="m_txt"><span>이수요건<br></span></span>
+              </button>
+              <button class="category-btn" type="button" name="message" value="2" data-type="과목정보">
+                <span class="m_txt"><span>과목정보<br></span></span>
+              </button>
+              <button class="category-btn" type="button" name="message" value="3" data-type="학사공지">
+                <span class="m_txt"><span>학사공지<br></span></span>
+              </button>
+            </form>
+          </div>
+          <div class="message-time">{{ now }}</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <form class="message-form">
+    {%csrf_token%}
+    <div class="input-wrapper">
+      <button type="button" class="btn-re"><i class="fa-solid fa-repeat"></i></button>
+      <input type="text" class="message-input" placeholder="질문을 입력하세요.">
+      <button type="submit" class="btn-send">전송</button>
+    </div>
+  </form>
+</div>
+
+<script src="{% static 'chatbot.js' %}"></script>
+{% endblock %}
