@@ -45,6 +45,3 @@ env.bak/
 venv.bak/
 
 .gitignore
-
-# files
-chroma.py

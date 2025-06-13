@@ -3,6 +3,15 @@
     word-break: keep-all;
 }
 
+button {
+    border: 0;
+    background-color: transparent;
+}
+
+p {
+  margin: 0 auto;
+}
+
 .chat-container {
     position: absolute;
     left: 0;
@@ -22,6 +31,7 @@
     color: #95a5a6;
     margin-left: 10px;
     margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .chat-box {
@@ -30,34 +40,45 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    gap: 10px;/* 
-    border: 2px solid white;
-    border-radius: 25px;
-    width: fit-content;
-    padding: 30px;
-    overflow: hidden; */
+    gap: 10px;
 }
 
-.icon_box {
-    width: 90px;
-    height: 80px;
-    padding: 10px;
+.category-btn {
+    background: #fdfdfd;
+    padding: 14px 30px;
+    border-radius: 20px;
+    font-size: 14px;
     text-align: center;
-    color: #282828;
-    background-color: #fdfdfd;
-    border-radius: 15px;
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+    cursor: pointer;
+    min-width: 120px;
 }
 
-.icon_box:hover {
-    background-color: #605a5a;
+.category-btn:hover {
+    background-color: var(--main-color);
     color: #fdfdfd;
-    transform: scale(1.04);
-    transition: transform 0.1s ease-in;
+    border-color: var(--main-color);
+    transform: translateY(-2px);
+}
+
+.cat-btn {
+    background: #fdfdfd;
+    padding: 14px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+.cat-btn:hover {
+    background-color: var(--main-color);
+    color: #fdfdfd;
+    border-color: var(--main-color);
+    transform: translateY(-2px);
 }
 
 .notice-image {
@@ -65,16 +86,8 @@
     margin-bottom: 5px;
 }
 
-.message .chat-box {
-    background-color: transparent;
-    border-radius: 0;
-    padding: 0;
-}
-
 /* 메시지 */
 .messages-box {
-    flex: 1;
-    overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -109,6 +122,11 @@
 
 .character-image {
     width: 80px;
+/*     height: 80px;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover; */
 }
 
 .sent .message-time {
@@ -151,20 +169,57 @@
     max-width: 60%;
 }
 
-/* 로딩 */
-.loading {
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-  position: relative;
-  animation: blink 1.5s step-end infinite;
+.message {
+    animation: fadeInUp 0.5s ease-out;
 }
 
-@keyframes blink {
-  50% {
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 로딩 */
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background-color: #333;
     opacity: 0;
-  }
+    animation: dotAnimation 1.5s infinite ease-in-out;
+}
+
+.dot1 {
+    animation-delay: 0s;
+}
+
+.dot2 {
+    animation-delay: 0.3s;
+}
+
+.dot3 {
+    animation-delay: 0.6s;
+}
+
+@keyframes dotAnimation {
+
+    0%,
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
 }
 
 /* 입력칸 */
@@ -184,6 +239,21 @@
 .input-wrapper {
     display: flex;
     flex-grow: 1;
+}
+
+.btn-re {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #dddddd;
+    transition: background-color 0.3s ease;
+}
+
+.btn-re:hover {
+    background-color: #605a5a;
 }
 
 .message-input {
@@ -208,6 +278,7 @@
     cursor: pointer;
     font-size: 14px;
     background-color: #dddddd;
+    transition: background-color 0.3s ease;
 }
 
 .btn-send:hover {
