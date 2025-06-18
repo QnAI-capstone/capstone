@@ -511,11 +511,11 @@ def get_response_from_retriever(query: str, selected_collection: str, chat_log: 
 
         # 2) 변환된 질의로 학과 키워드 추출
         major_filter_keyword = extract_major_keyword(query, unique_majors,threshold = 80)
-        
+
         if major_filter_keyword:
             print(f"✨ '{major_filter_keyword}' 관련 정보로 필터링하여 검색합니다.")
             # 3) 필터링 키워드를 retriever에 전달
-            top_docs_with_meta = retriever.retrieve(query, top_k_bm25=10, top_k_dpr=3, filter_major=major_filter_keyword,cat=1)
+            top_docs_with_meta = retriever.retrieve(query, top_k_bm25=3, top_k_dpr=3, filter_major=major_filter_keyword,alpha=0.5,cat= 2)
         else:
             if top_docs_with_meta is None or not top_docs_with_meta:
                 print("ℹ️ 특정 학과 키워드가 감지되지 않았습니다. 전체 문서에서 검색합니다.")
@@ -526,16 +526,16 @@ def get_response_from_retriever(query: str, selected_collection: str, chat_log: 
                 top_docs_with_meta = retriever.retrieve(query, top_k_bm25=3, top_k_dpr=3, filter_major=major_filter_keyword,alpha=0.5,cat= 2)
         
         print(f"query: {query}")
-        
+
         if not top_docs_with_meta:
             print("\n🧠 chatbot 응답:\n관련된 문서를 찾지 못했습니다. 다른 질문을 하거나 키워드를 확인해주세요.")
-            
+
         context_text = "\n\n".join([doc for doc, _ in top_docs_with_meta])
         answer = generate_answer(query, top_docs_with_meta, chat_log, cat=2)
 
         print("\n📎 참고한 문서 메타데이터:")
         for doc_content, meta in top_docs_with_meta: # 문서 내용도 함께 출력 (디버깅용)
-            print(f" - (내용 일부: {doc_content[:50]}...) 메타데이터: {meta}")
+            # print(f" - (내용 일부: {doc_content[:50]}...) 메타데이터: {meta}")
             print(f" - 메타데이터: {meta}")
 
     else:
@@ -553,11 +553,8 @@ def get_response_from_retriever(query: str, selected_collection: str, chat_log: 
             # 3) 필터링 키워드를 retriever에 전달
             top_docs_with_meta = retriever.retrieve(query, top_k_bm25=10, top_k_dpr=3, filter_major=major_filter_keyword,cat=1)
         else:
-            if not top_docs_with_meta:
-                print("ℹ️ 특정 학과 키워드가 감지되지 않았습니다. 전체 문서에서 검색합니다.")
-            else:
-                print("ℹ️ 같은 문서를 context로 제공합니다.")
-        
+            print("ℹ️ 특정 학과 키워드가 감지되지 않았습니다. 전체 문서에서 검색합니다.")
+
         if not top_docs_with_meta:
             print("\n🧠 chatbot 응답:\n관련된 문서를 찾지 못했습니다. 다른 질문을 하거나 키워드를 확인해주세요.")
 
