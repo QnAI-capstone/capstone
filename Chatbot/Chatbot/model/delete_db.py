@@ -1,7 +1,8 @@
 from chromadb import PersistentClient
 import os
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.abspath(os.path.join(__file__, "../../.."))
 CHROMA_STORE_PATH = os.path.join(BASE_DIR, 'chroma_store')
 
 client = PersistentClient(path=CHROMA_STORE_PATH)
