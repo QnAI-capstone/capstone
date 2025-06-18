@@ -266,7 +266,7 @@ def generate_answer(query, context_docs, log, cat):
             "- \"다전공(타전공)\" 사용자는 다른 학과가 제1전공 + 컴퓨터공학과 복수전공\n"
 
             "질문이 어느 전공 유형에 해당하는지 명확하지 않더라도, 각 경우에 따라 달라지는 내용을 **모두 분리된 문단**으로 나눠 설명하세요.\n"
-            "제목은 `**# 제목**`, 소제목은 `**## 제목**` 형식으로 굵게 표시하고, 본문은 리스트로 정리하세요.\n"
+            "- 제목, 소제목, 리스트 등을 적절히 활용하여 알아보기 좋게 정리하세요.\n"
             "제공된 context에서 찾을 수 없다면 찾을 수 없다고 메시지를 출력해주세요.\n"
         )
 
@@ -283,14 +283,14 @@ def generate_answer(query, context_docs, log, cat):
 
         prompt = (
             "당신은 서강대학교의 학사 요람 정보를 기반으로, 사용자 질문에 대해 정확하고 간결하게 답변해야 합니다.\n"
-            "- 질문이 모호하더라도, 관련 학과 또는 규정 문서를 모두 참고하여 가능한 모든 정보를 포함하세요.\n"
-            "- 이전 대화 내용이 제공된 경우 해당 내용을 참고하여 **대화의 맥락을 유지**하세요.\n"
-            "- 사용자가 이전 응답을 이어서 질문할 경우(예: '그중에서', '그러면', '이전에 말한 것 중'), 직전의 질문과 모델의 응답 내용을 함께 참고하여 일관된 맥락 속에서 답변하세요. 이전 질문/응답은 시스템이 메시지 히스토리로 제공합니다.\n"
-            "- 같은 과목에 대한 설명이 여러 학과 또는 전공에서 반복될 경우, **모든 관련 문서에서 나온 설명을 빠짐없이 포함**하세요.\n"
-            "- 각각의 설명은 **출처 학과명 기준으로 문단을 분리하여 출력**하고, 중복된 내용이 있더라도 **학과 문맥 내에서는 생략하지 말고 모두 출력**하세요.\n"
-            "- 요약하지 마세요. **모든 학과별 설명을 전부 나열**하는 것이 중요합니다.\n"
-            "- 제목은 `**# 제목**`, 소제목은 `**## 제목**` 형식으로 굵게 표시하고, 본문은 리스트로 정리하세요.\n"
-            "- 제공된 context에서 답변을 찾을 수 없을 경우, \"제공된 정보에서 답변을 찾을 수 없습니다.\"라고 출력하세요.\n"
+            "질문이 모호하더라도, 관련 학과 또는 규정 문서를 모두 참고하여 가능한 모든 정보를 포함하세요.\n"
+            "이전 대화 내용이 제공된 경우 해당 내용을 참고하여 **대화의 맥락을 유지**하세요.\n"
+            "사용자가 이전 응답을 이어서 질문할 경우(예: '그중에서', '그러면', '이전에 말한 것 중'), 직전의 질문과 모델의 응답 내용을 함께 참고하여 일관된 맥락 속에서 답변하세요. 이전 질문/응답은 시스템이 메시지 히스토리로 제공합니다.\n"
+            "같은 과목에 대한 설명이 여러 학과 또는 전공에서 반복될 경우, **모든 관련 문서에서 나온 설명을 빠짐없이 포함**하세요.\n"
+            "각각의 설명은 **출처 학과명 기준으로 문단을 분리하여 출력**하고, 중복된 내용이 있더라도 **학과 문맥 내에서는 생략하지 말고 모두 출력**하세요.\n"
+            "요약하지 마세요. **모든 학과별 설명을 전부 나열**하는 것이 중요합니다.\n"
+            "제목, 소제목, 리스트 등을 적절히 활용하여 알아보기 좋게 정리하세요.\n"
+            "제공된 context에서 답변을 찾을 수 없을 경우, \"제공된 정보에서 답변을 찾을 수 없습니다.\"라고 출력하세요.\n"
         )
 
         messages = [{"role": "system", "content": prompt}]
@@ -517,10 +517,13 @@ def get_response_from_retriever(query: str, selected_collection: str, chat_log: 
             # 3) 필터링 키워드를 retriever에 전달
             top_docs_with_meta = retriever.retrieve(query, top_k_bm25=10, top_k_dpr=3, filter_major=major_filter_keyword,cat=1)
         else:
-            if not top_docs_with_meta:
+            if top_docs_with_meta is None or not top_docs_with_meta:
                 print("ℹ️ 특정 학과 키워드가 감지되지 않았습니다. 전체 문서에서 검색합니다.")
-            else:
-                print("ℹ️ 같은 문서를 context로 제공합니다.")       
+                # 3) 필터링 키워드를 retriever에 전달
+                top_docs_with_meta = retriever.retrieve(query, top_k_bm25=3, top_k_dpr=3, filter_major=major_filter_keyword,alpha=0.5,cat= 2)
+            elif extract_subject_by_rapidfuzz(query):
+                print("ℹ️ 특정 과목 키워드가 감지되었습니다. context를 새로 검색합니다.")
+                top_docs_with_meta = retriever.retrieve(query, top_k_bm25=3, top_k_dpr=3, filter_major=major_filter_keyword,alpha=0.5,cat= 2)
         
         print(f"query: {query}")
         
@@ -532,7 +535,7 @@ def get_response_from_retriever(query: str, selected_collection: str, chat_log: 
 
         print("\n📎 참고한 문서 메타데이터:")
         for doc_content, meta in top_docs_with_meta: # 문서 내용도 함께 출력 (디버깅용)
-            # print(f" - (내용 일부: {doc_content[:50]}...) 메타데이터: {meta}")
+            print(f" - (내용 일부: {doc_content[:50]}...) 메타데이터: {meta}")
             print(f" - 메타데이터: {meta}")
 
     else:
@@ -550,8 +553,11 @@ def get_response_from_retriever(query: str, selected_collection: str, chat_log: 
             # 3) 필터링 키워드를 retriever에 전달
             top_docs_with_meta = retriever.retrieve(query, top_k_bm25=10, top_k_dpr=3, filter_major=major_filter_keyword,cat=1)
         else:
-            print("ℹ️ 특정 학과 키워드가 감지되지 않았습니다. 전체 문서에서 검색합니다.")
-
+            if not top_docs_with_meta:
+                print("ℹ️ 특정 학과 키워드가 감지되지 않았습니다. 전체 문서에서 검색합니다.")
+            else:
+                print("ℹ️ 같은 문서를 context로 제공합니다.")
+        
         if not top_docs_with_meta:
             print("\n🧠 chatbot 응답:\n관련된 문서를 찾지 못했습니다. 다른 질문을 하거나 키워드를 확인해주세요.")
 
