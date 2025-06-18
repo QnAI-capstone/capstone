@@ -554,7 +554,7 @@ def get_response_from_retriever(query: str, selected_collection: str, chat_log: 
         print(f"query: {query}")
 
         # 2) 변환된 질의로 학과 키워드 추출
-        major_filter_keyword = extract_major_keyword(query, unique_majors,threshold = 60)
+        major_filter_keyword = extract_major_keyword(query, unique_majors,threshold = 70)
 
         if major_filter_keyword:
                 print(f"✨ '{major_filter_keyword}' 관련 정보로 필터링하여 검색합니다.")
