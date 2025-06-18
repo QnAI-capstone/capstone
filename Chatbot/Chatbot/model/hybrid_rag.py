@@ -253,6 +253,7 @@ def generate_answer(query, context_docs, log, cat):
             "당신은 서강대학교의 학사 요람에 기반하여 정확하고 간결하게 답변해야 합니다.\n"
             "질문이 모호하더라도 관련 학과 또는 규정 문서를 참고하여 정확하게 답변하세요.\n"
             "이전 대화 내용이 제공된 경우 해당 내용을 참고하여 **대화의 맥락을 유지**하세요.\n"
+            "사용자가 이전 응답을 이어서 질문할 경우(예: '그중에서', '그러면', '이전에 말한 것 중'), 직전의 질문과 모델의 응답 내용을 함께 참고하여 일관된 맥락 속에서 답변하세요. 이전 질문/응답은 시스템이 메시지 히스토리로 제공합니다.\n"
             "사용자는 아래의 세 가지 전공 유형 중 하나에 해당할 수 있습니다. 이 구분은 모든 학과에 동일하게 적용되며, 어떤 전공이 주 전공인지에 따라 학과별 졸업 요건 및 이수 기준이 달라질 수 있습니다:\n"
             
             "1. **단일전공**: 사용자는 특정 학과(예: 컴퓨터공학과)만 전공합니다.\n"
@@ -283,6 +284,7 @@ def generate_answer(query, context_docs, log, cat):
             "당신은 서강대학교의 학사 요람 정보를 기반으로, 사용자 질문에 대해 정확하고 간결하게 답변해야 합니다.\n"
             "- 질문이 모호하더라도, 관련 학과 또는 규정 문서를 모두 참고하여 가능한 모든 정보를 포함하세요.\n"
             "- 이전 대화 내용이 제공된 경우 해당 내용을 참고하여 **대화의 맥락을 유지**하세요.\n"
+            "- 사용자가 이전 응답을 이어서 질문할 경우(예: '그중에서', '그러면', '이전에 말한 것 중'), 직전의 질문과 모델의 응답 내용을 함께 참고하여 일관된 맥락 속에서 답변하세요. 이전 질문/응답은 시스템이 메시지 히스토리로 제공합니다.\n"
             "- 같은 과목에 대한 설명이 여러 학과 또는 전공에서 반복될 경우, **모든 관련 문서에서 나온 설명을 빠짐없이 포함**하세요.\n"
             "- 각각의 설명은 **출처 학과명 기준으로 문단을 분리하여 출력**하고, 중복된 내용이 있더라도 **학과 문맥 내에서는 생략하지 말고 모두 출력**하세요.\n"
             "- 요약하지 마세요. **모든 학과별 설명을 전부 나열**하는 것이 중요합니다.\n"
@@ -299,6 +301,7 @@ def generate_answer(query, context_docs, log, cat):
         prompt = (
             "당신은 서강대학교의 공지사항 데이터를 기반으로 질문에 정확하고 간결하게 답변하는 어시스턴트입니다.\n"
             "이전 대화 내용이 제공된 경우 해당 내용을 참고하여 **대화의 맥락을 유지**하세요.\n"
+            "사용자가 이전 응답을 이어서 질문할 경우(예: '그중에서', '그러면', '이전에 말한 것 중'), 직전의 질문과 모델의 응답 내용을 함께 참고하여 일관된 맥락 속에서 답변하세요. 이전 질문/응답은 시스템이 메시지 히스토리로 제공합니다.\n"
             "질문이 모호하더라도, 제공된 공지 context를 바탕으로 규정과 사실에 근거해 답변해야 합니다.\n"
             "가능한 한 질문과 키워드가 정확히 일치하는 공지를 찾아서 제시하세요.\n"
             "여러 개의 공지가 관련 있다면, 날짜(date)가 가장 최신인 순서로 정렬하여 출력하세요.\n"
@@ -506,25 +509,22 @@ def get_response_from_retriever(query: str, selected_collection: str, chat_log: 
 
         # 2) 변환된 질의로 학과 키워드 추출
         major_filter_keyword = extract_major_keyword(query, unique_majors,threshold = 80)
-
+        
         if major_filter_keyword:
             print(f"✨ '{major_filter_keyword}' 관련 정보로 필터링하여 검색합니다.")
             # 3) 필터링 키워드를 retriever에 전달
-            top_docs_with_meta = retriever.retrieve(query, top_k_bm25=3, top_k_dpr=3, filter_major=major_filter_keyword,alpha=0.5,cat= 2)
+            top_docs_with_meta = retriever.retrieve(query, top_k_bm25=10, top_k_dpr=3, filter_major=major_filter_keyword,cat=1)
         else:
-            if top_docs_with_meta is None or not top_docs_with_meta:
+            if not top_docs_with_meta:
                 print("ℹ️ 특정 학과 키워드가 감지되지 않았습니다. 전체 문서에서 검색합니다.")
-                # 3) 필터링 키워드를 retriever에 전달
-                top_docs_with_meta = retriever.retrieve(query, top_k_bm25=3, top_k_dpr=3, filter_major=major_filter_keyword,alpha=0.5,cat= 2)
-            elif extract_subject_by_rapidfuzz(query):
-                print("ℹ️ 특정 과목 키워드가 감지되었습니다. context를 새로 검색합니다.")
-                top_docs_with_meta = retriever.retrieve(query, top_k_bm25=3, top_k_dpr=3, filter_major=major_filter_keyword,alpha=0.5,cat= 2)
+            else:
+                print("ℹ️ 같은 문서를 context로 제공합니다.")       
         
         print(f"query: {query}")
-
+        
         if not top_docs_with_meta:
             print("\n🧠 chatbot 응답:\n관련된 문서를 찾지 못했습니다. 다른 질문을 하거나 키워드를 확인해주세요.")
-
+            
         context_text = "\n\n".join([doc for doc, _ in top_docs_with_meta])
         answer = generate_answer(query, top_docs_with_meta, chat_log, cat=2)
 
