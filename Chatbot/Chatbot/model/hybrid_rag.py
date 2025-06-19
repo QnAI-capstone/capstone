@@ -335,13 +335,19 @@ def generate_answer(query, context_docs, log, cat):
             "사용자가 이전 응답을 이어서 질문할 경우(예: '그중에서', '그러면', '이전에 말한 것 중'), 직전의 질문과 모델의 응답 내용을 함께 참고하여 일관된 맥락 속에서 답변하세요. 이전 질문/응답은 시스템이 메시지 히스토리로 제공합니다.\n"
             "각각의 설명은 **출처 학과명 기준으로 문단을 분리하여 출력**하고, 중복된 내용이 있더라도 **학과 문맥 내에서는 생략하지 말고 모두 출력**하세요.\n"
             "동일한 과목 또는 내용이 여러 학과에서 반복되어 나타나더라도 **각 학과 기준으로 문단을 나누어 모두 출력**해야 합니다.\n"
-            "숫자 리스트(1. 2. 3.)는 웬만하면 사용하지 마세요.\n"
-            "제목, 소제목, 줄바꿈, 리스트, 볼드 등을 적절히 활용하여 알아보기 좋게 정리하세요.\n"
+            "숫자 리스트(1. 2. 3.)는 절대 사용하지 마세요.\n"
+            "제목, 소제목, 줄바꿈, 리스트, 볼드 등을 적절히 활용하여 알아보기 좋게 정리하며, 학과명, 과목명, 과목코드와 같이 한 개의 항목에 해당하는 내용 뒤에는 반드시 줄바꿈을 해주세요.\n"
             "제공된 context에서 찾을 수 없다면 찾을 수 없다고 메시지를 출력해주세요.\n"
         )
 
         messages = [{"role": "system", "content": prompt}]
         check_log(log, messages)
+        '''messages.extend([
+            # 🟡 One-shot 예시
+            {"role": "user", "content": "질문: 기초머신러닝은 ?\n답변:"},
+            {"role": "assistant", "content": "학위 가운 대여와 관련하여 다음 공지를 참조하세요.\n제목:[졸업] 2023학년도 후기(2024년 8월) 졸업_학위증 배부 및 학위가운 대여 안내\n업로드일자: 2024.07.30\n링크:https://sogang.ac.kr/ko/detail/\n"},
+            {"role": "user", "content": f"context:\n{context}\n\n질문: {query}\n답변:"}
+        ])'''
         messages.append({"role": "user", "content": f"context:\n{context}\n\n질문: {query}\n답변:"})
         model_name="gpt-4o"
 
@@ -535,7 +541,10 @@ def initialize_cat():
 
 # 검색기에서 데이터를 추출하는 함수
 def get_response_from_retriever(query: str, selected_collection: str, chat_log: list):
-    top_docs_with_meta = None
+    global top_docs_with_meta
+
+    if not top_docs_with_meta:
+        print("start")
     if selected_collection not in retrievers:
         return {
             "answer": f"❌ 선택한 컬렉션 '{selected_collection}'이 로드되지 않았습니다.",
@@ -600,10 +609,12 @@ def get_response_from_retriever(query: str, selected_collection: str, chat_log: 
             if not major_filter_list:
                 # 학과 추론 실패 시 전체 검색(cat=2)
                 filter_arg = None
+                #top_docs_with_meta = retriever.retrieve(query, top_k_bm25=3, top_k_dpr=3, filter_major=filter_arg, alpha=0.5, cat=2)
             else:
                 filter_arg = major_filter_list  # ['국어국문학과']
+                top_docs_with_meta = retriever.retrieve(query, top_k_bm25=3, top_k_dpr=3, filter_major=filter_arg, alpha=0.5, cat=2)
                 
-            top_docs_with_meta = retriever.retrieve(query, top_k_bm25=3, top_k_dpr=3, filter_major=filter_arg, alpha=0.5, cat=2)
+            #top_docs_with_meta = retriever.retrieve(query, top_k_bm25=3, top_k_dpr=3, filter_major=filter_arg, alpha=0.5, cat=2)
             
             
         print(f"query: {query}")
@@ -616,7 +627,7 @@ def get_response_from_retriever(query: str, selected_collection: str, chat_log: 
 
         print("\n📎 참고한 문서 메타데이터:")
         for doc_content, meta in top_docs_with_meta: # 문서 내용도 함께 출력 (디버깅용)
-            # print(f" - (내용 일부: {doc_content[:50]}...) 메타데이터: {meta}")
+            print(f" - (내용 일부: {doc_content[:50]}...) 메타데이터: {meta}")
             print(f" - 메타데이터: {meta}")
 
     else:

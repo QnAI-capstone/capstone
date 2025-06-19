@@ -7,7 +7,7 @@ from django.core.cache import cache
 from datetime import datetime
 import markdown
 from .model.build_db import *
-from .model.hybrid_rag import initialize_rag, get_categories, category_to_collection, get_response_from_retriever, auto_linkify
+from .model.hybrid_rag import initialize_rag, get_categories, category_to_collection, get_response_from_retriever, auto_linkify, initialize_cat
 
 # chatbot
 weekday_korean = ['월', '화', '수', '목', '금', '토', '일']
@@ -36,6 +36,7 @@ def chatbot(request):
             selected_category = category_to_collection[category]
             cache.set(f"chat_selected:{request.user.id}", selected_category, timeout=60*60*24*30)
             response = f"✅ '{get_categories()[category]}' 카테고리가 선택되었습니다."
+            initialize_cat()
 
         # 사용자가 질문을 입력한 경우
         elif message.strip():
