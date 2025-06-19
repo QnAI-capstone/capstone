@@ -23,6 +23,33 @@ from Chatbot.model.dictionary import ABBREVIATION_GROUPS,DATE_GROUPS
 from Chatbot.model.ex_sub import extract_subject_by_rapidfuzz
 from django.contrib.auth.models import User
 
+# 디버그용 메시지 출력 함수
+def debug_print_messages(
+    messages,
+    preview_count=3,
+    default_char_limit=100,
+    per_index_limits: dict[int, int] | None = None
+):
+    total = len(messages)
+    print(f"[DEBUG] 총 메시지 개수: {total}")
+    per_index_limits = per_index_limits or {}
+
+    for i, msg in enumerate(messages[:preview_count]):
+        role = msg.get("role")
+        content = msg.get("content", "").replace("\n", " ")
+
+        # 이 인덱스에 대해 별도 길이 제한이 지정되어 있는지 확인
+        limit = per_index_limits.get(i, default_char_limit)
+
+        # 출력할 snippet 길이 계산
+        snippet = content[:limit]
+        suffix = "..." if len(content) > limit else ""
+        print(f"  [{i}] {role}: {snippet!r}{suffix}")
+
+    if total > preview_count:
+        print(f"  ... and {total - preview_count} more messages")
+
+
 # ✅ API 키
 openai.api_key = settings.OPENAI_API_KEY
 
@@ -134,6 +161,21 @@ def extract_major_keyword(query, majors_list, threshold=70):
         
     return result  # 최대 top_k개의 학과명 반환
 
+# 과목명 -> 학과명 추출 (문서 내용 기반)
+def extract_major_from_subject(subject_name: str, documents: list[str], metadatas: list[dict]) -> list[str]:
+    """
+    주어진 과목명이 속해있는 학과(major) 리스트를 반환합니다.
+    documents: collection_subjectinfo의 모든 문서 텍스트 리스트
+    metadatas: collection_subjectinfo의 모든 메타데이터 리스트
+    """
+    majors = set()
+    for doc, meta in zip(documents, metadatas):
+        # doc(문서 본문)에 과목명이 들어 있으면 해당 major 추가
+        if subject_name in doc:
+            majors.add(meta.get("major"))
+    return list(majors)
+
+
 # ✅ 하이브리드 검색기 초기화
 class HybridRetriever:
     def __init__(self, corpus_all, metadatas_all, collection_name):
@@ -168,8 +210,8 @@ class HybridRetriever:
                 print(f"🔎 필터링 결과: 총 {len(current_corpus)}개의 문서로 제한됨.")
 
         if not current_corpus: # 필터링 후 문서가 없을 경우
-             print("⚠️ 검색할 문서가 없습니다.")
-             return []
+            print("⚠️ 검색할 문서가 없습니다.")
+            return []
 
         ###추가
         if cat == 2:
@@ -235,7 +277,7 @@ class HybridRetriever:
             final_results = [
                 (bm25_candidates_docs[i], bm25_candidates_meta[i]) for i in bm25_indices_in_current[:num_bm25_candidates]
             ]
-
+        # print("final results:", final_results[0])
         return final_results
 
 # ✅ GPT 응답 생성기
@@ -266,7 +308,8 @@ def generate_answer(query, context_docs, log, cat):
             "- \"다전공(타전공)\" 사용자는 다른 학과가 제1전공 + 컴퓨터공학과 복수전공\n"
 
             "질문이 어느 전공 유형에 해당하는지 명확하지 않더라도, 각 경우에 따라 달라지는 내용을 **모두 분리된 문단**으로 나눠 설명하세요.\n"
-            "- 제목, 소제목, 리스트 등을 적절히 활용하여 알아보기 좋게 정리하세요.\n"
+            "숫자 리스트(1. 2. 3.)는 웬만하면 사용하지 마세요.\n"
+            "제목, 소제목, 줄바꿈, 볼드, 리스트 등을 적절히 활용하여 알아보기 좋게 정리하세요.\n"
             "제공된 context에서 찾을 수 없다면 찾을 수 없다고 메시지를 출력해주세요.\n"
         )
 
@@ -284,13 +327,17 @@ def generate_answer(query, context_docs, log, cat):
         prompt = (
             "당신은 서강대학교의 학사 요람 정보를 기반으로, 사용자 질문에 대해 정확하고 간결하게 답변해야 합니다.\n"
             "질문이 모호하더라도, 관련 학과 또는 규정 문서를 모두 참고하여 가능한 모든 정보를 포함하세요.\n"
+            "요약하지 마세요. 각 과목에 대한 정보들이 여러 학과에 있어도, **모든 학과에 있는 해당 과목에 대한 설명을 전부 나열**하는 것이 중요합니다.\n"
+            "동일한 과목에 대한 설명이 여러 학과에서 반복될 경우, **모든 관련 문서에서 나온 과목들을 빠짐없이 포함**하세요.\n"
+            "단, 학과(전공) 정보가 명확히 주어진 질문인 경우에는 해당 학과(전공) 관련 문서의 내용만 가져와도 됩니다.\n"
+            "단, 과목명과 과목코드 위주로 먼저 내용을 포함하세요. 이외의 세부 정보는 후속 질문이 들어오는 경우 제공하세요."
             "이전 대화 내용이 제공된 경우 해당 내용을 참고하여 **대화의 맥락을 유지**하세요.\n"
             "사용자가 이전 응답을 이어서 질문할 경우(예: '그중에서', '그러면', '이전에 말한 것 중'), 직전의 질문과 모델의 응답 내용을 함께 참고하여 일관된 맥락 속에서 답변하세요. 이전 질문/응답은 시스템이 메시지 히스토리로 제공합니다.\n"
-            "같은 과목에 대한 설명이 여러 학과 또는 전공에서 반복될 경우, **모든 관련 문서에서 나온 설명을 빠짐없이 포함**하세요.\n"
             "각각의 설명은 **출처 학과명 기준으로 문단을 분리하여 출력**하고, 중복된 내용이 있더라도 **학과 문맥 내에서는 생략하지 말고 모두 출력**하세요.\n"
-            "요약하지 마세요. **모든 학과별 설명을 전부 나열**하는 것이 중요합니다.\n"
-            "제목, 소제목, 리스트 등을 적절히 활용하여 알아보기 좋게 정리하세요.\n"
-            "제공된 context에서 답변을 찾을 수 없을 경우, \"제공된 정보에서 답변을 찾을 수 없습니다.\"라고 출력하세요.\n"
+            "동일한 과목 또는 내용이 여러 학과에서 반복되어 나타나더라도 **각 학과 기준으로 문단을 나누어 모두 출력**해야 합니다.\n"
+            "숫자 리스트(1. 2. 3.)는 웬만하면 사용하지 마세요.\n"
+            "제목, 소제목, 줄바꿈, 리스트, 볼드 등을 적절히 활용하여 알아보기 좋게 정리하세요.\n"
+            "제공된 context에서 찾을 수 없다면 찾을 수 없다고 메시지를 출력해주세요.\n"
         )
 
         messages = [{"role": "system", "content": prompt}]
@@ -307,7 +354,7 @@ def generate_answer(query, context_docs, log, cat):
             "질문이 모호하더라도, 제공된 공지 context를 바탕으로 규정과 사실에 근거해 답변해야 합니다.\n"
             "가능한 한 질문과 키워드가 정확히 일치하는 공지를 찾아서 제시하세요.\n"
             "여러 개의 공지가 관련 있다면, 날짜(date)가 가장 최신인 순서로 정렬하여 출력하세요.\n"
-            "제공된 context에 관련 정보가 없다면, '관련 공지를 찾을 수 없습니다.'라고 답변하세요.\n"
+            "제공된 context에서 찾을 수 없다면 찾을 수 없다고 메시지를 출력해주세요.\n"
             "링크는 반드시 한 번만 출력하고, 마크다운 문법을 사용하지 말고 순수한 URL만 출력하세요.\n\n"
         )
 
@@ -338,6 +385,12 @@ def generate_answer(query, context_docs, log, cat):
             max_tokens = 4096, # 답변 토큰 수 제한
             temperature = 0.3,
             top_p = 0.9
+        )
+        debug_print_messages(
+        messages,
+        preview_count=3,
+        default_char_limit=100,
+        per_index_limits={2: 500}
         )
         return response.choices[0].message['content']
     except openai.error.InvalidRequestError as e:
@@ -447,10 +500,12 @@ def get_categories():
 retrievers = {}
 majors_by_collection = {}
 collection_data = load_corpus_by_collection()
+top_docs_with_meta = None
+
 
 def initialize_rag():
     print("💬 학사요람 기반 RAG 시스템 시작됨.")
-    global retrievers, majors_by_collection, collection_data
+    global retrievers, majors_by_collection, collection_data, top_docs_with_meta
     if not collection_data:
         print("⚠️ 로드된 문서가 없습니다. DB를 먼저 생성하거나 경로를 확인해주세요.")
         exit()
@@ -470,8 +525,17 @@ def initialize_rag():
         if "majors" in content
     }
 
+    top_docs_with_meta = None
+
+def initialize_cat():
+    global top_docs_with_meta
+
+    top_docs_with_meta = None
+
+
 # 검색기에서 데이터를 추출하는 함수
 def get_response_from_retriever(query: str, selected_collection: str, chat_log: list):
+    top_docs_with_meta = None
     if selected_collection not in retrievers:
         return {
             "answer": f"❌ 선택한 컬렉션 '{selected_collection}'이 로드되지 않았습니다.",
@@ -479,7 +543,6 @@ def get_response_from_retriever(query: str, selected_collection: str, chat_log: 
         }
         exit()
 
-    top_docs_with_meta = None  # ✅ 초기화
     retriever = retrievers[selected_collection]
     context_text = ""
     answer = ""
@@ -510,21 +573,39 @@ def get_response_from_retriever(query: str, selected_collection: str, chat_log: 
         query = preprocess_query(query)
 
         # 2) 변환된 질의로 학과 키워드 추출
-        major_filter_keyword = extract_major_keyword(query, unique_majors,threshold = 80)
+        major_filter_keyword = extract_major_keyword(query, unique_majors, threshold = 80)
 
-        if major_filter_keyword:
+        if major_filter_keyword: # 질의 안에 학과 키워드가 명시적으로 언급된 경우
             print(f"✨ '{major_filter_keyword}' 관련 정보로 필터링하여 검색합니다.")
             # 3) 필터링 키워드를 retriever에 전달
             top_docs_with_meta = retriever.retrieve(query, top_k_bm25=3, top_k_dpr=3, filter_major=major_filter_keyword,alpha=0.5,cat= 2)
-        else:
-            if top_docs_with_meta is None or not top_docs_with_meta:
-                print("ℹ️ 특정 학과 키워드가 감지되지 않았습니다. 전체 문서에서 검색합니다.")
-                # 3) 필터링 키워드를 retriever에 전달
-                top_docs_with_meta = retriever.retrieve(query, top_k_bm25=3, top_k_dpr=3, filter_major=major_filter_keyword,alpha=0.5,cat= 2)
-            elif extract_subject_by_rapidfuzz(query):
-                print("ℹ️ 특정 과목 키워드가 감지되었습니다. context를 새로 검색합니다.")
-                top_docs_with_meta = retriever.retrieve(query, top_k_bm25=3, top_k_dpr=3, filter_major=major_filter_keyword,alpha=0.5,cat= 2)
         
+        else: # 질의 안에 학과 키워드가 명시적으로 언급되지 않은 경우
+            # 학과 키워드는 없는데 과목 키워드는 있는 경우: 과목명을 통해 학과 목록 추출
+            subject_terms = extract_subject_by_rapidfuzz(query)
+            
+            inferred_majors = set()
+            for subject in subject_terms:
+                majors = extract_major_from_subject(
+                    subject,
+                    collection_data["collection_subjectinfo"]["documents"],
+                    collection_data["collection_subjectinfo"]["metadatas"],
+                )
+                print(f"과목 '{subject}' → 추론된 학과들: {majors}")
+                inferred_majors.update(majors)
+            # inferred_majors 예) {'국어국문학과'}
+
+            # set → list 로 변환
+            major_filter_list = list(inferred_majors)
+            if not major_filter_list:
+                # 학과 추론 실패 시 전체 검색(cat=2)
+                filter_arg = None
+            else:
+                filter_arg = major_filter_list  # ['국어국문학과']
+                
+            top_docs_with_meta = retriever.retrieve(query, top_k_bm25=3, top_k_dpr=3, filter_major=filter_arg, alpha=0.5, cat=2)
+            
+            
         print(f"query: {query}")
 
         if not top_docs_with_meta:
@@ -546,14 +627,14 @@ def get_response_from_retriever(query: str, selected_collection: str, chat_log: 
         print(f"query: {query}")
 
         # 2) 변환된 질의로 학과 키워드 추출
-        major_filter_keyword = extract_major_keyword(query, unique_majors,threshold = 60)
+        major_filter_keyword = extract_major_keyword(query, unique_majors,threshold = 70)
 
         if major_filter_keyword:
-            print(f"✨ '{major_filter_keyword}' 관련 정보로 필터링하여 검색합니다.")
-            # 3) 필터링 키워드를 retriever에 전달
-            top_docs_with_meta = retriever.retrieve(query, top_k_bm25=10, top_k_dpr=3, filter_major=major_filter_keyword,cat=1)
+                print(f"✨ '{major_filter_keyword}' 관련 정보로 필터링하여 검색합니다.")
+                # 3) 필터링 키워드를 retriever에 전달
+                top_docs_with_meta = retriever.retrieve(query, top_k_bm25=10, top_k_dpr=3, filter_major=major_filter_keyword,cat=1)
         else:
-            print("ℹ️ 특정 학과 키워드가 감지되지 않았습니다. 전체 문서에서 검색합니다.")
+            print("ℹ️ 특정 학과 키워드가 감지되지 않았습니다. retrieve를 다시 실행하지 않습니다.")
 
         if not top_docs_with_meta:
             print("\n🧠 chatbot 응답:\n관련된 문서를 찾지 못했습니다. 다른 질문을 하거나 키워드를 확인해주세요.")
@@ -575,6 +656,7 @@ def get_response_from_retriever(query: str, selected_collection: str, chat_log: 
         for line in suggested_questions_text.strip().splitlines()
         if line.strip()
     ]
+
     return {
         "answer": answer,
         "questions": suggested_question_list
