@@ -454,7 +454,7 @@ top_docs_with_meta = None
 
 def initialize_rag():
     print("💬 학사요람 기반 RAG 시스템 시작됨.")
-    global retrievers, majors_by_collection, collection_data
+    global retrievers, majors_by_collection, collection_data,top_docs_with_meta
     if not collection_data:
         print("⚠️ 로드된 문서가 없습니다. DB를 먼저 생성하거나 경로를 확인해주세요.")
         exit()
@@ -473,6 +473,8 @@ def initialize_rag():
         for col_name, content in collection_data.items()
         if "majors" in content
     }
+
+    top_docs_with_meta = None
 
 def initialize_cat():
     global top_docs_with_meta
