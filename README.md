@@ -18,6 +18,39 @@ RAG 기반 학사정보 챗봇 시스템<br>
 - 추천 질문 선택 버튼
 - 로그인 시 대화 내역 저장
 
+## 📂 파일 구조
+```
+📦Chatbot
+ ┣ 📂Chatbot
+ ┃ ┣ 📂model
+ ┃ ┃ ┣ 📂data
+ ┃ ┃ ┃ ┣ 📂course
+ ┃ ┃ ┃ ┣ 📂notice
+ ┃ ┃ ┃ ┣ 📂subjectinfo
+ ┃ ┃ ┃ ┗ 📜all_subject_names_unique.txt
+ ┃ ┃ ┣ 📜build_db.py
+ ┃ ┃ ┣ 📜chunk_split.py
+ ┃ ┃ ┣ 📜delete_db.py
+ ┃ ┃ ┣ 📜dictionary.py
+ ┃ ┃ ┣ 📜ex_sub.py
+ ┃ ┃ ┣ 📜flatten_notice.py
+ ┃ ┃ ┣ 📜flat_json.py
+ ┃ ┃ ┗ 📜hybrid_rag.py
+ ┃ ┣ 📂templates
+ ┃ ┣ 📜admin.py
+ ┃ ┣ 📜apps.py
+ ┃ ┣ 📜models.py
+ ┃ ┣ 📜tests.py
+ ┃ ┣ 📜urls.py
+ ┃ ┣ 📜views.py
+ ┃ ┗ 📜__init__.py
+ ┣ 📂chroma_store
+ ┣ 📂Settings
+ ┣ 📂static
+ ┣ 📜manage.py
+ ┗ 📜requirements.txt
+ ```
+
 ## 🛠️ 기술 스택
 |분류|기술스택|
 |:--:|:--:|
