@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+
+{% block title %}login.html{% endblock %}
+
+{% block content %}
+<div class="wrap">
+    <div class="content">
+        <h1>로그인</h1>
+        <p class="desc">ID와 비밀번호를 입력하세요.</p>
+
+        {% if form.errors %}
+        <script>
+            window.onload = function () {
+                var error = {general: "{% if form.errors %}true{% else %}false{% endif %}"};
+
+                if (error.general === "true") {
+                    alert("로그인 오류:\n 올바른 사용자 이름과 비밀번호를 입력하세요");
+                }
+            };
+        </script>
+        {% endif %}
+
+        <form action="." method="post" class="card">{% csrf_token %}
+            <br>
+            <div class="form-group">
+                <label for="username" class="label">아이디</label>
+                <div>
+                    {{ form.username|add_class:"form-input"|attr:"autofocus" }}
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="label">비밀번호</label>
+                <div>
+                    {{ form.password|add_class:"form-input" }}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="btn-row">
+                    <button type="submit" class="btn">로그인</button>
+                    <input type="hidden" name="next" value="{{ next }}" />
+                    <a href="{% url 'register' %}" class="btn">회원가입</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<footer class="chat-footer">
+    <div class="footer-info">
+        04107 서울특별시 마포구 백범로 35 (신수동) 서강대학교 | 02-705-8114
+    </div>
+    <div class="footer-copy">
+        COPYRIGHT&copy; SOGANG UNIVERSITY. ALL RIGHTS RESERVED.
+    </div>
+</footer>
+{% endblock %}
